@@ -508,9 +508,9 @@ navbox.innerHTML = `
                         <a href="#" class="item6 uppercase text-[14px] py-1.5 font-[700] text-[#282C3F]">Studio <sup class="text-[#FF3F6C]">new</sup></a>
                         <div class="absolute left-0 top-[80px] hidden group-hover:flex bg-white shadow-lg p-4 space-x-4 w-[500px] border border-gray-200">
                             <div class="w-full flex flex-col items-center space-y-4">
-                                <img src="./Assets/studio-logo-new.svg" class="w-[110px]" alt="">
+                                <img src="https://constant.myntassets.com/web/assets/img/studio-logo-new.svg" class="w-[110px]" alt="">
                                 <p class="text-[#535766]">Your daily inspiration for everything fashion</p>
-                                <img src="./Assets/sudio-nav-banner.png" alt="">
+                                <img src="https://constant.myntassets.com/web/assets/img/sudio-nav-banner.png" alt="">
                                 <button class="uppercase text-[14px] font-[700] border-[1px] border-[#b9bac0] text-[#282C3F] px-7 py-0.5 flex items-center justify-center cursor-pointer">Explore studio <i class="ri-arrow-right-s-line text-[25px] font-[100]"></i></button>
                             </div>
                         </div>
@@ -543,7 +543,7 @@ navbox.innerHTML = `
                                 <i class="ri-user-3-line text-[20px] relative top-[5px]"></i>
                                 <p class="text-[12px] font-[700]">Profile</p>
 
-                                <div class="absolute top-[65px] w-max shadow-lg border border-gray-200 bg-white text-black p-5 z-10 hidden group-hover:block">
+                                <div class="absolute top-[68px] w-max shadow-lg border border-gray-200 bg-white text-black p-5 z-10 hidden group-hover:block">
                                     <p class="text-[15px] font-[700] text-[#282C3F]">Welcome</p>
                                     <p class="font-[300] text-[14px]">To access account and manage orders</p>
                                     <button class="text-[#FF3F6C] border-[1px] border-[#d7d7d7] hover:border-[#FF3F6C] duration-300 text-[14.5px] font-[700] mt-3 px-4 py-1.5 cursor-pointer">LOGIN / SIGN UP</button>
@@ -625,12 +625,12 @@ footerbox.innerHTML = `
                             <div class="footer-section mt-6">
                                 <h3 class="text-xs font-bold uppercase mb-5 text-black">Useful Links</h3>
                                 <ul class="space-y-[5px] text-sm text-[#696B79]">
-                                    <li><a href="#"  class="hover:text-[#282C3F]">Blog</a></li>
-                                    <li><a href="#"  class="hover:text-[#282C3F]">Careers</a></li>
-                                    <li><a href="#"  class="hover:text-[#282C3F]">Site Map</a></li>
-                                    <li><a href="#"  class="hover:text-[#282C3F]">Corporate Information</a></li>
-                                    <li><a href="#"  class="hover:text-[#282C3F]">Whitehat</a></li>
-                                    <li><a href="#"  class="hover:text-[#282C3F]">Cleartrip</a></li>
+                                    <li><a href="#" class="hover:text-[#282C3F]">Blog</a></li>
+                                    <li><a href="#" class="hover:text-[#282C3F]">Careers</a></li>
+                                    <li><a href="#" class="hover:text-[#282C3F]">Site Map</a></li>
+                                    <li><a href="#" class="hover:text-[#282C3F]">Corporate Information</a></li>
+                                    <li><a href="#" class="hover:text-[#282C3F]">Whitehat</a></li>
+                                    <li><a href="#" class="hover:text-[#282C3F]">Cleartrip</a></li>
                                 </ul>
                             </div>
                         </ul>
