@@ -1,0 +1,719 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    link tailwind css
+    <link href="./output.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    link tailwind css
+
+    google fonts link
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Baloo+2:wght@400..800&family=Bangers&family=Baskervville:ital@0;1&family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Enriqueta:wght@400;500;600;700&family=Gantari:ital,wght@0,100..900;1,100..900&family=Heebo:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Londrina+Outline&family=Luckiest+Guy&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nothing+You+Could+Do&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sora:wght@100..800&family=Unbounded:wght@200..900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+    google fonts link
+
+    font awesome cdn
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    font awesome cdn
+
+    remix icon cdn 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+      integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    remix icon cdn 
+  </head>
+  <style>
+    *{
+        font-family: "Assistant", serif;
+    }
+    .nav-menu a{
+        position: relative;
+    }
+    .nav-menu a::before{
+        content: "";
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        bottom: 0;
+        transition: .6s;
+    }
+    .nav-menu .item1::before{
+        border-bottom: 4px solid #EE5F73;
+    }
+    .nav-menu .item2::before{
+        border-bottom: 4px solid #FB56C1;
+    }
+    .nav-menu .item3::before{
+        border-bottom: 4px solid #F26A10;
+    }
+    .nav-menu .item4::before{
+        border-bottom: 4px solid #F2C210;
+    }
+    .nav-menu .item5::before{
+        border-bottom: 4px solid #0DB7AF;
+    }
+    .nav-menu .item6::before{
+        border-bottom: 4px solid #FF3F6C;
+    }
+    .nav-menu a:hover::before{
+        left: 0%;
+        right: 0%;
+    }
+    .group::before {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 15px;
+      background: transparent;
+      z-index: 10;
+    }
+  </style>
+  <body>
+    <div class="navbar bg-white shadow-md w-full fixed top-0 left-0 z-10">
+      <div class="navbox flex justify-between items-center h-[85px] xl:max-w-[1440px] px-4 mx-auto">
+        <div class="nav-logo">
+          <img src="./Assets/myntra_logo-removebg-preview.png" class="xl:w-[50px] w-[40px] object-cover" alt="" />
+        </div>
+        <input type="checkbox" id="menu-toggle" class="peer hidden" />
+        <label for="menu-toggle" class="lg:hidden cursor-pointe">
+          <div class="w-8 h-8 flex items-center justify-center">
+            <i class="ri-menu-5-line text-3xl"></i>
+          </div>
+        </label>
+        <div
+          class="nav-menu hidden peer-checked:flex flex-col absolute top-[80px] bg-[white] lg:h-full left-0 w-full shadow-md p-4 lg:flex lg:flex-row lg:items-center lg:static lg:w-auto lg:shadow-none lg:p-0 xl:gap-9 lg:gap-7 gap-4">
+          <div class="relative group h-full lg:flex lg:items-center">
+            <a href="#" class="item1 uppercase text-[14px] py-1.5 font-[700] text-[#282C3F]">Men</a>
+            <div
+              class="absolute left-0 top-[80px] hidden group-hover:flex bg-white shadow-lg p-4 space-x-4 w-[900px] border border-gray-200">
+              <div class="w-full">
+                <h3 class="font-bold text-[#EE5F73] text-[14px]">Topwear</h3>
+                <ul class="text-sm text-gray-700 space-y-1">
+                  <li class="hover:font-bold"><a href="#">T-Shirts</a></li>
+                  <li class="hover:font-bold"><a href="#">Casual Shirts</a></li>
+                  <li class="hover:font-bold"><a href="#">Formal Shirts</a></li>
+                  <li class="hover:font-bold"><a href="#">Sweatshirts</a></li>
+                  <li class="hover:font-bold"><a href="#">Sweaters</a></li>
+                  <li class="hover:font-bold"><a href="#">Jackets</a></li>
+                  <li class="hover:font-bold"><a href="#">Blazers & Coats</a></li>
+                  <li class="hover:font-bold"><a href="#">Suits</a></li>
+                  <li class="hover:font-bold"><a href="#">Rain Jackets</a></li>
+                </ul>
+                <h3 class="font-bold text-[#EE5F73] text-[14px] pt-4">Indian & Festive Wear</h3>
+                <ul class="text-sm text-gray-700 space-y-1">
+                  <li class="hover:font-bold"><a href="#">Kurtas & Kurta Sets</a></li>
+                  <li class="hover:font-bold"><a href="#">Sherwanis</a></li>
+                  <li class="hover:font-bold"><a href="#">Nehru Jackets</a></li>
+                  <li class="hover:font-bold"><a href="#">Dhotis</a></li>
+                </ul>
+              </div>
+              <div class="w-full">
+                <h3 class="font-bold text-[#EE5F73] text-[14px]">Bottomwear</h3>
+                <ul class="text-sm text-gray-700 space-y-1">
+                  <li class="hover:font-bold"><a href="#">Jeans</a></li>
+                  <li class="hover:font-bold"><a href="#">Casual Trousers</a></li>
+                  <li class="hover:font-bold"><a href="#">Formal Trousers</a></li>
+                  <li class="hover:font-bold"><a href="#">Shorts</a></li>
+                  <li class="hover:font-bold"><a href="#">Track Pants & Joggers</a></li>
+                </ul>
+                <h3 class="font-bold text-[#EE5F73] text-[14px] pt-4">Innerwear & Sleepwear</h3>
+                <ul class="text-sm text-gray-700 space-y-1">
+                  <li class="hover:font-bold"><a href="#">Briefs & Trunks</a></li>
+                  <li class="hover:font-bold"><a href="#">Boxers</a></li>
+                  <li class="hover:font-bold"><a href="#">Vests</a></li>
+                  <li class="hover:font-bold"><a href="#">Sleepwear & Loungewear</a></li>
+                  <li class="hover:font-bold"><a href="#">Thermals</a></li>
+                </ul>
+                <h3 class="font-bold text-[#EE5F73] text-[14px] pt-4">Plus Size</h3>
+              </div>
+              <div class="w-full">
+                <h3 class="font-bold text-[#EE5F73]">Footwear</h3>
+                <ul class="text-sm text-gray-700 space-y-1">
+                  <li class="hover:font-bold"><a href="#">Casual Shoes</a></li>
+                  <li class="hover:font-bold"><a href="#">Sports Shoes</a></li>
+                  <li class="hover:font-bold"><a href="#">Formal Shoes</a></li>
+                  <li class="hover:font-bold"><a href="#">Sneakers</a></li>
+                  <li class="hover:font-bold"><a href="#">Sandals & Floaters</a></li>
+                  <li class="hover:font-bold"><a href="#">Flip Flops</a></li>
+                  <li class="hover:font-bold"><a href="#">Socks</a></li>
+                </ul>
+                <h3 class="font-bold text-[#EE5F73] text-[14px] pt-4">Personal Care & Grooming</h3>
+                <h3 class="font-bold text-[#EE5F73] text-[14px] pt-4">Sunglasses & Frames</h3>
+                <h3 class="font-bold text-[#EE5F73] text-[14px] pt-4">Watches</h3>
+              </div>
+              <div class="w-full">
+                <h3 class="font-bold text-[#EE5F73] text-[14px]">Sports & Active Wear</h3>
+                <ul class="text-sm text-gray-700 space-y-1">
+                  <li class="hover:font-bold"><a href="#">Sports Shoes</a></li>
+                  <li class="hover:font-bold"><a href="#">Sports Sandals</a></li>
+                  <li class="hover:font-bold"><a href="#">Active T-Shirts</a></li>
+                  <li class="hover:font-bold"><a href="#">Track Pants & Shorts</a></li>
+                  <li class="hover:font-bold"><a href="#">Tracksuits</a></li>
+                  <li class="hover:font-bold"><a href="#">Jackets & Sweatshirts</a></li>
+                  <li class="hover:font-bold"><a href="#">Sports Accessories</a></li>
+                  <li class="hover:font-bold"><a href="#">Swimwear</a></li>
+                </ul>
+                <h3 class="font-bold text-[#EE5F73] text-[14px] pt-4">Gadgets</h3>
+                <ul class="text-sm text-gray-700 space-y-1">
+                  <li class="hover:font-bold"><a href="#">Smart Wearables</a></li>
+                  <li class="hover:font-bold"><a href="#">Fitness Gadgets</a></li>
+                  <li class="hover:font-bold"><a href="#">Headphones</a></li>
+                  <li class="hover:font-bold"><a href="#">Speakers</a></li>
+                </ul>
+              </div>
+              <div class="w-full">
+                <h3 class="font-bold text-[#EE5F73] text-[14px]">Fashion Accessories</h3>
+                <ul class="text-sm text-gray-700 space-y-1">
+                  <li class="hover:font-bold"><a href="#">Wallets</a></li>
+                  <li class="hover:font-bold"><a href="#">Belts</a></li>
+                  <li class="hover:font-bold"><a href="#">Perfumes & Body Mists</a></li>
+                  <li class="hover:font-bold"><a href="#">Trimmers</a></li>
+                  <li class="hover:font-bold"><a href="#">Deodorants</a></li>
+                  <li class="hover:font-bold"><a href="#">Ties, Cufflinks & Pocket Squares</a></li>
+                  <li class="hover:font-bold"><a href="#">Accessory Gift Sets</a></li>
+                  <li class="hover:font-bold"><a href="#">Caps & Hats</a></li>
+                  <li class="hover:font-bold"><a href="#">Mufflers, Scarves & Gloves</a></li>
+                  <li class="hover:font-bold"><a href="#">Phone Cases</a></li>
+                  <li class="hover:font-bold"><a href="#">Rings & Wristwear</a></li>
+                  <li class="hover:font-bold"><a href="#">Helmets</a></li>
+                </ul>
+                <h3 class="font-bold text-[#EE5F73] text-[14px] pt-4">Bags & Backpacks</h3>
+                <h3 class="font-bold text-[#EE5F73] text-[14px] pt-4">Luggages & Trolleys</h3>
+              </div>
+            </div>
+          </div>
+          <div class="relative group h-full lg:flex lg:items-center">
+            <a href="#" class="item2 uppercase text-[14px] py-1.5 font-[700] text-[#282C3F]">Women</a>
+            <div
+              class="absolute left-0 top-[80px] hidden group-hover:flex bg-white shadow-lg p-4 space-x-4 w-[900px] border border-gray-200">
+              <div class="w-full">
+                <h3 class="font-bold text-[#FB56C1] text-[14px]">Indian & Fusion Wear</h3>
+                <ul class="text-sm text-gray-700 space-y-1">
+                  <li class="hover:font-bold"><a href="#">Kurtas & Suits</a></li>
+                  <li class="hover:font-bold"><a href="#">Kurtis, Tunics & Tops</a></li>
+                  <li class="hover:font-bold"><a href="#">Sarees</a></li>
+                  <li class="hover:font-bold"><a href="#">Ethnic Wear</a></li>
+                  <li class="hover:font-bold"><a href="#">Leggings, Salwars & Churidars</a></li>
+                  <li class="hover:font-bold"><a href="#">Skirts & Palazzos</a></li>
+                  <li class="hover:font-bold"><a href="#">Dress Materials</a></li>
+                  <li class="hover:font-bold"><a href="#">Lehenga Cholis</a></li>
+                  <li class="hover:font-bold"><a href="#">Dupattas & Shawls</a></li>
+                  <li class="hover:font-bold"><a href="#">Jackets</a></li>
+                </ul>
+                <h3 class="font-bold text-[#FB56C1] text-[14px] pt-4">Belts, Scarves & More</h3>
+                <h3 class="font-bold text-[#FB56C1] text-[14px] pt-4">Watches & Wearables</h3>
+              </div>
+              <div class="w-full">
+                <h3 class="font-bold text-[#FB56C1] text-[14px]">Western Wear</h3>
+                <ul class="text-sm text-gray-700 space-y-1">
+                  <li class="hover:font-bold"><a href="#">Dresses</a></li>
+                  <li class="hover:font-bold"><a href="#">Tops</a></li>
+                  <li class="hover:font-bold"><a href="#">Tshirts</a></li>
+                  <li class="hover:font-bold"><a href="#">Jeans</a></li>
+                  <li class="hover:font-bold"><a href="#">Trousers & Capris</a></li>
+                  <li class="hover:font-bold"><a href="#">Shorts & Skirts</a></li>
+                  <li class="hover:font-bold"><a href="#">Co-ords</a></li>
+                  <li class="hover:font-bold"><a href="#">Playsuits</a></li>
+                  <li class="hover:font-bold"><a href="#">Jumpsuits</a></li>
+                  <li class="hover:font-bold"><a href="#">Shrugs</a></li>
+                  <li class="hover:font-bold"><a href="#">Sweaters & Sweatshirts</a></li>
+                  <li class="hover:font-bold"><a href="#">Jackets & Coats</a></li>
+                  <li class="hover:font-bold"><a href="#">Blazers & Waistcoats</a></li>
+                </ul>
+                <h3 class="font-bold text-[#FB56C1] text-[14px] pt-4">Plus Size</h3>
+              </div>
+              <div class="w-full">
+                <h3 class="font-bold text-[#FB56C1] text-[14px]">Maternity</h3>
+                <h3 class="font-bold text-[#FB56C1] text-[14px] pt-4">Sunglasses & Frames</h3>
+                <h3 class="font-bold text-[#FB56C1] text-[14px] pt-4">Footwear</h3>
+                <ul class="text-sm text-gray-700 space-y-1">
+                  <li class="hover:font-bold"><a href="#">Flats</a></li>
+                  <li class="hover:font-bold"><a href="#">Casual Shoes</a></li>
+                  <li class="hover:font-bold"><a href="#">Heels</a></li>
+                  <li class="hover:font-bold"><a href="#">Boots</a></li>
+                  <li class="hover:font-bold"><a href="#">Sports Shoes & Floaters</a></li>
+                </ul>
+                <h3 class="font-bold text-[#FB56C1] text-[14px] pt-4">Sports & Active Wear</h3>
+                <ul class="text-sm text-gray-700 space-y-1">
+                  <li class="hover:font-bold"><a href="#">Clothing</a></li>
+                  <li class="hover:font-bold"><a href="#">Footwear</a></li>
+                  <li class="hover:font-bold"><a href="#">Sports Accessories</a></li>
+                  <li class="hover:font-bold"><a href="#">Sports Equipment</a></li>
+                </ul>
+              </div>
+              <div class="w-full">
+                <h3 class="font-bold text-[#FB56C1] text-[14px]">Lingerie & Sleepwear</h3>
+                <ul class="text-sm text-gray-700 space-y-1">
+                  <li class="hover:font-bold"><a href="#">Bra</a></li>
+                  <li class="hover:font-bold"><a href="#">Briefs</a></li>
+                  <li class="hover:font-bold"><a href="#">Shapewear</a></li>
+                  <li class="hover:font-bold"><a href="#">Sleepwear & Loungewear</a></li>
+                  <li class="hover:font-bold"><a href="#">Swimwear</a></li>
+                  <li class="hover:font-bold"><a href="#">Camisoles & Thermals</a></li>
+                </ul>
+                <h3 class="font-bold text-[#FB56C1] text-[14px] pt-4">Beauty & Personal Care</h3>
+                <ul class="text-sm text-gray-700 space-y-1">
+                  <li class="hover:font-bold"><a href="#">Makeup</a></li>
+                  <li class="hover:font-bold"><a href="#">Skincare</a></li>
+                  <li class="hover:font-bold"><a href="#">Premium Beauty</a></li>
+                  <li class="hover:font-bold"><a href="#">Lipsticks</a></li>
+                  <li class="hover:font-bold"><a href="#">Fragrances</a></li>
+                </ul>
+              </div>
+              <div class="w-full">
+                <h3 class="font-bold text-[#FB56C1] text-[14px]">Gadgets</h3>
+                <ul class="text-sm text-gray-700 space-y-1">
+                  <li class="hover:font-bold"><a href="#">Smart Wearables</a></li>
+                  <li class="hover:font-bold"><a href="#">Fitness Gadgets</a></li>
+                  <li class="hover:font-bold"><a href="#">Headphones</a></li>
+                  <li class="hover:font-bold"><a href="#">Speakers</a></li>
+                </ul>
+                <h3 class="font-bold text-[#FB56C1] text-[14px] pt-4">Jewellery</h3>
+                <ul class="text-sm text-gray-700 space-y-1">
+                  <li class="hover:font-bold"><a href="#">Fashion Jewellery</a></li>
+                  <li class="hover:font-bold"><a href="#">Fine Jewellery</a></li>
+                  <li class="hover:font-bold"><a href="#">Earrings</a></li>
+                </ul>
+                <h3 class="font-bold text-[#FB56C1] text-[14px] pt-4">Backpacks</h3>
+                <h3 class="font-bold text-[#FB56C1] text-[14px] pt-4">Handbags, Bags & Wallets</h3>
+                <h3 class="font-bold text-[#FB56C1] text-[14px] pt-4">Luggages & Trolleys</h3>
+              </div>
+            </div>
+          </div>
+          <div class="relative group h-full lg:flex lg:items-center">
+            <a href="#" class="item3 uppercase text-[14px] py-1.5 font-[700] text-[#282C3F]">kids</a>
+            <div
+              class="absolute left-0 top-[80px] hidden group-hover:flex bg-white shadow-lg p-4 space-x-4 w-[900px] border border-gray-200">
+              <div class="w-full">
+                <h3 class="font-bold text-[#F26A10] text-[14px]">Boys Clothing</h3>
+                <ul class="text-sm text-gray-700 space-y-1">
+                  <li class="hover:font-bold"><a href="#">T-Shirts</a></li>
+                  <li class="hover:font-bold"><a href="#">Shirts</a></li>
+                  <li class="hover:font-bold"><a href="#">Shorts</a></li>
+                  <li class="hover:font-bold"><a href="#">Jeans</a></li>
+                  <li class="hover:font-bold"><a href="#">Trousers</a></li>
+                  <li class="hover:font-bold"><a href="#">Clothing Sets</a></li>
+                  <li class="hover:font-bold"><a href="#">Ethnic Wear</a></li>
+                  <li class="hover:font-bold"><a href="#">Track Pants & Pyjamas</a></li>
+                  <li class="hover:font-bold"><a href="#">Jacket, Sweater & Sweatshirts</a></li>
+                  <li class="hover:font-bold"><a href="#">Party Wear</a></li>
+                  <li class="hover:font-bold"><a href="#">Innerwear & Thermals</a></li>
+                  <li class="hover:font-bold"><a href="#">Nightwear & Loungewear</a></li>
+                  <li class="hover:font-bold"><a href="#">Value Packs</a></li>
+                </ul>
+              </div>
+              <div class="w-full">
+                <h3 class="font-bold text-[#F26A10] text-[14px]">Girls Clothing</h3>
+                <ul class="text-sm text-gray-700 space-y-1">
+                  <li class="hover:font-bold"><a href="#">Dresses</a></li>
+                  <li class="hover:font-bold"><a href="#">Tops</a></li>
+                  <li class="hover:font-bold"><a href="#">T-shirts</a></li>
+                  <li class="hover:font-bold"><a href="#">Clothing Sets</a></li>
+                  <li class="hover:font-bold"><a href="#">Lehenga choli</a></li>
+                  <li class="hover:font-bold"><a href="#">Kurta Sets</a></li>
+                  <li class="hover:font-bold"><a href="#">Party wear</a></li>
+                  <li class="hover:font-bold"><a href="#">Dungarees & Jumpsuits</a></li>
+                  <li class="hover:font-bold"><a href="#">Skirts & shorts</a></li>
+                  <li class="hover:font-bold"><a href="#">Tights & Leggings</a></li>
+                  <li class="hover:font-bold"><a href="#">Jeans, Trousers & Capris</a></li>
+                  <li class="hover:font-bold"><a href="#">Jacket, Sweater & Sweatshirts</a></li>
+                  <li class="hover:font-bold"><a href="#">Innerwear & Thermals</a></li>
+                  <li class="hover:font-bold"><a href="#">Nightwear & Loungewear</a></li>
+                  <li class="hover:font-bold"><a href="#">Value Packs</a></li>
+                </ul>
+              </div>
+              <div class="w-full">
+                <h3 class="font-bold text-[#F26A10] text-[14px]">Footwear</h3>
+                <ul class="text-sm text-gray-700 space-y-1">
+                  <li class="hover:font-bold"><a href="#">Casual Shoes</a></li>
+                  <li class="hover:font-bold"><a href="#">Flipflops</a></li>
+                  <li class="hover:font-bold"><a href="#">Sports Shoes</a></li>
+                  <li class="hover:font-bold"><a href="#">Flats</a></li>
+                  <li class="hover:font-bold"><a href="#">Sandals</a></li>
+                  <li class="hover:font-bold"><a href="#">Heels</a></li>
+                  <li class="hover:font-bold"><a href="#">School Shoes</a></li>
+                  <li class="hover:font-bold"><a href="#">Socks</a></li>
+                </ul>
+                <h3 class="font-bold text-[#F26A10] text-[14px] pt-4">Toys & Games</h3>
+                <ul class="text-sm text-gray-700 space-y-1">
+                  <li class="hover:font-bold"><a href="#">Learning & Development</a></li>
+                  <li class="hover:font-bold"><a href="#">Activity Toys</a></li>
+                  <li class="hover:font-bold"><a href="#">Soft Toys</a></li>
+                  <li class="hover:font-bold"><a href="#">Action Figure / Play set</a></li>
+                </ul>
+              </div>
+              <div class="w-full">
+                <h3 class="font-bold text-[#F26A10] text-[14px]">Infants</h3>
+                <ul class="text-sm text-gray-700 space-y-1">
+                  <li class="hover:font-bold"><a href="#">Bodysuits</a></li>
+                  <li class="hover:font-bold"><a href="#">Rompers & Sleepsuits</a></li>
+                  <li class="hover:font-bold"><a href="#">Clothing Sets</a></li>
+                  <li class="hover:font-bold"><a href="#">Tshirts & Tops</a></li>
+                  <li class="hover:font-bold"><a href="#">Dresses</a></li>
+                  <li class="hover:font-bold"><a href="#">Bottom wear</a></li>
+                  <li class="hover:font-bold"><a href="#">Winter Wear</a></li>
+                  <li class="hover:font-bold"><a href="#">Innerwear & Sleepwear</a></li>
+                  <li class="hover:font-bold"><a href="#">Infant Care</a></li>
+                </ul>
+                <h3 class="font-bold text-[#F26A10] text-[14px] pt-4">Home & Bath</h3>
+                <h3 class="font-bold text-[#F26A10] text-[14px] pt-4">Personal Care</h3>
+              </div>
+              <div class="w-full">
+                <h3 class="font-bold text-[#F26A10] text-[14px]">Kids Accessories</h3>
+                <ul class="text-sm text-gray-700 space-y-1">
+                  <li class="hover:font-bold"><a href="#">Bags & Backpacks</a></li>
+                  <li class="hover:font-bold"><a href="#">Watches</a></li>
+                  <li class="hover:font-bold"><a href="#">Jewellery & Hair accessory</a></li>
+                  <li class="hover:font-bold"><a href="#">Sunglasses</a></li>
+                  <li class="hover:font-bold"><a href="#">Masks & Protective Gears</a></li>
+                  <li class="hover:font-bold"><a href="#">Caps & Hats</a></li>
+                </ul>
+                <h3 class="font-bold text-[#F26A10] text-[14px] pt-4">Brands</h3>
+                <ul class="text-sm text-gray-700 space-y-1">
+                  <li class="hover:font-bold"><a href="#">H&M</a></li>
+                  <li class="hover:font-bold"><a href="#">Max Kids</a></li>
+                  <li class="hover:font-bold"><a href="#">Pantaloons</a></li>
+                  <li class="hover:font-bold"><a href="#">United Colors Of Benetton Kids</a></li>
+                  <li class="hover:font-bold"><a href="#">YK</a></li>
+                  <li class="hover:font-bold"><a href="#">U.S. Polo Assn. Kids</a></li>
+                  <li class="hover:font-bold"><a href="#">Mothercare</a></li>
+                  <li class="hover:font-bold"><a href="#">HRX</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="relative group h-full lg:flex lg:items-center">
+            <a href="#" class="item4 uppercase text-[14px] py-1.5 font-[700] text-[#282C3F]">Home & Living</a>
+            <div
+              class="absolute left-0 top-[80px] hidden group-hover:flex bg-white shadow-lg p-4 space-x-4 w-[900px] border border-gray-200">
+              <div class="w-full">
+                <h3 class="font-bold text-[#F2C210] text-[14px]">Bed Linen & Furnishing</h3>
+                <ul class="text-sm text-gray-700 space-y-1">
+                  <li class="hover:font-bold"><a href="#">Bed Runners</a></li>
+                  <li class="hover:font-bold"><a href="#">Mattress Protectors</a></li>
+                  <li class="hover:font-bold"><a href="#">Bedsheets</a></li>
+                  <li class="hover:font-bold"><a href="#">Bedding Sets</a></li>
+                  <li class="hover:font-bold"><a href="#">Blankets, Quilts & Dohars</a></li>
+                  <li class="hover:font-bold"><a href="#">Pillows & Pillow Covers</a></li>
+                  <li class="hover:font-bold"><a href="#">Bed Covers</a></li>
+                  <li class="hover:font-bold"><a href="#">Diwan Sets</a></li>
+                  <li class="hover:font-bold"><a href="#">Chair Pads & Covers</a></li>
+                  <li class="hover:font-bold"><a href="#">Sofa Covers</a></li>
+                </ul>
+                <h3 class="font-bold text-[#F2C210] text-[14px] pt-4">Flooring</h3>
+                <ul class="text-sm text-gray-700 space-y-1">
+                  <li class="hover:font-bold"><a href="#">Carpets</a></li>
+                  <li class="hover:font-bold"><a href="#">Rugs</a></li>
+                  <li class="hover:font-bold"><a href="#">Doormats</a></li>
+                  <li class="hover:font-bold"><a href="#">Floor Runners</a></li>
+                  <li class="hover:font-bold"><a href="#">Vinyl Flooring</a></li>
+                  <li class="hover:font-bold"><a href="#">Wooden Flooring</a></li>
+                </ul>
+              </div>
+              <div class="w-full">
+                <h3 class="font-bold text-[#F2C210] text-[14px]">Bath</h3>
+                <ul class="text-sm text-gray-700 space-y-1">
+                  <li class="hover:font-bold"><a href="#">Bath Towels</a></li>
+                  <li class="hover:font-bold"><a href="#">Hand & Face Towels</a></li>
+                  <li class="hover:font-bold"><a href="#">Beach Towels</a></li>
+                  <li class="hover:font-bold"><a href="#">Towels Set</a></li>
+                  <li class="hover:font-bold"><a href="#">Bath Rugs</a></li>
+                  <li class="hover:font-bold"><a href="#">Bath Robes</a></li>
+                  <li class="hover:font-bold"><a href="#">Bathroom Accessories</a></li>
+                  <li class="hover:font-bold"><a href="#">Shower Curtains</a></li>
+                </ul>
+                <h3 class="font-bold text-[#F2C210] text-[14px] pt-4">Lamps & Lighting</h3>
+                <ul class="text-sm text-gray-700 space-y-1">
+                  <li class="hover:font-bold"><a href="#">Floor Lamps</a></li>
+                  <li class="hover:font-bold"><a href="#">Ceiling Lamps</a></li>
+                  <li class="hover:font-bold"><a href="#">Table Lamps</a></li>
+                  <li class="hover:font-bold"><a href="#">Wall Lamps</a></li>
+                  <li class="hover:font-bold"><a href="#">Outdoor Lamps</a></li>
+                  <li class="hover:font-bold"><a href="#">String Lights</a></li>
+                </ul>
+              </div>
+              <div class="w-full">
+                <h3 class="font-bold text-[#F2C210] text-[14px]">Home Décor</h3>
+                <ul class="text-sm text-gray-700 space-y-1">
+                  <li class="hover:font-bold"><a href="#">Plants & Planters</a></li>
+                  <li class="hover:font-bold"><a href="#">Aromas & Candles</a></li>
+                  <li class="hover:font-bold"><a href="#">Clocks</a></li>
+                  <li class="hover:font-bold"><a href="#">Mirrors</a></li>
+                  <li class="hover:font-bold"><a href="#">Wall Décor</a></li>
+                  <li class="hover:font-bold"><a href="#">Festive Decor</a></li>
+                  <li class="hover:font-bold"><a href="#">Pooja Essentials</a></li>
+                  <li class="hover:font-bold"><a href="#">Wall Shelves</a></li>
+                  <li class="hover:font-bold"><a href="#">Fountains</a></li>
+                  <li class="hover:font-bold"><a href="#">Showpieces & Vases</a></li>
+                  <li class="hover:font-bold"><a href="#">Ottoman</a></li>
+                </ul>
+                <h3 class="font-bold text-[#F2C210] text-[14px] pt-4">Cushions & Cushion Covers</h3>
+                <h3 class="font-bold text-[#F2C210] text-[14px] pt-4">Curtains</h3>
+              </div>
+
+              <div class="w-full">
+                <h3 class="font-bold text-[#F2C210] text-[14px]">Furniture</h3>
+                <h3 class="font-bold text-[#F2C210] text-[14px] pt-4">Home Gift Sets</h3>
+                <h3 class="font-bold text-[#F2C210] text-[14px] pt-4">Kitchen & Table</h3>
+                <ul class="text-sm text-gray-700 space-y-1">
+                  <li class="hover:font-bold"><a href="#">Table Runners</a></li>
+                  <li class="hover:font-bold"><a href="#">Dinnerware & Serveware</a></li>
+                  <li class="hover:font-bold"><a href="#">Cups and Mugs</a></li>
+                  <li class="hover:font-bold"><a href="#">Bakeware & Cookware</a></li>
+                  <li class="hover:font-bold"><a href="#">Kitchen Storage & Tools</a></li>
+                  <li class="hover:font-bold"><a href="#">Bar & Drinkware</a></li>
+                  <li class="hover:font-bold"><a href="#">Table Covers & Furnishings</a></li>
+                </ul>
+              </div>
+              <div class="w-full">
+                <h3 class="font-bold text-[#F2C210] text-[14px]">Storage</h3>
+                <ul class="text-sm text-gray-700 space-y-1">
+                  <li class="hover:font-bold"><a href="#">Bins</a></li>
+                  <li class="hover:font-bold"><a href="#">Hangers</a></li>
+                  <li class="hover:font-bold"><a href="#">Organisers</a></li>
+                  <li class="hover:font-bold"><a href="#">Hooks & Holders</a></li>
+                  <li class="hover:font-bold"><a href="#">Laundry Bags</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="relative group h-full lg:flex lg:items-center">
+            <a href="#" class="item5 uppercase text-[14px] py-1.5 font-[700] text-[#282C3F]">Beauty</a>
+            <div
+              class="absolute left-0 top-[80px] hidden group-hover:flex bg-white shadow-lg p-4 space-x-4 w-[900px] border border-gray-200">
+              <div class="w-full">
+                <h3 class="font-bold text-[#0DB7AF] text-[14px]">Makeup</h3>
+                <ul class="text-sm text-gray-700 space-y-1">
+                  <li class="hover:font-bold"><a href="#">Lipstick</a></li>
+                  <li class="hover:font-bold"><a href="#">Lip Gloss</a></li>
+                  <li class="hover:font-bold"><a href="#">Lip Liner</a></li>
+                  <li class="hover:font-bold"><a href="#">Mascara</a></li>
+                  <li class="hover:font-bold"><a href="#">Eyeliner</a></li>
+                  <li class="hover:font-bold"><a href="#">Kajal</a></li>
+                  <li class="hover:font-bold"><a href="#">Eyeshadow</a></li>
+                  <li class="hover:font-bold"><a href="#">Foundation</a></li>
+                  <li class="hover:font-bold"><a href="#">Primer</a></li>
+                  <li class="hover:font-bold"><a href="#">Concealer</a></li>
+                  <li class="hover:font-bold"><a href="#">Compact</a></li>
+                  <li class="hover:font-bold"><a href="#">Nail Polish</a></li>
+                </ul>
+              </div>
+              <div class="w-full">
+                <h3 class="font-bold text-[#0DB7AF] text-[14px]">Skincare, Bath & Body</h3>
+                <ul class="text-sm text-gray-700 space-y-1">
+                  <li class="hover:font-bold"><a href="#">Face Moisturiser</a></li>
+                  <li class="hover:font-bold"><a href="#">Cleanser</a></li>
+                  <li class="hover:font-bold"><a href="#">Masks & Peel</a></li>
+                  <li class="hover:font-bold"><a href="#">Sunscreen</a></li>
+                  <li class="hover:font-bold"><a href="#">Serum</a></li>
+                  <li class="hover:font-bold"><a href="#">Face Wash</a></li>
+                  <li class="hover:font-bold"><a href="#">Eye Cream</a></li>
+                  <li class="hover:font-bold"><a href="#">Lip Balm</a></li>
+                  <li class="hover:font-bold"><a href="#">Body Lotion</a></li>
+                  <li class="hover:font-bold"><a href="#">Body Wash</a></li>
+                  <li class="hover:font-bold"><a href="#">Body Scrub</a></li>
+                  <li class="hover:font-bold"><a href="#">Hand Cream</a></li>
+                </ul>
+                <h3 class="font-bold text-[#0DB7AF] text-[14px] pt-4">Baby Care</h3>
+                <h3 class="font-bold text-[#0DB7AF] text-[14px] pt-4">Masks</h3>
+              </div>
+              <div class="w-full">
+                <h3 class="font-bold text-[#0DB7AF] text-[14px]">Haircare</h3>
+                <ul class="text-sm text-gray-700 space-y-1">
+                  <li class="hover:font-bold"><a href="#">Shampoo</a></li>
+                  <li class="hover:font-bold"><a href="#">Conditioner</a></li>
+                  <li class="hover:font-bold"><a href="#">Hair Cream</a></li>
+                  <li class="hover:font-bold"><a href="#">Hair Oil</a></li>
+                  <li class="hover:font-bold"><a href="#">Hair Gel</a></li>
+                  <li class="hover:font-bold"><a href="#">Hair Color</a></li>
+                  <li class="hover:font-bold"><a href="#">Hair Serum</a></li>
+                  <li class="hover:font-bold"><a href="#">Hair Accessory</a></li>
+                </ul>
+                <h3 class="font-bold text-[#0DB7AF] text-[14px] pt-4">Fragrances</h3>
+                <ul class="text-sm text-gray-700 space-y-1">
+                  <li class="hover:font-bold"><a href="#">Perfume</a></li>
+                  <li class="hover:font-bold"><a href="#">Deodorant</a></li>
+                  <li class="hover:font-bold"><a href="#">Body Mist</a></li>
+                </ul>
+              </div>
+              <div class="w-full">
+                <h3 class="font-bold text-[#0DB7AF] text-[14px]">Appliances</h3>
+                <ul class="text-sm text-gray-700 space-y-1">
+                  <li class="hover:font-bold"><a href="#">Hair Straightener</a></li>
+                  <li class="hover:font-bold"><a href="#">Hair Dryer</a></li>
+                  <li class="hover:font-bold"><a href="#">Epilator</a></li>
+                </ul>
+                <h3 class="font-bold text-[#0DB7AF] text-[14px] pt-4">Men's Grooming</h3>
+                <ul class="text-sm text-gray-700 space-y-1">
+                  <li class="hover:font-bold"><a href="#">Trimmers</a></li>
+                  <li class="hover:font-bold"><a href="#">Beard Oil</a></li>
+                  <li class="hover:font-bold"><a href="#">Hair Wax</a></li>
+                </ul>
+                <h3 class="font-bold text-[#0DB7AF] text-[14px] pt-4">Beauty Gift & Makeup Set</h3>
+                <ul class="text-sm text-gray-700 space-y-1">
+                  <li class="hover:font-bold"><a href="#">Beauty Gift</a></li>
+                  <li class="hover:font-bold"><a href="#">Makeup Kit</a></li>
+                </ul>
+                <h3 class="font-bold text-[#0DB7AF] text-[14px] pt-4">Premium Beauty</h3>
+                <h3 class="font-bold text-[#0DB7AF] text-[14px] pt-4">Wellness & Hygiene</h3>
+              </div>
+              <div class="w-full">
+                <h3 class="font-bold text-[#0DB7AF] text-[14px]">Top Brands</h3>
+                <ul class="text-sm text-gray-700 space-y-1">
+                  <li class="hover:font-bold"><a href="#">Lakme</a></li>
+                  <li class="hover:font-bold"><a href="#">Maybelline</a></li>
+                  <li class="hover:font-bold"><a href="#">LOreal</a></li>
+                  <li class="hover:font-bold"><a href="#">Philips</a></li>
+                  <li class="hover:font-bold"><a href="#">Bath & Body Works</a></li>
+                  <li class="hover:font-bold"><a href="#">THE BODY SHOP</a></li>
+                  <li class="hover:font-bold"><a href="#">Biotique</a></li>
+                  <li class="hover:font-bold"><a href="#">Mamaearth</a></li>
+                  <li class="hover:font-bold"><a href="#">MCaffeine</a></li>
+                  <li class="hover:font-bold"><a href="#">Nivea</a></li>
+                  <li class="hover:font-bold"><a href="#">Lotus Herbals</a></li>
+                  <li class="hover:font-bold"><a href="#">LOreal Professionnel</a></li>
+                  <li class="hover:font-bold"><a href="#">KAMA AYURVEDA</a></li>
+                  <li class="hover:font-bold"><a href="#">M.A.C</a></li>
+                  <li class="hover:font-bold"><a href="#">Forest Essentials</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="relative group h-full lg:flex lg:items-center">
+            <a href="#" class="item6 uppercase text-[14px] py-1.5 font-[700] text-[#282C3F]">
+              Studio
+              <sup class="text-[#FF3F6C]">new</sup>
+            </a>
+            <div
+              class="absolute left-0 top-[80px] hidden group-hover:flex bg-white shadow-lg p-4 space-x-4 w-[500px] border border-gray-200">
+              <div class="w-full flex flex-col items-center space-y-4">
+                <img
+                  src="https://constant.myntassets.com/web/assets/img/studio-logo-new.svg"
+                  class="w-[110px]"
+                  alt="" />
+                <p class="text-[#535766]">Your daily inspiration for everything fashion</p>
+                <img src="https://constant.myntassets.com/web/assets/img/sudio-nav-banner.png" alt="" />
+                <button
+                  class="uppercase text-[14px] font-[700] border-[1px] border-[#b9bac0] text-[#282C3F] px-7 py-0.5 flex items-center justify-center cursor-pointer">
+                  Explore studio
+                  <i class="ri-arrow-right-s-line text-[25px] font-[100]"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="nav-icon lg:hidden flex">
+            <div class="icon-box flex gap-8 mb-2">
+              <div class="icon flex flex-col items-center">
+                <i class="ri-user-3-line text-[20px] relative top-[5px]"></i>
+                <p class="text-[12px] font-[700]">Profile</p>
+              </div>
+              <div class="icon flex flex-col items-center">
+                <i class="ri-heart-line text-[20px] relative top-[5px]"></i>
+                <p class="text-[12px] font-[700]">Wishlist</p>
+              </div>
+              <div class="icon flex flex-col items-center">
+                <i class="ri-shopping-bag-line text-[20px] relative top-[5px]"></i>
+                <p class="text-[12px] font-[700]">Bag</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-input bg-[#F5F5F6] h-[40px] rounded-[5px] xl:w-[36%] w-[30%] hidden lg:flex items-center pl-3">
+          <i class="fa-solid fa-magnifying-glass text-[#282C3F] text-[14px]"></i>
+          <input
+            type="search"
+            class="w-full text-[14px] pl-4 border-0 outline-0"
+            placeholder="Search for products, brand and more" />
+        </div>
+        <div class="nav-icon hidden lg:flex">
+          <div class="icon-box flex gap-8 mb-2">
+            <div class="relative group inline-block">
+              <div class="icon flex flex-col items-center cursor-pointer">
+                <i class="ri-user-3-line text-[20px] relative top-[5px]"></i>
+                <p class="text-[12px] font-[700]">Profile</p>
+
+                <div class="absolute top-[65px] w-max shadow-lg border border-gray-200 bg-white text-black p-5 z-10 hidden group-hover:block">
+                  <p class="text-[15px] font-[700] text-[#282C3F]">Welcome</p>
+                  <p class="font-[300] text-[14px]">To access account and manage orders</p>
+                  <button class="text-[#FF3F6C] border-[1px] border-[#d7d7d7] hover:border-[#FF3F6C] duration-300 text-[14.5px] font-[700] mt-3 px-4 py-1.5 cursor-pointer">LOGIN / SIGN UP</button>
+                  <div class="line h-[1px] w-full bg-[#d7d7d7] mt-5 mb-3"></div>
+                  <ul class="text-sm text-gray-700 space-y-1">
+                    <li class="hover:font-bold"><a href="#">Orders</a></li>
+                    <li class="hover:font-bold"><a href="#">Wishlist</a></li>
+                    <li class="hover:font-bold"><a href="#">Gift Cards</a></li>
+                    <li class="hover:font-bold"><a href="#">Contact Us</a></li>
+                    <li class="hover:font-bold"><a href="#">Myntra Insider</a></li>
+                  </ul>
+                  <div class="line h-[1px] w-full bg-[#d7d7d7] mt-4 mb-3"></div>
+                  <ul class="text-sm text-gray-700 space-y-1">
+                    <li class="hover:font-bold"><a href="#">Myntra Credit</a></li>
+                    <li class="hover:font-bold"><a href="#">Coupons</a></li>
+                    <li class="hover:font-bold"><a href="#">Saved Cards</a></li>
+                    <li class="hover:font-bold"><a href="#">Saved VPA</a></li>
+                    <li class="hover:font-bold"><a href="#">Saved Addresses</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="icon flex flex-col items-center cursor-pointer">
+              <i class="ri-heart-line text-[20px] relative top-[5px]"></i>
+              <p class="text-[12px] font-[700]">Wishlist</p>
+            </div>
+            <div class="icon flex flex-col items-center cursor-pointer">
+              <i class="ri-shopping-bag-line text-[20px] relative top-[5px]"></i>
+              <p class="text-[12px] font-[700]">Bag</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="input-box flex justify-center pt-24">
+      <div
+        class="nav-input bg-white shadow-lg h-[40px] rounded-3xl sm:w-[75%] w-[95%] lg:hidden flex items-center pl-3">
+        <i class="fa-solid fa-magnifying-glass text-[#282C3F] text-[14px]"></i>
+        <input
+          type="search"
+          class="w-full text-[14px] pl-4 border-0 outline-0"
+          placeholder="Search for products, brand and more" />
+      </div>
+    </div>
+    <div class="nav-icon fixed bottom-0 sm:hidden w-full bg-white z-10">
+      <div
+        class="icon-box flex justify-between items-center gap-8 pt-3 pb-1 px-[6vw]"
+        style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px">
+        <div class="icon flex flex-col justify-center items-center pt-1">
+          <img src="./Assets/myntra_logo-removebg-preview.png" width="30px" alt="" />
+          <p class="text-[12px] font-[700]">Home</p>
+        </div>
+        <div class="icon flex flex-col justify-center items-center pt-0.5">
+          <img src="./Assets/fwd.jpeg" width="37.5px" alt="" />
+          <p class="text-[12px] font-[700]">Wishlist</p>
+        </div>
+        <div class="icon flex flex-col justify-center items-center pt-0.5">
+          <img src="./Assets/brush.jpeg" width="30px" alt="" />
+          <p class="text-[12px] font-[700]">Bag</p>
+        </div>
+        <div class="icon flex flex-col justify-center items-center pb-0.5">
+          <i class="ri-user-3-line text-[20px] relative top-[5px]"></i>
+          <p class="text-[12px] font-[700]">Profile</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html> -->
