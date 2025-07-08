@@ -214,5 +214,221 @@
     "rating": 4.4,
     "category": "day creams",
     "image": "https://myhinine.com/cdn/shop/files/slide_1_2532ea37-9f96-4e66-813f-a0d10c81a4de.jpg?v=1723812416"
+  },
+  {
+    "id": 25,
+    "title": "Relaxed Track Pants",
+    "price": 699,
+    "description": "Ultra-comfortable and breathable track pants.",
+    "rating": 4.3,
+    "category": "relaxed track pants",
+    "image": "https://assets.ajio.com/medias/sys_master/root/20221208/Nu32/63920046f997ddfdbdc84e4a/-473Wx593H-469211191-blue-MODEL.jpg"
+  },
+  {
+    "id": 26,
+    "title": "Cleansing Shampoo",
+    "price": 299,
+    "description": "Deep cleanses and nourishes your scalp.",
+    "rating": 4.5,
+    "category": "cleansing shampoos",
+    "image": "https://k-beautyskin.com/wp-content/uploads/2023/08/Aromatica_Cypress_Deep_Cleansing_Shampoo_400ml_k-beauty-Skin_india.png"
+  },
+  {
+    "id": 27,
+    "title": "Refreshing Soap Bar",
+    "price": 99,
+    "description": "Feel refreshed with every wash.",
+    "rating": 4.1,
+    "category": "refreshing soaps",
+    "image": "https://www.aalamroots.com/wp-content/uploads/2023/07/Himalaya_Refreshing_Baby_Soap_01.jpg"
+  },
+  {
+    "id": 28,
+    "title": "Whitening Toothpaste",
+    "price": 89,
+    "description": "Whitens teeth and fights cavities.",
+    "rating": 4.4,
+    "category": "toothpastes",
+    "image": "https://people.com/thmb/sweqXlb2F5jtUaHX0F0gKNgHQ5g=/fit-in/1500x2450/filters:no_upscale():max_bytes(150000):strip_icc()/peo-toothpaste-test-colgate-total-fresh-mint-stripe-gel-rachel-marek-10-c090826a6c9748b8a4e036eb12d73a27.jpeg"
+  },
+  {
+    "id": 29,
+    "title": "BB & CC Cream Duo",
+    "price": 399,
+    "description": "Flawless skin with light coverage.",
+    "rating": 4.2,
+    "category": "bb & cc creams",
+    "image": "https://www.maybelline.com/-/media/project/loreal/brand-sites/mny/americas/us/makeup-tips/face/face-makeup-tutorials-for-beginners/the-difference-between-bb-and-cc-cream/new-2025/bb-cream-vs-cc-cream-hero.jpg?rev=373e5fc5dd4243e28982629c59d6d819"
+  },
+  {
+    "id": 30,
+    "title": "Supportive Sports Bra",
+    "price": 549,
+    "description": "High support for workouts and daily wear.",
+    "rating": 4.5,
+    "category": "supportive bras",
+    "image": "https://shyaway.static.n7.io/media/catalog/product/d/i/di1007-skylight-front.jpg"
+  },
+  {
+    "id": 31,
+    "title": "Chic Co-ord Set",
+    "price": 1299,
+    "description": "Trendy co-ord set for a stylish look.",
+    "rating": 4.3,
+    "category": "chic co-ords",
+    "image": "https://lovebohochic.com/cdn/shop/products/Bohochic02-Feb10598.jpg?v=1645981716&width=1000"
+  },
+  {
+    "id": 32,
+    "title": "Elegant Maxi Dress",
+    "price": 1499,
+    "description": "Perfect for parties and formal occasions.",
+    "rating": 4.6,
+    "category": "elegant dresses",
+    "image": "https://static-dress.missacc.com/productimages/2025/2/SED11837/1899027986066313216_400X.jpeg"
+  },
+  {
+    "id": 33,
+    "title": "Striking Flat Sandals",
+    "price": 649,
+    "description": "Comfortable and chic flats for daily wear.",
+    "rating": 4.2,
+    "category": "striking flats",
+    "image": "https://media.landmarkshops.in/cdn-cgi/image/h=730,w=540,q=85,fit=cover/max-new/1000014397532-Beige-NUDE-1000014397532_01-2100.jpg"
+  },
+  {
+    "id": 34,
+    "title": "Modern Kurti",
+    "price": 899,
+    "description": "Stylish kurti for a graceful look.",
+    "rating": 4.3,
+    "category": "modern kurtis",
+    "image": "https://images.meesho.com/images/products/453477751/n5brp_512.webp"
+  },
+  {
+    "id": 35,
+    "title": "Bold Matte Lipstick",
+    "price": 299,
+    "description": "Rich color and long-lasting finish.",
+    "rating": 4.4,
+    "category": "bold lipsticks",
+    "image": "https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/9028641/2019/3/15/50dd1f87-3fd7-4152-b695-e1e67ca68c991552639606293-Maybelline-Women-Lipstick-6601552639606047-1.jpg"
+  },
+  {
+    "id": 36,
+    "title": "Graceful Silk Saree",
+    "price": 1899,
+    "description": "Traditional elegance in every drape.",
+    "rating": 4.5,
+    "category": "graceful sarees",
+    "image": "https://images.sareeswholesale.com/grey-weaving-work-soft-silk-graceful-saree-171442.jpg"
+  },
+  {
+    "id": 37,
+    "title": "Trendy Handbag",
+    "price": 999,
+    "description": "Spacious and perfect for every look.",
+    "rating": 4.3,
+    "category": "trendy handbags",
+    "image": "https://5.imimg.com/data5/AS/TH/BQ/SELLER-71697535/trendy-hand-bag-500x500.jpg"
+  },
+  {
+    "id": 38,
+    "title": "Hottest Heels",
+    "price": 1299,
+    "description": "Turn heads with these stylish heels.",
+    "rating": 4.5,
+    "category": "hottest heels",
+    "image": "https://us.christianlouboutin.com/media/catalog/product/cache/e88e85f4e5336c618abbd9e5f93aeaf8/1/2/1250939b439-1250939b439-main_image-ecommerce-christianlouboutin-missz-1250939_b439_1_1200x1200.jpg"
+  },
+  {
+    "id": 39,
+    "title": "Classic Jeans",
+    "price": 399,
+    "description": "Stretchable and stylish for everyday wear.",
+    "rating": 4.4,
+    "category": "classic jeans",
+    "image": "https://www.allamericanclothing.com/cdn/shop/products/AA1873L---Men-s-Classic-Jean---Medium-Stonewash---Made-in-USA-All-American-Clothing-Co.-1653670419_1200x.jpg?v=1653670420"
+  },
+  {
+    "id": 40,
+    "title": "Festive Kurta Set",
+    "price": 1599,
+    "description": "Celebrate in style with traditional charm.",
+    "rating": 4.6,
+    "category": "festive kurta sets",
+    "image": "https://www.jaipurkurti.com/cdn/shop/files/2_d4da0e9c-95f3-47b6-96a8-7903be8e7d2a.jpg?v=1750513564&width=1080"
+  },
+  {
+    "id": 41,
+    "title": "Fab Printed Kurta",
+    "price": 849,
+    "description": "Colorful, fun, and fashionable.",
+    "rating": 4.3,
+    "category": "fab kurtas",
+    "image": "https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/25404224/2023/10/7/92f251dc-ed38-419a-82ac-c6b941cdf1e91696692357889KurtaSets1.jpg"
+  },
+  {
+    "id": 42,
+    "title": "Skin Brightening Day Cream",
+    "price": 429,
+    "description": "SPF enriched for daily protection.",
+    "rating": 4.2,
+    "category": "day creams",
+    "image": "https://myhinine.com/cdn/shop/files/slide_1_2532ea37-9f96-4e66-813f-a0d10c81a4de.jpg?v=1723812416"
+  },
+  {
+    "id": 43,
+    "title": "Wireless Headphones",
+    "price": 1999,
+    "description": "High quality sound with Bluetooth.",
+    "rating": 4.6,
+    "category": "headphones",
+    "image": "https://www.leafstudios.in/cdn/shop/files/1_a43c5e0b-3a47-497d-acec-b4764259b10e_800x.png?v=1750486829"
+  },
+  {
+    "id": 44,
+    "title": "Sensitive Skin Shaving Foam",
+    "price": 199,
+    "description": "Gentle shaving without irritation.",
+    "rating": 4.1,
+    "category": "shaving foams",
+    "image": "https://images.ctfassets.net/7tfi3razjgvb/2d75gH5KAXWuS1rO2rcMoV/fb112548da6d0a1942453d8816899418/DT_Overview_20Img_4ct_402x.png"
+  },
+  {
+    "id": 45,
+    "title": "Durable Travel Backpack",
+    "price": 1099,
+    "description": "Spacious, tough, and water-resistant.",
+    "rating": 4.5,
+    "category": "durable backpacks",
+    "image": "https://5.imimg.com/data5/JG/GK/TS/SELLER-20700789/bnp067-r-blue-2.jpg"
+  },
+  {
+    "id": 46,
+    "title": "Trendy Handbag",
+    "price": 999,
+    "description": "Spacious and perfect for every look.",
+    "rating": 4.3,
+    "category": "trendy handbags",
+    "image": "https://m.media-amazon.com/images/I/61eMpnhr+uL._UL1500_.jpg"
+  },
+  {
+    "id": 47,
+    "title": "Fab Printed Kurta",
+    "price": 849,
+    "description": "Colorful, fun, and fashionable.",
+    "rating": 4.3,
+    "category": "fab kurtas",
+    "image": "https://m.media-amazon.com/images/I/61g4NHgfd7L._UL1500_.jpg"
+  },
+  {
+    "id": 48,
+    "title": "Strawberry Lip Balm",
+    "price": 129,
+    "description": "Moisturizes and softens lips.",
+    "rating": 4.1,
+    "category": "lip balms",
+    "image": "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/30789439/2025/4/10/be723324-c7ec-41ff-bb9b-ea7b11d498201744298190931-DOT--KEY-Barrier-Repair-Hydrating-Lip-Balm-SPF-50---45-g---C-1.jpg"
   }
 ]
