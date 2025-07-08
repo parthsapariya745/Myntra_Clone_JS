@@ -1,51 +1,523 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Details</title>
+    <!-- link tailwind css -->
+    <link href="./output.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- link tailwind css -->
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Baloo+2:wght@400..800&family=Bangers&family=Baskervville:ital@0;1&family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Enriqueta:wght@400;500;600;700&family=Gantari:ital,wght@0,100..900;1,100..900&family=Heebo:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Londrina+Outline&family=Luckiest+Guy&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nothing+You+Could+Do&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sora:wght@100..800&family=Unbounded:wght@200..900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+    <!-- google fonts link -->
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <!-- font awesome cdn -->
+    <!-- remix icon cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+      integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <!-- remix icon cdn  -->
     <style>
+      * {
+        font-family: 'Assistant', serif;
+      }
+      .nav-menu a {
+        position: relative;
+      }
+      .nav-menu a::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        bottom: 0;
+        transition: 0.6s;
+      }
+      .nav-menu .item1::before {
+        border-bottom: 4px solid #ee5f73;
+      }
+      .nav-menu .item2::before {
+        border-bottom: 4px solid #fb56c1;
+      }
+      .nav-menu .item3::before {
+        border-bottom: 4px solid #f26a10;
+      }
+      .nav-menu .item4::before {
+        border-bottom: 4px solid #f2c210;
+      }
+      .nav-menu .item5::before {
+        border-bottom: 4px solid #0db7af;
+      }
+      .nav-menu .item6::before {
+        border-bottom: 4px solid #ff3f6c;
+      }
+      .nav-menu a:hover::before {
+        left: 0%;
+        right: 0%;
+      }
+      .img-break {
+        touch-action: pan-y;
+        user-select: none;
+        overflow: hidden;
+      }
+      .slider-img img {
+        cursor: pointer;
+      }
+      .img-con img {
+        cursor: pointer;
+      }
+      .group::before {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 15px;
+        background: transparent;
+        z-index: 10;
+      }
+      @media (max-width: 400px) {
+        .img-break .grid {
+          grid-template-columns: repeat(1, minmax(0, 1fr));
+        }
+      }
+
+      /* Enhanced Product Box Styling */
       .product-box {
         display: flex;
-        gap: 20px;
+        gap: 40px;
         background: #fff;
-        padding: 20px;
-        margin: 20px;
-        border-radius: 12px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        padding: 40px;
+        margin: 30px auto;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        max-width: 1200px;
+        min-height: 600px;
       }
+
+      .product-image-section {
+        flex: 1;
+        max-width: 500px;
+      }
+
       .product-box img {
-        width: 250px;
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .product-box img:hover {
+        transform: scale(1.02);
+      }
+
+      .product-info {
+        flex: 1;
+        padding-left: 20px;
+      }
+
+      .product-info h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #2d3748;
+        margin-bottom: 15px;
+        line-height: 1.2;
+        font-family: 'Poppins', sans-serif;
+      }
+
+      .product-brand {
+        font-size: 1.3rem;
+        color: #718096;
+        margin-bottom: 20px;
+        font-weight: 500;
+      }
+
+      .rating-section {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 25px;
+        padding: 15px;
+        background: #f7fafc;
         border-radius: 10px;
       }
-      .product-info h2 {
-        margin: 0 0 10px;
+
+      .stars {
+        font-size: 1.5rem;
+        color: #fbbf24;
       }
-      .product-info p {
-        margin: 4px 0;
+
+      .rating-text {
+        font-size: 1.1rem;
+        color: #4a5568;
+        font-weight: 500;
       }
-      .add-to-cart {
+
+      .price-section {
+        margin-bottom: 30px;
+        padding: 20px;
+        background: linear-gradient(135deg, #ff3e6c, #e91e63);
+        border-radius: 15px;
+        color: white;
+      }
+
+      .current-price {
+        font-size: 2.5rem;
+        font-weight: 800;
+        margin-right: 15px;
+      }
+
+      .original-price {
+        font-size: 1.5rem;
+        text-decoration: line-through;
+        opacity: 0.8;
+        margin-right: 15px;
+      }
+
+      .discount-badge {
+        background: rgba(255, 255, 255, 0.2);
+        padding: 8px 15px;
+        border-radius: 25px;
+        font-size: 1rem;
+        font-weight: 600;
+        display: inline-block;
+        margin-top: 10px;
+      }
+
+      .product-description {
+        font-size: 1.2rem;
+        line-height: 1.8;
+        color: #4a5568;
+        margin-bottom: 30px;
+        padding: 20px;
+        background: #f8f9fa;
+        border-radius: 10px;
+        border-left: 4px solid #ff3e6c;
+      }
+
+      .features-section {
+        margin-bottom: 30px;
+      }
+
+      .section-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #2d3748;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+        margin-bottom: 20px;
+      }
+
+      .feature-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 12px 15px;
+        background: #e6fffa;
+        border-radius: 8px;
+        font-size: 1rem;
+        color: #2d3748;
+      }
+
+      .feature-item i {
+        color: #38b2ac;
+        font-size: 1.1rem;
+      }
+
+      .specifications-section {
+        margin-bottom: 30px;
+        background: #f7fafc;
+        padding: 25px;
+        border-radius: 15px;
+      }
+
+      .spec-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+      }
+
+      .spec-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 0;
+        border-bottom: 1px solid #e2e8f0;
+        font-size: 1rem;
+      }
+
+      .spec-label {
+        font-weight: 600;
+        color: #4a5568;
+      }
+
+      .spec-value {
+        color: #2d3748;
+        font-weight: 500;
+      }
+
+      .action-section {
+        margin-top: 30px;
+        padding: 25px;
+        background: #f8f9fa;
+        border-radius: 15px;
+      }
+
+      .size-selector {
+        margin-bottom: 25px;
+      }
+
+      .size-options {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 10px;
+      }
+
+      .size-option {
+        padding: 12px 20px;
+        border: 2px solid #e2e8f0;
+        border-radius: 8px;
+        background: white;
+        cursor: pointer;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        font-size: 1rem;
+      }
+
+      .size-option:hover {
+        border-color: #ff3e6c;
         background: #ff3e6c;
         color: white;
-        padding: 10px 20px;
-        border: none;
+      }
+
+      .quantity-section {
+        margin-bottom: 25px;
+      }
+
+      .quantity-controls {
+        display: flex;
+        align-items: center;
+        gap: 15px;
         margin-top: 10px;
+      }
+
+      .qty-btn {
+        width: 45px;
+        height: 45px;
+        border: 2px solid #e2e8f0;
+        background: white;
+        border-radius: 8px;
         cursor: pointer;
-        border-radius: 5px;
+        font-size: 1.3rem;
+        font-weight: bold;
+        transition: all 0.3s ease;
+      }
+
+      .qty-btn:hover {
+        border-color: #ff3e6c;
+        color: #ff3e6c;
+      }
+
+      .qty-display {
+        font-size: 1.3rem;
+        font-weight: 600;
+        min-width: 50px;
+        text-align: center;
+        padding: 10px;
+        background: white;
+        border-radius: 8px;
+        border: 2px solid #e2e8f0;
+      }
+
+      .add-to-cart {
+        background: linear-gradient(135deg, #ff3e6c, #e91e63);
+        color: white;
+        padding: 18px 40px;
+        border: none;
+        margin-top: 20px;
+        cursor: pointer;
+        border-radius: 12px;
+        font-size: 1.2rem;
+        font-weight: 600;
+        width: 100%;
+        transition: all 0.3s ease;
+        box-shadow: 0 5px 15px rgba(255, 62, 108, 0.3);
+      }
+
+      .add-to-cart:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(255, 62, 108, 0.4);
+      }
+
+      .buy-now-btn {
+        background: white;
+        color: #ff3e6c;
+        border: 2px solid #ff3e6c;
+        padding: 18px 40px;
+        margin-top: 15px;
+        cursor: pointer;
+        border-radius: 12px;
+        font-size: 1.2rem;
+        font-weight: 600;
+        width: 100%;
+        transition: all 0.3s ease;
+      }
+
+      .buy-now-btn:hover {
+        background: #ff3e6c;
+        color: white;
+        transform: translateY(-2px);
+      }
+
+      .delivery-info {
+        margin-top: 30px;
+        padding: 25px;
+        background: #e6fffa;
+        border-radius: 15px;
+        border-left: 5px solid #38b2ac;
+      }
+
+      .delivery-item {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 15px;
+        font-size: 1.1rem;
+        color: #2d3748;
+      }
+
+      .delivery-item i {
+        color: #38b2ac;
+        font-size: 1.3rem;
+        width: 25px;
+      }
+
+      .trust-badges {
+        display: flex;
+        gap: 15px;
+        margin-top: 25px;
+        flex-wrap: wrap;
+      }
+
+      .trust-badge {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 12px 18px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        font-size: 0.95rem;
+        color: #4a5568;
+        font-weight: 500;
+      }
+
+      .trust-badge i {
+        color: #48bb78;
+        font-size: 1.1rem;
+      }
+
+      .reviews-section {
+        margin-top: 30px;
+        padding: 25px;
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      }
+
+      .review-item {
+        padding: 20px 0;
+        border-bottom: 1px solid #e2e8f0;
+      }
+
+      .review-header {
+        display: flex;
+        justify-content: between;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .reviewer-name {
+        font-weight: 600;
+        color: #2d3748;
+        font-size: 1.1rem;
+      }
+
+      .review-date {
+        color: #718096;
+        font-size: 0.9rem;
+      }
+
+      .review-text {
+        font-size: 1rem;
+        color: #4a5568;
+        line-height: 1.6;
+        margin-top: 10px;
+      }
+
+      @media (max-width: 768px) {
+        .product-box {
+          flex-direction: column;
+          gap: 20px;
+          padding: 20px;
+          margin: 15px;
+        }
+        
+        .product-info {
+          padding-left: 0;
+        }
+        
+        .product-info h1 {
+          font-size: 2rem;
+        }
+        
+        .current-price {
+          font-size: 2rem;
+        }
+        
+        .features-grid {
+          grid-template-columns: 1fr;
+        }
       }
     </style>
   </head>
   <body>
+    <!-- navbar -->
+    <div class="nav" id="navbox"></div>
     <div id="pDetail" class="product-detail"></div>
-
+    <!-- footer -->
+    <div class="footer mt-10" id="footerbox"></div>
+    <script src="./navfoot.js"></script>
     <script>
       function productDetail() {
         let pId = localStorage.getItem('selectedProductId');
         if (!pId) {
-          document.getElementById("pDetail").innerHTML = "<p>No product ID provided.</p>";
+          document.getElementById('pDetail').innerHTML = '<p>No product ID provided.</p>';
           return;
         }
-
         fetch('./data/product.json')
           .then((req) => {
             if (!req.ok) {
@@ -54,33 +526,233 @@
             return req.json();
           })
           .then((res) => {
-            let product = res.find(p => p.id == pId);
+            let product = res.find((p) => p.id == pId);
             if (product) {
-              let pDetail = document.getElementById("pDetail");
+              let pDetail = document.getElementById('pDetail');
+              let originalPrice = Math.round(product.price * 1.6);
+              let discount = Math.round(((originalPrice - product.price) / originalPrice) * 100);
+              
               pDetail.innerHTML = `
                 <div class="product-box">
-                  <img src="${product.image}" alt="${product.title}" onerror="this.src='https://via.placeholder.com/250?text=Image+Not+Found';" />
+                  <div class="product-image-section">
+                    <img src="${product.image}" alt="${product.title}" onerror="this.src='https://via.placeholder.com/500x500?text=Image+Not+Found';" />
+                  </div>
+                  
                   <div class="product-info">
-                    <h2>${product.title}</h2>
-                    <p><strong>Category:</strong> ${product.category}</p>
-                    <p><strong>Price:</strong> ₹${product.price}</p>
-                    <p><strong>Rating:</strong> ⭐ ${product.rating}</p>
-                    <p><strong>Description:</strong> ${product.description}</p>
-                    <p><strong>Brand:</strong> ${product.brand || 'Myntra Original'}</p>
-                    <p><strong>Stock:</strong> ${product.stock || 'In Stock'}</p>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <h1>${product.title}</h1>
+                    <div class="product-brand">by ${product.brand || 'Myntra Original'}</div>
+                    
+                    <div class="rating-section">
+                      <div class="stars">⭐⭐⭐⭐⭐</div>
+                      <span class="rating-text">${product.rating} (2,847 reviews)</span>
+                    </div>
+                    
+                    <div class="price-section">
+                      <div>
+                        <span class="current-price">₹${product.price.toLocaleString()}</span>
+                        <span class="original-price">₹${originalPrice.toLocaleString()}</span>
+                      </div>
+                      <div class="discount-badge">${discount}% OFF • You Save ₹${(originalPrice - product.price).toLocaleString()}</div>
+                    </div>
+                    
+                    <div class="product-description">
+                      <strong>Product Description:</strong><br>
+                      ${product.description} This premium quality product is crafted with attention to detail and designed for comfort and style. Perfect for everyday wear with superior materials and excellent craftsmanship.
+                    </div>
+                    
+                    <div class="features-section">
+                      <h3 class="section-title">
+                        <i class="fas fa-star"></i>
+                        Key Features
+                      </h3>
+                      <div class="features-grid">
+                        <div class="feature-item">
+                          <i class="fas fa-check-circle"></i>
+                          Premium Quality Material
+                        </div>
+                        <div class="feature-item">
+                          <i class="fas fa-check-circle"></i>
+                          Comfortable Fit
+                        </div>
+                        <div class="feature-item">
+                          <i class="fas fa-check-circle"></i>
+                          Durable Construction
+                        </div>
+                        <div class="feature-item">
+                          <i class="fas fa-check-circle"></i>
+                          Easy Care & Maintenance
+                        </div>
+                        <div class="feature-item">
+                          <i class="fas fa-check-circle"></i>
+                          Stylish Design
+                        </div>
+                        <div class="feature-item">
+                          <i class="fas fa-check-circle"></i>
+                          Value for Money
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="specifications-section">
+                      <h3 class="section-title">
+                        <i class="fas fa-info-circle"></i>
+                        Product Specifications
+                      </h3>
+                      <div class="spec-grid">
+                        <div class="spec-item">
+                          <span class="spec-label">Category:</span>
+                          <span class="spec-value">${product.category}</span>
+                        </div>
+                        <div class="spec-item">
+                          <span class="spec-label">Brand:</span>
+                          <span class="spec-value">${product.brand || 'Myntra Original'}</span>
+                        </div>
+                        <div class="spec-item">
+                          <span class="spec-label">Material:</span>
+                          <span class="spec-value">Premium Cotton Blend</span>
+                        </div>
+                        <div class="spec-item">
+                          <span class="spec-label">Care:</span>
+                          <span class="spec-value">Machine Washable</span>
+                        </div>
+                        <div class="spec-item">
+                          <span class="spec-label">Fit:</span>
+                          <span class="spec-value">Regular Fit</span>
+                        </div>
+                        <div class="spec-item">
+                          <span class="spec-label">Stock:</span>
+                          <span class="spec-value" style="color: #48bb78; font-weight: 600;">${product.stock || 'In Stock'}</span>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="action-section">
+                      <div class="size-selector">
+                        <h3 class="section-title">
+                          <i class="fas fa-ruler"></i>
+                          Select Size
+                        </h3>
+                        <div class="size-options">
+                          <div class="size-option">XS</div>
+                          <div class="size-option">S</div>
+                          <div class="size-option">M</div>
+                          <div class="size-option">L</div>
+                          <div class="size-option">XL</div>
+                          <div class="size-option">XXL</div>
+                        </div>
+                      </div>
+                      
+                      <div class="quantity-section">
+                        <h3 class="section-title">
+                          <i class="fas fa-sort-numeric-up"></i>
+                          Quantity
+                        </h3>
+                        <div class="quantity-controls">
+                          <button class="qty-btn">-</button>
+                          <div class="qty-display">1</div>
+                          <button class="qty-btn">+</button>
+                        </div>
+                      </div>
+                      
+                      <button class="add-to-cart">
+                        <i class="fas fa-shopping-bag"></i>
+                        ADD TO BAG
+                      </button>
+                      <button class="buy-now-btn">
+                        <i class="fas fa-bolt"></i>
+                        BUY NOW
+                      </button>
+                    </div>
+                    
+                    <div class="delivery-info">
+                      <h3 class="section-title">
+                        <i class="fas fa-truck"></i>
+                        Delivery & Services
+                      </h3>
+                      <div class="delivery-item">
+                        <i class="fas fa-shipping-fast"></i>
+                        <span><strong>Free Delivery</strong> on orders above ₹999</span>
+                      </div>
+                      <div class="delivery-item">
+                        <i class="fas fa-clock"></i>
+                        <span><strong>Express Delivery</strong> available in 2-3 days</span>
+                      </div>
+                      <div class="delivery-item">
+                        <i class="fas fa-undo-alt"></i>
+                        <span><strong>Easy Returns</strong> within 30 days of purchase</span>
+                      </div>
+                      <div class="delivery-item">
+                        <i class="fas fa-headset"></i>
+                        <span><strong>24/7 Customer Support</strong> for any queries</span>
+                      </div>
+                    </div>
+                    
+                    <div class="trust-badges">
+                      <div class="trust-badge">
+                        <i class="fas fa-shield-alt"></i>
+                        100% Authentic
+                      </div>
+                      <div class="trust-badge">
+                        <i class="fas fa-lock"></i>
+                        Secure Payment
+                      </div>
+                      <div class="trust-badge">
+                        <i class="fas fa-medal"></i>
+                        Quality Assured
+                      </div>
+                      <div class="trust-badge">
+                        <i class="fas fa-thumbs-up"></i>
+                        Trusted Brand
+                      </div>
+                    </div>
+                    
+                    <div class="reviews-section">
+                      <h3 class="section-title">
+                        <i class="fas fa-comments"></i>
+                        Customer Reviews (2,847)
+                      </h3>
+                      <div class="review-item">
+                        <div class="review-header">
+                          <span class="reviewer-name">Rahul Sharma</span>
+                          <span class="review-date">2 days ago</span>
+                        </div>
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <div class="review-text">
+                          "Excellent quality product! The material is soft and comfortable. Perfect fit and great value for money. Highly recommended!"
+                        </div>
+                      </div>
+                      <div class="review-item">
+                        <div class="review-header">
+                          <span class="reviewer-name">Priya Singh</span>
+                          <span class="review-date">1 week ago</span>
+                        </div>
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <div class="review-text">
+                          "Amazing product! The color is exactly as shown in the image. Fast delivery and excellent packaging. Will definitely buy again."
+                        </div>
+                      </div>
+                      <div class="review-item">
+                        <div class="review-header">
+                          <span class="reviewer-name">Amit Kumar</span>
+                          <span class="review-date">2 weeks ago</span>
+                        </div>
+                        <div class="stars">⭐⭐⭐⭐☆</div>
+                        <div class="review-text">
+                          "Good quality product. The size chart was accurate and the fit is perfect. Delivery was on time. Satisfied with the purchase."
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               `;
             } else {
-              document.getElementById("pDetail").innerHTML = "<p>Product not found.</p>";
+              document.getElementById('pDetail').innerHTML = '<p>Product not found.</p>';
             }
           })
           .catch((error) => {
-            document.getElementById("pDetail").innerHTML = "<p>Error loading product details.</p>";
+            document.getElementById('pDetail').innerHTML = '<p>Error loading product details.</p>';
           });
       }
-
       window.onload = productDetail;
     </script>
   </body>
