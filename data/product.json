@@ -6,7 +6,7 @@
     "description": "Soothes and cleans skin gently.",
     "rating": 4.3,
     "category": "face cleaners",
-    "image": "images/face-cleaners/product1.jpg"
+    "image": "https://skinkraft.com/cdn/shop/products/SyndetFaceCleanserForWomen_1024x1024.jpg?v=1681986220"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "description": "Shampoo + conditioner + serum pack.",
     "rating": 4.5,
     "category": "hair care combos",
-    "image": "images/hair-combos/product1.jpg"
+    "image": "https://mysticnaturalsstore.com/wp-content/uploads/2023/08/img_8780-scaled.jpeg"
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "description": "Promotes healthy hair growth.",
     "rating": 4.4,
     "category": "revitalizing hair oil",
-    "image": "images/hair-oil/product1.jpg"
+    "image": "https://nutrinormwellness.com/cdn/shop/files/shiero-revitalizing-hair-oil-3.webp?v=1718187968"
   },
   {
     "id": 4,
@@ -33,7 +33,7 @@
     "description": "High quality sound with Bluetooth.",
     "rating": 4.6,
     "category": "headphones",
-    "image": "images/headphones/product1.jpg"
+    "image": "https://t3.ftcdn.net/jpg/14/10/24/24/360_F_1410242409_NvJlbCstPUqW5kY29wXXOqO8WSWhBIoc.jpg"
   },
   {
     "id": 5,
@@ -42,7 +42,7 @@
     "description": "Moisturizes and softens lips.",
     "rating": 4.1,
     "category": "lip balms",
-    "image": "images/lip-balms/product1.jpg"
+    "image": "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/30789439/2025/4/10/be723324-c7ec-41ff-bb9b-ea7b11d498201744298190931-DOT--KEY-Barrier-Repair-Hydrating-Lip-Balm-SPF-50---45-g---C-1.jpg"
   },
   {
     "id": 6,
@@ -51,7 +51,7 @@
     "description": "Brightens skin and reduces spots.",
     "rating": 4.5,
     "category": "serums & gels",
-    "image": "images/serums-gels/product1.jpg"
+    "image": "https://guardian.com.my/media/wysiwyg/Garnier_Bright_Complete_Vitamin_C_Gel_Wash_120Ml__4.jpg?auto=webp&format=pjpg&quality=85"
   },
   {
     "id": 7,
@@ -60,7 +60,7 @@
     "description": "Comfortable for daily wear.",
     "rating": 4.2,
     "category": "comfy casual shoes",
-    "image": "images/casual-shoes/product1.jpg"
+    "image": "https://5.imimg.com/data5/ECOM/Default/2024/6/424690549/TJ/DP/MA/146821774/bbae755a-ad5b-4f86-8c8f-cc51e8fda670-500x500.jpg"
   },
   {
     "id": 8,
@@ -69,7 +69,7 @@
     "description": "Fresh fragrance all day.",
     "rating": 4.0,
     "category": "deodorants",
-    "image": "images/deodorants/product1.jpg"
+    "image": "https://www.health.com/thmb/yZIvNlYI_W0FExAKYgH6MQrcRw4=/6473x0/filters:no_upscale():max_bytes(150000):strip_icc()/hlt-clinical-strength-deodorant-GROUPSHOT_tstaples_219-f2722289daa74184af4b93b9cc44933c.jpg"
   },
   {
     "id": 9,
@@ -78,7 +78,7 @@
     "description": "Perfect for casual summer wear.",
     "rating": 4.3,
     "category": "breezy flip flops",
-    "image": "images/flip-flops/product1.jpg"
+    "image": "https://img.tatacliq.com/images/i22//437Wx649H/MP000000025460924_437Wx649H_202502210259007.jpeg"
   },
   {
     "id": 10,
@@ -87,7 +87,7 @@
     "description": "Elegant design for office and events.",
     "rating": 4.6,
     "category": "sharp formal shoes",
-    "image": "images/formal-shoes/product1.jpg"
+    "image": "https://image.made-in-china.com/2f0j00zrEcuaCWBRgp/Sharp-Toe-Formal-Shoes-for-Men-s-Leather-Shoes-Slip-on-Loafer.webp"
   },
   {
     "id": 11,
@@ -96,7 +96,7 @@
     "description": "Trendy and durable jeans for men.",
     "rating": 4.4,
     "category": "trendy jeans",
-    "image": "images/jeans/product1.jpg"
+    "image": "https://offduty.in/cdn/shop/products/f656d2d7-0bfd-4cf7-b81a-62bc7e8377a1_540x.jpg?v=1676893043"
   },
   {
     "id": 12,
@@ -105,7 +105,7 @@
     "description": "Long-lasting fragrance for all occasions.",
     "rating": 4.7,
     "category": "enticing perfumes",
-    "image": "images/perfumes/product1.jpg"
+    "image": "https://i.etsystatic.com/37689116/r/il/d0a42f/4915748528/il_570xN.4915748528_1cav.jpg"
   },
   {
     "id": 13,
@@ -114,7 +114,7 @@
     "description": "Spacious and comfortable on shoulders.",
     "rating": 4.5,
     "category": "durable backpacks",
-    "image": "images/backpacks/product1.jpg"
+    "image": "https://m.media-amazon.com/images/I/71qpXciYP1L._UY1100_.jpg"
   },
   {
     "id": 14,
@@ -123,7 +123,7 @@
     "description": "Soft and breathable fabric.",
     "rating": 4.3,
     "category": "soft bedsheets",
-    "image": "images/bedsheets/product1.jpg"
+    "image": "https://assets.ajio.com/medias/sys_master/root/20230629/CWLg/649d1029eebac147fc3a1505/-473Wx593H-464161329-multi-MODEL.jpg"
   },
   {
     "id": 15,
@@ -132,7 +132,7 @@
     "description": "Deep hydration for dry skin.",
     "rating": 4.4,
     "category": "body lotions",
-    "image": "images/body-lotions/product1.jpg"
+    "image": "https://thaneshop.com/wp-content/uploads/2023/01/Joy-Intense-Moisture-Shea-Butter-Body-Lotion-For-Dry-Skin.jpg"
   },
   {
     "id": 16,
@@ -141,7 +141,7 @@
     "description": "Smoothens hair and prevents frizz.",
     "rating": 4.2,
     "category": "conditioners",
-    "image": "images/conditioners/product1.jpg"
+    "image": "https://www.letscurlup.com/cdn/shop/files/Curl_up_Hydrating_Conditioner.webp?v=1724404844&width=1080"
   },
   {
     "id": 17,
@@ -150,7 +150,7 @@
     "description": "SPF 15 and skin glow formula.",
     "rating": 4.1,
     "category": "day creams",
-    "image": "images/day-creams/product1.jpg"
+    "image": "https://m.media-amazon.com/images/I/51N5ctG792L._UF1000,1000_QL80_.jpg"
   },
   {
     "id": 18,
@@ -159,7 +159,7 @@
     "description": "Protects from UVA/UVB rays.",
     "rating": 4.5,
     "category": "sunscreens",
-    "image": "images/sunscreens/product1.jpg"
+    "image": "https://domf5oio6qrcr.cloudfront.net/medialibrary/5171/5bafaead-3d2e-40c0-97d2-4f5edc2e350a.jpg"
   },
   {
     "id": 19,
@@ -168,7 +168,7 @@
     "description": "Lightweight and stylish for summer.",
     "rating": 4.3,
     "category": "easygoing sandals",
-    "image": "images/sandals/product1.jpg"
+    "image": "https://images-na.ssl-images-amazon.com/images/I/31hjZzvO96S._SL500_._AC_SL500_.jpg"
   },
   {
     "id": 20,
@@ -177,7 +177,7 @@
     "description": "Gentle shaving for daily use.",
     "rating": 4.0,
     "category": "shaving foams",
-    "image": "images/shaving-foams/product1.jpg"
+    "image": "https://images-static.nykaa.com/media/catalog/product/e/a/eae34144902430442688_2.jpeg?tr=w-500"
   },
   {
     "id": 21,
@@ -186,7 +186,7 @@
     "description": "Casual wear with modern fit.",
     "rating": 4.2,
     "category": "crisp shirts",
-    "image": "images/shirts/product1.jpg"
+    "image": "https://cdn.shopify.com/s/files/1/0794/2245/6081/files/WhatsAppImage2023-12-09at12.46.12PM_4_400x400.jpg?v=1726488634"
   },
   {
     "id": 22,
@@ -195,7 +195,7 @@
     "description": "Comfortable for daily lounging.",
     "rating": 4.1,
     "category": "casual shorts",
-    "image": "images/shorts/product1.jpg"
+    "image": "https://m.media-amazon.com/images/I/6184isI3AYL._UY1100_.jpg"
   },
   {
     "id": 23,
@@ -204,7 +204,7 @@
     "description": "Lightweight shoes for agile training.",
     "rating": 4.5,
     "category": "agile sports shoes",
-    "image": "images/sports-shoes/product1.jpg"
+    "image": "https://images-static.nykaa.com/media/catalog/product/2/0/201bba537079402_1.jpg?tr=w-500"
   },
   {
     "id": 24,
@@ -213,6 +213,6 @@
     "description": "Hydration + sun protection combo.",
     "rating": 4.4,
     "category": "day creams",
-    "image": "images/day-creams/product2.jpg"
+    "image": "https://myhinine.com/cdn/shop/files/slide_1_2532ea37-9f96-4e66-813f-a0d10c81a4de.jpg?v=1723812416"
   }
 ]

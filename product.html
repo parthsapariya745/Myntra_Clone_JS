@@ -40,7 +40,7 @@
 
     <script>
       function productDetail(pId) {
-        fetch('./Myntra-Clone-JS/data/product.json')
+        fetch('data/product.json')
           .then((req) => req.json())
           .then((res) => {
             let product = res.find(p => p.id == pId);
