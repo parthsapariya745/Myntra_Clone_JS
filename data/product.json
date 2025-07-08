@@ -1,0 +1,218 @@
+[
+  {
+    "id": 1,
+    "title": "Gentle Face Cleanser",
+    "price": 249,
+    "description": "Soothes and cleans skin gently.",
+    "rating": 4.3,
+    "category": "face cleaners",
+    "image": "images/face-cleaners/product1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Hair Repair Combo Pack",
+    "price": 799,
+    "description": "Shampoo + conditioner + serum pack.",
+    "rating": 4.5,
+    "category": "hair care combos",
+    "image": "images/hair-combos/product1.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Revitalizing Hair Oil",
+    "price": 399,
+    "description": "Promotes healthy hair growth.",
+    "rating": 4.4,
+    "category": "revitalizing hair oil",
+    "image": "images/hair-oil/product1.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Wireless Headphones",
+    "price": 1999,
+    "description": "High quality sound with Bluetooth.",
+    "rating": 4.6,
+    "category": "headphones",
+    "image": "images/headphones/product1.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Strawberry Lip Balm",
+    "price": 129,
+    "description": "Moisturizes and softens lips.",
+    "rating": 4.1,
+    "category": "lip balms",
+    "image": "images/lip-balms/product1.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Vitamin C Face Serum",
+    "price": 349,
+    "description": "Brightens skin and reduces spots.",
+    "rating": 4.5,
+    "category": "serums & gels",
+    "image": "images/serums-gels/product1.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Casual Walking Shoes",
+    "price": 899,
+    "description": "Comfortable for daily wear.",
+    "rating": 4.2,
+    "category": "comfy casual shoes",
+    "image": "images/casual-shoes/product1.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Long-Lasting Deodorant",
+    "price": 199,
+    "description": "Fresh fragrance all day.",
+    "rating": 4.0,
+    "category": "deodorants",
+    "image": "images/deodorants/product1.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Beach Flip Flops",
+    "price": 349,
+    "description": "Perfect for casual summer wear.",
+    "rating": 4.3,
+    "category": "breezy flip flops",
+    "image": "images/flip-flops/product1.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Classic Black Formal Shoes",
+    "price": 1499,
+    "description": "Elegant design for office and events.",
+    "rating": 4.6,
+    "category": "sharp formal shoes",
+    "image": "images/formal-shoes/product1.jpg"
+  },
+  {
+    "id": 11,
+    "title": "Slim Fit Denim Jeans",
+    "price": 1099,
+    "description": "Trendy and durable jeans for men.",
+    "rating": 4.4,
+    "category": "trendy jeans",
+    "image": "images/jeans/product1.jpg"
+  },
+  {
+    "id": 12,
+    "title": "Luxury Perfume Spray",
+    "price": 1299,
+    "description": "Long-lasting fragrance for all occasions.",
+    "rating": 4.7,
+    "category": "enticing perfumes",
+    "image": "images/perfumes/product1.jpg"
+  },
+  {
+    "id": 13,
+    "title": "Waterproof Travel Backpack",
+    "price": 799,
+    "description": "Spacious and comfortable on shoulders.",
+    "rating": 4.5,
+    "category": "durable backpacks",
+    "image": "images/backpacks/product1.jpg"
+  },
+  {
+    "id": 14,
+    "title": "Cotton Double Bedsheet",
+    "price": 599,
+    "description": "Soft and breathable fabric.",
+    "rating": 4.3,
+    "category": "soft bedsheets",
+    "image": "images/bedsheets/product1.jpg"
+  },
+  {
+    "id": 15,
+    "title": "Shea Butter Body Lotion",
+    "price": 299,
+    "description": "Deep hydration for dry skin.",
+    "rating": 4.4,
+    "category": "body lotions",
+    "image": "images/body-lotions/product1.jpg"
+  },
+  {
+    "id": 16,
+    "title": "Hair Conditioner (200ml)",
+    "price": 199,
+    "description": "Smoothens hair and prevents frizz.",
+    "rating": 4.2,
+    "category": "conditioners",
+    "image": "images/conditioners/product1.jpg"
+  },
+  {
+    "id": 17,
+    "title": "Brightening Day Cream",
+    "price": 329,
+    "description": "SPF 15 and skin glow formula.",
+    "rating": 4.1,
+    "category": "day creams",
+    "image": "images/day-creams/product1.jpg"
+  },
+  {
+    "id": 18,
+    "title": "SPF 50 Sunscreen Lotion",
+    "price": 399,
+    "description": "Protects from UVA/UVB rays.",
+    "rating": 4.5,
+    "category": "sunscreens",
+    "image": "images/sunscreens/product1.jpg"
+  },
+  {
+    "id": 19,
+    "title": "Comfortable Flat Sandals",
+    "price": 549,
+    "description": "Lightweight and stylish for summer.",
+    "rating": 4.3,
+    "category": "easygoing sandals",
+    "image": "images/sandals/product1.jpg"
+  },
+  {
+    "id": 20,
+    "title": "Sensitive Skin Shaving Foam",
+    "price": 179,
+    "description": "Gentle shaving for daily use.",
+    "rating": 4.0,
+    "category": "shaving foams",
+    "image": "images/shaving-foams/product1.jpg"
+  },
+  {
+    "id": 21,
+    "title": "Cotton Check Shirt",
+    "price": 699,
+    "description": "Casual wear with modern fit.",
+    "rating": 4.2,
+    "category": "crisp shirts",
+    "image": "images/shirts/product1.jpg"
+  },
+  {
+    "id": 22,
+    "title": "Knee-Length Cotton Shorts",
+    "price": 449,
+    "description": "Comfortable for daily lounging.",
+    "rating": 4.1,
+    "category": "casual shorts",
+    "image": "images/shorts/product1.jpg"
+  },
+  {
+    "id": 23,
+    "title": "Men's Sports Running Shoes",
+    "price": 1499,
+    "description": "Lightweight shoes for agile training.",
+    "rating": 4.5,
+    "category": "agile sports shoes",
+    "image": "images/sports-shoes/product1.jpg"
+  },
+  {
+    "id": 24,
+    "title": "Moisturizing Day Cream SPF 30",
+    "price": 379,
+    "description": "Hydration + sun protection combo.",
+    "rating": 4.4,
+    "category": "day creams",
+    "image": "images/day-creams/product2.jpg"
+  }
+]

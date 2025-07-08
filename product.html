@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details</title>
+    <style>
+      .product-box {
+        display: flex;
+        gap: 20px;
+        background: #fff;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      }
+      .product-box img {
+        width: 250px;
+        border-radius: 10px;
+      }
+      .product-info h2 {
+        margin: 0 0 10px;
+      }
+      .product-info p {
+        margin: 4px 0;
+      }
+      .add-to-cart {
+        background: #ff3e6c;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        margin-top: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="pDetail" class="product-detail"></div>
+
+    <script>
+      function productDetail(pId) {
+        fetch('./Myntra-Clone-JS/data/product.json')
+          .then((req) => req.json())
+          .then((res) => {
+            let product = res.find(p => p.id == pId);
+            if (product) {
+              let pDetail = document.getElementById("pDetail");
+              pDetail.innerHTML = `
+                <div class="product-box">
+                  <img src="${product.image}" alt="${product.title}" />
+                  <div class="product-info">
+                    <h2>${product.title}</h2>
+                    <p><strong>Category:</strong> ${product.category}</p>
+                    <p><strong>Price:</strong> ₹${product.price}</p>
+                    <p><strong>Rating:</strong> ⭐ ${product.rating}</p>
+                    <p><strong>Description:</strong> ${product.description}</p>
+                    <p><strong>Brand:</strong> ${product.brand || 'Myntra Original'}</p>
+                    <p><strong>Stock:</strong> ${product.stock || 'In Stock'}</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                  </div>
+                </div>
+              `;
+            } else {
+              document.getElementById("pDetail").innerHTML = "<p>Product not found.</p>";
+            }
+          });
+      }
+    </script>
+  </body>
+</html>
