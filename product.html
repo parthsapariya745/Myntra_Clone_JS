@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -39,16 +39,27 @@
     <div id="pDetail" class="product-detail"></div>
 
     <script>
-      function productDetail(pId) {
-        fetch('data/product.json')
-          .then((req) => req.json())
+      function productDetail() {
+        let pId = localStorage.getItem('selectedProductId');
+        if (!pId) {
+          document.getElementById("pDetail").innerHTML = "<p>No product ID provided.</p>";
+          return;
+        }
+
+        fetch('./data/product.json')
+          .then((req) => {
+            if (!req.ok) {
+              throw new Error(`HTTP error! Status: ${req.status}`);
+            }
+            return req.json();
+          })
           .then((res) => {
             let product = res.find(p => p.id == pId);
             if (product) {
               let pDetail = document.getElementById("pDetail");
               pDetail.innerHTML = `
                 <div class="product-box">
-                  <img src="${product.image}" alt="${product.title}" />
+                  <img src="${product.image}" alt="${product.title}" onerror="this.src='https://via.placeholder.com/250?text=Image+Not+Found';" />
                   <div class="product-info">
                     <h2>${product.title}</h2>
                     <p><strong>Category:</strong> ${product.category}</p>
@@ -64,8 +75,13 @@
             } else {
               document.getElementById("pDetail").innerHTML = "<p>Product not found.</p>";
             }
+          })
+          .catch((error) => {
+            document.getElementById("pDetail").innerHTML = "<p>Error loading product details.</p>";
           });
       }
+
+      window.onload = productDetail;
     </script>
   </body>
 </html>

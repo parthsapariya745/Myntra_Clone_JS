@@ -300,5 +300,12 @@
 
     <script src="./slider.js"></script>
     <script src="./navfoot.js"></script>
+
+    <script>
+        function productDetail(id) {
+            localStorage.setItem('selectedProductId', id);
+            window.location.href = `product.html?id=${id}`;
+        }
+    </script>
 </body>
 </html>
