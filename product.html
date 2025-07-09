@@ -513,7 +513,7 @@
     <script src="./navfoot.js"></script>
     <script>
       function productDetail() {
-        let pId = localStorage.getItem('selectedProductId');
+        let pId = localStorage.getItem('productId');
         if (!pId) {
           document.getElementById('pDetail').innerHTML = '<p>No product ID provided.</p>';
           return;

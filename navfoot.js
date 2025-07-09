@@ -4,7 +4,9 @@ navbox.innerHTML = `
         <!-- navbar -->
         <div class="navbar bg-white shadow-md w-full fixed top-0 left-0 z-10">
             <div class="navbox flex justify-between items-center h-[80px] xl:max-w-[1430px] px-4 mx-auto">
-                <div class="nav-logo"><img src="https://github.com/parthsapariya745/myntra-clone/blob/main/Assets/myntra_logo-removebg-preview.png?raw=true" class="xl:w-[50px] w-[40px] object-cover" alt=""></div>
+                <div class="nav-logo">
+                    <a href="./index.html"><img src="https://github.com/parthsapariya745/myntra-clone/blob/main/Assets/myntra_logo-removebg-preview.png?raw=true" class="xl:w-[50px] w-[40px] object-cover" alt=""></a>
+                </div>
                 <input type="checkbox" id="menu-toggle" class="peer hidden">
                 <label for="menu-toggle" class="lg:hidden cursor-pointe">
                     <div class="w-8 h-8 flex items-center justify-center">
