@@ -15,7 +15,7 @@ navbox.innerHTML = `
                 </label>
                 <div class="nav-menu hidden peer-checked:flex flex-col absolute top-[80px] bg-[white] lg:h-full left-0 w-full shadow-md p-4 lg:flex lg:flex-row lg:items-center lg:static lg:w-auto lg:shadow-none lg:p-0 xl:gap-9 lg:gap-7 gap-4">
                     <div class="relative group h-full lg:flex lg:items-center">
-                        <a href="#" class="item1 uppercase text-[14px] py-1.5 font-[700] text-[#282C3F]">Men</a>
+                        <a href="./man_m.html" class="item1 uppercase text-[14px] py-1.5 font-[700] text-[#282C3F]">Men</a>
                         <div class="absolute left-0 top-[80px] hidden group-hover:flex bg-white shadow-lg p-4 space-x-4 w-[900px] border border-gray-200">
                             <div class="w-full">
                                 <h3 class="font-bold text-[#EE5F73] text-[14px]">Topwear</h3>

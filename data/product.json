@@ -6,7 +6,8 @@
     "description": "Soothes and cleans skin gently.",
     "rating": 4.3,
     "category": "face cleaners",
-    "image": "https://skinkraft.com/cdn/shop/products/SyndetFaceCleanserForWomen_1024x1024.jpg?v=1681986220"
+    "image": "https://skinkraft.com/cdn/shop/products/SyndetFaceCleanserForWomen_1024x1024.jpg?v=1681986220",
+    "image2": "https://skinkraft.com/cdn/shop/products/men-syndet-face-cleanser-skightly-dry-skightly-oily-skin01_400x400.jpg?v=1681986316"
   },
   {
     "id": 2,
@@ -15,7 +16,8 @@
     "description": "Shampoo + conditioner + serum pack.",
     "rating": 4.5,
     "category": "hair care combos",
-    "image": "https://mysticnaturalsstore.com/wp-content/uploads/2023/08/img_8780-scaled.jpeg"
+    "image": "https://mysticnaturalsstore.com/wp-content/uploads/2023/08/img_8780-scaled.jpeg",
+    "image2": "https://studdmuffyn.com/cdn/shop/files/InsideOutHairCareCombo.jpg?v=1733479008"
   },
   {
     "id": 3,
@@ -24,7 +26,8 @@
     "description": "Promotes healthy hair growth.",
     "rating": 4.4,
     "category": "revitalizing hair oil",
-    "image": "https://nutrinormwellness.com/cdn/shop/files/shiero-revitalizing-hair-oil-3.webp?v=1718187968"
+    "image": "https://nutrinormwellness.com/cdn/shop/files/shiero-revitalizing-hair-oil-3.webp?v=1718187968",
+    "image2": "https://m.media-amazon.com/images/I/41B3J7LbMLL._UF1000,1000_QL80_.jpg"
   },
   {
     "id": 4,
@@ -33,7 +36,8 @@
     "description": "High quality sound with Bluetooth.",
     "rating": 4.6,
     "category": "headphones",
-    "image": "https://t3.ftcdn.net/jpg/14/10/24/24/360_F_1410242409_NvJlbCstPUqW5kY29wXXOqO8WSWhBIoc.jpg"
+    "image": "https://m.media-amazon.com/images/I/518JM28n34L._UF1000,1000_QL80_.jpg",
+    "image2": "https://honeywellconnection.com/in/wp-content/uploads/2024/12/01.jpg"
   },
   {
     "id": 5,
@@ -42,7 +46,8 @@
     "description": "Moisturizes and softens lips.",
     "rating": 4.1,
     "category": "lip balms",
-    "image": "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/30789439/2025/4/10/be723324-c7ec-41ff-bb9b-ea7b11d498201744298190931-DOT--KEY-Barrier-Repair-Hydrating-Lip-Balm-SPF-50---45-g---C-1.jpg"
+    "image": "https://aqualogica.in/cdn/shop/files/Pink_Sorbet_Plump__Lip_balm.jpg?v=1722338000",
+    "image2": "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/30789439/2025/4/10/be723324-c7ec-41ff-bb9b-ea7b11d498201744298190931-DOT--KEY-Barrier-Repair-Hydrating-Lip-Balm-SPF-50---45-g---C-1.jpg"
   },
   {
     "id": 6,
@@ -51,7 +56,8 @@
     "description": "Brightens skin and reduces spots.",
     "rating": 4.5,
     "category": "serums & gels",
-    "image": "https://guardian.com.my/media/wysiwyg/Garnier_Bright_Complete_Vitamin_C_Gel_Wash_120Ml__4.jpg?auto=webp&format=pjpg&quality=85"
+    "image": "https://guardian.com.my/media/wysiwyg/Garnier_Bright_Complete_Vitamin_C_Gel_Wash_120Ml__4.jpg?auto=webp&format=pjpg&quality=85",
+    "image2": "https://adn-static1.nykaa.com/media/wysiwyg/GARNI00000202_8.jpg"
   },
   {
     "id": 7,
@@ -60,7 +66,8 @@
     "description": "Comfortable for daily wear.",
     "rating": 4.2,
     "category": "comfy casual shoes",
-    "image": "https://5.imimg.com/data5/ECOM/Default/2024/6/424690549/TJ/DP/MA/146821774/bbae755a-ad5b-4f86-8c8f-cc51e8fda670-500x500.jpg"
+    "image": "https://5.imimg.com/data5/ECOM/Default/2024/6/424690549/TJ/DP/MA/146821774/bbae755a-ad5b-4f86-8c8f-cc51e8fda670-500x500.jpg",
+    "image2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDnyMHNutoh_QH-uD49okX4W1HeDDVAJ15iqUO1W9_RUVVy0dg-gdAbRJRlZ1Jl1_1r_I&usqp=CAU"
   },
   {
     "id": 8,
@@ -69,7 +76,8 @@
     "description": "Fresh fragrance all day.",
     "rating": 4.0,
     "category": "deodorants",
-    "image": "https://www.health.com/thmb/yZIvNlYI_W0FExAKYgH6MQrcRw4=/6473x0/filters:no_upscale():max_bytes(150000):strip_icc()/hlt-clinical-strength-deodorant-GROUPSHOT_tstaples_219-f2722289daa74184af4b93b9cc44933c.jpg"
+    "image": "https://www.health.com/thmb/yZIvNlYI_W0FExAKYgH6MQrcRw4=/6473x0/filters:no_upscale():max_bytes(150000):strip_icc()/hlt-clinical-strength-deodorant-GROUPSHOT_tstaples_219-f2722289daa74184af4b93b9cc44933c.jpg",
+    "image2": "https://target.scene7.com/is/image/Target/GUEST_3bba0916-ade8-40d3-a487-1f80a8f09c27?wid=668&qlt=80&fmt=pjpeg"
   },
   {
     "id": 9,
@@ -78,7 +86,8 @@
     "description": "Perfect for casual summer wear.",
     "rating": 4.3,
     "category": "breezy flip flops",
-    "image": "https://img.tatacliq.com/images/i22//437Wx649H/MP000000025460924_437Wx649H_202502210259007.jpeg"
+    "image": "https://img.tatacliq.com/images/i22//437Wx649H/MP000000025460924_437Wx649H_202502210259007.jpeg",
+    "image2": "https://neemans.com/cdn/shop/files/ND-BFS-Brown_WebOptimized_b.jpg?v=1735644867&width=800"
   },
   {
     "id": 10,
@@ -87,7 +96,8 @@
     "description": "Elegant design for office and events.",
     "rating": 4.6,
     "category": "sharp formal shoes",
-    "image": "https://image.made-in-china.com/2f0j00zrEcuaCWBRgp/Sharp-Toe-Formal-Shoes-for-Men-s-Leather-Shoes-Slip-on-Loafer.webp"
+    "image": "https://image.made-in-china.com/2f0j00zrEcuaCWBRgp/Sharp-Toe-Formal-Shoes-for-Men-s-Leather-Shoes-Slip-on-Loafer.webp",
+    "image2": "https://m.media-amazon.com/images/I/41+83tT1vQL.jpg"
   },
   {
     "id": 11,
@@ -96,7 +106,8 @@
     "description": "Trendy and durable jeans for men.",
     "rating": 4.4,
     "category": "trendy jeans",
-    "image": "https://offduty.in/cdn/shop/products/f656d2d7-0bfd-4cf7-b81a-62bc7e8377a1_540x.jpg?v=1676893043"
+    "image": "https://offduty.in/cdn/shop/products/f656d2d7-0bfd-4cf7-b81a-62bc7e8377a1_540x.jpg?v=1676893043",
+    "image2": "https://assets.ajio.com/medias/sys_master/root/20241220/Q1Jf/676504680f47f80c8711aa8d/-473Wx593H-467106748-blue-MODEL.jpg"
   },
   {
     "id": 12,
@@ -105,7 +116,8 @@
     "description": "Long-lasting fragrance for all occasions.",
     "rating": 4.7,
     "category": "enticing perfumes",
-    "image": "https://i.etsystatic.com/37689116/r/il/d0a42f/4915748528/il_570xN.4915748528_1cav.jpg"
+    "image": "https://scentice.in/wp-content/uploads/2019/05/entice-long-lasting-perfume.jpg",
+    "image2": "https://i.etsystatic.com/37689116/r/il/d0a42f/4915748528/il_570xN.4915748528_1cav.jpg"
   },
   {
     "id": 13,
@@ -114,7 +126,8 @@
     "description": "Spacious and comfortable on shoulders.",
     "rating": 4.5,
     "category": "durable backpacks",
-    "image": "https://m.media-amazon.com/images/I/71qpXciYP1L._UY1100_.jpg"
+    "image": "https://m.media-amazon.com/images/I/71qpXciYP1L._UY1100_.jpg",
+    "image2": "https://i.ebayimg.com/images/g/jtoAAOSwz1pm4mpW/s-l1200.png"
   },
   {
     "id": 14,
@@ -123,7 +136,8 @@
     "description": "Soft and breathable fabric.",
     "rating": 4.3,
     "category": "soft bedsheets",
-    "image": "https://assets.ajio.com/medias/sys_master/root/20230629/CWLg/649d1029eebac147fc3a1505/-473Wx593H-464161329-multi-MODEL.jpg"
+    "image": "https://assets.ajio.com/medias/sys_master/root/20230629/CWLg/649d1029eebac147fc3a1505/-473Wx593H-464161329-multi-MODEL.jpg",
+    "image2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM7HwWuW_LVx43KndSrA17MRwRAtKudHjyYg&s"
   },
   {
     "id": 15,
@@ -132,7 +146,8 @@
     "description": "Deep hydration for dry skin.",
     "rating": 4.4,
     "category": "body lotions",
-    "image": "https://thaneshop.com/wp-content/uploads/2023/01/Joy-Intense-Moisture-Shea-Butter-Body-Lotion-For-Dry-Skin.jpg"
+    "image": "https://thaneshop.com/wp-content/uploads/2023/01/Joy-Intense-Moisture-Shea-Butter-Body-Lotion-For-Dry-Skin.jpg",
+    "image2": "https://www.vishalmegamart.com/dw/image/v2/BGHT_PRD/on/demandware.static/-/Sites-vmm-fmcg-master-catalog/default/dw52658fc2/images/large/1311019715.jpg?sw=900&sh=900"
   },
   {
     "id": 16,
@@ -141,7 +156,8 @@
     "description": "Smoothens hair and prevents frizz.",
     "rating": 4.2,
     "category": "conditioners",
-    "image": "https://www.letscurlup.com/cdn/shop/files/Curl_up_Hydrating_Conditioner.webp?v=1724404844&width=1080"
+    "image": "https://www.letscurlup.com/cdn/shop/files/Curl_up_Hydrating_Conditioner.webp?v=1724404844&width=1080",
+    "image2": "https://images-static.nykaa.com/media/catalog/product/6/3/635e599CURLU00000007_1120424.jpg?tr=w-500"
   },
   {
     "id": 17,
@@ -150,7 +166,8 @@
     "description": "SPF 15 and skin glow formula.",
     "rating": 4.1,
     "category": "day creams",
-    "image": "https://m.media-amazon.com/images/I/51N5ctG792L._UF1000,1000_QL80_.jpg"
+    "image": "https://m.media-amazon.com/images/I/51N5ctG792L._UF1000,1000_QL80_.jpg",
+    "image2": "https://m.media-amazon.com/images/I/61w9wEpTrKL._UF1000,1000_QL80_.jpg"
   },
   {
     "id": 18,
@@ -159,7 +176,8 @@
     "description": "Protects from UVA/UVB rays.",
     "rating": 4.5,
     "category": "sunscreens",
-    "image": "https://domf5oio6qrcr.cloudfront.net/medialibrary/5171/5bafaead-3d2e-40c0-97d2-4f5edc2e350a.jpg"
+    "image": "https://domf5oio6qrcr.cloudfront.net/medialibrary/5171/5bafaead-3d2e-40c0-97d2-4f5edc2e350a.jpg",
+    "image2": "https://www.drsheths.com/cdn/shop/files/27.jpg?v=1689311556"
   },
   {
     "id": 19,
@@ -168,7 +186,8 @@
     "description": "Lightweight and stylish for summer.",
     "rating": 4.3,
     "category": "easygoing sandals",
-    "image": "https://images-na.ssl-images-amazon.com/images/I/31hjZzvO96S._SL500_._AC_SL500_.jpg"
+    "image": "https://images-na.ssl-images-amazon.com/images/I/31hjZzvO96S._SL500_._AC_SL500_.jpg",
+    "image2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiUGztESqewv2OBo7HhCcFHK1FofLnOzK_F7pCwKXPrNwkJCpXtst0koNiljCJWLWjo-A&usqp=CAU"
   },
   {
     "id": 20,
@@ -177,7 +196,8 @@
     "description": "Gentle shaving for daily use.",
     "rating": 4.0,
     "category": "shaving foams",
-    "image": "https://images-static.nykaa.com/media/catalog/product/e/a/eae34144902430442688_2.jpeg?tr=w-500"
+    "image": "https://images-static.nykaa.com/media/catalog/product/e/a/eae34144902430442688_2.jpeg?tr=w-500",
+    "image2": "https://images.ctfassets.net/7tfi3razjgvb/2d75gH5KAXWuS1rO2rcMoV/fb112548da6d0a1942453d8816899418/DT_Overview_20Img_4ct_402x.png"
   },
   {
     "id": 21,
@@ -186,7 +206,8 @@
     "description": "Casual wear with modern fit.",
     "rating": 4.2,
     "category": "crisp shirts",
-    "image": "https://cdn.shopify.com/s/files/1/0794/2245/6081/files/WhatsAppImage2023-12-09at12.46.12PM_4_400x400.jpg?v=1726488634"
+    "image": "https://cdn.shopify.com/s/files/1/0794/2245/6081/files/WhatsAppImage2023-12-09at12.46.12PM_4_400x400.jpg?v=1726488634",
+    "image2": "https://cdn.shopify.com/s/files/1/0794/2245/6081/files/WhatsAppImage2023-12-09at12.46.12PM_4_400x400.jpg?v=1726488634"
   },
   {
     "id": 22,
@@ -195,7 +216,8 @@
     "description": "Comfortable for daily lounging.",
     "rating": 4.1,
     "category": "casual shorts",
-    "image": "https://m.media-amazon.com/images/I/6184isI3AYL._UY1100_.jpg"
+    "image": "https://m.media-amazon.com/images/I/6184isI3AYL._UY1100_.jpg",
+    "image2": "https://m.media-amazon.com/images/I/6184isI3AYL._UY1100_.jpg"
   },
   {
     "id": 23,
@@ -204,7 +226,8 @@
     "description": "Lightweight shoes for agile training.",
     "rating": 4.5,
     "category": "agile sports shoes",
-    "image": "https://images-static.nykaa.com/media/catalog/product/2/0/201bba537079402_1.jpg?tr=w-500"
+    "image": "https://images-static.nykaa.com/media/catalog/product/2/0/201bba537079402_1.jpg?tr=w-500",
+    "image2": "https://images-static.nykaa.com/media/catalog/product/2/0/201bba537079402_1.jpg?tr=w-500"
   },
   {
     "id": 24,
@@ -213,7 +236,8 @@
     "description": "Hydration + sun protection combo.",
     "rating": 4.4,
     "category": "day creams",
-    "image": "https://myhinine.com/cdn/shop/files/slide_1_2532ea37-9f96-4e66-813f-a0d10c81a4de.jpg?v=1723812416"
+    "image": "https://myhinine.com/cdn/shop/files/slide_1_2532ea37-9f96-4e66-813f-a0d10c81a4de.jpg?v=1723812416",
+    "image2": "https://myhinine.com/cdn/shop/files/slide_1_2532ea37-9f96-4e66-813f-a0d10c81a4de.jpg?v=1723812416"
   },
   {
     "id": 25,
@@ -222,7 +246,8 @@
     "description": "Ultra-comfortable and breathable track pants.",
     "rating": 4.3,
     "category": "relaxed track pants",
-    "image": "https://assets.ajio.com/medias/sys_master/root/20221208/Nu32/63920046f997ddfdbdc84e4a/-473Wx593H-469211191-blue-MODEL.jpg"
+    "image": "https://assets.ajio.com/medias/sys_master/root/20221208/Nu32/63920046f997ddfdbdc84e4a/-473Wx593H-469211191-blue-MODEL.jpg",
+    "image2": "https://assets.ajio.com/medias/sys_master/root/20221208/Nu32/63920046f997ddfdbdc84e4a/-473Wx593H-469211191-blue-MODEL.jpg"
   },
   {
     "id": 26,
@@ -231,7 +256,8 @@
     "description": "Deep cleanses and nourishes your scalp.",
     "rating": 4.5,
     "category": "cleansing shampoos",
-    "image": "https://k-beautyskin.com/wp-content/uploads/2023/08/Aromatica_Cypress_Deep_Cleansing_Shampoo_400ml_k-beauty-Skin_india.png"
+    "image": "https://k-beautyskin.com/wp-content/uploads/2023/08/Aromatica_Cypress_Deep_Cleansing_Shampoo_400ml_k-beauty-Skin_india.png",
+    "image2": "https://k-beautyskin.com/wp-content/uploads/2023/08/Aromatica_Cypress_Deep_Cleansing_Shampoo_400ml_k-beauty-Skin_india.png"
   },
   {
     "id": 27,
@@ -240,7 +266,8 @@
     "description": "Feel refreshed with every wash.",
     "rating": 4.1,
     "category": "refreshing soaps",
-    "image": "https://www.aalamroots.com/wp-content/uploads/2023/07/Himalaya_Refreshing_Baby_Soap_01.jpg"
+    "image": "https://www.aalamroots.com/wp-content/uploads/2023/07/Himalaya_Refreshing_Baby_Soap_01.jpg",
+    "image2": "https://www.aalamroots.com/wp-content/uploads/2023/07/Himalaya_Refreshing_Baby_Soap_01.jpg"
   },
   {
     "id": 28,
@@ -249,7 +276,8 @@
     "description": "Whitens teeth and fights cavities.",
     "rating": 4.4,
     "category": "toothpastes",
-    "image": "https://people.com/thmb/sweqXlb2F5jtUaHX0F0gKNgHQ5g=/fit-in/1500x2450/filters:no_upscale():max_bytes(150000):strip_icc()/peo-toothpaste-test-colgate-total-fresh-mint-stripe-gel-rachel-marek-10-c090826a6c9748b8a4e036eb12d73a27.jpeg"
+    "image": "https://people.com/thmb/sweqXlb2F5jtUaHX0F0gKNgHQ5g=/fit-in/1500x2450/filters:no_upscale():max_bytes(150000):strip_icc()/peo-toothpaste-test-colgate-total-fresh-mint-stripe-gel-rachel-marek-10-c090826a6c9748b8a4e036eb12d73a27.jpeg",
+    "image2": "https://people.com/thmb/sweqXlb2F5jtUaHX0F0gKNgHQ5g=/fit-in/1500x2450/filters:no_upscale():max_bytes(150000):strip_icc()/peo-toothpaste-test-colgate-total-fresh-mint-stripe-gel-rachel-marek-10-c090826a6c9748b8a4e036eb12d73a27.jpeg"
   },
   {
     "id": 29,
@@ -258,7 +286,8 @@
     "description": "Flawless skin with light coverage.",
     "rating": 4.2,
     "category": "bb & cc creams",
-    "image": "https://www.maybelline.com/-/media/project/loreal/brand-sites/mny/americas/us/makeup-tips/face/face-makeup-tutorials-for-beginners/the-difference-between-bb-and-cc-cream/new-2025/bb-cream-vs-cc-cream-hero.jpg?rev=373e5fc5dd4243e28982629c59d6d819"
+    "image": "https://www.maybelline.com/-/media/project/loreal/brand-sites/mny/americas/us/makeup-tips/face/face-makeup-tutorials-for-beginners/the-difference-between-bb-and-cc-cream/new-2025/bb-cream-vs-cc-cream-hero.jpg?rev=373e5fc5dd4243e28982629c59d6d819",
+    "image2": "https://www.maybelline.com/-/media/project/loreal/brand-sites/mny/americas/us/makeup-tips/face/face-makeup-tutorials-for-beginners/the-difference-between-bb-and-cc-cream/new-2025/bb-cream-vs-cc-cream-hero.jpg?rev=373e5fc5dd4243e28982629c59d6d819"
   },
   {
     "id": 30,
@@ -267,7 +296,8 @@
     "description": "High support for workouts and daily wear.",
     "rating": 4.5,
     "category": "supportive bras",
-    "image": "https://shyaway.static.n7.io/media/catalog/product/d/i/di1007-skylight-front.jpg"
+    "image": "https://shyaway.static.n7.io/media/catalog/product/d/i/di1007-skylight-front.jpg",
+    "image2": "https://shyaway.static.n7.io/media/catalog/product/d/i/di1007-skylight-front.jpg"
   },
   {
     "id": 31,
@@ -276,7 +306,8 @@
     "description": "Trendy co-ord set for a stylish look.",
     "rating": 4.3,
     "category": "chic co-ords",
-    "image": "https://lovebohochic.com/cdn/shop/products/Bohochic02-Feb10598.jpg?v=1645981716&width=1000"
+    "image": "https://lovebohochic.com/cdn/shop/products/Bohochic02-Feb10598.jpg?v=1645981716&width=1000",
+    "image2": "https://lovebohochic.com/cdn/shop/products/Bohochic02-Feb10598.jpg?v=1645981716&width=1000"
   },
   {
     "id": 32,
@@ -285,7 +316,8 @@
     "description": "Perfect for parties and formal occasions.",
     "rating": 4.6,
     "category": "elegant dresses",
-    "image": "https://static-dress.missacc.com/productimages/2025/2/SED11837/1899027986066313216_400X.jpeg"
+    "image": "https://static-dress.missacc.com/productimages/2025/2/SED11837/1899027986066313216_400X.jpeg",
+    "image2": "https://static-dress.missacc.com/productimages/2025/2/SED11837/1899027986066313216_400X.jpeg"
   },
   {
     "id": 33,
@@ -294,7 +326,8 @@
     "description": "Comfortable and chic flats for daily wear.",
     "rating": 4.2,
     "category": "striking flats",
-    "image": "https://media.landmarkshops.in/cdn-cgi/image/h=730,w=540,q=85,fit=cover/max-new/1000014397532-Beige-NUDE-1000014397532_01-2100.jpg"
+    "image": "https://media.landmarkshops.in/cdn-cgi/image/h=730,w=540,q=85,fit=cover/max-new/1000014397532-Beige-NUDE-1000014397532_01-2100.jpg",
+    "image2": "https://media.landmarkshops.in/cdn-cgi/image/h=730,w=540,q=85,fit=cover/max-new/1000014397532-Beige-NUDE-1000014397532_01-2100.jpg"
   },
   {
     "id": 34,
@@ -303,7 +336,8 @@
     "description": "Stylish kurti for a graceful look.",
     "rating": 4.3,
     "category": "modern kurtis",
-    "image": "https://images.meesho.com/images/products/453477751/n5brp_512.webp"
+    "image": "https://images.meesho.com/images/products/453477751/n5brp_512.webp",
+    "image2": "https://images.meesho.com/images/products/453477751/n5brp_512.webp"
   },
   {
     "id": 35,
@@ -312,7 +346,8 @@
     "description": "Rich color and long-lasting finish.",
     "rating": 4.4,
     "category": "bold lipsticks",
-    "image": "https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/9028641/2019/3/15/50dd1f87-3fd7-4152-b695-e1e67ca68c991552639606293-Maybelline-Women-Lipstick-6601552639606047-1.jpg"
+    "image": "https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/9028641/2019/3/15/50dd1f87-3fd7-4152-b695-e1e67ca68c991552639606293-Maybelline-Women-Lipstick-6601552639606047-1.jpg",
+    "image2": "https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/9028641/2019/3/15/50dd1f87-3fd7-4152-b695-e1e67ca68c991552639606293-Maybelline-Women-Lipstick-6601552639606047-1.jpg"
   },
   {
     "id": 36,
@@ -321,7 +356,8 @@
     "description": "Traditional elegance in every drape.",
     "rating": 4.5,
     "category": "graceful sarees",
-    "image": "https://images.sareeswholesale.com/grey-weaving-work-soft-silk-graceful-saree-171442.jpg"
+    "image": "https://images.sareeswholesale.com/grey-weaving-work-soft-silk-graceful-saree-171442.jpg",
+    "image2": "https://images.sareeswholesale.com/grey-weaving-work-soft-silk-graceful-saree-171442.jpg"
   },
   {
     "id": 37,
@@ -330,7 +366,8 @@
     "description": "Spacious and perfect for every look.",
     "rating": 4.3,
     "category": "trendy handbags",
-    "image": "https://5.imimg.com/data5/AS/TH/BQ/SELLER-71697535/trendy-hand-bag-500x500.jpg"
+    "image": "https://5.imimg.com/data5/AS/TH/BQ/SELLER-71697535/trendy-hand-bag-500x500.jpg",
+    "image2": "https://5.imimg.com/data5/AS/TH/BQ/SELLER-71697535/trendy-hand-bag-500x500.jpg"
   },
   {
     "id": 38,
@@ -339,7 +376,8 @@
     "description": "Turn heads with these stylish heels.",
     "rating": 4.5,
     "category": "hottest heels",
-    "image": "https://us.christianlouboutin.com/media/catalog/product/cache/e88e85f4e5336c618abbd9e5f93aeaf8/1/2/1250939b439-1250939b439-main_image-ecommerce-christianlouboutin-missz-1250939_b439_1_1200x1200.jpg"
+    "image": "https://us.christianlouboutin.com/media/catalog/product/cache/e88e85f4e5336c618abbd9e5f93aeaf8/1/2/1250939b439-1250939b439-main_image-ecommerce-christianlouboutin-missz-1250939_b439_1_1200x1200.jpg",
+    "image2": "https://us.christianlouboutin.com/media/catalog/product/cache/e88e85f4e5336c618abbd9e5f93aeaf8/1/2/1250939b439-1250939b439-main_image-ecommerce-christianlouboutin-missz-1250939_b439_1_1200x1200.jpg"
   },
   {
     "id": 39,
@@ -348,7 +386,8 @@
     "description": "Stretchable and stylish for everyday wear.",
     "rating": 4.4,
     "category": "classic jeans",
-    "image": "https://www.allamericanclothing.com/cdn/shop/products/AA1873L---Men-s-Classic-Jean---Medium-Stonewash---Made-in-USA-All-American-Clothing-Co.-1653670419_1200x.jpg?v=1653670420"
+    "image": "https://www.allamericanclothing.com/cdn/shop/products/AA1873L---Men-s-Classic-Jean---Medium-Stonewash---Made-in-USA-All-American-Clothing-Co.-1653670419_1200x.jpg?v=1653670420",
+    "image2": "https://www.allamericanclothing.com/cdn/shop/products/AA1873L---Men-s-Classic-Jean---Medium-Stonewash---Made-in-USA-All-American-Clothing-Co.-1653670419_1200x.jpg?v=1653670420"
   },
   {
     "id": 40,
@@ -357,7 +396,8 @@
     "description": "Celebrate in style with traditional charm.",
     "rating": 4.6,
     "category": "festive kurta sets",
-    "image": "https://www.jaipurkurti.com/cdn/shop/files/2_d4da0e9c-95f3-47b6-96a8-7903be8e7d2a.jpg?v=1750513564&width=1080"
+    "image": "https://www.jaipurkurti.com/cdn/shop/files/2_d4da0e9c-95f3-47b6-96a8-7903be8e7d2a.jpg?v=1750513564&width=1080",
+    "image2": "https://www.jaipurkurti.com/cdn/shop/files/2_d4da0e9c-95f3-47b6-96a8-7903be8e7d2a.jpg?v=1750513564&width=1080"
   },
   {
     "id": 41,
@@ -366,7 +406,8 @@
     "description": "Colorful, fun, and fashionable.",
     "rating": 4.3,
     "category": "fab kurtas",
-    "image": "https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/25404224/2023/10/7/92f251dc-ed38-419a-82ac-c6b941cdf1e91696692357889KurtaSets1.jpg"
+    "image": "https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/25404224/2023/10/7/92f251dc-ed38-419a-82ac-c6b941cdf1e91696692357889KurtaSets1.jpg",
+    "image2": "https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/25404224/2023/10/7/92f251dc-ed38-419a-82ac-c6b941cdf1e91696692357889KurtaSets1.jpg"
   },
   {
     "id": 42,
@@ -375,7 +416,8 @@
     "description": "SPF enriched for daily protection.",
     "rating": 4.2,
     "category": "day creams",
-    "image": "https://myhinine.com/cdn/shop/files/slide_1_2532ea37-9f96-4e66-813f-a0d10c81a4de.jpg?v=1723812416"
+    "image": "https://myhinine.com/cdn/shop/files/slide_1_2532ea37-9f96-4e66-813f-a0d10c81a4de.jpg?v=1723812416",
+    "image2": "https://myhinine.com/cdn/shop/files/slide_1_2532ea37-9f96-4e66-813f-a0d10c81a4de.jpg?v=1723812416"
   },
   {
     "id": 43,
@@ -384,7 +426,8 @@
     "description": "High quality sound with Bluetooth.",
     "rating": 4.6,
     "category": "headphones",
-    "image": "https://www.leafstudios.in/cdn/shop/files/1_a43c5e0b-3a47-497d-acec-b4764259b10e_800x.png?v=1750486829"
+    "image": "https://www.leafstudios.in/cdn/shop/files/1_a43c5e0b-3a47-497d-acec-b4764259b10e_800x.png?v=1750486829",
+    "image2": "https://www.leafstudios.in/cdn/shop/files/1_a43c5e0b-3a47-497d-acec-b4764259b10e_800x.png?v=1750486829"
   },
   {
     "id": 44,
@@ -393,7 +436,8 @@
     "description": "Gentle shaving without irritation.",
     "rating": 4.1,
     "category": "shaving foams",
-    "image": "https://images.ctfassets.net/7tfi3razjgvb/2d75gH5KAXWuS1rO2rcMoV/fb112548da6d0a1942453d8816899418/DT_Overview_20Img_4ct_402x.png"
+    "image": "https://images.ctfassets.net/7tfi3razjgvb/2d75gH5KAXWuS1rO2rcMoV/fb112548da6d0a1942453d8816899418/DT_Overview_20Img_4ct_402x.png",
+    "image2": "https://images.ctfassets.net/7tfi3razjgvb/2d75gH5KAXWuS1rO2rcMoV/fb112548da6d0a1942453d8816899418/DT_Overview_20Img_4ct_402x.png"
   },
   {
     "id": 45,
@@ -402,7 +446,8 @@
     "description": "Spacious, tough, and water-resistant.",
     "rating": 4.5,
     "category": "durable backpacks",
-    "image": "https://5.imimg.com/data5/JG/GK/TS/SELLER-20700789/bnp067-r-blue-2.jpg"
+    "image": "https://5.imimg.com/data5/JG/GK/TS/SELLER-20700789/bnp067-r-blue-2.jpg",
+    "image2": "https://5.imimg.com/data5/JG/GK/TS/SELLER-20700789/bnp067-r-blue-2.jpg"
   },
   {
     "id": 46,
@@ -411,7 +456,8 @@
     "description": "Spacious and perfect for every look.",
     "rating": 4.3,
     "category": "trendy handbags",
-    "image": "https://m.media-amazon.com/images/I/61eMpnhr+uL._UL1500_.jpg"
+    "image": "https://m.media-amazon.com/images/I/61eMpnhr+uL._UL1500_.jpg",
+    "image2": "https://m.media-amazon.com/images/I/61eMpnhr+uL._UL1500_.jpg"
   },
   {
     "id": 47,
@@ -420,7 +466,8 @@
     "description": "Colorful, fun, and fashionable.",
     "rating": 4.3,
     "category": "fab kurtas",
-    "image": "https://m.media-amazon.com/images/I/61g4NHgfd7L._UL1500_.jpg"
+    "image": "https://m.media-amazon.com/images/I/61g4NHgfd7L._UL1500_.jpg",
+    "image2": "https://m.media-amazon.com/images/I/61g4NHgfd7L._UL1500_.jpg"
   },
   {
     "id": 48,
@@ -429,6 +476,7 @@
     "description": "Moisturizes and softens lips.",
     "rating": 4.1,
     "category": "lip balms",
-    "image": "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/30789439/2025/4/10/be723324-c7ec-41ff-bb9b-ea7b11d498201744298190931-DOT--KEY-Barrier-Repair-Hydrating-Lip-Balm-SPF-50---45-g---C-1.jpg"
+    "image": "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/30789439/2025/4/10/be723324-c7ec-41ff-bb9b-ea7b11d498201744298190931-DOT--KEY-Barrier-Repair-Hydrating-Lip-Balm-SPF-50---45-g---C-1.jpg",
+    "image2": "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/30789439/2025/4/10/be723324-c7ec-41ff-bb9b-ea7b11d498201744298190931-DOT--KEY-Barrier-Repair-Hydrating-Lip-Balm-SPF-50---45-g---C-1.jpg"
   }
 ]
