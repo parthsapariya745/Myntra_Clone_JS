@@ -87,6 +87,68 @@
             grid-template-columns: repeat(1, minmax(0, 1fr)); 
         }
     }
+    @keyframes spinRotate {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+    @keyframes pulse-custom {
+        0%, 100% { 
+            opacity: 0.3;
+            transform: scale(0.8);
+        }
+        50% { 
+            opacity: 1;
+            transform: scale(1.2);
+        }
+    }
+    @keyframes fadeInOut {
+        0%, 100% { opacity: 0.5; }
+        50% { opacity: 1; }
+    }
+    @keyframes zoomIn {
+        0% {
+            opacity: 0;
+            transform: scale(0.3);
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+    @keyframes slideInRight {
+        0% {
+            opacity: 0;
+            transform: translateX(100px) scale(0.5);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0) scale(1);
+        }
+    }
+    .spinner-rotate {
+        animation: spinRotate 1.2s linear infinite;
+    }
+    .spinner-reverse {
+        animation: spinRotate 2s linear infinite reverse;
+    }
+    .pulse-custom {
+        animation: pulse-custom 1.5s ease-in-out infinite;
+    }
+    .fade-in-out {
+        animation: fadeInOut 2s ease-in-out infinite;
+    }
+    .zoom-in {
+        animation: zoomIn 0.5s ease-out;
+    }
+    .slide-in-right {
+        animation: slideInRight 0.6s ease-out 0.2s both;
+    }
+    .modal-active .spinner-container {
+        animation: zoomIn 0.5s ease-out;
+    }
+    .modal-active .close-btn {
+        animation: slideInRight 0.6s ease-out 0.2s both;
+    }
 </style>
 <body>
     <div class="bg h-auto w-full">
@@ -251,48 +313,60 @@
             <img src="https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/pNLXLLRS_d2268acb341140969f9e8ce391f06878.jpg">
         </div>
         <div class="img-con grid md:grid-cols-6 grid-cols-3 mx-auto">
-            <img class="object-cover" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/Oqnlx6wK_90a1b0c2083a402c8226268c3af89f15.jpg" alt="">
-            <img class="object-cover" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/QF61dTzS_b7738a92fc0c4008a4dc2bcbb6e6a9e8.jpg" alt="">
-            <img class="object-cover" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/UraDd9nq_3a1e0e4cfcee4af49e6ee4207066f973.jpg" alt="">
-            <img class="object-cover" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/t6Yr7ShF_557fa3c97db04f2b93e80c0bc2655fa2.jpg" alt="">
-            <img class="object-cover" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/L89Ncr0C_62ede487224248349baa738430d65c15.jpg" alt="">
-            <img class="object-cover" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/iTPytjKV_deb128ce012645d08ae1805742529e25.jpg" alt="">
+            <img class="object-cover" onclick="spinner()" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/Oqnlx6wK_90a1b0c2083a402c8226268c3af89f15.jpg" alt="">
+            <img class="object-cover" onclick="spinner()" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/QF61dTzS_b7738a92fc0c4008a4dc2bcbb6e6a9e8.jpg" alt="">
+            <img class="object-cover" onclick="spinner()" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/UraDd9nq_3a1e0e4cfcee4af49e6ee4207066f973.jpg" alt="">
+            <img class="object-cover" onclick="spinner()" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/t6Yr7ShF_557fa3c97db04f2b93e80c0bc2655fa2.jpg" alt="">
+            <img class="object-cover" onclick="spinner()" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/L89Ncr0C_62ede487224248349baa738430d65c15.jpg" alt="">
+            <img class="object-cover" onclick="spinner()" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/iTPytjKV_deb128ce012645d08ae1805742529e25.jpg" alt="">
             
-            <img class="object-cover" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/pdHwP3Qm_32928f53441e4614b3059b2053f3125c.jpg" alt="">
-            <img class="object-cover" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/MoCgjGa2_47edbe66683b4009a40782d32400b896.jpg" alt="">
-            <img class="object-cover" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/m9BLTLMk_4ddf9f7af6884629b69abcd7c6705830.jpg" alt="">
-            <img class="object-cover" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/IOWMiwrr_d64804faa8214dc8928027c81489fff1.jpg" alt="">
-            <img class="object-cover" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/abto8Zeq_c42fc7fa8e4c42149a7f80b6f02fe7ee.jpg" alt="">
-            <img class="object-cover" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/bPw717RT_c797346b76024d92bd8ec127c9c9c2ed.jpg" alt="">
+            <img class="object-cover" onclick="spinner()" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/pdHwP3Qm_32928f53441e4614b3059b2053f3125c.jpg" alt="">
+            <img class="object-cover" onclick="spinner()" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/MoCgjGa2_47edbe66683b4009a40782d32400b896.jpg" alt="">
+            <img class="object-cover" onclick="spinner()" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/m9BLTLMk_4ddf9f7af6884629b69abcd7c6705830.jpg" alt="">
+            <img class="object-cover" onclick="spinner()" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/IOWMiwrr_d64804faa8214dc8928027c81489fff1.jpg" alt="">
+            <img class="object-cover" onclick="spinner()" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/abto8Zeq_c42fc7fa8e4c42149a7f80b6f02fe7ee.jpg" alt="">
+            <img class="object-cover" onclick="spinner()" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/bPw717RT_c797346b76024d92bd8ec127c9c9c2ed.jpg" alt="">
             
-            <img class="object-cover" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/ByzDiVZ6_1c1089d2c39a4a3087c4ebccf117b4a9.jpg" alt="">
-            <img class="object-cover" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/otluVtrC_3316745cf1334685929e4428e18e032a.jpg" alt="">
-            <img class="object-cover" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/bn1iQu4a_9397ea3e99164d8884aae4cfbf837728.jpg" alt="">
-            <img class="object-cover" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/ah01UIrk_45d1a2ba764040adbe9719596b2add1c.jpg" alt="">
-            <img class="object-cover" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/FnbxdAH7_efa4f4bcf62a427bb65db89c31c1365d.jpg" alt="">
-            <img class="object-cover" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/9OkPxvS7_f15f8852646a4da0a83aa56aaae5d90c.jpg" alt="">
+            <img class="object-cover" onclick="spinner()" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/ByzDiVZ6_1c1089d2c39a4a3087c4ebccf117b4a9.jpg" alt="">
+            <img class="object-cover" onclick="spinner()" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/otluVtrC_3316745cf1334685929e4428e18e032a.jpg" alt="">
+            <img class="object-cover" onclick="spinner()" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/bn1iQu4a_9397ea3e99164d8884aae4cfbf837728.jpg" alt="">
+            <img class="object-cover" onclick="spinner()" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/ah01UIrk_45d1a2ba764040adbe9719596b2add1c.jpg" alt="">
+            <img class="object-cover" onclick="spinner()" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/FnbxdAH7_efa4f4bcf62a427bb65db89c31c1365d.jpg" alt="">
+            <img class="object-cover" onclick="spinner()" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/9OkPxvS7_f15f8852646a4da0a83aa56aaae5d90c.jpg" alt="">
             
-            <img class="object-cover" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/W7K7HQvT_778d3288ee354622bf017f3b5b4e1aae.jpg" alt="">
-            <img class="object-cover" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/uBVVZEsi_fe3013d0a0eb4a5697ad47fca37cd055.jpg" alt="">
-            <img class="object-cover" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/qmn3es2P_6f0ea861f03f469db0d8ee614a4ad894.jpg" alt="">
-            <img class="object-cover" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/rrwXs9Fe_ddeb1f121c5a44f29a51f76e1b8497fb.jpg" alt="">
-            <img class="object-cover" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/GOkLwii5_26842b29ad934eb4a8f954fe7bcf6b16.jpg" alt="">
-            <img class="object-cover" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/hjtdtjeu_b73f7ac892844438870a2dc3e53b373b.jpg" alt="">
+            <img class="object-cover" onclick="spinner()" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/W7K7HQvT_778d3288ee354622bf017f3b5b4e1aae.jpg" alt="">
+            <img class="object-cover" onclick="spinner()" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/uBVVZEsi_fe3013d0a0eb4a5697ad47fca37cd055.jpg" alt="">
+            <img class="object-cover" onclick="spinner()" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/qmn3es2P_6f0ea861f03f469db0d8ee614a4ad894.jpg" alt="">
+            <img class="object-cover" onclick="spinner()" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/rrwXs9Fe_ddeb1f121c5a44f29a51f76e1b8497fb.jpg" alt="">
+            <img class="object-cover" onclick="spinner()" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/GOkLwii5_26842b29ad934eb4a8f954fe7bcf6b16.jpg" alt="">
+            <img class="object-cover" onclick="spinner()" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/hjtdtjeu_b73f7ac892844438870a2dc3e53b373b.jpg" alt="">
             
-            <img class="object-cover" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/xzg1aO7Q_547f2e814f9349aa9c21853837b005d2.jpg" alt="">
-            <img class="object-cover" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/Pvw29lds_a220d0b134ac4b2a823aa7daab53e6ce.jpg" alt="">
-            <img class="object-cover" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/DkZKOPIY_25d17c6744384631b9472a7e7a785d73.jpg" alt="">
-            <img class="object-cover" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/0NgjmdOd_b3dc09cd52f740218108188a9d46887c.jpg" alt="">
-            <img class="object-cover" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/f6zAZigj_1607999f08354b349dc4f1cf521b2bb0.jpg" alt="">
-            <img class="object-cover" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/nXUe6peM_6059bb6ab8574b86a012685513f91e38.jpg" alt="">
+            <img class="object-cover" onclick="spinner()" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/xzg1aO7Q_547f2e814f9349aa9c21853837b005d2.jpg" alt="">
+            <img class="object-cover" onclick="spinner()" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/Pvw29lds_a220d0b134ac4b2a823aa7daab53e6ce.jpg" alt="">
+            <img class="object-cover" onclick="spinner()" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/DkZKOPIY_25d17c6744384631b9472a7e7a785d73.jpg" alt="">
+            <img class="object-cover" onclick="spinner()" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/0NgjmdOd_b3dc09cd52f740218108188a9d46887c.jpg" alt="">
+            <img class="object-cover" onclick="spinner()" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/f6zAZigj_1607999f08354b349dc4f1cf521b2bb0.jpg" alt="">
+            <img class="object-cover" onclick="spinner()" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/nXUe6peM_6059bb6ab8574b86a012685513f91e38.jpg" alt="">
             
             <div class="md:col-span-6 flex md:justify-center">
-                <img class="md:w-[20vw] object-cover" src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/uGmZhOUh_950f37e9eed04eef9934dc2a692ae2c6.jpg" alt="">
-                <img class="md:w-[20vw] object-cover" src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/Pr5qu9Sh_22f394122ced446facbd9403d5326b34.jpg" alt="">
-                <img class="md:w-[20vw] object-cover" src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/ecQm5RIX_5b3d408370fb4168b30ff0046db6bfad.jpg" alt="">
+                <img class="md:w-[20vw] object-cover" onclick="spinner()" src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/uGmZhOUh_950f37e9eed04eef9934dc2a692ae2c6.jpg" alt="">
+                <img class="md:w-[20vw] object-cover" onclick="spinner()" src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/Pr5qu9Sh_22f394122ced446facbd9403d5326b34.jpg" alt="">
+                <img class="md:w-[20vw] object-cover" onclick="spinner()" src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2025/JUNE/30/ecQm5RIX_5b3d408370fb4168b30ff0046db6bfad.jpg" alt="">
             </div>
         </div>
         <!-- sells sliders -->
+
+        <div id="spinnerModal" class="fixed inset-0 bg-gradient-to-br from-black/80 to-black/90 backdrop-blur-lg flex items-center justify-center z-50 opacity-0 invisible transition-all duration-500 ease-out">
+            <div class="spinner-container relative flex items-center justify-center z-10">
+                <img onclick="rotateSpin()" src="https://static.vecteezy.com/system/resources/thumbnails/024/036/933/small/lucky-spin-with-transparent-background-free-png.png" class="w-[600px] cursor-pointer" alt="">
+            </div>
+        
+            <div onclick="hideSpinner()" class="close-btn absolute top-7 right-7 md:top-8 md:right-8 w-12 h-12 md:w-15 md:h-15 bg-white/15 border-3 border-white/30 rounded-full cursor-pointer flex items-center justify-center transition-all duration-300 z-20 backdrop-blur-sm hover:bg-white/25 hover:scale-110 hover:rotate-90 hover:shadow-2xl">
+                <div class="relative text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M3 16.74L7.76 12L3 7.26L7.26 3L12 7.76L16.74 3L21 7.26L16.24 12L21 16.74L16.74 21L12 16.24L7.26 21zm9-3.33l4.74 4.75l1.42-1.42L13.41 12l4.75-4.74l-1.42-1.42L12 10.59L7.26 5.84L5.84 7.26L10.59 12l-4.75 4.74l1.42 1.42z"/></svg>
+                </div>
+            </div>
+        </div>
 
         <!-- footer -->
         <div class="footer mt-10" id="footerbox"></div>
@@ -305,6 +379,36 @@
         function productDetail(id) {
             localStorage.setItem('productId', id);
             window.location.href = `product.html?id=${id}`;
+        }
+        
+        function spinner() {
+            const modal = document.getElementById('spinnerModal');
+            modal.classList.remove('opacity-0', 'invisible');
+            modal.classList.add('opacity-100', 'visible', 'modal-active');
+            document.body.classList.add('overflow-hidden');
+        }
+        
+        function hideSpinner() {
+            const modal = document.getElementById('spinnerModal');
+            modal.classList.add('opacity-0', 'invisible');
+            modal.classList.remove('opacity-100', 'visible', 'modal-active');
+            document.body.classList.remove('overflow-hidden');
+        }
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.key == 'Escape') {
+                hideSpinner();
+            }
+        });
+        
+        document.getElementById('spinnerModal').addEventListener('click', function(e) {
+            if (e.target == this) {
+                hideSpinner();
+            }
+        });
+
+        function rotateSpin() {
+
         }
     </script>
 </body>
