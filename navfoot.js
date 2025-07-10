@@ -521,7 +521,7 @@ navbox.innerHTML = `
                         <div class="icon-box flex gap-8 mb-2">
                             <div class="icon flex flex-col items-center">
                                 <i class="ri-user-3-line text-[20px] relative top-[5px]"></i>
-                                <p class="text-[12px] font-[700]">Profile</p>
+                                <a href="./profile.html"><p class="text-[12px] font-[700]">Profile</p></a>
                             </div>
                             <div class="icon flex flex-col items-center">
                                 <i class="ri-heart-line text-[20px] relative top-[5px]"></i>
@@ -548,7 +548,7 @@ navbox.innerHTML = `
                                 <div class="absolute top-[68px] w-max shadow-lg border border-gray-200 bg-white text-black p-5 z-10 hidden group-hover:block">
                                     <p class="text-[15px] font-[700] text-[#282C3F]">Welcome</p>
                                     <p class="font-[300] text-[14px]">To access account and manage orders</p>
-                                    <button class="text-[#FF3F6C] border-[1px] border-[#d7d7d7] hover:border-[#FF3F6C] duration-300 text-[14.5px] font-[700] mt-3 px-4 py-1.5 cursor-pointer">LOGIN / SIGN UP</button>
+                                    <a href="./profile.html"><button class="text-[#FF3F6C] border-[1px] border-[#d7d7d7] hover:border-[#FF3F6C] duration-300 text-[14.5px] font-[700] mt-3 px-4 py-1.5 cursor-pointer">LOGIN / SIGN UP</button></a>
                                     <div class="line h-[1px] w-full bg-[#d7d7d7] mt-5 mb-3"></div>
                                     <ul class="text-sm text-gray-700 space-y-1">
                                         <li class="hover:font-bold"><a href="#">Orders</a></li>

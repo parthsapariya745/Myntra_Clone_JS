@@ -357,13 +357,13 @@
         <!-- sells sliders -->
 
         <div id="spinnerModal" class="fixed inset-0 bg-gradient-to-br from-black/80 to-black/90 backdrop-blur-lg flex items-center justify-center z-50 opacity-0 invisible transition-all duration-500 ease-out">
-            <div class="spinner-container relative flex items-center justify-center z-10">
-                <img onclick="rotateSpin()" src="https://static.vecteezy.com/system/resources/thumbnails/024/036/933/small/lucky-spin-with-transparent-background-free-png.png" class="w-[600px] cursor-pointer" alt="">
+            <div class="spinner-container relative flex items-center justify-center z-10" id="spinnerContainer">
+                <img onclick="rotateSpin()" src="https://static.vecteezy.com/system/resources/thumbnails/024/036/933/small/lucky-spin-with-transparent-background-free-png.png" class="w-[80vw] max-w-[600px] min-w-[300px] cursor-pointer" alt="Lucky Spin">
             </div>
-        
-            <div onclick="hideSpinner()" class="close-btn absolute top-7 right-7 md:top-8 md:right-8 w-12 h-12 md:w-15 md:h-15 bg-white/15 border-3 border-white/30 rounded-full cursor-pointer flex items-center justify-center transition-all duration-300 z-20 backdrop-blur-sm hover:bg-white/25 hover:scale-110 hover:rotate-90 hover:shadow-2xl">
+
+            <div onclick="hideSpinner()" class="close-btn absolute top-4 right-4 md:top-6 md:right-6 w-10 h-10 md:w-12 md:h-12 bg-white/15 border-2 border-white/30 rounded-full cursor-pointer flex items-center justify-center transition-all duration-300 z-20 backdrop-blur-sm hover:bg-white/25 hover:scale-110 hover:rotate-90 hover:shadow-2xl">
                 <div class="relative text-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M3 16.74L7.76 12L3 7.26L7.26 3L12 7.76L16.74 3L21 7.26L16.24 12L21 16.74L16.74 21L12 16.24L7.26 21zm9-3.33l4.74 4.75l1.42-1.42L13.41 12l4.75-4.74l-1.42-1.42L12 10.59L7.26 5.84L5.84 7.26L10.59 12l-4.75 4.74l1.42 1.42z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M3 16.74L7.76 12L3 7.26L7.26 3L12 7.76L16.74 3L21 7.26L16.24 12L21 16.74L16.74 21L12 16.24L7.26 21zm9-3.33l4.74 4.75l1.42-1.42L13.41 12l4.75-4.74l-1.42-1.42L12 10.59L7.26 5.84L5.84 7.26L10.59 12l-4.75 4.74l1.42 1.42z"/></svg>
                 </div>
             </div>
         </div>
@@ -407,8 +407,62 @@
             }
         });
 
-        function rotateSpin() {
+        let rotation = 0;
+        let interval;
 
+        function rotateSpin() {
+            let img = document.querySelector("#spinnerModal img");
+            let spinnerContainer = document.getElementById("spinnerContainer");
+
+            clearInterval(interval);
+            rotation = 0;
+
+            let oldMsg = document.getElementById("rewardMessage");
+            if (oldMsg) oldMsg.remove();
+            spinnerContainer.classList.remove("hidden");
+
+            interval = setInterval(() => {
+                rotation += 50;
+                img.style.transform = `rotate(${rotation}deg)`;
+                img.style.transition = "transform 0.1s linear";
+            }, 100);
+
+            setTimeout(() => {
+                clearInterval(interval);
+                spinnerContainer.classList.add("hidden");
+
+                let spinnerModal = document.getElementById("spinnerModal");
+                let off = document.createElement("div");
+                off.id = "rewardMessage";
+
+                off.innerHTML = `
+                <div class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-50 animate-in fade-in-0 zoom-in-95 duration-500 bg-gradient-to-br from-purple-600 via-pink-600 to-orange-500 text-white p-6 rounded-2xl shadow-2xl border border-white/20 backdrop-blur-sm text-center w-[90vw] max-w-[400px] min-w-[280px] mx-auto transform transition-all duration-500 hover:scale-105">
+                    <div class="absolute -top-1 -left-1 w-4 h-4 bg-pink-400 rounded-full animate-pulse"></div>
+                    <div class="relative z-10">
+                        <div class="text-4xl md:text-5xl mb-3 animate-bounce">🎉</div>
+                        <h1 class="text-xl md:text-2xl font-black mb-3 tracking-tight">
+                            <span class="bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">Congratulations!</span>
+                        </h1>
+                        <div class="bg-white/10 backdrop-blur-md rounded-xl p-3 mb-3 border border-white/20">
+                            <p class="text-base md:text-lg font-semibold mb-2">You have won</p>
+                            <div class="inline-flex items-center bg-gradient-to-r from-yellow-400 to-orange-400 text-black px-4 py-2 rounded-full font-black text-lg md:text-xl shadow-lg transform rotate-1 hover:rotate-0 transition-transform duration-300">50% OFF</div>
+                            <p class="text-sm md:text-base font-medium mt-2">on your next purchase!</p>
+                        </div>
+                        <div onclick="hideReward()" class="close-reward-btn absolute top-[-35px] right-[-35px] w-8 h-8 bg-white/15 border-2 border-white/30 rounded-full cursor-pointer flex items-center justify-center transition-all duration-300 z-20 backdrop-blur-sm hover:bg-white/25 hover:scale-110 hover:rotate-90 hover:shadow-xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="currentColor" d="M3 16.74L7.76 12L3 7.26L7.26 3L12 7.76L16.74 3L21 7.26L16.24 12L21 16.74L16.74 21L12 16.24L7.26 21zm9-3.33l4.74 4.75l1.42-1.42L13.41 12l4.75-4.74l-1.42-1.42L12 10.59L7.26 5.84L5.84 7.26L10.59 12l-4.75 4.74l1.42 1.42z"/></svg>
+                        </div>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-br from-purple-600/50 via-pink-600/50 to-orange-500/50 rounded-2xl blur-xl -z-10 animate-pulse"></div>
+                </div>`;
+
+                spinnerModal.appendChild(off);
+            }, 5000);
+        }
+        function hideReward() {
+            let rewardMessage = document.getElementById("rewardMessage");
+            let spinnerContainer = document.getElementById("spinnerContainer");
+            if (rewardMessage) rewardMessage.remove();
+            spinnerContainer.classList.remove("hidden");
         }
     </script>
 </body>

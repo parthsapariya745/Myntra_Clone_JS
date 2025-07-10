@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Myntra Login/Signup Clone</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Baloo+2:wght@400..800&family=Bangers&family=Baskervville:ital@0;1&family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Enriqueta:wght@400;500;600;700&family=Gantari:ital,wght@0,100..900;1,100..900&family=Heebo:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Londrina+Outline&family=Luckiest+Guy&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nothing+You+Could+Do&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sora:wght@100..800&family=Unbounded:wght@200..900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+
+    <!-- Remix Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+      integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+
+    <style>
+      body {
+        font-family: 'Montserrat', Arial, sans-serif;
+      }
+      input[type='checkbox']:focus {
+        outline: 2px solid #ff3f6c;
+        outline-offset: 2px;
+      }
+      .hidden {
+        display: none !important;
+      }
+    </style>
+  </head>
+
+  <body class="min-h-screen bg-gradient-to-b from-[#fff6fa] to-[#ffe9e9]">
+    <div id="mainForm" class="flex min-h-[100vh] w-full items-start justify-center">
+      <div class="mt-10 h-[600px] w-full max-w-md rounded-none bg-white pb-10 shadow-lg">
+        <img
+          class="w-full"
+          src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2023/10/29/9610da61-a1a4-4215-b1fa-f612242d10e61698602536819-Flat_200--1-.jpg"
+          alt="Offer Banner" />
+        <form class="flex h-[500px] flex-col gap-6 px-6 pt-8" autocomplete="off">
+          <h2 class="mb-2 text-2xl font-bold tracking-wide text-[#282c3f]">
+            Login
+            <span class="font-bold">
+              <span class="font-[10px] text-[#535766]">or</span>
+              Signup
+            </span>
+          </h2>
+          <div class="flex h-12 items-center rounded border border-[#d4d5d9] bg-white">
+            <span class="px-3 text-base font-medium text-[#696e79]">+91</span>
+            <input
+              type="text"
+              id="mobileInput"
+              maxlength="10"
+              pattern="[0-9]*"
+              inputmode="numeric"
+              placeholder="Mobile Number*"
+              required
+              class="h-full flex-1 border-none bg-transparent px-3 py-2 text-base outline-none" />
+          </div>
+          <div class="mt-1 flex items-start gap-3 text-[15px] text-[#282c3f]">
+            <input type="checkbox" id="termsCheck" class="mt-1 h-4 w-4 accent-[#ff3f6c]" />
+            <label for="termsCheck" class="cursor-pointer leading-snug select-none">
+              By continuing, I agree to the
+              <a href="./privacy-policy.html" class="font-bold text-[#ff3f6c] hover:underline">Terms of Use</a>
+              &
+              <a href="./privacy-policy.html" class="font-bold text-[#ff3f6c] hover:underline">Privacy Policy</a>
+              and I am above 18 years old.
+            </label>
+          </div>
+          <button type="button" id="continueBtn" class="mt-2 h-12 w-full cursor-not-allowed rounded bg-[#eaeaec] text-lg font-bold tracking-wide text-white transition-all duration-200" disabled>
+            CONTINUE
+          </button>
+          <div class="text-left text-[14px] text-[#696e79]">
+            Have trouble logging in?
+            <a href="#" class="ml-1 font-bold text-[#ff3f6c] hover:underline">Get help</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="signupForm" class="bg-opacity-40 fixed inset-0 z-50 flex hidden items-center justify-center bg-black">
+      <div class="relative w-full max-w-md rounded-lg bg-white p-6 shadow-lg">
+        <button id="closeSignup" class="absolute top-4 right-4 text-xl text-gray-500 hover:text-gray-700">✕</button>
+        <h2 class="mb-4 text-2xl font-bold text-[#282c3f]">Sign Up</h2>
+        <form class="flex flex-col gap-4">
+          <input type="text" placeholder="First Name" required class="rounded border border-[#d4d5d9] px-3 py-2" />
+          <input type="text" placeholder="Last Name" required class="rounded border border-[#d4d5d9] px-3 py-2" />
+          <input type="email" placeholder="Email Address" required class="rounded border border-[#d4d5d9] px-3 py-2" />
+          <input type="text" placeholder="Home Address" required class="rounded border border-[#d4d5d9] px-3 py-2" />
+          <input type="password" placeholder="New Password" required class="rounded border border-[#d4d5d9] px-3 py-2" />
+          <input type="password" placeholder="Confirm Password" required class="rounded border border-[#d4d5d9] px-3 py-2" />
+          <div class="flex items-center gap-2">
+            <input type="checkbox" id="captchaCheck" required />
+            <label for="captchaCheck" class="text-sm text-[#282c3f]">I'm not a robot</label>
+          </div>
+          <button type="submit" id="signupSubmit" class="mt-2 h-12 w-full rounded bg-[#ff3f6c] text-lg font-bold text-white transition-colors hover:bg-[#e6356a]">Sign Up</button>
+          <div class="mt-2 text-center text-sm">
+            Already have an account?
+            <a href="#" id="showLogin" class="ml-1 font-bold text-[#ff3f6c] hover:underline">Log in</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="loginForm" class="bg-opacity-40 fixed inset-0 z-50 flex hidden items-center justify-center bg-black">
+      <div class="relative w-full max-w-md rounded-lg bg-white p-6 shadow-lg">
+        <button id="closeLogin" class="absolute top-4 right-4 text-xl text-gray-500 hover:text-gray-700">✕</button>
+        <h2 class="mb-4 text-2xl font-bold text-[#282c3f]">Log In</h2>
+        <form class="flex flex-col gap-4">
+          <input type="email" placeholder="Email Address" required class="rounded border border-[#d4d5d9] px-3 py-2" />
+          <input type="password" id="loginPassword" placeholder="Password" required class="rounded border border-[#d4d5d9] px-3 py-2" />
+          <div class="mb-2 flex items-center gap-2">
+            <input type="checkbox" id="showPass" class="h-4 w-4" />
+            <label for="showPass" class="text-sm text-[#282c3f]">Show Password</label>
+            <a href="#" id="forgotPass" class="ml-auto text-sm font-bold text-[#ff3f6c] hover:underline">Forgot Password?</a>
+          </div>
+          <button type="submit" id="loginSubmit" class="mt-2 h-12 w-full rounded bg-[#ff3f6c] text-lg font-bold text-white transition-colors hover:bg-[#e6356a]">Log In</button>
+          <div class="mt-2 text-center text-sm">
+            Don't have an account?
+            <a href="#" id="showSignup" class="ml-1 font-bold text-[#ff3f6c] hover:underline">Sign up</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="forgotForm" class="bg-opacity-40 fixed inset-0 z-50 flex hidden items-center justify-center bg-black">
+      <div class="relative w-full max-w-md rounded-lg bg-white p-6 shadow-lg">
+        <button id="closeForgot" class="absolute top-4 right-4 text-xl text-gray-500 hover:text-gray-700">✕</button>
+        <h2 class="mb-4 text-2xl font-bold text-[#282c3f]">Forgot Password</h2>
+        <form class="flex flex-col gap-4">
+          <input type="email" placeholder="Enter your email" required class="rounded border border-[#d4d5d9] px-3 py-2" />
+          <button type="submit" id="forgotSubmit" class="mt-2 h-12 w-full rounded bg-[#ff3f6c] text-lg font-bold text-white transition-colors hover:bg-[#e6356a]">Send Reset Link</button>
+          <div class="mt-2 text-center text-sm">
+            <a href="#" id="backToLogin" class="font-bold text-[#ff3f6c] hover:underline">Back to Login</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="verifyPopup" class="bg-opacity-40 fixed inset-0 z-50 flex hidden items-center justify-center bg-black">
+      <div class="relative flex w-full max-w-md flex-col items-center rounded-lg bg-white p-6 shadow-lg">
+        <h2 class="mb-4 text-2xl font-bold text-[#282c3f]">Mail Box</h2>
+        <div class="mb-6 text-lg text-[#282c3f]">Your Email Verified</div>
+        <button id="verifyBtn" class="mb-2 h-12 w-full rounded bg-[#ff3f6c] text-lg font-bold text-white transition-colors hover:bg-[#e6356a]">Verify</button>
+      </div>
+    </div>
+
+    <div id="newPassPopup" class="bg-opacity-40 fixed inset-0 z-50 flex hidden items-center justify-center bg-black">
+      <div class="relative flex w-full max-w-md flex-col items-center rounded-lg bg-white p-6 shadow-lg">
+        <h2 class="mb-4 text-2xl font-bold text-[#282c3f]">Set New Password</h2>
+        <input type="password" placeholder="New Password" class="mb-3 w-full rounded border border-[#d4d5d9] px-3 py-2" />
+        <input type="password" placeholder="Confirm Password" class="mb-4 w-full rounded border border-[#d4d5d9] px-3 py-2" />
+        <button id="continueLoginBtn" class="mb-2 h-12 w-full rounded bg-[#ff3f6c] text-lg font-bold text-white transition-colors hover:bg-[#e6356a]">Continue</button>
+        <div class="mt-2 text-center text-sm">
+          <a href="#" id="backToLoginFromNewPass" class="font-bold text-[#ff3f6c] hover:underline">Login Page</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="profilePage" class="hidden min-h-screen bg-gradient-to-b from-[#fff6fa] to-[#ffe9e9]">
+      <div class="mx-auto w-full max-w-4xl p-6">
+        <div class="mb-6 rounded-lg bg-white p-8 shadow-lg">
+          <div class="mb-8 flex items-center gap-6">
+            <div class="relative">
+              <div id="profileImageContainer" class="h-32 w-32 cursor-pointer overflow-hidden rounded-full border-4 border-[#ff3f6c] transition-opacity hover:opacity-80">
+                <img id="profileImage" src="https://via.placeholder.com/128x128/ff3f6c/ffffff?text=User" alt="Profile" class="h-full w-full object-cover" />
+              </div>
+              <div class="absolute right-0 bottom-0 cursor-pointer rounded-full bg-[#ff3f6c] p-2 transition-colors hover:bg-[#e6356a]">
+                <svg class="h-4 w-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+              </div>
+              <input type="file" id="fileInput" accept="image/*" class="hidden" />
+            </div>
+            <div>
+              <h1 id="userName" class="mb-2 text-3xl font-bold text-[#282c3f]">John Doe</h1>
+              <div class="mb-4 flex items-center gap-2">
+                <span class="rounded-full bg-gradient-to-r from-yellow-400 to-yellow-600 px-3 py-1 text-sm font-bold text-white">✨ Premium User</span>
+              </div>
+              <div class="flex gap-3">
+                <button class="rounded-lg bg-[#ff3f6c] px-6 py-2 font-semibold text-white transition-colors hover:bg-[#e6356a]">Edit Profile</button>
+                <button class="rounded-lg bg-blue-500 px-6 py-2 font-semibold text-white transition-colors hover:bg-blue-600">View Orders</button>
+                <button class="rounded-lg bg-green-500 px-6 py-2 font-semibold text-white transition-colors hover:bg-green-600">Wishlist</button>
+                <button class="rounded-lg bg-purple-500 px-6 py-2 font-semibold text-white transition-colors hover:bg-purple-600">Rewards</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-lg bg-white p-6 shadow-lg">
+          <h2 class="mb-6 text-2xl font-bold text-[#282c3f]">Account Settings</h2>
+
+          <div class="space-y-4">
+            <div class="border-b border-gray-200 pb-4">
+              <h3 class="mb-3 text-lg font-semibold text-[#282c3f]">Personal Information</h3>
+              <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+                <div class="flex items-center justify-between rounded-lg bg-gray-50 p-3">
+                  <span class="text-[#282c3f]">Full Name</span>
+                  <button class="font-semibold text-[#ff3f6c] hover:underline">Edit</button>
+                </div>
+                <div class="flex items-center justify-between rounded-lg bg-gray-50 p-3">
+                  <span class="text-[#282c3f]">Email Address</span>
+                  <button class="font-semibold text-[#ff3f6c] hover:underline">Edit</button>
+                </div>
+                <div class="flex items-center justify-between rounded-lg bg-gray-50 p-3">
+                  <span class="text-[#282c3f]">Mobile Number</span>
+                  <button class="font-semibold text-[#ff3f6c] hover:underline">Edit</button>
+                </div>
+                <div class="flex items-center justify-between rounded-lg bg-gray-50 p-3">
+                  <span class="text-[#282c3f]">Date of Birth</span>
+                  <button class="font-semibold text-[#ff3f6c] hover:underline">Add</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="border-b border-gray-200 pb-4">
+              <h3 class="mb-3 text-lg font-semibold text-[#282c3f]">Address Book</h3>
+              <div class="flex items-center justify-between rounded-lg bg-gray-50 p-3">
+                <span class="text-[#282c3f]">Manage Addresses</span>
+                <button class="font-semibold text-[#ff3f6c] hover:underline">View All</button>
+              </div>
+            </div>
+
+            <div class="border-b border-gray-200 pb-4">
+              <h3 class="mb-3 text-lg font-semibold text-[#282c3f]">Payment Options</h3>
+              <div class="space-y-2">
+                <div class="flex items-center justify-between rounded-lg bg-gray-50 p-3">
+                  <span class="text-[#282c3f]">Saved Cards</span>
+                  <button class="font-semibold text-[#ff3f6c] hover:underline">Manage</button>
+                </div>
+                <div class="flex items-center justify-between rounded-lg bg-gray-50 p-3">
+                  <span class="text-[#282c3f]">UPI</span>
+                  <button class="font-semibold text-[#ff3f6c] hover:underline">Add</button>
+                </div>
+                <div class="flex items-center justify-between rounded-lg bg-gray-50 p-3">
+                  <span class="text-[#282c3f]">Wallets</span>
+                  <button class="font-semibold text-[#ff3f6c] hover:underline">Link</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="border-b border-gray-200 pb-4">
+              <h3 class="mb-3 text-lg font-semibold text-[#282c3f]">Preferences</h3>
+              <div class="space-y-2">
+                <div class="flex items-center justify-between rounded-lg bg-gray-50 p-3">
+                  <span class="text-[#282c3f]">Notifications</span>
+                  <button class="font-semibold text-[#ff3f6c] hover:underline">Manage</button>
+                </div>
+                <div class="flex items-center justify-between rounded-lg bg-gray-50 p-3">
+                  <span class="text-[#282c3f]">Language</span>
+                  <button class="font-semibold text-[#ff3f6c] hover:underline">Change</button>
+                </div>
+                <div class="flex items-center justify-between rounded-lg bg-gray-50 p-3">
+                  <span class="text-[#282c3f]">Privacy Settings</span>
+                  <button class="font-semibold text-[#ff3f6c] hover:underline">Manage</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="border-b border-gray-200 pb-4">
+              <h3 class="mb-3 text-lg font-semibold text-[#282c3f]">Help & Support</h3>
+              <div class="space-y-2">
+                <div class="flex items-center justify-between rounded-lg bg-gray-50 p-3">
+                  <span class="text-[#282c3f]">Customer Care</span>
+                  <button class="font-semibold text-[#ff3f6c] hover:underline">Contact</button>
+                </div>
+                <div class="flex items-center justify-between rounded-lg bg-gray-50 p-3">
+                  <span class="text-[#282c3f]">FAQ</span>
+                  <button class="font-semibold text-[#ff3f6c] hover:underline">View</button>
+                </div>
+                <div class="flex items-center justify-between rounded-lg bg-gray-50 p-3">
+                  <span class="text-[#282c3f]">Terms & Conditions</span>
+                  <button class="font-semibold text-[#ff3f6c] hover:underline">Read</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-4">
+              <button id="logoutBtn" class="w-full rounded-lg bg-red-500 py-3 font-semibold text-white transition-colors hover:bg-red-600">Logout</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+      let currentView = 'main';
+    let mobileNumber = '';
+    let termsAccepted = false;
+    let showPassword = false;
+    let profileImageSrc = 'https://via.placeholder.com/128x128/ff3f6c/ffffff?text=User';
+    let userName = 'John Doe';
+
+    let continueBtn = document.getElementById('continueBtn');
+    let termsCheck = document.getElementById('termsCheck');
+    let mobileInput = document.getElementById('mobileInput');
+    let mainForm = document.getElementById('mainForm');
+    let signupForm = document.getElementById('signupForm');
+    let loginForm = document.getElementById('loginForm');
+    let forgotForm = document.getElementById('forgotForm');
+    let verifyPopup = document.getElementById('verifyPopup');
+    let newPassPopup = document.getElementById('newPassPopup');
+    let profilePage = document.getElementById('profilePage');
+
+    function hideAllViews() {
+      mainForm.classList.add('hidden');
+      signupForm.classList.add('hidden');
+      loginForm.classList.add('hidden');
+      forgotForm.classList.add('hidden');
+      verifyPopup.classList.add('hidden');
+      newPassPopup.classList.add('hidden');
+      profilePage.classList.add('hidden');
+    }
+
+    function showView(viewName) {
+      hideAllViews();
+      currentView = viewName;
+      
+      switch(viewName) {
+        case 'main':
+          mainForm.classList.remove('hidden');
+          break;
+        case 'signup':
+          signupForm.classList.remove('hidden');
+          break;
+        case 'login':
+          loginForm.classList.remove('hidden');
+          break;
+        case 'forgot':
+          forgotForm.classList.remove('hidden');
+          break;
+        case 'verify':
+          verifyPopup.classList.remove('hidden');
+          break;
+        case 'newpass':
+          newPassPopup.classList.remove('hidden');
+          break;
+        case 'profile':
+          profilePage.classList.remove('hidden');
+          break;
+      }
+    }
+
+    function checkEnableButton() {
+      let isTenDigits = mobileInput.value.length == 10;
+      let isChecked = termsCheck.checked;
+      continueBtn.disabled = !(isTenDigits && isChecked);
+      continueBtn.classList.toggle('cursor-not-allowed', continueBtn.disabled);
+      continueBtn.classList.toggle('bg-[#ff3f6c]', !continueBtn.disabled);
+      continueBtn.classList.toggle('bg-[#eaeaec]', continueBtn.disabled);
+    }
+
+    mobileInput.addEventListener('input', function() {
+      mobileNumber = this.value;
+      checkEnableButton();
+    });
+
+    termsCheck.addEventListener('change', function() {
+      termsAccepted = this.checked;
+      checkEnableButton();
+    });
+
+    continueBtn.addEventListener('click', function() {
+      if (!continueBtn.disabled) {
+        showView('signup');
+      }
+    });
+
+    document.getElementById('closeSignup').addEventListener('click', () => showView('main'));
+    document.getElementById('closeLogin').addEventListener('click', () => showView('main'));
+    document.getElementById('closeForgot').addEventListener('click', () => showView('login'));
+
+    document.getElementById('showLogin').addEventListener('click', function(e) {
+      e.preventDefault();
+      showView('login');
+    });
+
+    document.getElementById('showSignup').addEventListener('click', function(e) {
+      e.preventDefault();
+      showView('signup');
+    });
+
+    document.getElementById('forgotPass').addEventListener('click', function(e) {
+      e.preventDefault();
+      showView('forgot');
+    });
+
+    document.getElementById('backToLogin').addEventListener('click', function(e) {
+      e.preventDefault();
+      showView('login');
+    });
+
+    document.getElementById('backToLoginFromNewPass').addEventListener('click', function(e) {
+      e.preventDefault();
+      showView('login');
+    });
+
+    document.getElementById('showPass').addEventListener('change', function() {
+      const passwordInput = document.getElementById('loginPassword');
+      passwordInput.type = this.checked ? 'text' : 'password';
+    });
+
+    document.getElementById('signupSubmit').addEventListener('click', function(e) {
+      e.preventDefault();
+      showView('profile');
+    });
+
+    document.getElementById('loginSubmit').addEventListener('click', function(e) {
+      e.preventDefault();
+      showView('profile');
+    });
+
+    document.getElementById('forgotSubmit').addEventListener('click', function(e) {
+      e.preventDefault();
+      showView('verify');
+    });
+
+    document.getElementById('verifyBtn').addEventListener('click', function() {
+      showView('newpass');
+    });
+
+    document.getElementById('continueLoginBtn').addEventListener('click', function() {
+      showView('login');
+    });
+
+    document.getElementById('profileImageContainer').addEventListener('click', function() {
+      document.getElementById('fileInput').click();
+    });
+
+    document.getElementById('fileInput').addEventListener('change', function(e) {
+      const file = e.target.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          profileImageSrc = e.target.result;
+          document.getElementById('profileImage').src = profileImageSrc;
+        };
+        reader.readAsDataURL(file);
+      }
+    });
+
+    document.getElementById('logoutBtn').addEventListener('click', function() {
+      mobileNumber = '';
+      termsAccepted = false;
+      mobileInput.value = '';
+      termsCheck.checked = false;
+      profileImageSrc = 'https://via.placeholder.com/128x128/ff3f6c/ffffff?text=User';
+      document.getElementById('profileImage').src = profileImageSrc;
+      checkEnableButton();
+      showView('main');
+    });
+
+    [signupForm, loginForm, forgotForm, verifyPopup, newPassPopup].forEach(popup => {
+      popup.addEventListener('click', function(e) {
+        if (e.target == popup) {
+          if (popup == signupForm || popup == loginForm) {
+            showView('main');
+          } else if (popup == forgotForm) {
+            showView('login');
+          } else {
+            popup.classList.add('hidden');
+          }
+        }
+      });
+    });
+
+    checkEnableButton();
+    </script>
+  </body>
+</html>
