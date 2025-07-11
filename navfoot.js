@@ -527,7 +527,7 @@ navbox.innerHTML = `
                                 <i class="ri-heart-line text-[20px] relative top-[5px]"></i>
                                 <p class="text-[12px] font-[700]">Wishlist</p>
                             </div>
-                            <div class="icon flex flex-col items-center">
+                            <div class="icon flex flex-col items-center cursor-pointer" onclick="showProduct()">
                                 <i class="ri-shopping-bag-line text-[20px] relative top-[5px]"></i>
                                 <p class="text-[12px] font-[700]">Bag</p>
                             </div>
@@ -572,7 +572,7 @@ navbox.innerHTML = `
                             <i class="ri-heart-line text-[20px] relative top-[5px]"></i>
                             <p class="text-[12px] font-[700]">Wishlist</p>
                         </div>
-                        <div class="icon flex flex-col items-center">
+                        <div class="icon flex flex-col items-center cursor-pointer" onclick="showProduct()">
                             <i class="ri-shopping-bag-line text-[20px] relative top-[5px]"></i>
                             <p class="text-[12px] font-[700]">Bag</p>
                         </div>
@@ -596,9 +596,9 @@ navbox.innerHTML = `
                     <img src="./Assets/fwd.jpeg" width="37.5px" alt="">
                     <p class="text-[12px] font-[700]">Wishlist</p>
                 </div>
-                <div class="icon flex flex-col justify-center items-center pt-0.5">
+                <div class="icon flex flex-col justify-center items-center pt-0.5 cursor-pointer" onclick="showProduct()">
                     <img src="./Assets/brush.jpeg" width="30px" alt="">
-                    <p class="text-[12px] font-[700] cursor-pointer ">Bag</p>
+                    <p class="text-[12px] font-[700]">Bag</p>
                 </div>
                 <div class="icon flex flex-col justify-center items-center pb-0.5 cursor-pointer">
                     <i class="ri-user-3-line text-[20px] relative top-[5px] cursor-pointer"></i>

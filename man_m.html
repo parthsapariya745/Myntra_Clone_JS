@@ -1,351 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>men's Fashion - Myntra Clone</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- link tailwind css -->
-    <link href="./output.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- link tailwind css -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <link
-      rel="icon"
-      href="https://constant.myntassets.com/web/assets/img/icon.5d108c858a0db793700f0be5d3ad1e120a01a500_2021.png"
-    />
 
-    <!-- google fonts link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Baloo+2:wght@400..800&family=Bangers&family=Baskervville:ital@0;1&family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Enriqueta:wght@400;500;600;700&family=Gantari:ital,wght@0,100..900;1,100..900&family=Heebo:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Londrina+Outline&family=Luckiest+Guy&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nothing+You+Could+Do&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sora:wght@100..800&family=Unbounded:wght@200..900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
-    <!-- google fonts link -->
+<head>
+  <meta charset="UTF-8" />
+  <title>men's Fashion - Myntra Clone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- link tailwind css -->
+  <link href="./output.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- link tailwind css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <link rel="icon"
+    href="https://constant.myntassets.com/web/assets/img/icon.5d108c858a0db793700f0be5d3ad1e120a01a500_2021.png" />
 
-    <!-- font awesome cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
-    <!-- font awesome cdn -->
+  <!-- google fonts link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Baloo+2:wght@400..800&family=Bangers&family=Baskervville:ital@0;1&family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Enriqueta:wght@400;500;600;700&family=Gantari:ital,wght@0,100..900;1,100..900&family=Heebo:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Londrina+Outline&family=Luckiest+Guy&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nothing+You+Could+Do&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sora:wght@100..800&family=Unbounded:wght@200..900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!-- google fonts link -->
 
-    <!-- remix icon cdn  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
-    <!-- remix icon cdn  -->
-  </head>
-  <style>
-    *{
-        font-family: "Assistant", serif;
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- font awesome cdn -->
+
+  <!-- remix icon cdn  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+    integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- remix icon cdn  -->
+</head>
+<style>
+  * {
+    font-family: "Assistant", serif;
+  }
+
+  .nav-menu a {
+    position: relative;
+  }
+
+  .nav-menu a::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    transition: .6s;
+  }
+
+  .nav-menu .item1::before {
+    border-bottom: 4px solid #EE5F73;
+  }
+
+  .nav-menu .item2::before {
+    border-bottom: 4px solid #FB56C1;
+  }
+
+  .nav-menu .item3::before {
+    border-bottom: 4px solid #F26A10;
+  }
+
+  .nav-menu .item4::before {
+    border-bottom: 4px solid #F2C210;
+  }
+
+  .nav-menu .item5::before {
+    border-bottom: 4px solid #0DB7AF;
+  }
+
+  .nav-menu .item6::before {
+    border-bottom: 4px solid #FF3F6C;
+  }
+
+  .nav-menu a:hover::before {
+    left: 0%;
+    right: 0%;
+  }
+
+  .img-break {
+    touch-action: pan-y;
+    user-select: none;
+    overflow: hidden;
+  }
+
+  .slider-img img {
+    cursor: pointer;
+  }
+
+  .img-con img {
+    cursor: pointer;
+  }
+
+  .group::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background: transparent;
+    z-index: 10;
+  }
+
+  @media (max-width : 400px) {
+    .img-break .grid {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
     }
-    .nav-menu a{
-        position: relative;
-    }
-    .nav-menu a::before{
-        content: "";
-        position: absolute;
-        left: 50%;
-        right: 50%;
-        bottom: 0;
-        transition: .6s;
-    }
-    .nav-menu .item1::before{
-        border-bottom: 4px solid #EE5F73;
-    }
-    .nav-menu .item2::before{
-        border-bottom: 4px solid #FB56C1;
-    }
-    .nav-menu .item3::before{
-        border-bottom: 4px solid #F26A10;
-    }
-    .nav-menu .item4::before{
-        border-bottom: 4px solid #F2C210;
-    }
-    .nav-menu .item5::before{
-        border-bottom: 4px solid #0DB7AF;
-    }
-    .nav-menu .item6::before{
-        border-bottom: 4px solid #FF3F6C;
-    }
-    .nav-menu a:hover::before{
-        left: 0%;
-        right: 0%;
-    }
-    .img-break {
-        touch-action: pan-y; 
-        user-select: none;
-        overflow: hidden;
-    }
-    .slider-img img {
-        cursor: pointer;
-    }
-    .img-con img {
-        cursor: pointer;
-    }
-    .group::before {
-      content: '';
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
-      height: 15px;
-      background: transparent;
-      z-index: 10;
-    }
-    @media (max-width : 400px) {
-        .img-break .grid{
-            grid-template-columns: repeat(1, minmax(0, 1fr)); 
-        }
-    }
+  }
 </style>
-  <body class="bg-white text-gray-800 font-sans">
-    <!-- navbar -->
-    <div class="nav" id="navbox"></div>
 
-    <section class="w-full h-[60vh] relative">
-      <div class="absolute inset-0">
-        <!-- Swiper -->
-        <div class="swiper hero-swiper h-full">
-          <div class="swiper-wrapper h-full">
-            <div class="swiper-slide relative h-full">
-              <img
-                src="https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/17/a53b7f7e-37ab-4319-a1b4-5d9c0cca68601650180659343-Lancer_Desk.jpg"
-                alt="Sangria Kurtas"
-                class="object-cover"
-              />
-            </div>
-            <div class="swiper-slide relative h-full">
-              <img
-                src="https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/5/3/b54399f0-6ed5-44b3-84b0-e9d5c1657aaa1651599573991-CR7_Desk_Baner.jpg"
-                alt="Hero 2"
-                class="object-cover"
-              />
-            </div>
-            <div class="swiper-slide relative h-full">
-              <img
-                src="https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/17/abd2b07f-954c-43ad-ba39-bfa50527d0641650180659364-Backpacks---Luggage_Desk.jpg"
-                alt="Hero 3"
-                class="object-cover"
-              />
-            </div>
-            <div class="swiper-slide relative h-full">
-              <img
-                src="https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/17/eb6408d8-b413-49f7-8525-317fddba53821650180659351-Casual---Sports-Shoes_Desk.jpg"
-                alt="Hero 3"
-                class="object-cover"
-              />
-            </div>
+<body class="bg-white text-gray-800 font-sans">
+  <!-- navbar -->
+  <div class="nav" id="navbox"></div>
+
+  <section class="w-full h-[60vh] relative mt-5">
+    <div class="absolute inset-0">
+      <!-- Swiper -->
+      <div class="swiper hero-swiper h-full">
+        <div class="swiper-wrapper h-full">
+          <div class="swiper-slide relative h-full">
+            <img
+              src="https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/17/a53b7f7e-37ab-4319-a1b4-5d9c0cca68601650180659343-Lancer_Desk.jpg"
+              class="object-cover" />
           </div>
-          <!-- Slider controls -->
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <div class="swiper-slide relative h-full">
+            <img
+              src="https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/5/3/b54399f0-6ed5-44b3-84b0-e9d5c1657aaa1651599573991-CR7_Desk_Baner.jpg"
+              class="object-cover" />
+          </div>
+          <div class="swiper-slide relative h-full">
+            <img
+              src="https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/17/abd2b07f-954c-43ad-ba39-bfa50527d0641650180659364-Backpacks---Luggage_Desk.jpg"
+              class="object-cover" />
+          </div>
+          <div class="swiper-slide relative h-full">
+            <img
+              src="https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/17/eb6408d8-b413-49f7-8525-317fddba53821650180659351-Casual---Sports-Shoes_Desk.jpg"
+              class="object-cover" />
+          </div>
         </div>
+        <!-- Slider controls -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <script>
-      new Swiper(".hero-swiper", {
-        loop: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        autoplay: {
-          delay: 3500,
-          disableOnInteraction: false,
-        },
-      });
-    </script>
+  <script>
+    new Swiper(".hero-swiper", {
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
 
-    <!-- Biggest Deals on Top Brands -->
-    <div class="w-full">
-      <h3
-        class="text-[25px] font-bold mb-4 tracking-wide text-left mt-[20px] ml-[20px]"
-      >
-        BIGGEST DEALS ON TOP BRANDS
-      </h3>
-      <div
-  id="grid1"
-  class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 justify-items-center px-2 "
-></div>
+  <!-- Biggest Deals on Top Brands -->
+  <div class="w-full">
+    <h3 class="text-[25px] font-bold mb-4 tracking-wide text-left mt-[20px] ml-[20px]">
+      BIGGEST DEALS ON TOP BRANDS
+    </h3>
+    <div id="grid1" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 justify-items-center px-2 "></div>
 
     <!-- Categories to Bag -->
     <!-- CATEGORIES TO BAG -->
-<h3 class="text-[25px] font-bold mb-8 tracking-wide ml-[30px] mt-[200px]">
-  CATEGORIES TO BAG
-</h3>
-<div class="flex flex-wrap gap-5 justify-center">
-  <div>
-    <a href="man.html">
-      <img
-        src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/89f1bd9d-3a28-456d-888a-beff717a06f81594222908155-Shirts.jpg"
-        alt="Kurtas & Kurta Sets"
-        class="w-56 h-60 object-cover-xl rounded-lg shadow"
-      />
-    </a>
-  </div>
-  <div>
-    <a href="man.html">
-      <img
-        src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/9ff1f34e-9242-47fd-9566-e7d7a5c240511594222908483-T-shirt.jpg"
-        alt="Sarees"
-        class="w-56 h-60 object-cover-xl rounded-lg shadow"
-      />
-    </a>
-  </div>
-  <div>
-    <a href="man.html">
-      <img
-        src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/720cf6ef-3be4-4825-8211-0125c942e3821594222907960-Jeans.jpg"
-        alt="Dresses"
-        class="w-56 h-60 object-cover-xl rounded-lg shadow"
-      />
-    </a>
-  </div>
-  <div>
-    <a href="man.html">
-      <img
-        src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/2bac5e2d-337b-42c0-88c7-3d4e2dc464141594222908262-Shorts-_-Trousers.jpg"
-        alt="Flats & Heels"
-        class="w-56 h-60 object-cover-xl rounded-lg shadow"
-      />
-    </a>
-  </div>
-  <div>
-    <a href="man.html">
-      <img
-        src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/ae14f627-9fd9-41ce-80a4-f107c316c7eb1594222907625-Casual-shoes.jpg"
-        alt="Handbags"
-        class="w-56 h-60 object-cover-xl rounded-lg shadow"
-      />
-    </a>
-  </div>
-  <div>
-    <a href="man.html">
-      <img
-        src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/f0f9b81a-b9d5-4b8b-94d5-ea878fa9b18e1594222834121-Infant-Essential.jpg"
-        alt="Shorts"
-        class="w-56 h-60 object-cover-xl rounded-lg shadow"
-      />
-    </a>
-  </div>
-</div>
+    <h3 class="text-[25px] font-bold mb-8 tracking-wide ml-[30px] mt-[200px]">
+      CATEGORIES TO BAG
+    </h3>
+    <div class="flex flex-wrap gap-5 justify-center">
+      <div>
+        <a href="man.html">
+          <img
+            src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/89f1bd9d-3a28-456d-888a-beff717a06f81594222908155-Shirts.jpg"
+            alt="Kurtas & Kurta Sets" class="w-56 h-60 object-cover-xl rounded-lg shadow" />
+        </a>
+      </div>
+      <div>
+        <a href="man.html">
+          <img
+            src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/9ff1f34e-9242-47fd-9566-e7d7a5c240511594222908483-T-shirt.jpg"
+            alt="Sarees" class="w-56 h-60 object-cover-xl rounded-lg shadow" />
+        </a>
+      </div>
+      <div>
+        <a href="man.html">
+          <img
+            src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/720cf6ef-3be4-4825-8211-0125c942e3821594222907960-Jeans.jpg"
+            alt="Dresses" class="w-56 h-60 object-cover-xl rounded-lg shadow" />
+        </a>
+      </div>
+      <div>
+        <a href="man.html">
+          <img
+            src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/2bac5e2d-337b-42c0-88c7-3d4e2dc464141594222908262-Shorts-_-Trousers.jpg"
+            alt="Flats & Heels" class="w-56 h-60 object-cover-xl rounded-lg shadow" />
+        </a>
+      </div>
+      <div>
+        <a href="man.html">
+          <img
+            src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/ae14f627-9fd9-41ce-80a4-f107c316c7eb1594222907625-Casual-shoes.jpg"
+            alt="Handbags" class="w-56 h-60 object-cover-xl rounded-lg shadow" />
+        </a>
+      </div>
+      <div>
+        <a href="man.html">
+          <img
+            src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/f0f9b81a-b9d5-4b8b-94d5-ea878fa9b18e1594222834121-Infant-Essential.jpg"
+            alt="Shorts" class="w-56 h-60 object-cover-xl rounded-lg shadow" />
+        </a>
+      </div>
+    </div>
 
-<!-- EXPLORE TOP BRANDS -->
-<h3 class="text-[25px] font-bold mb-8 tracking-wide ml-[50px] mt-[60px]">
-  EXPLORE TOP BRANDS
-</h3>
-<div class="flex flex-wrap gap-8 justify-center">
-  <div>
-    <a href="man.html">
-      <img
-        src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/25/a88b9390-5adb-493b-a1b3-702c59ccf53a1598348260502-Nike.jpg"
-        alt="ONLY"
-        class="w-64 h-[350px] object-cover-xl shadow"
-      />
-    </a>
-  </div>
-  <div>
-    <a href="man.html">
-      <img
-        src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/25/c9f66558-feab-4d76-aa3c-adc68d81dce21598348260415-Levis.jpg"
-        alt="Anouk"
-        class="w-64 h-[350px] object-cover-xl shadow"
-      />
-    </a>
-  </div>
-  <div>
-    <a href="man.html">
-      <img
-        src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/5/178c1e5d-69f2-402f-a2a5-ef44700a0f691596640983793-Roadster---.jpg"
-        alt="MAC"
-        class="w-64 h-[350px] object-cover-xl shadow"
-      />
-    </a>
-  </div>
-  <div>
-    <a href="man.html">
-      <img
-        src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/25/085719b1-c71e-4f47-950c-9a6b7f291fac1598348260370-Jack-_-Jones.jpg"
-        alt="W"
-        class="w-64 h-[350px] object-cover-xl shadow"
-      />
-    </a>
-  </div>
-  <div>
-    <a href="man.html">
-      <img
-        src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/5/774f42c4-f459-4514-9b90-cf8a60a5f68c1596644478087-hrx30.jpg"
-        alt="H&M"
-        class="w-64 h-[350px] object-cover-xl shadow"
-      />
-    </a>
-  </div>
-</div>
+    <!-- EXPLORE TOP BRANDS -->
+    <h3 class="text-[25px] font-bold mb-8 tracking-wide ml-[50px] mt-[60px]">
+      EXPLORE TOP BRANDS
+    </h3>
+    <div class="flex flex-wrap gap-8 justify-center">
+      <div>
+        <a href="man.html">
+          <img
+            src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/25/a88b9390-5adb-493b-a1b3-702c59ccf53a1598348260502-Nike.jpg"
+            alt="ONLY" class="w-64 h-[350px] object-cover-xl shadow" />
+        </a>
+      </div>
+      <div>
+        <a href="man.html">
+          <img
+            src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/25/c9f66558-feab-4d76-aa3c-adc68d81dce21598348260415-Levis.jpg"
+            alt="Anouk" class="w-64 h-[350px] object-cover-xl shadow" />
+        </a>
+      </div>
+      <div>
+        <a href="man.html">
+          <img
+            src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/5/178c1e5d-69f2-402f-a2a5-ef44700a0f691596640983793-Roadster---.jpg"
+            alt="MAC" class="w-64 h-[350px] object-cover-xl shadow" />
+        </a>
+      </div>
+      <div>
+        <a href="man.html">
+          <img
+            src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/25/085719b1-c71e-4f47-950c-9a6b7f291fac1598348260370-Jack-_-Jones.jpg"
+            alt="W" class="w-64 h-[350px] object-cover-xl shadow" />
+        </a>
+      </div>
+      <div>
+        <a href="man.html">
+          <img
+            src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/5/774f42c4-f459-4514-9b90-cf8a60a5f68c1596644478087-hrx30.jpg"
+            alt="H&M" class="w-64 h-[350px] object-cover-xl shadow" />
+        </a>
+      </div>
+    </div>
 
-<!-- MYNTRA LUXE -->
-<h3 class="text-[25px] font-bold mb-8 tracking-wide ml-[30px] mt-[60px]">
-  MYNTRA LUXE
-</h3>
-<div class="flex-wrap px-[10px] flex justify-evenly">
-  <div class="flex flex-col items-center">
-    <a href="man.html">
-      <img
-        src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2021/11/17/85fa3b9b-9e7c-43a5-9de0-1cb32f3180151637149111314-MP-Farah.jpg"
-        alt="Western 1"
-        class="h-[300px] w-74 object-cover rounded mb-2"
-      />
-    </a>
-  </div>
-  <div class="flex flex-col items-center">
-    <a href="man.html">
-      <img
-        src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2021/11/17/480f4bde-1d72-4517-be6d-af2dfef7528e1637149111337-MP-Collective.jpg"
-        alt="Western 2"
-        class="h-[300px] w-74 object-cover rounded mb-2"
-      />
-    </a>
-  </div>
-  <div class="flex flex-col items-center">
-    <a href="man.html">
-      <img
-        src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2021/11/17/cadd8457-b8ec-464c-9bc6-6082a24075591637149111331-MP-OriginalPenguin.jpg"
-        alt="Western 3"
-        class="h-[300px] w-74 object-cover rounded mb-2"
-      />
-    </a>
-  </div>
-  <div class="flex flex-col items-center">
-    <a href="man.html">
-      <img
-        src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2021/11/17/e185b9a2-0c12-4379-a85c-a4ceed2fe9931637149111326-MP-D1Milano.jpg"
-        alt="Western 4"
-        class="h-[300px] w-74 object-cover rounded mb-2"
-      />
-    </a>
-  </div>
-  <div class="flex flex-col items-center">
-    <a href="man.html">
-      <img
-        src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2021/11/17/ab5c5029-d24f-4789-979c-d4910801ea191637149111321-MP-HUGOBoss.jpg"
-        alt="Western 5"
-        class="h-[300px] w-74 object-cover rounded mb-2"
-      />
-    </a>
-  </div>
-  <div class="flex flex-col items-center">
-    <a href="man.html">
-      <img
-        src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2021/11/17/621ce33b-3383-4347-99bf-2038b95f27151637149369429-MP-Ducati.jpg"
-        alt="Western 5"
-        class="h-[300px] w-74 object-cover rounded mb-2"
-      />
-    </a>
-  </div>
-</div>
+    <!-- MYNTRA LUXE -->
+    <h3 class="text-[25px] font-bold mb-8 tracking-wide ml-[30px] mt-[60px]">
+      MYNTRA LUXE
+    </h3>
+    <div class="flex-wrap px-[10px] flex justify-evenly">
+      <div class="flex flex-col items-center">
+        <a href="man.html">
+          <img
+            src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2021/11/17/85fa3b9b-9e7c-43a5-9de0-1cb32f3180151637149111314-MP-Farah.jpg"
+            alt="Western 1" class="h-[300px] w-74 object-cover rounded mb-2" />
+        </a>
+      </div>
+      <div class="flex flex-col items-center">
+        <a href="man.html">
+          <img
+            src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2021/11/17/480f4bde-1d72-4517-be6d-af2dfef7528e1637149111337-MP-Collective.jpg"
+            alt="Western 2" class="h-[300px] w-74 object-cover rounded mb-2" />
+        </a>
+      </div>
+      <div class="flex flex-col items-center">
+        <a href="man.html">
+          <img
+            src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2021/11/17/cadd8457-b8ec-464c-9bc6-6082a24075591637149111331-MP-OriginalPenguin.jpg"
+            alt="Western 3" class="h-[300px] w-74 object-cover rounded mb-2" />
+        </a>
+      </div>
+      <div class="flex flex-col items-center">
+        <a href="man.html">
+          <img
+            src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2021/11/17/e185b9a2-0c12-4379-a85c-a4ceed2fe9931637149111326-MP-D1Milano.jpg"
+            alt="Western 4" class="h-[300px] w-74 object-cover rounded mb-2" />
+        </a>
+      </div>
+      <div class="flex flex-col items-center">
+        <a href="man.html">
+          <img
+            src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2021/11/17/ab5c5029-d24f-4789-979c-d4910801ea191637149111321-MP-HUGOBoss.jpg"
+            alt="Western 5" class="h-[300px] w-74 object-cover rounded mb-2" />
+        </a>
+      </div>
+      <div class="flex flex-col items-center">
+        <a href="man.html">
+          <img
+            src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2021/11/17/621ce33b-3383-4347-99bf-2038b95f27151637149369429-MP-Ducati.jpg"
+            alt="Western 5" class="h-[300px] w-74 object-cover rounded mb-2" />
+        </a>
+      </div>
+    </div>
 
     <!-- footer -->
     <div class="footer mt-10" id="footerbox"></div>
@@ -353,5 +323,5 @@
     <script src="script.js"></script>
     <script src="wo_man.js"></script>
     <script src="./navfoot.js"></script>
-  </body>
+</body>
 </html>
