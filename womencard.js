@@ -109,7 +109,7 @@ let products =[
 ]
 
 products.forEach((item)=>{
-    container.innerHTML += `<div class="w-56 sm:w-60 md:w-56 lg:w-52 xl:w-56 shadow-lg overflow-hidden bg-white group relative rounded-xl transition-transform duration-300 hover:scale-105 hover:shadow-2xl animate-fadeInUp"     
+    container.innerHTML += `<div class="w-64 sm:w-56 md:w-48 lg:w-44 xl:w-48 shadow-lg overflow-hidden bg-white group relative rounded-xl transition-transform duration-300 hover:scale-105 hover:shadow-2xl animate-fadeInUp"     
     onmouseenter="startSlider(this)" onmouseleave="stopSlider(this)">
   <!-- Image Box -->
   <div class="relative w-full aspect-[3/4] bg-gray-100 overflow-hidden">

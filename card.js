@@ -108,9 +108,8 @@ let card = [
 ]
 
 card.forEach((e)=>{
-    box.innerHTML += `
-<div class="w-64 sm:w-56 md:w-48 lg:w-44 xl:w-48 shadow-lg overflow-hidden bg-white group relative rounded-xl transition-transform duration-300 hover:scale-105 hover:shadow-2xl animate-fadeInUp"
-     onmouseenter="startSlider(this)" onmouseleave="stopSlider(this)">
+    box.innerHTML += `<div class="w-64 sm:w-56 md:w-48 lg:w-44 xl:w-48 shadow-lg overflow-hidden bg-white group relative rounded-xl transition-transform duration-300 hover:scale-105 hover:shadow-2xl animate-fadeInUp"
+    onmouseenter="startSlider(this)" onmouseleave="stopSlider(this)">
   <!-- Image Box -->
   <div class="relative w-full aspect-[3/4] bg-gray-100 overflow-hidden">
     <img src="${e.image}" class="product-img w-full h-full object-cover absolute top-0 left-0 opacity-100 transition-transform duration-300 group-hover:scale-110" />
@@ -136,7 +135,6 @@ card.forEach((e)=>{
 </div>
 `
 })
-// ...existing code...
 
 let container = document.getElementById("woman")
 let products = [
