@@ -2,9 +2,9 @@
 let container = document.getElementById("woman")
 let products =[
   {
-    "image": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop",
+    "image": "https://imagescdn.pantaloons.com/img/app/product/3/393581-2083699.jpg?auto=format&w=450",
     "company": "Levi's",
-    "product_name": "Men's Slim Fit Jeans",
+    "product_name": "Women's Slim Fit Jeans",
     "price": 2999,
     "discount_price": 1999
   },
@@ -16,21 +16,21 @@ let products =[
     "discount_price": 899
   },
   {
-    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=500&fit=crop",
+    "image": "https://www.globalrepublic.in/cdn/shop/products/3_364837ed-4395-43d7-9f1b-40689aa9172e_1080x.jpg?v=1591353306",
     "company": "Nike",
-    "product_name": "Sports T-Shirt",
+    "product_name": "Women's Sports T-Shirt",
     "price": 1799,
     "discount_price": 1399
   },
   {
-    "image": "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=400&h=500&fit=crop",
+    "image": "https://www.intermod.in/cdn/shop/products/houndtooth_trouser_1_1000x.jpg",
     "company": "Zara",
     "product_name": "Formal Pant",
     "price": 3499,
     "discount_price": 2499
   },
   {
-    "image": "https://images.unsplash.com/photo-1506629905607-d405d7d3b0d2?w=400&h=500&fit=crop",
+    "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcT4os1jj3lEd2NTJXs8yyuABN53-ddf2UdCZvngB3Ap5IFShGMQWHl0K0So3uKFlVj1WhSRP1uPPPU7tunxX8v9lMXBZe40FkVZ483RRixMLQCgTz5ECpmkYQ&usqp=CAc",
     "company": "Puma",
     "product_name": "Joggers",
     "price": 2299,
@@ -58,42 +58,42 @@ let products =[
     "discount_price": 1199
   },
   {
-    "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop",
+    "image": "https://www.jiomart.com/images/product/original/rvnuxuazhy/mans-fab-solid-single-breasted-formal-women-blazer-brown-xs-product-images-rvnuxuazhy-0-202308290719.jpg?im=Resize=(500,630)",
     "company": "Van Heusen",
     "product_name": "Formal Blazer",
     "price": 5999,
     "discount_price": 4499
   },
   {
-    "image": "https://i.pinimg.com/736x/fd/9c/d7/fd9cd702891f5340b21ae174403c0a73.jpg",
+    "image": "https://okhai.org/cdn/shop/files/SSKR102K.jpg?v=1743232271",
     "company": "Biba",
     "product_name": "Printed Kurti",
     "price": 1899,
     "discount_price": 1399
   },
   {
-    "image": "https://i.pinimg.com/736x/2e/69/a6/2e69a6083e3ccdfe3239e07ad8498a46.jpg",
+    "image": "https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/2024/OCTOBER/21/6yluxQL3_d01b23632c1c409ba30c65d6ecb9ca15.jpg",
     "company": "Max",
     "product_name": "Floral Dress",
     "price": 2199,
     "discount_price": 1599
   },
   {
-    "image": "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=400&h=500&fit=crop",
+    "image": "https://www.staffuniforms.co.uk/cdn/shop/products/fr622-stretch-chinos-785491.jpg?v=1737493544",
     "company": "Allen Solly",
     "product_name": "Chino Trousers",
     "price": 2699,
     "discount_price": 1899
   },
   {
-    "image": "https://images.unsplash.com/photo-1506629905607-d405d7d3b0d2?w=400&h=500&fit=crop",
+    "image": "https://imagescdn.pantaloons.com/img/app/product/1/1035969-14642092.jpg?auto=format&w=450",
     "company": "HRX",
     "product_name": "Track Pants",
     "price": 1899,
     "discount_price": 1299
   },
   {
-    "image": "https://images.unsplash.com/photo-1565084888279-aca607ecce0c?w=400&h=500&fit=crop",
+    "image": "https://m.media-amazon.com/images/I/71DKXNucXJL._UY1100_.jpg",
     "company": "Spykar",
     "product_name": "Denim Jeans",
     "price": 2499,
