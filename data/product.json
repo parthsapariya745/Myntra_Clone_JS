@@ -478,5 +478,205 @@
     "category": "lip balms",
     "image": "https://images-static.naikaa.com/beauty-blog/wp-content/uploads/2023/02/The-New-Serial-Kisser-Tinted-Lip-Balm-By-Nykaa-Is-A-Revelation-1.jpg",
     "image2": "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/30789439/2025/4/10/be723324-c7ec-41ff-bb9b-ea7b11d498201744298190931-DOT--KEY-Barrier-Repair-Hydrating-Lip-Balm-SPF-50---45-g---C-1.jpg"
+  },
+  {
+    "id": 49,
+    "title": "Skin-Loving Serum",
+    "price": 349,
+    "description": "Deeply nourishes and hydrates your skin.",
+    "rating": 4.6,
+    "category": "skin-loving formulas",
+    "image": "https://images-static.nykaa.com/media/catalog/product/1/1/112.jpg",
+    "image2": "https://images-static.nykaa.com/media/catalog/product/1/1/113.jpg"
+  },
+  {
+    "id": 50,
+    "title": "Trendy Sneakers",
+    "price": 1499,
+    "description": "Comfortable and stylish for everyday wear.",
+    "rating": 4.3,
+    "category": "trendy shoes",
+    "image": "https://assets.myntassets.com/assets/images/1.jpg",
+    "image2": "https://assets.myntassets.com/assets/images/2.jpg"
+  },
+  {
+    "id": 51,
+    "title": "Classic Everyday Bag",
+    "price": 899,
+    "description": "Spacious and sleek for daily use.",
+    "rating": 4.2,
+    "category": "everyday bags",
+    "image": "https://assets.myntassets.com/assets/images/3.jpg",
+    "image2": "https://assets.myntassets.com/assets/images/4.jpg"
+  },
+  {
+    "id": 52,
+    "title": "Statement Earrings",
+    "price": 399,
+    "description": "Eye-catching finds for every occasion.",
+    "rating": 4.5,
+    "category": "eye-catching finds",
+    "image": "https://assets.myntassets.com/assets/images/5.jpg",
+    "image2": "https://assets.myntassets.com/assets/images/6.jpg"
+  },
+  {
+    "id": 53,
+    "title": "Stylish Stride Loafers",
+    "price": 1699,
+    "description": "Elegant and supportive loafers.",
+    "rating": 4.0,
+    "category": "stylish strides",
+    "image": "https://assets.myntassets.com/assets/images/7.jpg",
+    "image2": "https://assets.myntassets.com/assets/images/8.jpg"
+  },
+  {
+    "id": 54,
+    "title": "Graphic T-shirt",
+    "price": 499,
+    "description": "Trendy prints for bold personalities.",
+    "rating": 4.4,
+    "category": "graphic t-shirts",
+    "image": "https://assets.myntassets.com/assets/images/9.jpg",
+    "image2": "https://assets.myntassets.com/assets/images/10.jpg"
+  },
+  {
+    "id": 55,
+    "title": "Casual Checked Shirt",
+    "price": 799,
+    "description": "Relaxed fit and premium cotton.",
+    "rating": 4.3,
+    "category": "casual shirts",
+    "image": "https://assets.myntassets.com/assets/images/11.jpg",
+    "image2": "https://assets.myntassets.com/assets/images/12.jpg"
+  },
+  {
+    "id": 56,
+    "title": "Speed Runner Shoes",
+    "price": 2599,
+    "description": "Built for performance and speed.",
+    "rating": 4.7,
+    "category": "speed boosters",
+    "image": "https://assets.myntassets.com/assets/images/13.jpg",
+    "image2": "https://assets.myntassets.com/assets/images/14.jpg"
+  },
+  {
+    "id": 57,
+    "title": "Formal Derby Shoes",
+    "price": 1899,
+    "description": "Perfect corporate look shoes.",
+    "rating": 4.1,
+    "category": "corporate soles",
+    "image": "https://assets.myntassets.com/assets/images/15.jpg",
+    "image2": "https://assets.myntassets.com/assets/images/16.jpg"
+  },
+  {
+    "id": 58,
+    "title": "Bold Fit Hoodie",
+    "price": 1099,
+    "description": "Oversized comfort with bold style.",
+    "rating": 4.6,
+    "category": "bold fits",
+    "image": "https://assets.myntassets.com/assets/images/17.jpg",
+    "image2": "https://assets.myntassets.com/assets/images/18.jpg"
+  },
+  {
+    "id": 59,
+    "title": "Pinterest Fit Co-ord Set",
+    "price": 1399,
+    "description": "Aesthetic co-ord set inspired by Pinterest trends.",
+    "rating": 4.5,
+    "category": "pinterest-inspired fits",
+    "image": "https://assets.myntassets.com/assets/images/19.jpg",
+    "image2": "https://assets.myntassets.com/assets/images/20.jpg"
+  },
+  {
+    "id": 60,
+    "title": "Chic Linen Pants",
+    "price": 999,
+    "description": "Airy and modern bottomwear for summer.",
+    "rating": 4.3,
+    "category": "chic bottomwear",
+    "image": "https://assets.myntassets.com/assets/images/21.jpg",
+    "image2": "https://assets.myntassets.com/assets/images/22.jpg"
+  },
+  {
+    "id": 61,
+    "title": "Pretty Fusion Kurta",
+    "price": 1199,
+    "description": "East meets West in stylish fusion wear.",
+    "rating": 4.4,
+    "category": "pretty fusion wear",
+    "image": "https://assets.myntassets.com/assets/images/23.jpg",
+    "image2": "https://assets.myntassets.com/assets/images/24.jpg"
+  },
+  {
+    "id": 62,
+    "title": "Chikankari Kurta Set",
+    "price": 1599,
+    "description": "Elegant embroidery with pants.",
+    "rating": 4.6,
+    "category": "chikankari kurta & pants",
+    "image": "https://assets.myntassets.com/assets/images/25.jpg",
+    "image2": "https://assets.myntassets.com/assets/images/26.jpg"
+  },
+  {
+    "id": 63,
+    "title": "Insulated Lunch Box Set",
+    "price": 549,
+    "description": "Keeps food warm and fresh.",
+    "rating": 4.2,
+    "category": "lunch boxes",
+    "image": "https://assets.myntassets.com/assets/images/27.jpg",
+    "image2": "https://assets.myntassets.com/assets/images/28.jpg"
+  },
+  {
+    "id": 64,
+    "title": "Travel Trolley Set",
+    "price": 3499,
+    "description": "Durable trolleys for smart travel.",
+    "rating": 4.5,
+    "category": "trolleys & sets",
+    "image": "https://assets.myntassets.com/assets/images/29.jpg",
+    "image2": "https://assets.myntassets.com/assets/images/30.jpg"
+  },
+  {
+    "id": 65,
+    "title": "Dapper Men’s Suit",
+    "price": 2599,
+    "description": "Make a sharp statement with this set.",
+    "rating": 4.7,
+    "category": "dapper styles",
+    "image": "https://assets.myntassets.com/assets/images/31.jpg",
+    "image2": "https://assets.myntassets.com/assets/images/32.jpg"
+  },
+  {
+    "id": 66,
+    "title": "Luxury Gold Watch",
+    "price": 6499,
+    "description": "Luxury in every tick – timeless elegance.",
+    "rating": 4.8,
+    "category": "luxury in every tick",
+    "image": "https://assets.myntassets.com/assets/images/33.jpg",
+    "image2": "https://assets.myntassets.com/assets/images/34.jpg"
+  },
+  {
+    "id": 67,
+    "title": "Bold Chronograph Watch",
+    "price": 3199,
+    "description": "Make bold wrist moves with style.",
+    "rating": 4.6,
+    "category": "bold wrist moves",
+    "image": "https://assets.myntassets.com/assets/images/35.jpg",
+    "image2": "https://assets.myntassets.com/assets/images/36.jpg"
+  },
+  {
+    "id": 68,
+    "title": "Fresh Citrus Body Mist",
+    "price": 599,
+    "description": "Revitalizing scent with fresh citrus notes.",
+    "rating": 4.4,
+    "category": "fresh tones",
+    "image": "https://assets.myntassets.com/assets/images/37.jpg",
+    "image2": "https://assets.myntassets.com/assets/images/38.jpg"
   }
 ]
