@@ -114,7 +114,7 @@ navbox.innerHTML = `
                         </div>
                     </div>
                     <div class="relative group h-full lg:flex lg:items-center">
-                        <a href="#" class="item2 uppercase text-[14px] py-1.5 font-[700] text-[#282C3F]">Women</a>
+                        <a href="./woman_m.html" class="item2 uppercase text-[14px] py-1.5 font-[700] text-[#282C3F]">Women</a>
                         <div class="absolute left-0 top-[80px] hidden group-hover:flex bg-white shadow-lg p-4 space-x-4 w-[900px] border border-gray-200">
                             <div class="w-full">
                                 <h3 class="font-bold text-[#FB56C1] text-[14px]">Indian & Fusion Wear</h3>
@@ -536,7 +536,7 @@ navbox.innerHTML = `
                 </div>
                 <div class="nav-input bg-[#F5F5F6] h-[40px] rounded-[5px] xl:w-[36%] w-[30%] hidden lg:flex items-center pl-3">
                     <i class="fa-solid fa-magnifying-glass text-[#282C3F] text-[14px]"></i>
-                    <input type="search" class="w-full text-[14px] pl-4 border-0 outline-0" placeholder="Search for products, brand and more">
+                    <input type="search" class="w-full text-[14px] pl-4 border-0 outline-0 bg-transparent" placeholder="Search for products, brand and more">
                 </div>
                 <div class="nav-icon hidden lg:flex">
                     <div class="icon-box flex gap-8 mb-2">
