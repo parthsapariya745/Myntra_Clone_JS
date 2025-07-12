@@ -527,9 +527,14 @@ navbox.innerHTML = `
                                 <i class="ri-heart-line text-[20px] relative top-[5px]"></i>
                                 <p class="text-[12px] font-[700]">Wishlist</p>
                             </div>
-                            <div class="icon flex flex-col items-center cursor-pointer" onclick="showProduct()">
-                                <i class="ri-shopping-bag-line text-[20px] relative top-[5px]"></i>
-                                <p class="text-[12px] font-[700]">Bag</p>
+                            <div class="relative cursor-pointer" onclick="showProduct()">
+                                <div class="flex flex-col items-center">
+                                    <div class="relative">
+                                        <i class="ri-shopping-bag-line text-[20px] relative top-[5px]"></i>
+                                        <span id="cartBadge" class="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">0</span>
+                                    </div>
+                                    <p class="text-[12px] font-[700]">Bag</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -572,9 +577,14 @@ navbox.innerHTML = `
                             <i class="ri-heart-line text-[20px] relative top-[5px]"></i>
                             <p class="text-[12px] font-[700]">Wishlist</p>
                         </div>
-                        <div class="icon flex flex-col items-center cursor-pointer" onclick="showProduct()">
-                            <i class="ri-shopping-bag-line text-[20px] relative top-[5px]"></i>
-                            <p class="text-[12px] font-[700]">Bag</p>
+                        <div class="relative cursor-pointer" onclick="showProduct()">
+                            <div class="flex flex-col items-center">
+                                <div class="relative">
+                                    <i class="ri-shopping-bag-line text-[20px] relative top-[5px]"></i>
+                                    <span id="cartBadge" class="absolute -top-1 -right-2 bg-red-500 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">0</span>
+                                </div>
+                                <p class="text-[12px] font-[700]">Bag</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -596,9 +606,14 @@ navbox.innerHTML = `
                     <img src="./Assets/fwd.jpeg" width="37.5px" alt="">
                     <p class="text-[12px] font-[700]">Wishlist</p>
                 </div>
-                <div class="icon flex flex-col justify-center items-center pt-0.5 cursor-pointer" onclick="showProduct()">
-                    <img src="./Assets/brush.jpeg" width="30px" alt="">
-                    <p class="text-[12px] font-[700]">Bag</p>
+                <div class="relative cursor-pointer" onclick="showProduct()">
+                    <div class="flex flex-col items-center">
+                        <div class="relative">
+                            <i class="ri-shopping-bag-line text-[20px] relative top-[5px]"></i>
+                            <span id="cartBadge" class="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">0</span>
+                        </div>
+                        <p class="text-[12px] font-[700]">Bag</p>
+                    </div>
                 </div>
                 <div class="icon flex flex-col justify-center items-center pb-0.5 cursor-pointer">
                     <i class="ri-user-3-line text-[20px] relative top-[5px] cursor-pointer"></i>
@@ -606,7 +621,6 @@ navbox.innerHTML = `
                 </div>
             </div>
         </div>
-        <!-- footer  -->
     </div>
 `;
 let footerbox = document.getElementById('footerbox');

@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,11 +29,9 @@
     * {
       font-family: 'Assistant', serif;
     }
-
     .nav-menu a {
       position: relative;
     }
-
     .nav-menu a::before {
       content: '';
       position: absolute;
@@ -43,50 +40,39 @@
       bottom: 0;
       transition: 0.6s;
     }
-
     .nav-menu .item1::before {
       border-bottom: 4px solid #ee5f73;
     }
-
     .nav-menu .item2::before {
       border-bottom: 4px solid #fb56c1;
     }
-
     .nav-menu .item3::before {
       border-bottom: 4px solid #f26a10;
     }
-
     .nav-menu .item4::before {
       border-bottom: 4px solid #f2c210;
     }
-
     .nav-menu .item5::before {
       border-bottom: 4px solid #0db7af;
     }
-
     .nav-menu .item6::before {
       border-bottom: 4px solid #ff3f6c;
     }
-
     .nav-menu a:hover::before {
       left: 0%;
       right: 0%;
     }
-
     .img-break {
       touch-action: pan-y;
       user-select: none;
       overflow: hidden;
     }
-
     .slider-img img {
       cursor: pointer;
     }
-
     .img-con img {
       cursor: pointer;
     }
-
     .group::before {
       content: '';
       position: absolute;
@@ -97,423 +83,13 @@
       background: transparent;
       z-index: 10;
     }
-
     @media (max-width: 400px) {
       .img-break .grid {
         grid-template-columns: repeat(1, minmax(0, 1fr));
       }
     }
-
-    /* Enhanced Product Box Styling */
-    .product-box {
-      display: flex;
-      gap: 40px;
-      background: #fff;
-      padding: 40px;
-      margin: 30px auto;
-      border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-      max-width: 1200px;
-      min-height: 600px;
-    }
-
-    .product-image-section {
-      flex: 1;
-      max-width: 500px;
-    }
-
-    .product-box img {
-      width: 100%;
-      height: 500px;
-      object-fit: cover;
-      border-radius: 15px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease;
-    }
-
-    .product-box img:hover {
-      transform: scale(1.02);
-    }
-
-    .product-info {
-      flex: 1;
-      padding-left: 20px;
-    }
-
-    .product-info h1 {
-      font-size: 2.5rem;
-      font-weight: 700;
-      color: #2d3748;
-      margin-bottom: 15px;
-      line-height: 1.2;
-      font-family: 'Poppins', sans-serif;
-    }
-
-    .product-brand {
-      font-size: 1.3rem;
-      color: #718096;
-      margin-bottom: 20px;
-      font-weight: 500;
-    }
-
-    .rating-section {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      margin-bottom: 25px;
-      padding: 15px;
-      background: #f7fafc;
-      border-radius: 10px;
-    }
-
-    .stars {
-      font-size: 1.5rem;
-      color: #fbbf24;
-    }
-
-    .rating-text {
-      font-size: 1.1rem;
-      color: #4a5568;
-      font-weight: 500;
-    }
-
-    .price-section {
-      margin-bottom: 30px;
-      padding: 20px;
-      background: linear-gradient(135deg, #ff3e6c, #e91e63);
-      border-radius: 15px;
-      color: white;
-    }
-
-    .current-price {
-      font-size: 2.5rem;
-      font-weight: 800;
-      margin-right: 15px;
-    }
-
-    .original-price {
-      font-size: 1.5rem;
-      text-decoration: line-through;
-      opacity: 0.8;
-      margin-right: 15px;
-    }
-
-    .discount-badge {
-      background: rgba(255, 255, 255, 0.2);
-      padding: 8px 15px;
-      border-radius: 25px;
-      font-size: 1rem;
-      font-weight: 600;
-      display: inline-block;
-      margin-top: 10px;
-    }
-
-    .product-description {
-      font-size: 1.2rem;
-      line-height: 1.8;
-      color: #4a5568;
-      margin-bottom: 30px;
-      padding: 20px;
-      background: #f8f9fa;
-      border-radius: 10px;
-      border-left: 4px solid #ff3e6c;
-    }
-
-    .features-section {
-      margin-bottom: 30px;
-    }
-
-    .section-title {
-      font-size: 1.5rem;
-      font-weight: 600;
-      color: #2d3748;
-      margin-bottom: 15px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .features-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 15px;
-      margin-bottom: 20px;
-    }
-
-    .feature-item {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      padding: 12px 15px;
-      background: #e6fffa;
-      border-radius: 8px;
-      font-size: 1rem;
-      color: #2d3748;
-    }
-
-    .feature-item i {
-      color: #38b2ac;
-      font-size: 1.1rem;
-    }
-
-    .specifications-section {
-      margin-bottom: 30px;
-      background: #f7fafc;
-      padding: 25px;
-      border-radius: 15px;
-    }
-
-    .spec-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 15px;
-    }
-
-    .spec-item {
-      display: flex;
-      justify-content: space-between;
-      padding: 12px 0;
-      border-bottom: 1px solid #e2e8f0;
-      font-size: 1rem;
-    }
-
-    .spec-label {
-      font-weight: 600;
-      color: #4a5568;
-    }
-
-    .spec-value {
-      color: #2d3748;
-      font-weight: 500;
-    }
-
-    .action-section {
-      margin-top: 30px;
-      padding: 25px;
-      background: #f8f9fa;
-      border-radius: 15px;
-    }
-
-    .size-selector {
-      margin-bottom: 25px;
-    }
-
-    .size-options {
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-      margin-top: 10px;
-    }
-
-    .size-option {
-      padding: 12px 20px;
-      border: 2px solid #e2e8f0;
-      border-radius: 8px;
-      background: white;
-      cursor: pointer;
-      font-weight: 500;
-      transition: all 0.3s ease;
-      font-size: 1rem;
-    }
-
-    .size-option:hover {
-      border-color: #ff3e6c;
-      background: #ff3e6c;
-      color: white;
-    }
-
-    .quantity-section {
-      margin-bottom: 25px;
-    }
-
-    .quantity-controls {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      margin-top: 10px;
-    }
-
-    .qty-btn {
-      width: 45px;
-      height: 45px;
-      border: 2px solid #e2e8f0;
-      background: white;
-      border-radius: 8px;
-      cursor: pointer;
-      font-size: 1.3rem;
-      font-weight: bold;
-      transition: all 0.3s ease;
-    }
-
-    .qty-btn:hover {
-      border-color: #ff3e6c;
-      color: #ff3e6c;
-    }
-
-    .qty-display {
-      font-size: 1.3rem;
-      font-weight: 600;
-      min-width: 50px;
-      text-align: center;
-      padding: 10px;
-      background: white;
-      border-radius: 8px;
-      border: 2px solid #e2e8f0;
-    }
-
-    .add-to-cart {
-      background: linear-gradient(135deg, #ff3e6c, #e91e63);
-      color: white;
-      padding: 18px 40px;
-      border: none;
-      margin-top: 20px;
-      cursor: pointer;
-      border-radius: 12px;
-      font-size: 1.2rem;
-      font-weight: 600;
-      width: 100%;
-      transition: all 0.3s ease;
-      box-shadow: 0 5px 15px rgba(255, 62, 108, 0.3);
-    }
-
-    .add-to-cart:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 25px rgba(255, 62, 108, 0.4);
-    }
-
-    .buy-now-btn {
-      background: white;
-      color: #ff3e6c;
-      border: 2px solid #ff3e6c;
-      padding: 18px 40px;
-      margin-top: 15px;
-      cursor: pointer;
-      border-radius: 12px;
-      font-size: 1.2rem;
-      font-weight: 600;
-      width: 100%;
-      transition: all 0.3s ease;
-    }
-
-    .buy-now-btn:hover {
-      background: #ff3e6c;
-      color: white;
-      transform: translateY(-2px);
-    }
-
-    .delivery-info {
-      margin-top: 30px;
-      padding: 25px;
-      background: #e6fffa;
-      border-radius: 15px;
-      border-left: 5px solid #38b2ac;
-    }
-
-    .delivery-item {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      margin-bottom: 15px;
-      font-size: 1.1rem;
-      color: #2d3748;
-    }
-
-    .delivery-item i {
-      color: #38b2ac;
-      font-size: 1.3rem;
-      width: 25px;
-    }
-
-    .trust-badges {
-      display: flex;
-      gap: 15px;
-      margin-top: 25px;
-      flex-wrap: wrap;
-    }
-
-    .trust-badge {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      padding: 12px 18px;
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      font-size: 0.95rem;
-      color: #4a5568;
-      font-weight: 500;
-    }
-
-    .trust-badge i {
-      color: #48bb78;
-      font-size: 1.1rem;
-    }
-
-    .reviews-section {
-      margin-top: 30px;
-      padding: 25px;
-      background: white;
-      border-radius: 15px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    }
-
-    .review-item {
-      padding: 20px 0;
-      border-bottom: 1px solid #e2e8f0;
-    }
-
-    .review-header {
-      display: flex;
-      justify-content: between;
-      align-items: center;
-      margin-bottom: 10px;
-    }
-
-    .reviewer-name {
-      font-weight: 600;
-      color: #2d3748;
-      font-size: 1.1rem;
-    }
-
-    .review-date {
-      color: #718096;
-      font-size: 0.9rem;
-    }
-
-    .review-text {
-      font-size: 1rem;
-      color: #4a5568;
-      line-height: 1.6;
-      margin-top: 10px;
-    }
-
-    @media (max-width: 768px) {
-      .product-box {
-        flex-direction: column;
-        gap: 20px;
-        padding: 20px;
-        margin: 15px;
-      }
-
-      .product-info {
-        padding-left: 0;
-      }
-
-      .product-info h1 {
-        font-size: 2rem;
-      }
-
-      .current-price {
-        font-size: 2rem;
-      }
-
-      .features-grid {
-        grid-template-columns: 1fr;
-      }
-    }
   </style>
 </head>
-
 <body>
   <!-- navbar -->
   <div class="nav" id="navbox"></div>
@@ -541,199 +117,198 @@
             let pDetail = document.getElementById('pDetail');
             let originalPrice = Math.round(product.price * 1.6);
             let discount = Math.round(((originalPrice - product.price) / originalPrice) * 100);
-
             pDetail.innerHTML = `
-                <div class="product-box">
-                  <div class="product-image-section">
-                    <img src="${product.image}" alt="${product.title}"/>
-                    <img class="mt-7" src="${product.image2}"/>
+                <div class="flex flex-col lg:flex-row gap-10 bg-white p-10 my-8 mx-auto rounded-3xl shadow-2xl max-w-7xl min-h-[600px]">
+                  <div class="flex-1 max-w-lg">
+                    <img src="${product.image}" alt="${product.title}" class="w-full h-[500px] object-cover rounded-2xl shadow-lg transition-transform duration-300 hover:scale-105 cursor-pointer"/>
+                    <img class="mt-7 w-full h-[500px] object-cover rounded-2xl shadow-lg transition-transform duration-300 hover:scale-105 cursor-pointer" src="${product.image2}"/>
                   </div>
                   
-                  <div class="product-info">
-                    <h1>${product.title}</h1>
-                    <div class="product-brand">by ${product.brand || 'Myntra Original'}</div>
+                  <div class="flex-1 pl-0 lg:pl-5">
+                    <h1 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-4 leading-tight font-['Poppins']">${product.title}</h1>
+                    <div class="text-xl text-gray-500 mb-5 font-medium">by ${product.brand || 'Myntra Original'}</div>
                     
-                    <div class="rating-section">
-                      <div class="stars">⭐⭐⭐⭐⭐</div>
-                      <span class="rating-text">${product.rating} (2,847 reviews)</span>
+                    <div class="flex items-center gap-4 mb-6 p-4 bg-gray-50 rounded-xl">
+                      <div class="text-2xl text-yellow-400">⭐⭐⭐⭐⭐</div>
+                      <span class="text-lg text-gray-600 font-medium">${product.rating} (2,847 reviews)</span>
                     </div>
                     
-                    <div class="price-section">
-                      <div>
-                        <span class="current-price">₹${product.price.toLocaleString()}</span>
-                        <span class="original-price">₹${originalPrice.toLocaleString()}</span>
+                    <div class="mb-8 p-5 bg-gradient-to-r from-pink-500 to-red-500 rounded-2xl text-white">
+                      <div class="flex items-center">
+                        <span class="text-4xl lg:text-5xl font-extrabold mr-4">₹${product.price.toLocaleString()}</span>
+                        <span class="text-2xl line-through opacity-80 mr-4">₹${originalPrice.toLocaleString()}</span>
                       </div>
-                      <div class="discount-badge">${discount}% OFF • You Save ₹${(originalPrice - product.price).toLocaleString()}</div>
+                      <div class="bg-[#ffffff33] bg-opacity-20 inline-block px-4 py-2 rounded-full text-base font-semibold mt-3">${discount}% OFF • You Save ₹${(originalPrice - product.price).toLocaleString()}</div>
                     </div>
                     
-                    <div class="product-description">
+                    <div class="text-xl leading-relaxed text-gray-600 mb-8 p-5 bg-gray-50 rounded-xl border-l-4 border-pink-500">
                       <strong>Product Description:</strong><br>
                       ${product.description} This premium quality product is crafted with attention to detail and designed for comfort and style. Perfect for everyday wear with superior materials and excellent craftsmanship.
                     </div>
                     
-                    <div class="features-section">
-                      <h3 class="section-title">
-                        <i class="fas fa-star"></i>
+                    <div class="mb-8">
+                      <h3 class="text-2xl font-semibold text-gray-800 mb-4 flex items-center gap-3">
+                        <i class="fas fa-star text-pink-500"></i>
                         Key Features
                       </h3>
-                      <div class="features-grid">
-                        <div class="feature-item">
-                          <i class="fas fa-check-circle"></i>
+                      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-5">
+                        <div class="flex items-center gap-3 p-3 bg-teal-50 rounded-lg text-base text-gray-800">
+                          <i class="fas fa-check-circle text-teal-500 text-lg"></i>
                           Premium Quality Material
                         </div>
-                        <div class="feature-item">
-                          <i class="fas fa-check-circle"></i>
+                        <div class="flex items-center gap-3 p-3 bg-teal-50 rounded-lg text-base text-gray-800">
+                          <i class="fas fa-check-circle text-teal-500 text-lg"></i>
                           Comfortable Fit
                         </div>
-                        <div class="feature-item">
-                          <i class="fas fa-check-circle"></i>
+                        <div class="flex items-center gap-3 p-3 bg-teal-50 rounded-lg text-base text-gray-800">
+                          <i class="fas fa-check-circle text-teal-500 text-lg"></i>
                           Durable Construction
                         </div>
-                        <div class="feature-item">
-                          <i class="fas fa-check-circle"></i>
+                        <div class="flex items-center gap-3 p-3 bg-teal-50 rounded-lg text-base text-gray-800">
+                          <i class="fas fa-check-circle text-teal-500 text-lg"></i>
                           Easy Care & Maintenance
                         </div>
-                        <div class="feature-item">
-                          <i class="fas fa-check-circle"></i>
+                        <div class="flex items-center gap-3 p-3 bg-teal-50 rounded-lg text-base text-gray-800">
+                          <i class="fas fa-check-circle text-teal-500 text-lg"></i>
                           Stylish Design
                         </div>
-                        <div class="feature-item">
-                          <i class="fas fa-check-circle"></i>
+                        <div class="flex items-center gap-3 p-3 bg-teal-50 rounded-lg text-base text-gray-800">
+                          <i class="fas fa-check-circle text-teal-500 text-lg"></i>
                           Value for Money
                         </div>
                       </div>
                     </div>
                     
-                    <div class="specifications-section">
-                      <h3 class="section-title">
-                        <i class="fas fa-info-circle"></i>
+                    <div class="mb-8 bg-gray-50 p-6 rounded-2xl">
+                      <h3 class="text-2xl font-semibold text-gray-800 mb-4 flex items-center gap-3">
+                        <i class="fas fa-info-circle text-pink-500"></i>
                         Product Specifications
                       </h3>
-                      <div class="spec-grid">
-                        <div class="spec-item">
-                          <span class="spec-label">Category:</span>
-                          <span class="spec-value">${product.category}</span>
+                      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="flex justify-between py-3 border-b border-gray-300 text-base">
+                          <span class="font-semibold text-gray-600">Category:</span>
+                          <span class="text-gray-800 font-medium">${product.category}</span>
                         </div>
-                        <div class="spec-item">
-                          <span class="spec-label">Brand:</span>
-                          <span class="spec-value">${product.brand || 'Myntra Original'}</span>
+                        <div class="flex justify-between py-3 border-b border-gray-300 text-base">
+                          <span class="font-semibold text-gray-600">Brand:</span>
+                          <span class="text-gray-800 font-medium">${product.brand || 'Myntra Original'}</span>
                         </div>
-                        <div class="spec-item">
-                          <span class="spec-label">Material:</span>
-                          <span class="spec-value">Premium Cotton Blend</span>
+                        <div class="flex justify-between py-3 border-b border-gray-300 text-base">
+                          <span class="font-semibold text-gray-600">Material:</span>
+                          <span class="text-gray-800 font-medium">Premium Cotton Blend</span>
                         </div>
-                        <div class="spec-item">
-                          <span class="spec-label">Care:</span>
-                          <span class="spec-value">Machine Washable</span>
+                        <div class="flex justify-between py-3 border-b border-gray-300 text-base">
+                          <span class="font-semibold text-gray-600">Care:</span>
+                          <span class="text-gray-800 font-medium">Machine Washable</span>
                         </div>
-                        <div class="spec-item">
-                          <span class="spec-label">Fit:</span>
-                          <span class="spec-value">Regular Fit</span>
+                        <div class="flex justify-between py-3 border-b border-gray-300 text-base">
+                          <span class="font-semibold text-gray-600">Fit:</span>
+                          <span class="text-gray-800 font-medium">Regular Fit</span>
                         </div>
-                        <div class="spec-item">
-                          <span class="spec-label">Stock:</span>
-                          <span class="spec-value" style="color: #48bb78; font-weight: 600;">${product.stock || 'In Stock'}</span>
+                        <div class="flex justify-between py-3 border-b border-gray-300 text-base">
+                          <span class="font-semibold text-gray-600">Stock:</span>
+                          <span class="text-green-500 font-semibold">${product.stock || 'In Stock'}</span>
                         </div>
                       </div>
                     </div>
                     
-                    <div class="action-section">
-                      <div class="quantity-section">
-                        <h3 class="section-title">
-                          <i class="fas fa-sort-numeric-up"></i>
+                    <div class="mt-8 p-6 bg-gray-50 rounded-2xl">
+                      <div class="mb-6">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4 flex items-center gap-3">
+                          <i class="fas fa-sort-numeric-up text-pink-500"></i>
                           Quantity
                         </h3>
-                        <div class="quantity-controls">
-                          <button class="qty-btn">-</button>
-                          <div class="qty-display">1</div>
-                          <button class="qty-btn">+</button>
+                        <div class="flex items-center gap-4 mt-3">
+                          <button class="w-11 h-11 border-2 border-gray-300 bg-white rounded-lg cursor-pointer text-xl font-bold transition-all duration-300 hover:border-pink-500 hover:text-pink-500">-</button>
+                          <div class="text-xl font-semibold min-w-12 text-center p-2 bg-white rounded-lg border-2 border-gray-300">1</div>
+                          <button class="w-11 h-11 border-2 border-gray-300 bg-white rounded-lg cursor-pointer text-xl font-bold transition-all duration-300 hover:border-pink-500 hover:text-pink-500">+</button>
                         </div>
                       </div>
                       
-                      <button class="add-to-cart">
-                        <i class="fas fa-shopping-bag"></i>
+                      <button class="bg-gradient-to-r from-pink-500 to-red-500 text-white py-4 px-10 border-none mt-5 cursor-pointer rounded-xl text-xl font-semibold w-full transition-all duration-300 shadow-lg hover:-translate-y-1 hover:shadow-xl">
+                        <i class="fas fa-shopping-bag mr-2"></i>
                         ADD TO BAG
                       </button>
-                      <button class="buy-now-btn">
-                        <i class="fas fa-bolt"></i>
+                      <button class="bg-white text-pink-500 border-2 border-pink-500 py-4 px-10 mt-4 cursor-pointer rounded-xl text-xl font-semibold w-full transition-all duration-300 hover:bg-pink-500 hover:text-white hover:-translate-y-1">
+                        <i class="fas fa-bolt mr-2"></i>
                         BUY NOW
                       </button>
                     </div>
                     
-                    <div class="delivery-info">
-                      <h3 class="section-title">
-                        <i class="fas fa-truck"></i>
+                    <div class="mt-8 p-6 bg-teal-50 rounded-2xl border-l-4 border-teal-500">
+                      <h3 class="text-2xl font-semibold text-gray-800 mb-4 flex items-center gap-3">
+                        <i class="fas fa-truck text-teal-500"></i>
                         Delivery & Services
                       </h3>
-                      <div class="delivery-item">
-                        <i class="fas fa-shipping-fast"></i>
+                      <div class="flex items-center gap-4 mb-4 text-lg text-gray-800">
+                        <i class="fas fa-shipping-fast text-teal-500 text-xl w-6"></i>
                         <span><strong>Free Delivery</strong> on orders above ₹999</span>
                       </div>
-                      <div class="delivery-item">
-                        <i class="fas fa-clock"></i>
+                      <div class="flex items-center gap-4 mb-4 text-lg text-gray-800">
+                        <i class="fas fa-clock text-teal-500 text-xl w-6"></i>
                         <span><strong>Express Delivery</strong> available in 2-3 days</span>
                       </div>
-                      <div class="delivery-item">
-                        <i class="fas fa-undo-alt"></i>
+                      <div class="flex items-center gap-4 mb-4 text-lg text-gray-800">
+                        <i class="fas fa-undo-alt text-teal-500 text-xl w-6"></i>
                         <span><strong>Easy Returns</strong> within 30 days of purchase</span>
                       </div>
-                      <div class="delivery-item">
-                        <i class="fas fa-headset"></i>
+                      <div class="flex items-center gap-4 mb-4 text-lg text-gray-800">
+                        <i class="fas fa-headset text-teal-500 text-xl w-6"></i>
                         <span><strong>24/7 Customer Support</strong> for any queries</span>
                       </div>
                     </div>
                     
-                    <div class="trust-badges">
-                      <div class="trust-badge">
-                        <i class="fas fa-shield-alt"></i>
+                    <div class="flex flex-wrap gap-4 mt-6">
+                      <div class="flex items-center gap-2 p-3 bg-white rounded-xl shadow-sm text-sm text-gray-600 font-medium">
+                        <i class="fas fa-shield-alt text-green-500 text-lg"></i>
                         100% Authentic
                       </div>
-                      <div class="trust-badge">
-                        <i class="fas fa-lock"></i>
+                      <div class="flex items-center gap-2 p-3 bg-white rounded-xl shadow-sm text-sm text-gray-600 font-medium">
+                        <i class="fas fa-lock text-green-500 text-lg"></i>
                         Secure Payment
                       </div>
-                      <div class="trust-badge">
-                        <i class="fas fa-medal"></i>
+                      <div class="flex items-center gap-2 p-3 bg-white rounded-xl shadow-sm text-sm text-gray-600 font-medium">
+                        <i class="fas fa-medal text-green-500 text-lg"></i>
                         Quality Assured
                       </div>
-                      <div class="trust-badge">
-                        <i class="fas fa-thumbs-up"></i>
+                      <div class="flex items-center gap-2 p-3 bg-white rounded-xl shadow-sm text-sm text-gray-600 font-medium">
+                        <i class="fas fa-thumbs-up text-green-500 text-lg"></i>
                         Trusted Brand
                       </div>
                     </div>
                     
-                    <div class="reviews-section">
-                      <h3 class="section-title">
-                        <i class="fas fa-comments"></i>
+                    <div class="mt-8 p-6 bg-white rounded-2xl shadow-sm">
+                      <h3 class="text-2xl font-semibold text-gray-800 mb-4 flex items-center gap-3">
+                        <i class="fas fa-comments text-pink-500"></i>
                         Customer Reviews (2,847)
                       </h3>
-                      <div class="review-item">
-                        <div class="review-header">
-                          <span class="reviewer-name">Rahul Sharma-</span>
-                          <span class="review-date">2 days ago</span>
+                      <div class="py-5 border-b border-gray-300">
+                        <div class="flex justify-between items-center mb-3">
+                          <span class="font-semibold text-gray-800 text-lg">Rahul Sharma</span>
+                          <span class="text-gray-500 text-sm">2 days ago</span>
                         </div>
-                        <div class="stars">⭐⭐⭐⭐⭐</div>
-                        <div class="review-text">
+                        <div class="text-yellow-400 text-lg mb-2">⭐⭐⭐⭐⭐</div>
+                        <div class="text-base text-gray-600 leading-relaxed mt-3">
                           "Excellent quality product! The material is soft and comfortable. Perfect fit and great value for money. Highly recommended!"
                         </div>
                       </div>
-                      <div class="review-item">
-                        <div class="review-header">
-                          <span class="reviewer-name">Priya Singh-</span>
-                          <span class="review-date">1 week ago</span>
+                      <div class="py-5 border-b border-gray-300">
+                        <div class="flex justify-between items-center mb-3">
+                          <span class="font-semibold text-gray-800 text-lg">Priya Singh</span>
+                          <span class="text-gray-500 text-sm">1 week ago</span>
                         </div>
-                        <div class="stars">⭐⭐⭐⭐⭐</div>
-                        <div class="review-text">
+                        <div class="text-yellow-400 text-lg mb-2">⭐⭐⭐⭐⭐</div>
+                        <div class="text-base text-gray-600 leading-relaxed mt-3">
                           "Amazing product! The color is exactly as shown in the image. Fast delivery and excellent packaging. Will definitely buy again."
                         </div>
                       </div>
-                      <div class="review-item">
-                        <div class="review-header">
-                          <span class="reviewer-name">Amit Kumar-</span>
-                          <span class="review-date">2 weeks ago</span>
+                      <div class="py-5 border-b border-gray-300">
+                        <div class="flex justify-between items-center mb-3">
+                          <span class="font-semibold text-gray-800 text-lg">Amit Kumar</span>
+                          <span class="text-gray-500 text-sm">2 weeks ago</span>
                         </div>
-                        <div class="stars">⭐⭐⭐⭐☆</div>
-                        <div class="review-text">
+                        <div class="text-yellow-400 text-lg mb-2">⭐⭐⭐⭐☆</div>
+                        <div class="text-base text-gray-600 leading-relaxed mt-3">
                           "Good quality product. The size chart was accurate and the fit is perfect. Delivery was on time. Satisfied with the purchase."
                         </div>
                       </div>
