@@ -531,7 +531,7 @@ navbox.innerHTML = `
                                 <div class="flex flex-col items-center">
                                     <div class="relative">
                                         <i class="ri-shopping-bag-line text-[20px] relative top-[5px]"></i>
-                                        <span id="cartBadge" class="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">0</span>
+                                        <span id="cartBadge" class="absolute -top-1 -right-2 bg-red-500 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">0</span>
                                     </div>
                                     <p class="text-[12px] font-[700]">Bag</p>
                                 </div>
@@ -547,8 +547,10 @@ navbox.innerHTML = `
                     <div class="icon-box flex gap-8 mb-2">
                         <div class="relative group inline-block">
                             <div class="icon flex flex-col items-center cursor-pointer">
-                                <i class="ri-user-3-line text-[20px] relative top-[5px]"></i>
-                                <p class="text-[12px] font-[700]">Profile</p>
+                                <a href="./profile.html" class="flex flex-col justify-center items-center pb-0.5 cursor-pointer">
+                                    <i class="ri-user-3-line text-[20px] relative top-[5px] cursor-pointer"></i>
+                                    <p class="text-[12px] font-[700] cursor-pointer">Profile</p>
+                                </a>
 
                                 <div class="absolute top-[68px] w-max shadow-lg border border-gray-200 bg-white text-black p-5 z-10 hidden group-hover:block">
                                     <p class="text-[15px] font-[700] text-[#282C3F]">Welcome</p>
@@ -610,14 +612,16 @@ navbox.innerHTML = `
                     <div class="flex flex-col items-center">
                         <div class="relative">
                             <i class="ri-shopping-bag-line text-[20px] relative top-[5px]"></i>
-                            <span id="cartBadge" class="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">0</span>
+                            <span id="cartBadge" class="absolute -top-1 -right-2 bg-red-500 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">0</span>
                         </div>
                         <p class="text-[12px] font-[700]">Bag</p>
                     </div>
                 </div>
                 <div class="icon flex flex-col justify-center items-center pb-0.5 cursor-pointer">
-                    <i class="ri-user-3-line text-[20px] relative top-[5px] cursor-pointer"></i>
-                    <p class="text-[12px] font-[700] cursor-pointer ">Profile</p>
+                    <a href="./profile.html" class="flex flex-col justify-center items-center pb-0.5 cursor-pointer">
+                        <i class="ri-user-3-line text-[20px] relative top-[5px] cursor-pointer"></i>
+                        <p class="text-[12px] font-[700] cursor-pointer">Profile</p>
+                    </a>
                 </div>
             </div>
         </div>
