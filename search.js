@@ -1,17 +1,20 @@
 let allProducts = [];
 
 fetch('./data/product.json')
-    .then((res) => res.json())
+.then((res) => res.json())
     .then((data) => {
         allProducts = data;
     });
 
 function searchProduct() {
-    let sProduct = document.getElementById("sProduct").value.toLowerCase();
+    let sProduct = document.querySelector(".sProduct").value.toLowerCase();
+    let sProduct2 = document.querySelector(".sProduct2").value.toLowerCase();
     let container = document.getElementById("container");
     let results = document.getElementById("searchResults");
 
-    if (!sProduct) {
+    let sProduct3 = (sProduct + " " + sProduct2).trim()
+
+    if (!sProduct3) {
         container.style.display = "block";
         results.style.display = "none";
         results.innerHTML = "";
@@ -23,7 +26,7 @@ function searchProduct() {
     }
 
     let filtered = allProducts.filter(p =>
-        p.title.toLowerCase().includes(sProduct)
+        p.title.toLowerCase().includes(sProduct3)
     );
 
     container.style.display = "none";
