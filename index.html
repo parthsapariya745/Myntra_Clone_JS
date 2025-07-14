@@ -151,8 +151,13 @@
     }
 </style>
 <body>
-    <div class="bg h-auto w-full">
+    <div class="nav" id="navbox"></div>
 
+    <div id="container"></div>
+
+    <div id="searchResults" class="flex flex-wrap gap-4 p-5" style="display: none;"></div>
+
+    <div class="bg h-auto w-full" id="homeBg">
         <!-- navbar -->
         <div class="nav" id="navbox"></div>
 
@@ -378,8 +383,8 @@
         <div class="footer mt-10" id="footerbox"></div>
     </div>
 
-    <script src="./slider.js"></script>
     <script src="./navfoot.js"></script>
+    <script src="./slider.js"></script>
 
     <script>
         function productDetail(id) {
@@ -464,6 +469,7 @@
                 spinnerModal.appendChild(off);
             }, 5000);
         }
+
         function hideReward() {
             let rewardMessage = document.getElementById("rewardMessage");
             let spinnerContainer = document.getElementById("spinnerContainer");
@@ -471,5 +477,7 @@
             spinnerContainer.classList.remove("hidden");
         }
     </script>
+
+    <script src="./search.js"></script>
 </body>
 </html>

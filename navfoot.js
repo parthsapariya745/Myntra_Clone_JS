@@ -541,7 +541,7 @@ navbox.innerHTML = `
                 </div>
                 <div class="nav-input bg-[#F5F5F6] h-[40px] rounded-[5px] xl:w-[36%] w-[30%] hidden lg:flex items-center pl-3">
                     <i class="fa-solid fa-magnifying-glass text-[#282C3F] text-[14px]"></i>
-                    <input type="search" class="w-full text-[14px] pl-4 border-0 outline-0 bg-transparent" placeholder="Search for products, brand and more">
+                    <input type="search" class="w-full text-[14px] pl-4 border-0 outline-0 bg-transparent" placeholder="Search for products, brand and more" id="sProduct" onInput="searchProduct()">
                 </div>
                 <div class="nav-icon hidden lg:flex">
                     <div class="icon-box flex gap-8 mb-2">
