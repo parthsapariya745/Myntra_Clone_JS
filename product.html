@@ -98,6 +98,20 @@
   <div class="footer mt-10" id="footerbox"></div>
   <script src="./navfoot.js"></script>
   <script>
+    let qty = 1
+
+    function minus() {
+      if(qty > 1) {
+        qty--
+        document.getElementById("qty").innerText = qty
+      }
+    }
+
+    function plus() {
+      qty++  
+      document.getElementById("qty").innerText = qty
+    }
+
     function productDetail() {
       let pId = localStorage.getItem('productId');
       if (!pId) {
@@ -219,9 +233,9 @@
                           Quantity
                         </h3>
                         <div class="flex items-center gap-4 mt-3">
-                          <button class="w-11 h-11 border-2 border-gray-300 bg-white rounded-lg cursor-pointer text-xl font-bold transition-all duration-300 hover:border-pink-500 hover:text-pink-500">-</button>
-                          <div class="text-xl font-semibold min-w-12 text-center p-2 bg-white rounded-lg border-2 border-gray-300">1</div>
-                          <button class="w-11 h-11 border-2 border-gray-300 bg-white rounded-lg cursor-pointer text-xl font-bold transition-all duration-300 hover:border-pink-500 hover:text-pink-500">+</button>
+                          <button class="w-11 h-11 border-2 border-gray-300 bg-white rounded-lg cursor-pointer text-xl font-bold transition-all duration-300 hover:border-pink-500 hover:text-pink-500" onclick="minus()">-</button>
+                          <div class="text-xl font-semibold min-w-12 text-center p-2 bg-white rounded-lg border-2 border-gray-300" id="qty">${qty}</div>
+                          <button class="w-11 h-11 border-2 border-gray-300 bg-white rounded-lg cursor-pointer text-xl font-bold transition-all duration-300 hover:border-pink-500 hover:text-pink-500" onclick="plus()">+</button>
                         </div>
                       </div>
                       
