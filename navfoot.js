@@ -527,13 +527,15 @@ navbox.innerHTML = `
                                 <i class="ri-heart-line text-[20px] relative top-[5px]"></i>
                                 <p class="text-[12px] font-[700]">Wishlist</p>
                             </div>
-                            <div class="relative cursor-pointer" onclick="showProduct()">
+                            <div class="relative cursor-pointer">
                                 <div class="flex flex-col items-center">
-                                    <div class="relative">
-                                        <i class="ri-shopping-bag-line text-[20px] relative top-[5px]"></i>
-                                        <span id="cartBadge" class="absolute -top-1 -right-2 bg-red-500 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">0</span>
-                                    </div>
-                                    <p class="text-[12px] font-[700]">Bag</p>
+                                    <a href="./addtocart.html">
+                                        <div class="relative">
+                                            <i class="ri-shopping-bag-line text-[20px] relative top-[5px]"></i>
+                                            <span id="cartBadge" class="absolute -top-1 -right-2 bg-red-500 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">0</span>
+                                        </div>
+                                        <p class="text-[12px] font-[700]">Bag</p>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -579,13 +581,15 @@ navbox.innerHTML = `
                             <i class="ri-heart-line text-[20px] relative top-[5px]"></i>
                             <p class="text-[12px] font-[700]">Wishlist</p>
                         </div>
-                        <div class="relative cursor-pointer" onclick="showProduct()">
+                        <div class="relative cursor-pointer">
                             <div class="flex flex-col items-center">
-                                <div class="relative">
-                                    <i class="ri-shopping-bag-line text-[20px] relative top-[5px]"></i>
-                                    <span id="cartBadge" class="absolute -top-1 -right-2 bg-red-500 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">0</span>
-                                </div>
-                                <p class="text-[12px] font-[700]">Bag</p>
+                                <a href="./addtocart.html">
+                                    <div class="relative">
+                                        <i class="ri-shopping-bag-line text-[20px] relative top-[5px]"></i>
+                                        <span id="cartBadge" class="absolute -top-1 -right-2 bg-red-500 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">0</span>
+                                    </div>
+                                    <p class="text-[12px] font-[700]">Bag</p>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -608,13 +612,15 @@ navbox.innerHTML = `
                     <img src="./Assets/fwd.jpeg" width="37.5px" alt="">
                     <p class="text-[12px] font-[700]">Wishlist</p>
                 </div>
-                <div class="relative cursor-pointer" onclick="showProduct()">
+                <div class="relative cursor-pointer">
                     <div class="flex flex-col items-center">
-                        <div class="relative">
-                            <i class="ri-shopping-bag-line text-[20px] relative top-[5px]"></i>
-                            <span id="cartBadge" class="absolute -top-1 -right-2 bg-red-500 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">0</span>
-                        </div>
-                        <p class="text-[12px] font-[700]">Bag</p>
+                        <a href="./addtocart.html">
+                            <div class="relative">
+                                <i class="ri-shopping-bag-line text-[20px] relative top-[5px]"></i>
+                                <span id="cartBadge" class="absolute -top-1 -right-2 bg-red-500 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">0</span>
+                            </div>
+                            <p class="text-[12px] font-[700]">Bag</p>
+                        </a>
                     </div>
                 </div>
                 <div class="icon flex flex-col justify-center items-center pb-0.5 cursor-pointer">
