@@ -72,6 +72,13 @@
 
     <script>
         let container = document.getElementById("container")
+        let qty = document.getElementById("qty")
+
+        fetch("./data/cart.json")
+        .then((req) => req.json())
+        .then((res)=> {
+            console.log(res)
+        })
     </script>
 </body>
 </html>
