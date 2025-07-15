@@ -1,0 +1,682 @@
+[
+  {
+    "id": 1,
+    "title": "Gentle Face Cleanser",
+    "price": 249,
+    "description": "Soothes and cleans skin gently.",
+    "rating": 4.3,
+    "category": "face cleaners",
+    "image": "https://skinkraft.com/cdn/shop/products/SyndetFaceCleanserForWomen_1024x1024.jpg?v=1681986220",
+    "return": "7 days return"
+  },
+  {
+    "id": 2,
+    "title": "Hair Repair Combo Pack",
+    "price": 799,
+    "description": "Shampoo + conditioner + serum pack.",
+    "rating": 4.5,
+    "category": "hair care combos",
+    "image": "https://mysticnaturalsstore.com/wp-content/uploads/2023/08/img_8780-scaled.jpeg",
+    "return": "7 days return"
+  },
+  {
+    "id": 3,
+    "title": "Revitalizing Hair Oil",
+    "price": 399,
+    "description": "Promotes healthy hair growth.",
+    "rating": 4.4,
+    "category": "revitalizing hair oil",
+    "image": "https://nutrinormwellness.com/cdn/shop/files/shiero-revitalizing-hair-oil-3.webp?v=1718187968",
+    "return": "7 days return"
+  },
+  {
+    "id": 4,
+    "title": "Wireless Headphones",
+    "price": 1999,
+    "description": "High quality sound with Bluetooth.",
+    "rating": 4.6,
+    "category": "headphones",
+    "image": "https://m.media-amazon.com/images/I/518JM28n34L._UF1000,1000_QL80_.jpg",
+    "return": "7 days return"
+  },
+  {
+    "id": 5,
+    "title": "Strawberry Lip Balm",
+    "price": 129,
+    "description": "Moisturizes and softens lips.",
+    "rating": 4.1,
+    "category": "lip balms",
+    "image": "https://aqualogica.in/cdn/shop/files/Pink_Sorbet_Plump__Lip_balm.jpg?v=1722338000",
+    "return": "7 days return"
+  },
+  {
+    "id": 6,
+    "title": "Vitamin C Face Serum",
+    "price": 349,
+    "description": "Brightens skin and reduces spots.",
+    "rating": 4.5,
+    "category": "serums & gels",
+    "image": "https://guardian.com.my/media/wysiwyg/Garnier_Bright_Complete_Vitamin_C_Gel_Wash_120Ml__4.jpg?auto=webp&format=pjpg&quality=85",
+    "return": "7 days return"
+  },
+  {
+    "id": 7,
+    "title": "Casual Walking Shoes",
+    "price": 899,
+    "description": "Comfortable for daily wear.",
+    "rating": 4.2,
+    "category": "comfy casual shoes",
+    "image": "https://5.imimg.com/data5/ECOM/Default/2024/6/424690549/TJ/DP/MA/146821774/bbae755a-ad5b-4f86-8c8f-cc51e8fda670-500x500.jpg",
+    "return": "7 days return"
+  },
+  {
+    "id": 8,
+    "title": "Long-Lasting Deodorant",
+    "price": 199,
+    "description": "Fresh fragrance all day.",
+    "rating": 4.0,
+    "category": "deodorants",
+    "image": "https://www.health.com/thmb/yZIvNlYI_W0FExAKYgH6MQrcRw4=/6473x0/filters:no_upscale():max_bytes(150000):strip_icc()/hlt-clinical-strength-deodorant-GROUPSHOT_tstaples_219-f2722289daa74184af4b93b9cc44933c.jpg",
+    "return": "7 days return"
+  },
+  {
+    "id": 9,
+    "title": "Beach Flip Flops",
+    "price": 349,
+    "description": "Perfect for casual summer wear.",
+    "rating": 4.3,
+    "category": "breezy flip flops",
+    "image": "https://img.tatacliq.com/images/i22//437Wx649H/MP000000025460924_437Wx649H_202502210259007.jpeg",
+    "return": "7 days return"
+  },
+  {
+    "id": 10,
+    "title": "Classic Formal Shoes",
+    "price": 1499,
+    "description": "Elegant design for office and events.",
+    "rating": 4.6,
+    "category": "sharp formal shoes",
+    "image": "https://image.made-in-china.com/2f0j00zrEcuaCWBRgp/Sharp-Toe-Formal-Shoes-for-Men-s-Leather-Shoes-Slip-on-Loafer.webp",
+    "return": "7 days return"
+  },
+  {
+    "id": 11,
+    "title": "Slim Fit Denim Jeans",
+    "price": 1099,
+    "description": "Trendy and durable jeans for men.",
+    "rating": 4.4,
+    "category": "trendy jeans",
+    "image": "https://offduty.in/cdn/shop/products/f656d2d7-0bfd-4cf7-b81a-62bc7e8377a1_540x.jpg?v=1676893043",
+    "return": "7 days return"
+  },
+  {
+    "id": 12,
+    "title": "Luxury Perfume Spray",
+    "price": 1299,
+    "description": "Long-lasting fragrance for all occasions.",
+    "rating": 4.7,
+    "category": "enticing perfumes",
+    "image": "https://scentice.in/wp-content/uploads/2019/05/entice-long-lasting-perfume.jpg",
+    "return": "7 days return"
+  },
+  {
+    "id": 13,
+    "title": "Waterproof Travel Backpack",
+    "price": 799,
+    "description": "Spacious and comfortable on shoulders.",
+    "rating": 4.5,
+    "category": "durable backpacks",
+    "image": "https://m.media-amazon.com/images/I/71qpXciYP1L._UY1100_.jpg",
+    "return": "7 days return"
+  },
+  {
+    "id": 14,
+    "title": "Cotton Double Bedsheet",
+    "price": 599,
+    "description": "Soft and breathable fabric.",
+    "rating": 4.3,
+    "category": "soft bedsheets",
+    "image": "https://assets.ajio.com/medias/sys_master/root/20230629/CWLg/649d1029eebac147fc3a1505/-473Wx593H-464161329-multi-MODEL.jpg",
+    "return": "7 days return"
+  },
+  {
+    "id": 15,
+    "title": "Shea Butter Body Lotion",
+    "price": 299,
+    "description": "Deep hydration for dry skin.",
+    "rating": 4.4,
+    "category": "body lotions",
+    "image": "https://thaneshop.com/wp-content/uploads/2023/01/Joy-Intense-Moisture-Shea-Butter-Body-Lotion-For-Dry-Skin.jpg",
+    "return": "7 days return"
+  },
+  {
+    "id": 16,
+    "title": "Hair Conditioner (200ml)",
+    "price": 199,
+    "description": "Smoothens hair and prevents frizz.",
+    "rating": 4.2,
+    "category": "conditioners",
+    "image": "https://www.letscurlup.com/cdn/shop/files/Curl_up_Hydrating_Conditioner.webp?v=1724404844&width=1080",
+    "return": "7 days return"
+  },
+  {
+    "id": 17,
+    "title": "Brightening Day Cream",
+    "price": 329,
+    "description": "SPF 15 and skin glow formula.",
+    "rating": 4.1,
+    "category": "day creams",
+    "image": "https://m.media-amazon.com/images/I/51N5ctG792L._UF1000,1000_QL80_.jpg",
+    "return": "7 days return"
+  },
+  {
+    "id": 18,
+    "title": "SPF 50 Sunscreen Lotion",
+    "price": 399,
+    "description": "Protects from UVA/UVB rays.",
+    "rating": 4.5,
+    "category": "sunscreens",
+    "image": "https://domf5oio6qrcr.cloudfront.net/medialibrary/5171/5bafaead-3d2e-40c0-97d2-4f5edc2e350a.jpg",
+    "return": "7 days return"
+  },
+  {
+    "id": 19,
+    "title": "Comfortable Flat Sandals",
+    "price": 549,
+    "description": "Lightweight and stylish for summer.",
+    "rating": 4.3,
+    "category": "easygoing sandals",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/31hjZzvO96S._SL500_._AC_SL500_.jpg",
+    "return": "7 days return"
+  },
+  {
+    "id": 20,
+    "title": "Sensitive Skin Shaving Foam",
+    "price": 179,
+    "description": "Gentle shaving for daily use.",
+    "rating": 4.0,
+    "category": "shaving foams",
+    "image": "https://images-static.nykaa.com/media/catalog/product/e/a/eae34144902430442688_2.jpeg?tr=w-500",
+    "return": "7 days return"
+  },
+  {
+    "id": 21,
+    "title": "Cotton Check Shirt",
+    "price": 699,
+    "description": "Casual wear with modern fit.",
+    "rating": 4.2,
+    "category": "crisp shirts",
+    "image": "https://cdn.shopify.com/s/files/1/0794/2245/6081/files/WhatsAppImage2023-12-09at12.46.12PM_4_400x400.jpg?v=1726488634",
+    "return": "7 days return"
+  },
+  {
+    "id": 22,
+    "title": "Knee-Length Cotton Shorts",
+    "price": 449,
+    "description": "Comfortable for daily lounging.",
+    "rating": 4.1,
+    "category": "casual shorts",
+    "image": "https://m.media-amazon.com/images/I/6184isI3AYL._UY1100_.jpg",
+    "return": "7 days return"
+  },
+  {
+    "id": 23,
+    "title": "Men's Sports Running Shoes",
+    "price": 1499,
+    "description": "Lightweight shoes for agile training.",
+    "rating": 4.5,
+    "category": "agile sports shoes",
+    "image": "https://images-static.nykaa.com/media/catalog/product/2/0/201bba537079402_1.jpg?tr=w-500",
+    "return": "7 days return"
+  },
+  {
+    "id": 24,
+    "title": "Moisturizing Day Cream SPF 30",
+    "price": 379,
+    "description": "Hydration + sun protection combo.",
+    "rating": 4.4,
+    "category": "day creams",
+    "image": "https://myhinine.com/cdn/shop/files/slide_1_2532ea37-9f96-4e66-813f-a0d10c81a4de.jpg?v=1723812416",
+    "return": "7 days return"
+  },
+  {
+    "id": 25,
+    "title": "Relaxed Track Pants",
+    "price": 699,
+    "description": "Ultra-comfortable and breathable track pants.",
+    "rating": 4.3,
+    "category": "relaxed track pants",
+    "image": "https://assets.ajio.com/medias/sys_master/root/20221208/Nu32/63920046f997ddfdbdc84e4a/-473Wx593H-469211191-blue-MODEL.jpg",
+    "return": "7 days return"
+  },
+  {
+    "id": 26,
+    "title": "Cleansing Shampoo",
+    "price": 299,
+    "description": "Deep cleanses and nourishes your scalp.",
+    "rating": 4.5,
+    "category": "cleansing shampoos",
+    "image": "https://k-beautyskin.com/wp-content/uploads/2023/08/Aromatica_Cypress_Deep_Cleansing_Shampoo_400ml_k-beauty-Skin_india.png",
+    "return": "7 days return"
+  },
+  {
+    "id": 27,
+    "title": "Refreshing Soap Bar",
+    "price": 99,
+    "description": "Feel refreshed with every wash.",
+    "rating": 4.1,
+    "category": "refreshing soaps",
+    "image": "https://www.aalamroots.com/wp-content/uploads/2023/07/Himalaya_Refreshing_Baby_Soap_01.jpg",
+    "return": "7 days return"
+  },
+  {
+    "id": 28,
+    "title": "Whitening Toothpaste",
+    "price": 89,
+    "description": "Whitens teeth and fights cavities.",
+    "rating": 4.4,
+    "category": "toothpastes",
+    "image": "https://m.media-amazon.com/images/I/61fFhFnhIvL._UF1000,1000_QL80_.jpg",
+    "return": "7 days return"
+  },
+  {
+    "id": 29,
+    "title": "BB & CC Cream Duo",
+    "price": 399,
+    "description": "Flawless skin with light coverage.",
+    "rating": 4.2,
+    "category": "bb & cc creams",
+    "image": "https://www.maybelline.com/-/media/project/loreal/brand-sites/mny/americas/us/makeup-tips/face/face-makeup-tutorials-for-beginners/the-difference-between-bb-and-cc-cream/new-2025/bb-cream-vs-cc-cream-hero.jpg?rev=373e5fc5dd4243e28982629c59d6d819",
+    "return": "7 days return"
+  },
+  {
+    "id": 30,
+    "title": "Supportive Sports Bra",
+    "price": 549,
+    "description": "High support for workouts and daily wear.",
+    "rating": 4.5,
+    "category": "supportive bras",
+    "image": "https://shyaway.static.n7.io/media/catalog/product/d/i/di1007-skylight-front.jpg",
+    "return": "7 days return"
+  },
+  {
+    "id": 31,
+    "title": "Chic Co-ord Set",
+    "price": 1299,
+    "description": "Trendy co-ord set for a stylish look.",
+    "rating": 4.3,
+    "category": "chic co-ords",
+    "image": "https://lovebohochic.com/cdn/shop/products/Bohochic02-Feb10598.jpg?v=1645981716&width=1000",
+    "return": "7 days return"
+  },
+  {
+    "id": 32,
+    "title": "Elegant Maxi Dress",
+    "price": 1499,
+    "description": "Perfect for parties and formal occasions.",
+    "rating": 4.6,
+    "category": "elegant dresses",
+    "image": "https://static-dress.missacc.com/productimages/2025/2/SED11837/1899027986066313216_400X.jpeg",
+    "return": "7 days return"
+  },
+  {
+    "id": 33,
+    "title": "Striking Flat Sandals",
+    "price": 649,
+    "description": "Comfortable and chic flats for daily wear.",
+    "rating": 4.2,
+    "category": "striking flats",
+    "image": "https://media.landmarkshops.in/cdn-cgi/image/h=730,w=540,q=85,fit=cover/max-new/1000014397532-Beige-NUDE-1000014397532_01-2100.jpg",
+    "return": "7 days return"
+  },
+  {
+    "id": 34,
+    "title": "Modern Kurti",
+    "price": 899,
+    "description": "Stylish kurti for a graceful look.",
+    "rating": 4.3,
+    "category": "modern kurtis",
+    "image": "https://images.meesho.com/images/products/453477751/n5brp_512.webp",
+    "return": "7 days return"
+  },
+  {
+    "id": 35,
+    "title": "Bold Matte Lipstick",
+    "price": 299,
+    "description": "Rich color and long-lasting finish.",
+    "rating": 4.4,
+    "category": "bold lipsticks",
+    "image": "https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/9028641/2019/3/15/50dd1f87-3fd7-4152-b695-e1e67ca68c991552639606293-Maybelline-Women-Lipstick-6601552639606047-1.jpg",
+    "return": "7 days return"
+  },
+  {
+    "id": 36,
+    "title": "Graceful Silk Saree",
+    "price": 1899,
+    "description": "Traditional elegance in every drape.",
+    "rating": 4.5,
+    "category": "graceful sarees",
+    "image": "https://images.sareeswholesale.com/grey-weaving-work-soft-silk-graceful-saree-171442.jpg",
+    "return": "7 days return"
+  },
+  {
+    "id": 37,
+    "title": "Trendy Handbag",
+    "price": 999,
+    "description": "Spacious and perfect for every look.",
+    "rating": 4.3,
+    "category": "trendy handbags",
+    "image": "https://5.imimg.com/data5/AS/TH/BQ/SELLER-71697535/trendy-hand-bag-500x500.jpg",
+    "return": "7 days return"
+  },
+  {
+    "id": 38,
+    "title": "Hottest Heels",
+    "price": 1299,
+    "description": "Turn heads with these stylish heels.",
+    "rating": 4.5,
+    "category": "hottest heels",
+    "image": "https://us.christianlouboutin.com/media/catalog/product/cache/e88e85f4e5336c618abbd9e5f93aeaf8/1/2/1250939b439-1250939b439-main_image-ecommerce-christianlouboutin-missz-1250939_b439_1_1200x1200.jpg",
+    "return": "7 days return"
+  },
+  {
+    "id": 39,
+    "title": "Classic Jeans",
+    "price": 399,
+    "description": "Stretchable and stylish for everyday wear.",
+    "rating": 4.4,
+    "category": "classic jeans",
+    "image": "https://www.allamericanclothing.com/cdn/shop/products/AA1873L---Men-s-Classic-Jean---Medium-Stonewash---Made-in-USA-All-American-Clothing-Co.-1653670419_1200x.jpg?v=1653670420",
+    "return": "7 days return"
+  },
+  {
+    "id": 40,
+    "title": "Festive Kurta Set",
+    "price": 1599,
+    "description": "Celebrate in style with traditional charm.",
+    "rating": 4.6,
+    "category": "festive kurta sets",
+    "image": "https://www.jaipurkurti.com/cdn/shop/files/2_d4da0e9c-95f3-47b6-96a8-7903be8e7d2a.jpg?v=1750513564&width=1080",
+    "return": "7 days return"
+  },
+  {
+    "id": 41,
+    "title": "Fab Printed Kurta",
+    "price": 849,
+    "description": "Colorful, fun, and fashionable.",
+    "rating": 4.3,
+    "category": "fab kurtas",
+    "image": "https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/25404224/2023/10/7/92f251dc-ed38-419a-82ac-c6b941cdf1e91696692357889KurtaSets1.jpg",
+    "return": "7 days return"
+  },
+  {
+    "id": 42,
+    "title": "Skin Brightening Day Cream",
+    "price": 429,
+    "description": "SPF enriched for daily protection.",
+    "rating": 4.2,
+    "category": "day creams",
+    "image": "https://myhinine.com/cdn/shop/files/slide_1_2532ea37-9f96-4e66-813f-a0d10c81a4de.jpg?v=1723812416",
+    "return": "7 days return"
+  },
+  {
+    "id": 43,
+    "title": "Wireless Headphones",
+    "price": 1999,
+    "description": "High quality sound with Bluetooth.",
+    "rating": 4.6,
+    "category": "headphones",
+    "image": "https://www.leafstudios.in/cdn/shop/files/1_a43c5e0b-3a47-497d-acec-b4764259b10e_800x.png?v=1750486829",
+    "return": "7 days return"
+  },
+  {
+    "id": 44,
+    "title": "Sensitive Skin Shaving Foam",
+    "price": 199,
+    "description": "Gentle shaving without irritation.",
+    "rating": 4.1,
+    "category": "shaving foams",
+    "image": "https://images.ctfassets.net/7tfi3razjgvb/2d75gH5KAXWuS1rO2rcMoV/fb112548da6d0a1942453d8816899418/DT_Overview_20Img_4ct_402x.png",
+    "return": "7 days return"
+  },
+  {
+    "id": 45,
+    "title": "Durable Travel Backpack",
+    "price": 1099,
+    "description": "Spacious, tough, and water-resistant.",
+    "rating": 4.5,
+    "category": "durable backpacks",
+    "image": "https://5.imimg.com/data5/JG/GK/TS/SELLER-20700789/bnp067-r-blue-2.jpg",
+    "return": "7 days return"
+  },
+  {
+    "id": 46,
+    "title": "Trendy Handbag",
+    "price": 999,
+    "description": "Spacious and perfect for every look.",
+    "rating": 4.3,
+    "category": "trendy handbags",
+    "image": "https://m.media-amazon.com/images/I/61eMpnhr+uL._UL1500_.jpg",
+    "return": "7 days return"
+  },
+  {
+    "id": 47,
+    "title": "Fab Printed Kurta",
+    "price": 849,
+    "description": "Colorful, fun, and fashionable.",
+    "rating": 4.3,
+    "category": "fab kurtas",
+    "image": "https://m.media-amazon.com/images/I/61g4NHgfd7L._UL1500_.jpg",
+    "return": "7 days return"
+  },
+  {
+    "id": 48,
+    "title": "Strawberry Lip Balm",
+    "price": 129,
+    "description": "Moisturizes and softens lips.",
+    "rating": 4.1,
+    "category": "lip balms",
+    "image": "https://images-static.naikaa.com/beauty-blog/wp-content/uploads/2023/02/The-New-Serial-Kisser-Tinted-Lip-Balm-By-Nykaa-Is-A-Revelation-1.jpg",
+    "return": "7 days return"
+  },
+  {
+    "id": 49,
+    "title": "Skin-Loving Serum",
+    "price": 349,
+    "description": "Deeply nourishes and hydrates your skin.",
+    "rating": 4.6,
+    "category": "skin-loving formulas",
+    "image": "https://blogscdn.thehut.net/app/uploads/sites/1736/2021/10/wk9wk9_blog_itcosmetics_4-xy2dnjpg_1633098632.jpg",
+    "return": "7 days return"
+  },
+  {
+    "id": 50,
+    "title": "Trendy Sneakers",
+    "price": 1499,
+    "description": "Comfortable and stylish for everyday wear.",
+    "rating": 4.3,
+    "category": "trendy shoes",
+    "image": "https://www.jiomart.com/images/product/original/rv5ta7l07y/fitfusion-premium-partywear-casual-shoes-for-women-stylish-trendy-sneakers-for-girl-product-images-rv5ta7l07y-1-202311081713.jpg?im=Resize=(500,630)",
+    "return": "7 days return"
+  },
+  {
+    "id": 51,
+    "title": "Classic Everyday Bag",
+    "price": 899,
+    "description": "Spacious and sleek for daily use.",
+    "rating": 4.2,
+    "category": "everyday bags",
+    "image": "https://m.media-amazon.com/images/I/71f000GnXzL._UY1000_.jpg",
+    "return": "7 days return"
+  },
+  {
+    "id": 52,
+    "title": "Statement Earrings",
+    "price": 399,
+    "description": "Eye-catching finds for every occasion.",
+    "rating": 4.5,
+    "category": "eye-catching finds",
+    "image": "https://safevision.com/wp-content/uploads/2024/09/1.-SVSR5-Matt-Spider-Web-Quarter.jpg",
+    "return": "7 days return"
+  },
+  {
+    "id": 53,
+    "title": "Stylish Stride Loafers",
+    "price": 1699,
+    "description": "Elegant and supportive loafers.",
+    "rating": 4.0,
+    "category": "stylish strides",
+    "image": "https://septembershoes.com/cdn/shop/files/DSC01411.jpg?v=1725954953",
+    "return": "7 days return"
+  },
+  {
+    "id": 54,
+    "title": "Graphic T-shirt",
+    "price": 499,
+    "description": "Trendy prints for bold personalities.",
+    "rating": 4.4,
+    "category": "graphic t-shirts",
+    "image": "https://m.media-amazon.com/images/I/61ETIupdWLL.jpg",
+    "return": "7 days return"
+  },
+  {
+    "id": 55,
+    "title": "Casual Checked Shirt",
+    "price": 799,
+    "description": "Relaxed fit and premium cotton.",
+    "rating": 4.3,
+    "category": "casual shirts",
+    "image": "https://static.cilory.com/681508-thickbox_default/nologo-white-navy-checked-casual-shirt.jpg",
+    "return": "7 days return"
+  },
+  {
+    "id": 56,
+    "title": "Speed Runner Shoes",
+    "price": 2599,
+    "description": "Built for performance and speed.",
+    "rating": 4.7,
+    "category": "speed boosters",
+    "image": "https://primesandzooms.com/media/catalog/product/cache/cf9cb432f05f4e06667382b9ec676d02/m/e/metabones_speed_booster_canon_ef_to_mft_ultra_0.71x_on_rent_at_primes_and_zooms.jpg",
+    "return": "7 days return"
+  },
+  {
+    "id": 57,
+    "title": "Formal Derby Shoes",
+    "price": 1899,
+    "description": "Perfect corporate look shoes.",
+    "rating": 4.1,
+    "category": "corporate soles",
+    "image": "https://paragonfootwear.com/cdn/shop/products/rk11233g-brown-1.jpg?v=1741863250",
+    "return": "7 days return"
+  },
+  {
+    "id": 58,
+    "title": "Bold Fit Hoodie",
+    "price": 1099,
+    "description": "Oversized comfort with bold style.",
+    "rating": 4.6,
+    "category": "bold fits",
+    "image": "https://assets.ajio.com/medias/sys_master/root/20241209/uAJ1/6756d0570f47f80c87e797c8/-473Wx593H-700593148-olive-MODEL.jpg",
+    "return": "7 days return"
+  },
+  {
+    "id": 59,
+    "title": "Pinterest Fit Co-ord Set",
+    "price": 1399,
+    "description": "Aesthetic co-ord set inspired by Pinterest trends.",
+    "rating": 4.5,
+    "category": "pinterest-inspired fits",
+    "image": "https://www.indianrani.com/cdn/shop/files/ND-15_7.jpg?v=1707476905&width=1946",
+    "return": "7 days return"
+  },
+  {
+    "id": 60,
+    "title": "Chic Linen Pants",
+    "price": 999,
+    "description": "Airy and modern bottomwear for summer.",
+    "rating": 4.3,
+    "category": "chic bottomwear",
+    "image": "https://i.etsystatic.com/18064174/r/il/da9348/5132022248/il_570xN.5132022248_szwb.jpg",
+    "return": "7 days return"
+  },
+  {
+    "id": 61,
+    "title": "Pretty Fusion Kurta",
+    "price": 1199,
+    "description": "East meets West in stylish fusion wear.",
+    "rating": 4.4,
+    "category": "pretty fusion wear",
+    "image": "https://fashor.com/cdn/shop/files/30635_8.jpg?v=1744790442",
+    "return": "7 days return"
+  },
+  {
+    "id": 62,
+    "title": "Chikankari Kurta Set",
+    "price": 1599,
+    "description": "Elegant embroidery with pants.",
+    "rating": 4.6,
+    "category": "chikankari kurta & pants",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfa4QbVjwL_b_V6l-z_QU398Gdn9N7cZCxcA&s",
+    "return": "7 days return"
+  },
+  {
+    "id": 63,
+    "title": "Insulated Lunch Box Set",
+    "price": 549,
+    "description": "Keeps food warm and fresh.",
+    "rating": 4.2,
+    "category": "lunch boxes",
+    "image": "https://www.oliveware.com/cdn/shop/files/LB113-Blue.jpg?v=1690433234",
+    "return": "7 days return"
+  },
+  {
+    "id": 64,
+    "title": "Travel Trolley Set",
+    "price": 3499,
+    "description": "Durable trolleys for smart travel.",
+    "rating": 4.5,
+    "category": "trolleys & sets",
+    "image": "https://redhorns.in/cdn/shop/files/CHAM_MAIN_WEB_1.jpg?v=1727272808",
+    "return": "7 days return"
+  },
+  {
+    "id": 65,
+    "title": "Dapper Men’s Suit",
+    "price": 2599,
+    "description": "Make a sharp statement with this set.",
+    "rating": 4.7,
+    "category": "dapper styles",
+    "image": "https://static.showit.co/1200/C_zvFz4OQf2NSQpRqNR6xQ/shared/photo_jun_25_10_09_15_am.jpg",
+    "return": "7 days return"
+  },
+  {
+    "id": 66,
+    "title": "Luxury Gold Watch",
+    "price": 6499,
+    "description": "Luxury in every tick – timeless elegance.",
+    "rating": 4.8,
+    "category": "luxury in every tick",
+    "image": "https://m.media-amazon.com/images/I/71q28LYkHIL._UY1000_.jpg",
+    "return": "7 days return"
+  },
+  {
+    "id": 67,
+    "title": "Bold Chronograph Watch",
+    "price": 3199,
+    "description": "Make bold wrist moves with style.",
+    "rating": 4.6,
+    "category": "bold wrist moves",
+    "image": "https://justintime.in/cdn/shop/products/1Chivij5owfnC6mCTVdmzncuGEXBBZKRe.jpg?v=1703248318&width=1946",
+    "return": "7 days return"
+  },
+  {
+    "id": 68,
+    "title": "Fresh Citrus Body Mist",
+    "price": 599,
+    "description": "Revitalizing scent with fresh citrus notes.",
+    "rating": 4.4,
+    "category": "fresh tones",
+    "image": "https://m.media-amazon.com/images/I/614B-LzKghL._UF1000,1000_QL80_.jpg",
+    "return": "7 days return"
+  }
+]
