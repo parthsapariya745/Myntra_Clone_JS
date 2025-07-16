@@ -119,12 +119,7 @@
         return;
       }
       fetch('./data/product.json')
-        .then((req) => {
-          if (!req.ok) {
-            throw new Error(`HTTP error! Status: ${req.status}`);
-          }
-          return req.json();
-        })
+        .then((req)=> req.json())
         .then((res) => {
           let product = res.find((p) => p.id == pId);
           if (product) {
