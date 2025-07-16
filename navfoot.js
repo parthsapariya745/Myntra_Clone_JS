@@ -1,3 +1,5 @@
+window.count = 0
+
 let navbox = document.getElementById('navbox');
 navbox.innerHTML = `
 <div class="bg h-auto w-full">
@@ -532,7 +534,6 @@ navbox.innerHTML = `
                                     <a href="./addtocart.html">
                                         <div class="relative">
                                             <i class="ri-shopping-bag-line text-[20px] relative top-[5px]"></i>
-                                            <span id="cartBadge" class="absolute -top-1 -right-2 bg-red-500 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">0</span>
                                         </div>
                                         <p class="text-[12px] font-[700]">Bag</p>
                                     </a>
@@ -586,7 +587,6 @@ navbox.innerHTML = `
                                 <a href="./addtocart.html">
                                     <div class="relative">
                                         <i class="ri-shopping-bag-line text-[20px] relative top-[5px]"></i>
-                                        <span id="cartBadge" class="absolute -top-1 -right-2 bg-red-500 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">0</span>
                                     </div>
                                     <p class="text-[12px] font-[700]">Bag</p>
                                 </a>
@@ -617,7 +617,6 @@ navbox.innerHTML = `
                         <a href="./addtocart.html">
                             <div class="relative">
                                 <i class="ri-shopping-bag-line text-[20px] relative top-[5px]"></i>
-                                <span id="cartBadge" class="absolute -top-1 -right-2 bg-red-500 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">0</span>
                             </div>
                             <p class="text-[12px] font-[700]">Bag</p>
                         </a>
