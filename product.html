@@ -256,7 +256,7 @@
                         </div>
                       </div>
                       
-                      <button class="bg-gradient-to-r from-pink-500 to-red-500 text-white py-4 px-10 border-none mt-5 cursor-pointer rounded-xl text-xl font-semibold w-full transition-all duration-300 shadow-lg hover:-translate-y-1 hover:shadow-xl" onclick="addProduct()">
+                      <button class="bg-gradient-to-r from-pink-500 to-red-500 text-white py-4 px-10 border-none mt-5 cursor-pointer rounded-xl text-xl font-semibold w-full transition-all duration-300 shadow-lg hover:-translate-y-1 hover:shadow-xl" onclick="addProduct(${product.id})">
                         <i class="fas fa-shopping-bag mr-2"></i>
                         ADD TO BAG
                       </button>
@@ -281,7 +281,7 @@
                       </div>
                       <div class="flex items-center gap-4 mb-4 text-lg text-gray-800">
                         <i class="fas fa-undo-alt text-teal-500 text-xl w-6"></i>
-                        <span><strong>Easy Returns</strong> within 30 days of purchase</span>
+                        <span><strong>Easy Returns</strong> within 7 days of purchase</span>
                       </div>
                       <div class="flex items-center gap-4 mb-4 text-lg text-gray-800">
                         <i class="fas fa-headset text-teal-500 text-xl w-6"></i>
@@ -356,6 +356,15 @@
         });
     }
     window.onload = productDetail;
+
+    function addProduct(id) {
+      let cart = JSON.parse(localStorage.getItem("item")) || [];
+
+      if (!cart.includes(id)) {
+        cart.push(id);
+        localStorage.setItem("item", JSON.stringify(cart));
+      }
+    }
   </script>
 </body>
 </html>
