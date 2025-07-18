@@ -678,5 +678,155 @@
     "category": "fresh tones",
     "image": "https://m.media-amazon.com/images/I/614B-LzKghL._UF1000,1000_QL80_.jpg",
     "return": "7 days return"
+  },
+  {
+    "id": 69,
+    "title": "Men’s Slim Fit Jeans",
+    "price": 1999,
+    "description": "Stylish slim fit jeans for men, perfect for casual outings.",
+    "rating": 4.3,
+    "category": "jeans",
+    "image": "https://levi.in/cdn/shop/files/182981482_01_Front_4b14f5bd-3c6a-4603-acda-096c5675d825.jpg?v=1740488440",
+    "return": "7 days return"
+  },
+  {
+    "id": 70,
+    "title": "Men’s Casual Top",
+    "price": 899,
+    "description": "Comfortable casual top with a modern look.",
+    "rating": 4.2,
+    "category": "tops",
+    "image": "https://i.pinimg.com/736x/d5/ce/ec/d5ceecc69624ce256c62f568d7df0852.jpg",
+    "return": "7 days return"
+  },
+  {
+    "id": 71,
+    "title": "Sports T-Shirt",
+    "price": 1399,
+    "description": "Breathable and stylish sportswear for workouts.",
+    "rating": 4.5,
+    "category": "sportswear",
+    "image": "https://m.media-amazon.com/images/I/518a424uw8L._UY1100_.jpg",
+    "return": "7 days return"
+  },
+  {
+    "id": 72,
+    "title": "Formal Pant",
+    "price": 2499,
+    "description": "Tailored formal pants for professional attire.",
+    "rating": 4.4,
+    "category": "formalwear",
+    "image": "https://i.pinimg.com/736x/0b/a3/1e/0ba31e95b01883f502a8846b6a0a83b9.jpg",
+    "return": "7 days return"
+  },
+  {
+    "id": 73,
+    "title": "Joggers",
+    "price": 1599,
+    "description": "Comfort-fit joggers made with premium fabric.",
+    "rating": 4.3,
+    "category": "casual wear",
+    "image": "https://images-cdn.ubuy.co.in/654e5911b072f645b77dd5ff-puma-men-39-s-cover-french-terry.jpg",
+    "return": "7 days return"
+  },
+  {
+    "id": 74,
+    "title": "Running Shorts",
+    "price": 1099,
+    "description": "Lightweight and breathable shorts for running.",
+    "rating": 4.3,
+    "category": "activewear",
+    "image": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/bd46800b786548e7b4a1234553d66533_9366/Own_the_Run_3-Stripes_Shorts_Black_IQ3814_HM4.jpg",
+    "return": "7 days return"
+  },
+  {
+    "id": 75,
+    "title": "Lightweight Jacket",
+    "price": 2799,
+    "description": "Versatile lightweight jacket for all seasons.",
+    "rating": 4.6,
+    "category": "jackets",
+    "image": "https://m.media-amazon.com/images/I/61EvSi-Q7wL._UY1100_.jpg",
+    "return": "7 days return"
+  },
+  {
+    "id": 76,
+    "title": "Checked Casual Shirt",
+    "price": 1199,
+    "description": "Trendy checked shirt ideal for casual wear.",
+    "rating": 4.3,
+    "category": "shirts",
+    "image": "https://rukminim2.flixcart.com/image/850/1000/kflftzk0-0/shirt/q/7/s/40-10398369-roadster-original-imafwyez4s2ctghk.jpeg?q=90&crop=false",
+    "return": "7 days return"
+  },
+  {
+    "id": 77,
+    "title": "Formal Blazer",
+    "price": 4499,
+    "description": "Elegant blazer for formal and party occasions.",
+    "rating": 4.7,
+    "category": "formalwear",
+    "image": "https://imagescdn.vanheusenindia.com/img/app/product/3/39624826-12861529.jpg?auto=format&w=390",
+    "return": "7 days return"
+  },
+  {
+    "id": 78,
+    "title": "Printed Kurta",
+    "price": 1399,
+    "description": "Traditional printed kurta for festive wear.",
+    "rating": 4.4,
+    "category": "ethnic",
+    "image": "https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/19065302/2022/12/16/52f6c71a-9187-41ab-ac88-b6795fcf82f41671180852490-Anouk-Men-Kurtas-8111671180851957-1.jpg",
+    "return": "7 days return"
+  },
+  {
+    "id": 79,
+    "title": "Floral Dress",
+    "price": 1599,
+    "description": "Chic floral dress for casual and party look.",
+    "rating": 4.5,
+    "category": "dresses",
+    "image": "https://m.media-amazon.com/images/I/A1rHT-qVzrL._AC_UY1100_.jpg",
+    "return": "7 days return"
+  },
+  {
+    "id": 80,
+    "title": "Chino Trousers",
+    "price": 1899,
+    "description": "Smart casual chino trousers for men.",
+    "rating": 4.3,
+    "category": "trousers",
+    "image": "https://img.tatacliq.com/images/i8/1348Wx2000H/MP000000014796445_1348Wx2000H_202210090146491.jpeg",
+    "return": "7 days return"
+  },
+  {
+    "id": 81,
+    "title": "Track Pants",
+    "price": 1299,
+    "description": "Stretchable track pants suitable for workouts.",
+    "rating": 4.4,
+    "category": "activewear",
+    "image": "https://rukminim2.flixcart.com/image/850/1000/kawtvgw0/track-pant/h/8/6/xxl-11012148-hrx-by-hrithik-roshan-original-imafsdhdwey2g2hu.jpeg?q=90&crop=false",
+    "return": "7 days return"
+  },
+  {
+    "id": 82,
+    "title": "Denim Jeans",
+    "price": 1799,
+    "description": "Classic denim jeans with a modern fit.",
+    "rating": 4.5,
+    "category": "jeans",
+    "image": "https://spykar.com/cdn/shop/products/kbTYEA_5wy-MDSS1BC015MID-BLUE-_1.jpg?v=1750331187",
+    "return": "7 days return"
+  },
+  {
+    "id": 83,
+    "title": "Lace Blouse",
+    "price": 1499,
+    "description": "Elegant lace blouse for a stylish look.",
+    "rating": 4.3,
+    "category": "tops",
+    "image": "https://m.media-amazon.com/images/I/61Y0AlhowkL._UY1100_.jpg",
+    "return": "7 days return"
   }
 ]
