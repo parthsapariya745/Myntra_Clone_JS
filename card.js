@@ -123,6 +123,7 @@ let card = [
 ]
 
 card.forEach((e)=>{
+    let dPersentage = (((Math.round(e.discount_price * 1.6) - e.discount_price) / Math.round(e.discount_price * 1.6)) * 100).toFixed(2)
     box.innerHTML += `
     <div class="shadow-lg overflow-hidden bg-white group relative rounded-xl transition-transform duration-300 hover:scale-105 hover:shadow-2xl animate-fadeInUp"
     onmouseenter="startSlider(this)" onmouseleave="stopSlider(this)">
@@ -141,8 +142,8 @@ card.forEach((e)=>{
         <p class="text-sm font-medium text-gray-800 truncate">${e.product_name}</p>
         <div class="flex items-center gap-2 mt-1">
           <span class="font-bold text-gray-900 text-sm">₹${e.discount_price}</span>
-          <span class="line-through text-xs text-gray-500">₹${e.price}</span>
-          <span class="text-xs text-pink-600 font-semibold">${Math.round(100 - (e.discount_price/e.price)*100)}% OFF</span>
+          <span class="line-through text-xs text-gray-500">₹${Math.round(e.discount_price * 1.6)}</span>
+          <span class="text-xs text-pink-600 font-semibold">${dPersentage}% OFF</span>
         </div>
         <button class="mt-3 w-full px-4 py-2 cursor-pointer bg-[#ff1b58] hover:bg-[#ff0095] text-white text-sm rounded-md transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-opacity-50" onclick="addProduct(${e.id})">
           Add to Cart
