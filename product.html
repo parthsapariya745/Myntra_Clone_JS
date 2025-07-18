@@ -103,21 +103,6 @@
   <!-- footer -->
   <div class="footer mt-10" id="footerbox"></div>
 
-  <script>
-    window.count = 0
-    function addProduct() {
-      let cart = JSON.parse(localStorage.getItem("item"))
-      localStorage.setItem("item", JSON.stringify(cart))
-
-      window.count++
-
-      let cartBadge = document.getElementById("cartBadge")
-      if (cartBadge) {
-        cartBadge.innerText = window.count
-        //console.log(window.count)
-      }
-    }
-  </script>
   <script src="./navfoot.js"></script>
   <script>
     let qty = 1

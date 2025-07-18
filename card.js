@@ -108,29 +108,30 @@ let card = [
 ]
 
 card.forEach((e)=>{
-    box.innerHTML += `<div class="w-64 sm:w-56 md:w-48 lg:w-44 xl:w-48 shadow-lg overflow-hidden bg-white group relative rounded-xl transition-transform duration-300 hover:scale-105 hover:shadow-2xl animate-fadeInUp"
+    box.innerHTML += `
+    <div class="shadow-lg overflow-hidden bg-white group relative rounded-xl transition-transform duration-300 hover:scale-105 hover:shadow-2xl animate-fadeInUp"
     onmouseenter="startSlider(this)" onmouseleave="stopSlider(this)">
-  <!-- Image Box -->
-  <div class="relative w-full aspect-[3/4] bg-gray-100 overflow-hidden">
-    <img src="${e.image}" class="product-img w-full h-full object-cover absolute top-0 left-0 opacity-100 transition-transform duration-300 group-hover:scale-110" />
-    <img src="https://via.placeholder.com/300x400?text=Image+2" class="product-img w-full h-full object-cover absolute top-0 left-0 opacity-0" />
-    <img src="https://via.placeholder.com/300x400?text=Image+3" class="product-img w-full h-full object-cover absolute top-0 left-0 opacity-0" />
+      <div class="relative w-full aspect-[3/4] bg-gray-100 overflow-hidden">
+        <img src="${e.image}" class="product-img w-full h-full object-cover absolute top-0 left-0 opacity-100 transition-transform duration-300 group-hover:scale-110" />
+        <img src="https://via.placeholder.com/300x400?text=Image+2" class="product-img w-full h-full object-cover absolute top-0 left-0 opacity-0" />
+        <img src="https://via.placeholder.com/300x400?text=Image+3" class="product-img w-full h-full object-cover absolute top-0 left-0 opacity-0" />
 
-    <!-- Wishlist Button -->
-    <button class="wishlist-btn absolute bottom-2 left-1/2 -translate-x-1/2 bg-white px-3 py-1 text-xs rounded shadow opacity-0 group-hover:opacity-100 transition-all duration-300">
-      ❤️ Wishlist
-    </button>
-  </div>
+        <button class="wishlist-btn absolute bottom-2 left-1/2 -translate-x-1/2 bg-white px-3 py-1 text-xs rounded shadow opacity-0 group-hover:opacity-100 transition-all duration-300">
+          ❤️ Wishlist
+        </button>
+      </div>
 
-  <!-- Product Info -->
-  <div class="p-2">
-    <h2 class="text-xs text-gray-500 font-semibold truncate">${e.company}</h2>
-    <p class="text-sm font-medium text-gray-800 truncate">${e.product_name}</p>
-    <div class="flex items-center gap-2 mt-1">
-      <span class="font-bold text-gray-900 text-sm">₹${e.discount_price}</span>
-      <span class="line-through text-xs text-gray-500">₹${e.price}</span>
-      <span class="text-xs text-pink-600 font-semibold">${Math.round(100 - (e.discount_price/e.price)*100)}% OFF</span>
-    </div>
-  </div>
-</div>`
+      <div class="p-2">
+        <h2 class="text-xs text-gray-500 font-semibold truncate">${e.company}</h2>
+        <p class="text-sm font-medium text-gray-800 truncate">${e.product_name}</p>
+        <div class="flex items-center gap-2 mt-1">
+          <span class="font-bold text-gray-900 text-sm">₹${e.discount_price}</span>
+          <span class="line-through text-xs text-gray-500">₹${e.price}</span>
+          <span class="text-xs text-pink-600 font-semibold">${Math.round(100 - (e.discount_price/e.price)*100)}% OFF</span>
+        </div>
+        <button class="mt-3 w-full px-4 py-2 cursor-pointer bg-[#ff1b58] hover:bg-[#ff0095] text-white text-sm rounded-md transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-opacity-50" onclick="addProduct(${e.id})">
+          Add to Cart
+        </button>
+      </div>
+    </div>`
 })
