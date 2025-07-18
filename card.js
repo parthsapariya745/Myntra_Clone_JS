@@ -5,7 +5,6 @@ let card = [
     "image": "https://levi.in/cdn/shop/files/182981482_01_Front_4b14f5bd-3c6a-4603-acda-096c5675d825.jpg?v=1740488440",
     "company": "Levi's",
     "product_name": "Men’s Slim Fit Jeans",
-    "price": 2999,
     "discount_price": 1999
   },
   {
@@ -13,7 +12,6 @@ let card = [
     "image": "https://i.pinimg.com/736x/d5/ce/ec/d5ceecc69624ce256c62f568d7df0852.jpg",
     "company": "H&M",
     "product_name": "Men’s Casual Top",
-    "price": 1299,
     "discount_price": 899
   },
   {
@@ -21,15 +19,13 @@ let card = [
     "image": "https://m.media-amazon.com/images/I/518a424uw8L._UY1100_.jpg",
     "company": "Nike",
     "product_name": "Sports T-Shirt",
-    "price": 1799,
-    "discount_price": 1399
+    "discount_price": 799
   },
   {
     "id": 72,
     "image": "https://i.pinimg.com/736x/0b/a3/1e/0ba31e95b01883f502a8846b6a0a83b9.jpg",
     "company": "Zara",
     "product_name": "Formal Pant",
-    "price": 3499,
     "discount_price": 2499
   },
   {
@@ -37,7 +33,6 @@ let card = [
     "image": "https://images-cdn.ubuy.co.in/654e5911b072f645b77dd5ff-puma-men-39-s-cover-french-terry.jpg",
     "company": "Puma",
     "product_name": "Joggers",
-    "price": 2299,
     "discount_price": 1599
   },
   {
@@ -45,7 +40,6 @@ let card = [
     "image": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/bd46800b786548e7b4a1234553d66533_9366/Own_the_Run_3-Stripes_Shorts_Black_IQ3814_HM4.jpg",
     "company": "Adidas",
     "product_name": "Running Shorts",
-    "price": 1499,
     "discount_price": 1099
   },
   {
@@ -53,7 +47,6 @@ let card = [
     "image": "https://m.media-amazon.com/images/I/61EvSi-Q7wL._UY1100_.jpg",
     "company": "Uniqlo",
     "product_name": "Lightweight Jacket",
-    "price": 3999,
     "discount_price": 2799
   },
   {
@@ -61,7 +54,6 @@ let card = [
     "image": "https://rukminim2.flixcart.com/image/850/1000/kflftzk0-0/shirt/q/7/s/40-10398369-roadster-original-imafwyez4s2ctghk.jpeg?q=90&crop=false",
     "company": "Roadster",
     "product_name": "Checked Casual Shirt",
-    "price": 1599,
     "discount_price": 1199
   },
   {
@@ -69,7 +61,6 @@ let card = [
     "image": "https://imagescdn.vanheusenindia.com/img/app/product/3/39624826-12861529.jpg?auto=format&w=390",
     "company": "Van Heusen",
     "product_name": "Formal Blazer",
-    "price": 5999,
     "discount_price": 4499
   },
   {
@@ -77,7 +68,6 @@ let card = [
     "image": "https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/19065302/2022/12/16/52f6c71a-9187-41ab-ac88-b6795fcf82f41671180852490-Anouk-Men-Kurtas-8111671180851957-1.jpg",
     "company": "Biba",
     "product_name": "Printed Kurta",
-    "price": 1899,
     "discount_price": 1399
   },
   {
@@ -85,7 +75,6 @@ let card = [
     "image": "https://m.media-amazon.com/images/I/A1rHT-qVzrL._AC_UY1100_.jpg",
     "company": "Max",
     "product_name": "Floral Dress",
-    "price": 2199,
     "discount_price": 1599
   },
   {
@@ -93,7 +82,6 @@ let card = [
     "image": "https://img.tatacliq.com/images/i8/1348Wx2000H/MP000000014796445_1348Wx2000H_202210090146491.jpeg",
     "company": "Allen Solly",
     "product_name": "Chino Trousers",
-    "price": 2699,
     "discount_price": 1899
   },
   {
@@ -101,7 +89,6 @@ let card = [
     "image": "https://rukminim2.flixcart.com/image/850/1000/kawtvgw0/track-pant/h/8/6/xxl-11012148-hrx-by-hrithik-roshan-original-imafsdhdwey2g2hu.jpeg?q=90&crop=false",
     "company": "HRX",
     "product_name": "Track Pants",
-    "price": 1899,
     "discount_price": 1299
   },
   {
@@ -109,7 +96,6 @@ let card = [
     "image": "https://spykar.com/cdn/shop/products/kbTYEA_5wy-MDSS1BC015MID-BLUE-_1.jpg?v=1750331187",
     "company": "Spykar",
     "product_name": "Denim Jeans",
-    "price": 2499,
     "discount_price": 1799
   },
   {
@@ -117,7 +103,6 @@ let card = [
     "image": "https://m.media-amazon.com/images/I/61Y0AlhowkL._UY1100_.jpg",
     "company": "ONLY",
     "product_name": "Lace Blouse",
-    "price": 1999,
     "discount_price": 1499
   }
 ]
