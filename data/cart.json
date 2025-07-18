@@ -712,11 +712,11 @@
   {
     "id": 72,
     "title": "Formal Pant",
-    "price": 2499,
+    "price": 699,
     "description": "Tailored formal pants for professional attire.",
     "rating": 4.4,
     "category": "formalwear",
-    "image": "https://i.pinimg.com/736x/0b/a3/1e/0ba31e95b01883f502a8846b6a0a83b9.jpg",
+    "image": "https://static.zara.net/assets/public/4619/aebc/4cfd4d43b103/baa249f7f934/06861441802-a1/06861441802-a1.jpg?ts=1727349036352",
     "return": "7 days return"
   },
   {
@@ -827,6 +827,156 @@
     "rating": 4.3,
     "category": "tops",
     "image": "https://m.media-amazon.com/images/I/61Y0AlhowkL._UY1100_.jpg",
+    "return": "7 days return"
+  },
+  {
+    "id": 84,
+    "title": "Women's Slim Fit Jeans",
+    "price": 2999,
+    "description": "Stylish slim fit jeans with modern design.",
+    "rating": 4.4,
+    "category": "bottomwear",
+    "image": "https://imagescdn.pantaloons.com/img/app/product/3/393581-2083699.jpg?auto=format&w=450",
+    "return": "7 days return"
+  },
+  {
+    "id": 85,
+    "title": "Women's Casual Top",
+    "price": 1299,
+    "description": "Comfortable and trendy casual top for daily wear.",
+    "rating": 4.2,
+    "category": "tops",
+    "image": "https://i.pinimg.com/736x/7f/7d/cc/7f7dccb4815ad4a5e9ed124a2b3adcf5.jpg",
+    "return": "7 days return"
+  },
+  {
+    "id": 86,
+    "title": "Women's Sports T-Shirt",
+    "price": 1799,
+    "description": "Breathable sports T-shirt for workouts and active wear.",
+    "rating": 4.6,
+    "category": "sportswear",
+    "image": "https://www.globalrepublic.in/cdn/shop/products/3_364837ed-4395-43d7-9f1b-40689aa9172e_1080x.jpg?v=1591353306",
+    "return": "7 days return"
+  },
+  {
+    "id": 87,
+    "title": "Formal Pant",
+    "price": 3499,
+    "description": "Elegant formal pants perfect for office wear.",
+    "rating": 4.5,
+    "category": "bottomwear",
+    "image": "https://www.intermod.in/cdn/shop/products/houndtooth_trouser_1_1000x.jpg",
+    "return": "7 days return"
+  },
+  {
+    "id": 88,
+    "title": "Joggers",
+    "price": 2299,
+    "description": "Comfortable joggers ideal for daily and sporty use.",
+    "rating": 4.3,
+    "category": "bottomwear",
+    "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcT4os1jj3lEd2NTJXs8yyuABN53-ddf2UdCZvngB3Ap5IFShGMQWHl0K0So3uKFlVj1WhSRP1uPPPU7tunxX8v9lMXBZe40FkVZ483RRixMLQCgTz5ECpmkYQ&usqp=CAc",
+    "return": "7 days return"
+  },
+  {
+    "id": 89,
+    "title": "Running Shorts",
+    "price": 1499,
+    "description": "Lightweight and breathable shorts for running.",
+    "rating": 4.1,
+    "category": "sportswear",
+    "image": "https://images.unsplash.com/photo-1591195853828-11db59a44f6b?w=400&h=500&fit=crop",
+    "return": "7 days return"
+  },
+  {
+    "id": 90,
+    "title": "Lightweight Jacket",
+    "price": 3999,
+    "description": "Trendy and lightweight jacket for all seasons.",
+    "rating": 4.5,
+    "category": "jackets",
+    "image": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&h=500&fit=crop",
+    "return": "7 days return"
+  },
+  {
+    "id": 91,
+    "title": "Checked Casual Shirt",
+    "price": 1599,
+    "description": "Classic checked shirt for casual outings.",
+    "rating": 4.2,
+    "category": "shirts",
+    "image": "https://i.pinimg.com/736x/a4/73/e8/a473e8584f7b9ce37729cf059c0b5e99.jpg",
+    "return": "7 days return"
+  },
+  {
+    "id": 92,
+    "title": "Formal Blazer",
+    "price": 5999,
+    "description": "Smart and professional blazer for women.",
+    "rating": 4.6,
+    "category": "blazers",
+    "image": "https://www.jiomart.com/images/product/original/rvnuxuazhy/mans-fab-solid-single-breasted-formal-women-blazer-brown-xs-product-images-rvnuxuazhy-0-202308290719.jpg?im=Resize=(500,630)",
+    "return": "7 days return"
+  },
+  {
+    "id": 93,
+    "title": "Printed Kurti",
+    "price": 1899,
+    "description": "Beautifully printed kurti for traditional look.",
+    "rating": 4.4,
+    "category": "ethnic",
+    "image": "https://okhai.org/cdn/shop/files/SSKR102K.jpg?v=1743232271",
+    "return": "7 days return"
+  },
+  {
+    "id": 94,
+    "title": "Floral Dress",
+    "price": 2199,
+    "description": "Elegant floral dress perfect for any occasion.",
+    "rating": 4.3,
+    "category": "dresses",
+    "image": "https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/2024/OCTOBER/21/6yluxQL3_d01b23632c1c409ba30c65d6ecb9ca15.jpg",
+    "return": "7 days return"
+  },
+  {
+    "id": 95,
+    "title": "Chino Trousers",
+    "price": 2699,
+    "description": "Stretchable and stylish chinos for men and women.",
+    "rating": 4.1,
+    "category": "bottomwear",
+    "image": "https://www.staffuniforms.co.uk/cdn/shop/products/fr622-stretch-chinos-785491.jpg?v=1737493544",
+    "return": "7 days return"
+  },
+  {
+    "id": 96,
+    "title": "Track Pants",
+    "price": 1899,
+    "description": "Durable and comfy track pants for workout sessions.",
+    "rating": 4.3,
+    "category": "sportswear",
+    "image": "https://imagescdn.pantaloons.com/img/app/product/1/1035969-14642092.jpg?auto=format&w=450",
+    "return": "7 days return"
+  },
+  {
+    "id": 97,
+    "title": "Denim Jeans",
+    "price": 2499,
+    "description": "Classic denim jeans suitable for any outfit.",
+    "rating": 4.4,
+    "category": "bottomwear",
+    "image": "https://m.media-amazon.com/images/I/71DKXNucXJL._UY1100_.jpg",
+    "return": "7 days return"
+  },
+  {
+    "id": 98,
+    "title": "Lace Blouse",
+    "price": 1999,
+    "description": "Elegant lace blouse for a stylish look.",
+    "rating": 4.3,
+    "category": "tops",
+    "image": "https://i.pinimg.com/736x/b8/ad/92/b8ad9275082209d9a07a362bf28b0cd8.jpg",
     "return": "7 days return"
   }
 ]

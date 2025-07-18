@@ -2,6 +2,7 @@
 let container = document.getElementById("woman")
 let products =[
   {
+    "id": 84,
     "image": "https://imagescdn.pantaloons.com/img/app/product/3/393581-2083699.jpg?auto=format&w=450",
     "company": "Levi's",
     "product_name": "Women's Slim Fit Jeans",
@@ -9,6 +10,7 @@ let products =[
     "discount_price": 1999
   },
   {
+    "id": 85,
     "image": "https://i.pinimg.com/736x/7f/7d/cc/7f7dccb4815ad4a5e9ed124a2b3adcf5.jpg",
     "company": "H&M",
     "product_name": "Women's Casual Top",
@@ -16,6 +18,7 @@ let products =[
     "discount_price": 899
   },
   {
+    "id": 86,
     "image": "https://www.globalrepublic.in/cdn/shop/products/3_364837ed-4395-43d7-9f1b-40689aa9172e_1080x.jpg?v=1591353306",
     "company": "Nike",
     "product_name": "Women's Sports T-Shirt",
@@ -23,6 +26,7 @@ let products =[
     "discount_price": 1399
   },
   {
+    "id": 87,
     "image": "https://www.intermod.in/cdn/shop/products/houndtooth_trouser_1_1000x.jpg",
     "company": "Zara",
     "product_name": "Formal Pant",
@@ -30,6 +34,7 @@ let products =[
     "discount_price": 2499
   },
   {
+    "id": 88,
     "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcT4os1jj3lEd2NTJXs8yyuABN53-ddf2UdCZvngB3Ap5IFShGMQWHl0K0So3uKFlVj1WhSRP1uPPPU7tunxX8v9lMXBZe40FkVZ483RRixMLQCgTz5ECpmkYQ&usqp=CAc",
     "company": "Puma",
     "product_name": "Joggers",
@@ -37,6 +42,7 @@ let products =[
     "discount_price": 1599
   },
   {
+    "id": 89,
     "image": "https://images.unsplash.com/photo-1591195853828-11db59a44f6b?w=400&h=500&fit=crop",
     "company": "Adidas",
     "product_name": "Running Shorts",
@@ -44,6 +50,7 @@ let products =[
     "discount_price": 1099
   },
   {
+    "id": 90,
     "image": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&h=500&fit=crop",
     "company": "Uniqlo",
     "product_name": "Lightweight Jacket",
@@ -51,6 +58,7 @@ let products =[
     "discount_price": 2799
   },
   {
+    "id": 91,
     "image": "https://i.pinimg.com/736x/a4/73/e8/a473e8584f7b9ce37729cf059c0b5e99.jpg",
     "company": "Roadster",
     "product_name": "Checked Casual Shirt",
@@ -58,6 +66,7 @@ let products =[
     "discount_price": 1199
   },
   {
+    "id": 92,
     "image": "https://www.jiomart.com/images/product/original/rvnuxuazhy/mans-fab-solid-single-breasted-formal-women-blazer-brown-xs-product-images-rvnuxuazhy-0-202308290719.jpg?im=Resize=(500,630)",
     "company": "Van Heusen",
     "product_name": "Formal Blazer",
@@ -65,6 +74,7 @@ let products =[
     "discount_price": 4499
   },
   {
+    "id": 93,
     "image": "https://okhai.org/cdn/shop/files/SSKR102K.jpg?v=1743232271",
     "company": "Biba",
     "product_name": "Printed Kurti",
@@ -72,6 +82,7 @@ let products =[
     "discount_price": 1399
   },
   {
+    "id": 94,
     "image": "https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/2024/OCTOBER/21/6yluxQL3_d01b23632c1c409ba30c65d6ecb9ca15.jpg",
     "company": "Max",
     "product_name": "Floral Dress",
@@ -79,6 +90,7 @@ let products =[
     "discount_price": 1599
   },
   {
+    "id": 95,
     "image": "https://www.staffuniforms.co.uk/cdn/shop/products/fr622-stretch-chinos-785491.jpg?v=1737493544",
     "company": "Allen Solly",
     "product_name": "Chino Trousers",
@@ -86,6 +98,7 @@ let products =[
     "discount_price": 1899
   },
   {
+    "id": 96,
     "image": "https://imagescdn.pantaloons.com/img/app/product/1/1035969-14642092.jpg?auto=format&w=450",
     "company": "HRX",
     "product_name": "Track Pants",
@@ -93,6 +106,7 @@ let products =[
     "discount_price": 1299
   },
   {
+    "id": 97,
     "image": "https://m.media-amazon.com/images/I/71DKXNucXJL._UY1100_.jpg",
     "company": "Spykar",
     "product_name": "Denim Jeans",
@@ -100,6 +114,7 @@ let products =[
     "discount_price": 1799
   },
   {
+    "id": 98,
     "image": "https://i.pinimg.com/736x/b8/ad/92/b8ad9275082209d9a07a362bf28b0cd8.jpg",
     "company": "ONLY",
     "product_name": "Lace Blouse",
@@ -130,6 +145,18 @@ products.forEach((item)=>{
       <span class="line-through text-xs text-gray-500">₹${item.price}</span>
       <span class="text-xs text-pink-600 font-semibold">${Math.round(100 - (item.discount_price/item.price)*100)}% OFF</span>
     </div>
+    <button class="mt-3 w-full px-4 py-2 cursor-pointer bg-[#ff1b58] hover:bg-[#ff0095] text-white text-sm rounded-md transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-opacity-50" onclick="addProduct(${item.id})">
+      Add to Cart
+    </button>
   </div>
 </div>`
 })
+
+function addProduct(id) {
+  let cart = JSON.parse(localStorage.getItem("item")) || [];
+
+  if (!cart.includes(id)) {
+    cart.push(id);
+    localStorage.setItem("item", JSON.stringify(cart));
+  }
+}

@@ -23,10 +23,10 @@ let card = [
   },
   {
     "id": 72,
-    "image": "https://i.pinimg.com/736x/0b/a3/1e/0ba31e95b01883f502a8846b6a0a83b9.jpg",
+    "image": "https://static.zara.net/assets/public/4619/aebc/4cfd4d43b103/baa249f7f934/06861441802-a1/06861441802-a1.jpg?ts=1727349036352",
     "company": "Zara",
     "product_name": "Formal Pant",
-    "discount_price": 2499
+    "discount_price": 699
   },
   {
     "id": 73,
