@@ -1328,5 +1328,195 @@
     "rating": 4.3,
     "category": "mouse",
     "return": "7 days return"
+  },
+  {
+    "id": 134,
+    "title": "iPhone 12",
+    "price": 49999,
+    "description": "Apple iPhone 12 with A14 Bionic chip and dual camera.",
+    "image": "https://m.media-amazon.com/images/I/71fVoqRC0wL._UF1000,1000_QL80_.jpg",
+    "rating": 4.5,
+    "category": "smartphones",
+    "return": "7 days return"
+  },
+  {
+    "id": 135,
+    "title": "iPhone 12 mini",
+    "price": 44999,
+    "description": "Compact iPhone 12 with A14 Bionic chip.",
+    "image": "https://m.media-amazon.com/images/I/51-ZD+JBZ7L._UF894,1000_QL80_.jpg",
+    "rating": 4.4,
+    "category": "smartphones",
+    "return": "7 days return"
+  },
+  {
+    "id": 136,
+    "title": "iPhone 12 Pro",
+    "price": 79999,
+    "description": "Premium iPhone 12 with triple camera and LiDAR.",
+    "image": "https://images-cdn.ubuy.co.in/676fd54910c7813370554dfa-pre-owned-apple-iphone-12-pro-carrier.jpg",
+    "rating": 4.6,
+    "category": "smartphones",
+    "return": "7 days return"
+  },
+  {
+    "id": 137,
+    "title": "iPhone 12 Pro Max",
+    "price": 89999,
+    "description": "Largest iPhone 12 with advanced camera system.",
+    "image": "https://m.media-amazon.com/images/I/71MHTD3uL4L._UF1000,1000_QL80_.jpg",
+    "rating": 4.7,
+    "category": "smartphones",
+    "return": "7 days return"
+  },
+  {
+    "id": 138,
+    "title": "iPhone 13 mini",
+    "price": 54999,
+    "description": "Compact iPhone 13 with A15 Bionic chip.",
+    "image": "https://m.media-amazon.com/images/I/71X6mnUDSzL._UF1000,1000_QL80_.jpg",
+    "rating": 4.5,
+    "category": "smartphones",
+    "return": "7 days return"
+  },
+  {
+    "id": 139,
+    "title": "iPhone 13 Pro",
+    "price": 89999,
+    "description": "Pro model with ProMotion display and triple camera.",
+    "image": "https://m.media-amazon.com/images/I/61sDyXAepuL._UF1000,1000_QL80_.jpg",
+    "rating": 4.7,
+    "category": "smartphones",
+    "return": "7 days return"
+  },
+  {
+    "id": 140,
+    "title": "iPhone 13 Pro Max",
+    "price": 99999,
+    "description": "Largest iPhone 13 with advanced camera and battery.",
+    "image": "https://iplanet.one/cdn/shop/files/iPhone_13_Pro_Max_Silver_PDP_Image_Position-1A__GBEN.jpg?v=1691139033&width=1445",
+    "rating": 4.8,
+    "category": "smartphones",
+    "return": "7 days return"
+  },
+  {
+    "id": 141,
+    "title": "iPhone 14",
+    "price": 69999,
+    "description": "iPhone 14 with A15 Bionic and improved cameras.",
+    "image": "https://m.media-amazon.com/images/I/61cwywLZR-L._UF1000,1000_QL80_.jpg",
+    "rating": 4.6,
+    "category": "smartphones",
+    "return": "7 days return"
+  },
+  {
+    "id": 142,
+    "title": "iPhone 14 Plus",
+    "price": 79999,
+    "description": "Larger iPhone 14 with bigger display and battery.",
+    "image": "https://m.media-amazon.com/images/I/61BGE6iu4AL._UF1000,1000_QL80_.jpg",
+    "rating": 4.5,
+    "category": "smartphones",
+    "return": "7 days return"
+  },
+  {
+    "id": 143,
+    "title": "iPhone 14 Pro",
+    "price": 109999,
+    "description": "Pro model with Dynamic Island and A16 Bionic.",
+    "image": "https://m.media-amazon.com/images/I/31irWzsdLsL.jpg",
+    "rating": 4.7,
+    "category": "smartphones",
+    "return": "7 days return"
+  },
+  {
+    "id": 144,
+    "title": "iPhone 14 Pro Max",
+    "price": 119999,
+    "description": "Largest iPhone 14 with advanced camera system.",
+    "image": "https://m.media-amazon.com/images/I/31qeR3U2bdL._SS520_.jpg",
+    "rating": 4.8,
+    "category": "smartphones",
+    "return": "7 days return"
+  },
+  {
+    "id": 145,
+    "title": "iPhone 15",
+    "price": 79999,
+    "description": "iPhone 15 with A16 Bionic and USB-C connector.",
+    "image": "https://m.media-amazon.com/images/I/71d7rfSl0wL._UF1000,1000_QL80_.jpg",
+    "rating": 4.7,
+    "category": "smartphones",
+    "return": "7 days return"
+  },
+  {
+    "id": 146,
+    "title": "iPhone 15 Plus",
+    "price": 89999,
+    "description": "Larger iPhone 15 with bigger display and battery.",
+    "image": "https://m.media-amazon.com/images/I/71PjpS59XLL.jpg",
+    "rating": 4.6,
+    "category": "smartphones",
+    "return": "7 days return"
+  },
+  {
+    "id": 147,
+    "title": "iPhone 15 Pro",
+    "price": 119999,
+    "description": "Pro model with A17 Pro chip and titanium design.",
+    "image": "https://www.myg.in/images/thumbnails/300/300/detailed/87/81c50PU_lpL._SX679__pdxa-es_kebu-bl-removebg-preview.png.png",
+    "rating": 4.8,
+    "category": "smartphones",
+    "return": "7 days return"
+  },
+  {
+    "id": 148,
+    "title": "iPhone 15 Pro Max",
+    "price": 129999,
+    "description": "Largest iPhone 15 with 5x telephoto camera.",
+    "image": "https://m.media-amazon.com/images/I/81Os1SDWpcL._UF1000,1000_QL80_.jpg",
+    "rating": 4.9,
+    "category": "smartphones",
+    "return": "7 days return"
+  },
+  {
+    "id": 149,
+    "title": "iPhone 16",
+    "price": 89999,
+    "description": "iPhone 16 with A18 chip and enhanced AI features.",
+    "image": "https://media.tatacroma.com/Croma%20Assets/Communication/Mobiles/Images/309692_0_ois5su.png",
+    "rating": 4.7,
+    "category": "smartphones",
+    "return": "7 days return"
+  },
+  {
+    "id": 150,
+    "title": "iPhone 16 Plus",
+    "price": 99999,
+    "description": "Larger iPhone 16 with bigger display and battery.",
+    "image": "https://media.tatacroma.com/Croma%20Assets/Communication/Mobiles/Images/309708_0_euqey0.png",
+    "rating": 4.6,
+    "category": "smartphones",
+    "return": "7 days return"
+  },
+  {
+    "id": 151,
+    "title": "iPhone 16 Pro",
+    "price": 129999,
+    "description": "Pro model with A18 Pro chip and advanced camera.",
+    "image": "https://iplanet.one/cdn/shop/files/iPhone_16_Pro_Desert_Titanium_PDP_Image_Position_1__en-IN_38a0c11d-1864-457e-a2e2-7333c0480a7b.jpg?v=1727249764",
+    "rating": 4.8,
+    "category": "smartphones",
+    "return": "7 days return"
+  },
+  {
+    "id": 152,
+    "title": "iPhone 16 Pro Max",
+    "price": 156000,
+    "description": "Largest iPhone 16 with superior camera and battery.",
+    "image": "https://idestiny.in/wp-content/uploads/2024/10/iPhone_16_Pro_Max_White_Titanium_PDP_Image_Position_1__en-IN.jpg",
+    "rating": 4.9,
+    "category": "smartphones",
+    "return": "7 days return"
   }
 ]
