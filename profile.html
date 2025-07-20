@@ -40,16 +40,28 @@
     .hidden {
       display: none !important;
     }
+    @media (min-width: 0px) {
+      .login-option {
+        gap: 20px;
+      }
+    }
+    @media (max-width: 480px) {
+      .login-option {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+      }
+    }
   </style>
 </head>
 
-<body class="min-h-screen bg-gradient-to-b from-[#fff6fa] to-[#ffe9e9]">
-  <div id="mainForm" class="flex min-h-[100vh] w-full items-start justify-center">
-    <div class="mt-10 h-[600px] w-full max-w-md rounded-none bg-white pb-10 shadow-lg">
+<body class="min-h-screen bg-gradient-to-b from-[#fff6fa] to-[#ffe9e9] flex items-center justify-center">
+  <div id="mainForm" class="flex w-full items-center justify-center">
+    <div class="h-[600px] w-full max-w-md rounded-none bg-white pb-10 shadow-lg">
       <img class="w-full"
         src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2023/10/29/9610da61-a1a4-4215-b1fa-f612242d10e61698602536819-Flat_200--1-.jpg"
         alt="Offer Banner" />
-      <form class="flex h-[500px] flex-col gap-6 px-6 pt-8" autocomplete="off">
+      <form class="flex flex-col gap-6 px-6 pt-8" autocomplete="off">
         <h2 class="mb-2 text-2xl font-bold tracking-wide text-[#282c3f]">
           Login
           <span class="font-bold">
@@ -78,9 +90,10 @@
           disabled>
           CONTINUE
         </button>
-        <div class="text-left text-[14px] text-[#696e79]">
+        <div class="login-option text-left text-[14px] text-[#696e79] flex">
           Have trouble logging in?
           <a href="#" class="ml-1 font-bold text-[#ff3f6c] hover:underline">Get help</a>
+          <a href="./index.html" class="ml-1 font-bold text-[#ff3f6c] hover:underline">Back to Home</a>
         </div>
       </form>
     </div>
