@@ -3,36 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>Shopping Cart</title>
     <!-- link tailwind css -->
     <link href="./output.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- link tailwind css -->
-
     <!-- google fonts link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Baloo+2:wght@400..800&family=Bangers&family=Baskervville:ital@0;1&family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Enriqueta:wght@400;500;600;700&family=Gantari:ital,wght@0,100..900;1,100..900&family=Heebo:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Londrina+Outline&family=Luckiest+Guy&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nothing+You+Could+Do&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sora:wght@100..800&family=Unbounded:wght@200..900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <!-- google fonts link -->
-
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap" rel="stylesheet">
     <!-- font awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- font awesome cdn -->
-
     <!-- remix icon cdn  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- remix icon cdn  -->
 </head>
 <style>
     * {
       font-family: "Assistant", serif;
     }
-
     .nav-menu a {
       position: relative;
     }
-
     .nav-menu a::before {
       content: "";
       position: absolute;
@@ -41,55 +31,55 @@
       bottom: 0;
       transition: .6s;
     }
-
     .nav-menu .item1::before {
       border-bottom: 4px solid #EE5F73;
     }
-
     .nav-menu .item2::before {
       border-bottom: 4px solid #FB56C1;
     }
-
     .nav-menu .item3::before {
       border-bottom: 4px solid #F26A10;
     }
-
     .nav-menu .item4::before {
       border-bottom: 4px solid #F2C210;
     }
-
     .nav-menu .item5::before {
       border-bottom: 4px solid #0DB7AF;
     }
-
     .nav-menu .item6::before {
       border-bottom: 4px solid #FF3F6C;
     }
-
     .nav-menu a:hover::before {
       left: 0%;
       right: 0%;
     }
-
     @media (max-width: 480px) {
       .basicDetail{
         flex-direction: column;
       }
     }
+    .payment-method:checked + label {
+      border-color: #3B82F6;
+      background-color: #EFF6FF;
+    }
+    .payment-method:checked + label::after {
+      content: '✓';
+      position: absolute;
+      top: 8px;
+      right: 12px;
+      color: #3B82F6;
+      font-weight: bold;
+    }
 </style>
-
 <body>
     <!-- navbar -->
     <div class="nav" id="navbox"></div>
-
     <div id="container"></div>
-
     <script src="./navfoot.js"></script>
-
     <script>
       let cart = JSON.parse(localStorage.getItem("item")) || [];
       let qty = JSON.parse(localStorage.getItem("qty")) || [];
-
+      
       showCartData()
       function showCartData() {
         if (cart.length == 0) {
@@ -97,29 +87,25 @@
           <div id="emptyCart" class="flex flex-col items-center justify-center p-8 min-h-[70vh]">
             <div class="text-center">
               <div class="mb-8 relative w-48 h-48 mx-auto">
-                <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-16 h-16 bg-yellow-200 rounded-full"></div>        
-                  <div class="absolute top-4 left-1/2 transform -translate-x-1/2 flex justify-center w-16">
-                    <div class="w-2 h-2 bg-gray-700 rounded-full mx-1 mt-3"></div>
-                    <div class="w-2 h-2 bg-gray-700 rounded-full mx-1 mt-3"></div>
-                    <div class="w-6 h-2 bg-gray-700 rounded-full mx-auto mt-4 transform rotate-180"></div>
-                  </div>
-                  <div class="absolute top-16 left-1/2 transform -translate-x-1/2 w-12 h-20 bg-blue-500 rounded-t-lg"></div>
-                        
-                  <div class="absolute top-20 left-1/2 transform -translate-x-1/2 w-24 h-4 bg-blue-500 rounded-full -translate-y-4"></div>
-                        
-                  <div class="absolute top-20 left-1/2 transform -translate-x-1/2 w-16 h-12 bg-gray-300 border-2 border-gray-400 rounded-md -translate-y-8"></div>
-                        
-                  <div class="absolute top-36 left-1/2 transform -translate-x-1/2 w-6 h-16 bg-blue-700 rounded-b-lg -translate-x-6"></div>
-                  <div class="absolute top-36 left-1/2 transform -translate-x-1/2 w-6 h-16 bg-blue-700 rounded-b-lg translate-x-6"></div>
+                <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-16 h-16 bg-yellow-200 rounded-full"></div>
+                <div class="absolute top-4 left-1/2 transform -translate-x-1/2 flex justify-center w-16">
+                  <div class="w-2 h-2 bg-gray-700 rounded-full mx-1 mt-3"></div>
+                  <div class="w-2 h-2 bg-gray-700 rounded-full mx-1 mt-3"></div>
+                  <div class="w-6 h-2 bg-gray-700 rounded-full mx-auto mt-4 transform rotate-180"></div>
                 </div>
-                <h3 class="text-xl font-semibold text-gray-700 mb-2">Your cart is empty</h3>
-                <p class="text-gray-500 mb-6">Looks like you haven't added any products to your cart yet.</p>
-                <a href="./index.html">
-                  <button id="continueShopping" class="bg-blue-600 cursor-pointer hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors">
-                    Back to Home
-                  </button>
-                </a>
+                <div class="absolute top-16 left-1/2 transform -translate-x-1/2 w-12 h-20 bg-blue-500 rounded-t-lg"></div>
+                <div class="absolute top-20 left-1/2 transform -translate-x-1/2 w-24 h-4 bg-blue-500 rounded-full -translate-y-4"></div>
+                <div class="absolute top-20 left-1/2 transform -translate-x-1/2 w-16 h-12 bg-gray-300 border-2 border-gray-400 rounded-md -translate-y-8"></div>
+                <div class="absolute top-36 left-1/2 transform -translate-x-1/2 w-6 h-16 bg-blue-700 rounded-b-lg -translate-x-6"></div>
+                <div class="absolute top-36 left-1/2 transform -translate-x-1/2 w-6 h-16 bg-blue-700 rounded-b-lg translate-x-6"></div>
               </div>
+              <h3 class="text-xl font-semibold text-gray-700 mb-2">Your cart is empty</h3>
+              <p class="text-gray-500 mb-6">Looks like you haven't added any products to your cart yet.</p>
+              <a href="./index.html">
+                <button id="continueShopping" class="bg-blue-600 cursor-pointer hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors">
+                  Back to Home
+                </button>
+              </a>
             </div>
           </div>`;
           qty = [];
@@ -130,18 +116,167 @@
             if (qty[i] == undefined) qty[i] = 1;
           });
           localStorage.setItem("qty", JSON.stringify(qty));
-
           fetch("./data/cart.json")
             .then((req) => req.json())
             .then((res) => {
               let container = document.getElementById("container")
               container.innerHTML = ""
-    
+              
+              container.innerHTML = `
+                <div class="max-w-7xl mx-auto p-4 lg:p-6">
+                  <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <div class="lg:col-span-2">
+                      <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6 mb-6">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                          <i class="ri-shopping-cart-line mr-3 text-blue-600"></i>
+                          Shopping Cart (${cart.length} items)
+                        </h2>
+                        <div id="cartItems" class="space-y-4"></div>
+                      </div>
+                    </div>
+                    
+                    <div class="lg:col-span-1">
+                      <div class="sticky top-6">
+                        <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6 mb-6">
+                          <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                            <i class="ri-file-list-3-line mr-2 text-green-600"></i>
+                            Order Summary
+                          </h3>
+                          <div class="space-y-3 mb-4">
+                            <div class="flex justify-between text-gray-600">
+                              <span>Subtotal</span>
+                              <span id="subtotal">₹0</span>
+                            </div>
+                            <div class="flex justify-between text-gray-600">
+                              <span>Shipping</span>
+                              <span class="text-green-600 font-medium">Free</span>
+                            </div>
+                            <div class="flex justify-between text-gray-600">
+                              <span>Tax (18% GST)</span>
+                              <span id="tax">₹0</span>
+                            </div>
+                            <div class="border-t pt-3">
+                              <div class="flex justify-between text-lg font-bold text-gray-800">
+                                <span>Total</span>
+                                <span id="total">₹0</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6 mb-6">
+                          <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                            <i class="ri-bank-card-line mr-2 text-purple-600"></i>
+                            Payment Method
+                          </h3>
+                          <div class="space-y-3">
+                            <div class="relative">
+                              <input type="radio" id="card" name="payment" class="payment-method sr-only" checked>
+                              <label for="card" class="relative flex items-center p-4 border-2 border-gray-200 rounded-lg cursor-pointer hover:border-blue-300 transition-colors">
+                                <i class="ri-bank-card-line text-xl text-blue-600 mr-3"></i>
+                                <div>
+                                  <div class="font-medium text-gray-800">Credit/Debit Card</div>
+                                  <div class="text-sm text-gray-500">Visa, Mastercard, RuPay</div>
+                                </div>
+                              </label>
+                            </div>
+                            
+                            <div class="relative">
+                              <input type="radio" id="upi" name="payment" class="payment-method sr-only">
+                              <label for="upi" class="relative flex items-center p-4 border-2 border-gray-200 rounded-lg cursor-pointer hover:border-blue-300 transition-colors">
+                                <i class="ri-smartphone-line text-xl text-green-600 mr-3"></i>
+                                <div>
+                                  <div class="font-medium text-gray-800">UPI</div>
+                                  <div class="text-sm text-gray-500">PhonePe, GPay, Paytm</div>
+                                </div>
+                              </label>
+                            </div>
+                            
+                            <div class="relative">
+                              <input type="radio" id="wallet" name="payment" class="payment-method sr-only">
+                              <label for="wallet" class="relative flex items-center p-4 border-2 border-gray-200 rounded-lg cursor-pointer hover:border-blue-300 transition-colors">
+                                <i class="ri-wallet-line text-xl text-orange-600 mr-3"></i>
+                                <div>
+                                  <div class="font-medium text-gray-800">Digital Wallet</div>
+                                  <div class="text-sm text-gray-500">Paytm, Amazon Pay</div>
+                                </div>
+                              </label>
+                            </div>
+                            
+                            <div class="relative">
+                              <input type="radio" id="cod" name="payment" class="payment-method sr-only">
+                              <label for="cod" class="relative flex items-center p-4 border-2 border-gray-200 rounded-lg cursor-pointer hover:border-blue-300 transition-colors">
+                                <i class="ri-hand-coin-line text-xl text-yellow-600 mr-3"></i>
+                                <div>
+                                  <div class="font-medium text-gray-800">Cash on Delivery</div>
+                                  <div class="text-sm text-gray-500">Pay when you receive</div>
+                                </div>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <!-- Billing Address -->
+                        <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6 mb-6">
+                          <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                            <i class="ri-map-pin-line mr-2 text-red-600"></i>
+                            Billing Address
+                          </h3>
+                          <div class="space-y-4">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                              <input type="text" placeholder="First Name" class="px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                              <input type="text" placeholder="Last Name" class="px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            </div>
+                            <input type="email" placeholder="Email Address" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            <input type="tel" placeholder="Phone Number" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            <textarea placeholder="Address" rows="3" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"></textarea>
+                            <div class="grid grid-cols-2 gap-4">
+                              <input type="text" placeholder="City" class="px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                              <input type="text" placeholder="PIN Code" class="px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
+                          <button onclick="proceedToCheckout()" class="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center">
+                            <i class="ri-secure-payment-line mr-2 text-xl"></i>
+                            Proceed to Checkout
+                          </button>
+                          
+                          <div class="mt-4 flex items-center justify-center space-x-4 text-sm text-gray-500">
+                            <div class="flex items-center">
+                              <i class="ri-shield-check-line text-green-500 mr-1"></i>
+                              Secure Payment
+                            </div>
+                            <div class="flex items-center">
+                              <i class="ri-truck-line text-blue-500 mr-1"></i>
+                              Free Delivery
+                            </div>
+                          </div>
+                          
+                          <div class="mt-4 text-center">
+                            <p class="text-xs text-gray-400">
+                              By placing your order, you agree to our 
+                              <a href="#" class="text-blue-600 hover:underline">Terms & Conditions</a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>`;
+              
+              let cartItemsContainer = document.getElementById("cartItems");
+              let subtotal = 0;
+              
               cart.forEach((id, i) => {
-                let e = res.find(product => product.id == id);  
+                let e = res.find(product => product.id == id);
                 if (!e) return;
-
-                container.innerHTML += `
+                
+                let itemTotal = e.price * qty[i];
+                subtotal += itemTotal;
+                
+                cartItemsContainer.innerHTML += `
                 <div class="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 mb-4">
                   <div class="flex flex-wrap md:flex-nowrap items-start md:items-center p-4 gap-4 max-w-[1440px] mx-auto">
                     <div>
@@ -196,35 +331,75 @@
                       </div>
                     </div>
                   </div>
-                </div>`;  
-              })
+                </div>`;
+              });
+              
+              let tax = Math.round(subtotal * 0.18); 
+              let total = subtotal + tax;
+              
+              document.getElementById("subtotal").textContent = `₹${subtotal}`;
+              document.getElementById("tax").textContent = `₹${tax}`;
+              document.getElementById("total").textContent = `₹${total}`;
             })
-          }
         }
-
-        function minus(index) {
-          if(qty[index] > 1) {
-            qty[index]--
-            localStorage.setItem("qty", JSON.stringify(qty));
-            showCartData()
-          }
-        }
-
-        function plus(index) {
-          qty[index]++
+      }
+      
+      function minus(index) {
+        if(qty[index] > 1) {
+          qty[index]--
           localStorage.setItem("qty", JSON.stringify(qty));
           showCartData()
         }
-
-        function removeItem(id) {
-          let index = cart.indexOf(id)
-          cart.splice(index, 1);
-          qty.splice(index, 1);
-            
-          localStorage.setItem("item", JSON.stringify(cart));
-          localStorage.setItem("qty", JSON.stringify(qty));
-          showCartData()
+      }
+      
+      function plus(index) {
+        qty[index]++
+        localStorage.setItem("qty", JSON.stringify(qty));
+        showCartData()
+      }
+      
+      function removeItem(id) {
+        let index = cart.indexOf(id)
+        cart.splice(index, 1);
+        qty.splice(index, 1);
+        localStorage.setItem("item", JSON.stringify(cart));
+        localStorage.setItem("qty", JSON.stringify(qty));
+        showCartData()
+      }
+      
+      function proceedToCheckout() {
+        let selectedPayment = document.querySelector('input[name="payment"]:checked');
+        if (!selectedPayment) {
+          alert('Please select a payment method');
+          return;
         }
+        
+        let inputs = document.querySelectorAll('input[type="text"], input[type="email"], input[type="tel"], textarea');
+        let isValid = true;
+        
+        inputs.forEach(input => {
+          if (!input.value.trim()) {
+            input.style.borderColor = '#EF4444';
+            isValid = false;
+          } else {
+            input.style.borderColor = '#D1D5DB';
+          }
+        });
+        
+        if (!isValid) {
+          alert('Please fill in all required fields');
+          return;
+        }
+        
+        let paymentMethod = selectedPayment.nextElementSibling.querySelector('.font-medium').textContent;
+        alert(`Order placed successfully! Payment method: ${paymentMethod}`);
+        
+        cart = [];
+        qty = [];
+        localStorage.setItem("item", JSON.stringify(cart));
+        localStorage.setItem("qty", JSON.stringify(qty));
+        showCartData();
+      }
     </script>
 </body>
 </html>
