@@ -26,7 +26,7 @@ function searchProduct() {
     }
 
     let filtered = allProducts.filter(p =>
-        p.title.toLowerCase().includes(sProduct3)
+        p.category.toLowerCase().includes(sProduct3)
     );
 
     container.style.display = "none";

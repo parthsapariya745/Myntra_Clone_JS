@@ -978,5 +978,355 @@
     "category": "tops",
     "image": "https://i.pinimg.com/736x/b8/ad/92/b8ad9275082209d9a07a362bf28b0cd8.jpg",
     "return": "7 days return"
+  },
+  {
+    "id": 99,
+    "title": "iPhone 13",
+    "price": 59999,
+    "description": "Apple iPhone 13 with A15 Bionic chip.",
+    "image": "https://m.media-amazon.com/images/I/71xb2xkN5qL._UF1000,1000_QL80_.jpg",
+    "rating": 4.8,
+    "category": "smartphones",
+    "return": "7 days return"
+  },
+  {
+    "id": 100,
+    "title": "Samsung Galaxy S21",
+    "price": 51999,
+    "description": "Samsung flagship with Dynamic AMOLED display.",
+    "image": "https://igalaxy.nl/cdn/shop/files/samsung-galaxy-s21-ultra_600x600_BGresize_16777215-tj.png?v=1718277326",
+    "rating": 4.6,
+    "category": "smartphones",
+    "return": "7 days return"
+  },
+  {
+    "id": 101,
+    "title": "Redmi Note 13 Pro",
+    "price": 18999,
+    "description": "Powerful mid-range phone with 200MP camera.",
+    "image": "https://m.media-amazon.com/images/I/61r0Gt3mXkL._UF1000,1000_QL80_.jpg",
+    "rating": 4.4,
+    "category": "smartphones",
+    "return": "7 days return"
+  },
+  {
+    "id": 102,
+    "title": "Realme Narzo 60",
+    "price": 15999,
+    "description": "5G smartphone with AMOLED display.",
+    "image": "https://m.media-amazon.com/images/I/8195A49fZbL._UF1000,1000_QL80_.jpg",
+    "rating": 4.3,
+    "category": "smartphones",
+    "return": "7 days return"
+  },
+  {
+    "id": 103,
+    "title": "Motorola Edge 40",
+    "price": 23999,
+    "description": "Curved OLED and clean stock Android.",
+    "image": "https://cdn.beebom.com/mobile/Untitled%20design%20(28).png",
+    "rating": 4.5,
+    "category": "smartphones",
+    "return": "7 days return"
+  },
+  {
+    "id": 104,
+    "title": "HP Pavilion 15",
+    "price": 57999,
+    "description": "Intel i5 12th Gen with 16GB RAM.",
+    "image": "https://m.media-amazon.com/images/I/714mXtkIrlL._UF1000,1000_QL80_.jpg",
+    "rating": 4.6,
+    "category": "laptops",
+    "return": "7 days return"
+  },
+  {
+    "id": 105,
+    "title": "ASUS Vivobook 14",
+    "price": 42999,
+    "description": "Compact design with Ryzen 5 processor.",
+    "image": "https://www.asus.com/media/global/gallery/eYBkyNxYxRL2RLjl_setting_xxx_0_90_end_2000.png",
+    "rating": 4.4,
+    "category": "laptops",
+    "return": "7 days return"
+  },
+  {
+    "id": 106,
+    "title": "Dell Inspiron 3520",
+    "price": 48999,
+    "description": "Everyday laptop with 12th Gen i5.",
+    "image": "https://rukminim1.flixcart.com/image/300/300/xif0q/computer/t/a/c/dell-laptop-inspiron-3520-dell-laptop-inspiron-3520-laptop-dell-original-imah4dffcr5qa3am.jpeg",
+    "rating": 4.3,
+    "category": "laptops",
+    "return": "7 days return"
+  },
+  {
+    "id": 107,
+    "title": "Lenovo IdeaPad Slim 3",
+    "price": 39999,
+    "description": "Affordable choice for students.",
+    "image": "https://m.media-amazon.com/images/I/81+SKGgJ9yL.jpg",
+    "rating": 4.2,
+    "category": "laptops",
+    "return": "7 days return"
+  },
+  {
+    "id": 108,
+    "title": "Apple MacBook Air M1",
+    "price": 89999,
+    "description": "Powerful and silent with Apple M1 chip.",
+    "image": "https://www.apple.com/newsroom/images/product/mac/standard/Apple_new-macbookair-wallpaper-screen_11102020_big.jpg.large.jpg",
+    "rating": 4.9,
+    "category": "laptops",
+    "return": "7 days return"
+  },
+  {
+    "id": 109,
+    "title": "Milton Thermosteel Bottle",
+    "price": 799,
+    "description": "Keeps water hot or cold for 24 hours.",
+    "image": "https://m.media-amazon.com/images/I/81KrnHiiIHL.jpg",
+    "rating": 4.5,
+    "category": "bottles",
+    "return": "14 days return"
+  },
+  {
+    "id": 110,
+    "title": "Cello H2O Bottle",
+    "price": 299,
+    "description": "Stylish and durable plastic bottle.",
+    "image": "https://m.media-amazon.com/images/I/615gXBF3T1L._UF1000,1000_QL80_.jpg",
+    "rating": 4.1,
+    "category": "bottles",
+    "return": "14 days return"
+  },
+  {
+    "id": 111,
+    "title": "Pigeon Copper Bottle",
+    "price": 999,
+    "description": "Ayurvedic copper bottle for health benefits.",
+    "image": "https://5.imimg.com/data5/SELLER/Default/2020/12/BT/HJ/IT/37912944/pigeon-tamba-1-ltr-copper-water-bottle.jpg",
+    "rating": 4.3,
+    "category": "bottles",
+    "return": "14 days return"
+  },
+  {
+    "id": 112,
+    "title": "Tupperware Eco Bottle",
+    "price": 210,
+    "description": "Eco-friendly and leak-proof.",
+    "image": "https://www.myuniqueshop.in/cdn/shop/products/IMG_20211026_172852_980_720x-removebg-preview.png?v=1635324063&width=1445",
+    "rating": 4.0,
+    "category": "bottles",
+    "return": "14 days return"
+  },
+  {
+    "id": 113,
+    "title": "Borosil Hydra Bottle",
+    "price": 649,
+    "description": "Insulated steel water bottle.",
+    "image": "https://www.rasoishop.com/cdn/shop/products/8901309219457-1.jpg?v=1670390623",
+    "rating": 4.4,
+    "category": "bottles",
+    "return": "14 days return"
+  },
+  {
+    "id": 114,
+    "title": "Levi’s Cotton Tshirt",
+    "price": 899,
+    "description": "Premium cotton casual wear.",
+    "image": "https://levi.in/cdn/shop/files/169601331_04_Detail_56eeb7ea-741a-43f6-ac0c-8dabccdeb2b6.jpg?v=1743416468&width=1445",
+    "rating": 4.3,
+    "category": "t-shirts",
+    "return": "14 days return"
+  },
+  {
+    "id": 115,
+    "title": "Bewakoof Graphic Tee",
+    "price": 499,
+    "description": "Trendy and comfortable print T-shirt.",
+    "image": "https://m.media-amazon.com/images/I/71beiCPXDgL._UY1100_.jpg",
+    "rating": 4.2,
+    "category": "t-shirts",
+    "return": "14 days return"
+  },
+  {
+    "id": 116,
+    "title": "H&M Basic Tee",
+    "price": 399,
+    "description": "Minimal style for everyday use.",
+    "image": "https://image.hm.com/assets/hm/95/b2/95b26c6ec290ad5eaf70e60d68865f85d88783b3.jpg?imwidth=2160",
+    "rating": 4.0,
+    "category": "t-shirts",
+    "return": "14 days return"
+  },
+  {
+    "id": 117,
+    "title": "Jack & Jones Solid Tee",
+    "price": 749,
+    "description": "Soft and breathable cotton.",
+    "image": "https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2025/APRIL/21/nULkt8f7_abce75e395bf481e9c28d1ecbee82d85.jpg",
+    "rating": 4.3,
+    "category": "t-shirts",
+    "return": "14 days return"
+  },
+  {
+    "id": 118,
+    "title": "Roadster Slim Fit Tee",
+    "price": 549,
+    "description": "Urban design with cool feel.",
+    "image": "https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/24153290/2023/8/1/422a1b5c-5753-4407-9b70-4c20c5a7bb771690870624928-Roadster-Women-Tshirts-8921690870624501-1.jpg",
+    "rating": 4.1,
+    "category": "t-shirts",
+    "return": "14 days return"
+  },
+  {
+    "id": 119,
+    "title": "Nike Ankle Socks",
+    "price": 399,
+    "description": "Comfortable athletic ankle socks (Pack of 3).",
+    "image": "https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/68c250f2-451a-47d4-a5be-de7cc13dd82a/U+NK+EVERYDAY+CSH+ANKL+3PR+132.png",
+    "rating": 4.4,
+    "category": "socks",
+    "return": "14 days return"
+  },
+  {
+    "id": 120,
+    "title": "Adidas Crew Socks",
+    "price": 499,
+    "description": "Soft cotton socks for sports and gym.",
+    "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/4496ecb293014b61a970afc9012b3acc_9366/Mid_Cut_Crew_Socks_3_Pairs_Black_IL5022_03_standard.jpg",
+    "rating": 4.5,
+    "category": "socks",
+    "return": "14 days return"
+  },
+  {
+    "id": 121,
+    "title": "Puma Cotton Socks",
+    "price": 349,
+    "description": "Everyday wear socks (Pack of 3).",
+    "image": "https://m.media-amazon.com/images/I/71i7BTcoCzL._UY1100_.jpg",
+    "rating": 4.2,
+    "category": "socks",
+    "return": "14 days return"
+  },
+  {
+    "id": 122,
+    "title": "Soxytoes Funky Socks",
+    "price": 299,
+    "description": "Colorful stylish socks for youth.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuEr7iW607dAZLi_XtwtbgXBf8KICx7wHKTw&s",
+    "rating": 4.0,
+    "category": "socks",
+    "return": "14 days return"
+  },
+  {
+    "id": 123,
+    "title": "Jockey Men's Socks",
+    "price": 399,
+    "description": "High-quality casual socks for men.",
+    "image": "https://www.jockey.in/cdn/shop/products/7104_NAVY_0305_S223_JKY_0_d030f05e-2717-4b15-a55f-549cffb7e148.webp?v=1700041745",
+    "rating": 4.3,
+    "category": "socks",
+    "return": "14 days return"
+  },
+  {
+    "id": 124,
+    "title": "Noise ColorFit Pro 4",
+    "price": 2999,
+    "description": "1.72'' display with health tracking.",
+    "image": "https://m.media-amazon.com/images/I/61jOliJK5CL.jpg",
+    "rating": 4.2,
+    "category": "smartwatches",
+    "return": "7 days return"
+  },
+  {
+    "id": 125,
+    "title": "boAt Wave Call",
+    "price": 1599,
+    "description": "Bluetooth calling and fitness tracking.",
+    "image": "https://www.boat-lifestyle.com/cdn/shop/products/wave-call-3.png?v=1685530085",
+    "rating": 4.1,
+    "category": "smartwatches",
+    "return": "7 days return"
+  },
+  {
+    "id": 126,
+    "title": "Fire-Boltt Visionary",
+    "price": 2999,
+    "description": "AMOLED display and premium build.",
+    "image": "https://www.fireboltt.com/cdn/shop/files/phoenix-pro-2_1_400x.png?v=1744949568",
+    "rating": 4.3,
+    "category": "smartwatches",
+    "return": "7 days return"
+  },
+  {
+    "id": 127,
+    "title": "Realme Watch 2 Pro",
+    "price": 2799,
+    "description": "Large screen with GPS support.",
+    "image": "https://sc04.alicdn.com/kf/Hb5cd52bc48884a7f8904074db0095aa8y.jpg",
+    "rating": 4.2,
+    "category": "smartwatches",
+    "return": "7 days return"
+  },
+  {
+    "id": 128,
+    "title": "Fastrack Reflex Beat+",
+    "price": 1899,
+    "description": "Heart rate monitor and sleep tracking.",
+    "image": "https://m.media-amazon.com/images/I/71E-b8o-1hL._UF1000,1000_QL80_.jpg",
+    "rating": 4.0,
+    "category": "smartwatches",
+    "return": "7 days return"
+  },
+  {
+    "id": 129,
+    "title": "Logitech M235 Wireless Mouse",
+    "price": 699,
+    "description": "Compact and comfortable wireless mouse.",
+    "image": "https://m.media-amazon.com/images/I/61k86rQjLtL.jpg",
+    "rating": 4.4,
+    "category": "mouse",
+    "return": "7 days return"
+  },
+  {
+    "id": 130,
+    "title": "HP X500 Wired Mouse",
+    "price": 299,
+    "description": "Affordable USB wired mouse.",
+    "image": "https://m.media-amazon.com/images/I/51dIBKPmD9L._UF1000,1000_QL80_.jpg",
+    "rating": 4.1,
+    "category": "mouse",
+    "return": "7 days return"
+  },
+  {
+    "id": 131,
+    "title": "Lenovo 300 Wireless Mouse",
+    "price": 599,
+    "description": "Lightweight and battery-efficient.",
+    "image": "https://pcshoppe.in/wp-content/uploads/2023/01/Lenovo-300-Wireless-Mouse.jpg",
+    "rating": 4.2,
+    "category": "mouse",
+    "return": "7 days return"
+  },
+  {
+    "id": 132,
+    "title": "Dell MS116 Optical Mouse",
+    "price": 349,
+    "description": "Reliable mouse for office and home.",
+    "image": "https://m.media-amazon.com/images/I/51a1LryFTZS._UF1000,1000_QL80_.jpg",
+    "rating": 4.0,
+    "category": "mouse",
+    "return": "7 days return"
+  },
+  {
+    "id": 133,
+    "title": "Zebronics Zeb-Rise",
+    "price": 499,
+    "description": "Gaming mouse with ergonomic grip.",
+    "image": "https://zebronics.com/cdn/shop/products/Zeb-Rise-pic2.jpg?v=1624704492&width=1200",
+    "rating": 4.3,
+    "category": "mouse",
+    "return": "7 days return"
   }
 ]
