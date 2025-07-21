@@ -534,6 +534,7 @@ navbox.innerHTML = `
                                     <a href="./addtocart.html">
                                         <div class="relative">
                                             <i class="ri-shopping-bag-line text-[20px] relative top-[5px]"></i>
+                                            <span id="cartCount" class="absolute -right-2 bg-red-500 text-white text-xs px-1.5 py-0.5 rounded-full">0</span>
                                         </div>
                                         <p class="text-[12px] font-[700]">Bag</p>
                                     </a>
@@ -587,6 +588,7 @@ navbox.innerHTML = `
                                 <a href="./addtocart.html">
                                     <div class="relative">
                                         <i class="ri-shopping-bag-line text-[20px] relative top-[5px]"></i>
+                                        <span id="cartCount" class="absolute -right-2 bg-red-500 text-white text-xs px-1.5 py-0.5 rounded-full">0</span>
                                     </div>
                                     <p class="text-[12px] font-[700]">Bag</p>
                                 </a>
@@ -617,6 +619,7 @@ navbox.innerHTML = `
                         <a href="./addtocart.html">
                             <div class="relative">
                                 <i class="ri-shopping-bag-line text-[20px] relative top-[5px]"></i>
+                                <span id="cartCount" class="absolute -right-2 bg-red-500 text-white text-xs px-1.5 py-0.5 rounded-full">0</span>
                             </div>
                             <p class="text-[12px] font-[700]">Bag</p>
                         </a>
@@ -632,6 +635,24 @@ navbox.innerHTML = `
         </div>
     </div>
 `;
+
+// Function to update cart count
+function updateCartCount() {
+    const cart = JSON.parse(localStorage.getItem("item") || "[]");
+    const count = cart.length;
+    document.getElementById("cartCount").textContent = count;
+}
+
+// Update cart count when page loads
+updateCartCount();
+
+// Add event listener for cart updates
+window.addEventListener('storage', function(e) {
+    if (e.key === 'item') {
+        updateCartCount();
+    }
+});
+
 let footerbox = document.getElementById('footerbox');
 footerbox.innerHTML = `
   <footer class="bg-[#FAFBFC] py-10 text-[#282C3F] sm:pb-10 pb-28">
@@ -718,7 +739,7 @@ footerbox.innerHTML = `
                 <div class="grid md:grid-cols-3 grid-cols-1 mt-8">
                     <div class="box flex"><p class="text-[#696B79]">In case of any concern, <span class="text-[#526CD0] font-[700] cursor-pointer">Contact Us</span>
                     </p></div>
-                    <div class="box flex md:justify-center"><p class="text-[#696B79]">© 2025 www.myntra.com. All rights reserved.</p></div>
+                    <div class="box flex md:justify-center"><p class="text-[#696B79]"> 2025 www.myntra.com. All rights reserved.</p></div>
                     <div class="box flex md:justify-end"><p class="text-[#696B79]">A Flipkart company</p></div>
                 </div>
                 <div class="line h-[1px] w-full mt-7 bg-[#dfdfdf]"></div>
