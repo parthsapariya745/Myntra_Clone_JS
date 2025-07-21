@@ -1,0 +1,353 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/output.css">
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <!-- google fonts link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap" rel="stylesheet">
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- remix icon cdn  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- alpinejs slider cdn  -->
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<style>
+  * {
+    font-family: "Assistant", serif;
+  }
+
+  .nav-menu a {
+    position: relative;
+  }
+
+  .nav-menu a::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    transition: .6s;
+  }
+
+  .nav-menu .item1::before {
+    border-bottom: 4px solid #EE5F73;
+  }
+
+  .nav-menu .item2::before {
+    border-bottom: 4px solid #FB56C1;
+  }
+
+  .nav-menu .item3::before {
+    border-bottom: 4px solid #F26A10;
+  }
+
+  .nav-menu .item4::before {
+    border-bottom: 4px solid #F2C210;
+  }
+
+  .nav-menu .item5::before {
+    border-bottom: 4px solid #0DB7AF;
+  }
+
+  .nav-menu .item6::before {
+    border-bottom: 4px solid #FF3F6C;
+  }
+
+  .nav-menu a:hover::before {
+    left: 0%;
+    right: 0%;
+  }
+
+  .img-break {
+    touch-action: pan-y;
+    user-select: none;
+    overflow: hidden;
+  }
+
+  @media (max-width : 400px) {
+    .img-break .grid {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fadeInUp {
+    animation: fadeInUp 0.7s cubic-bezier(.4, 0, .2, 1) both;
+  }
+</style>
+
+<body class="bg-[#fafafd] min-h-screen transition-colors duration-500">
+  <!-- navbar -->
+  <div id="navbox"></div>
+  <!-- navbar -->
+
+  <div class="max-w-7xl mx-auto px-2 md:px-6 py-4">
+    <!-- Breadcrumb & Heading -->
+    <div class="mb-2">
+      <a href="#" class="text-[14px]">Home / Clothing / <span class="font-bold">Kids T-Shirt</span></a>
+    </div>
+    <div class="mb-4">
+      <span class="font-bold text-black text-lg">Kids T-shirts</span>
+      <span class="text-[#8d8d8d] text-base">- 234259 items</span>
+    </div>
+
+    <!-- Filter & Products Responsive Layout -->
+    <div class="flex flex-col lg:flex-row gap-6">
+      <!-- Sidebar Filters -->
+      <aside class="w-full lg:w-1/4 flex-shrink-0 mb-4 lg:mb-0">
+        <div class="bg-white rounded-lg shadow p-4 mb-4">
+          <h1 class="text-xl font-bold mb-4">FILTERS</h1>
+          <!-- Categories -->
+          <div class="mb-6 order-last lg:order-first" x-data="{ open: window.innerWidth >= 1024 }" x-init="
+    window.addEventListener('resize', () => { open = window.innerWidth >= 1024 ? true : false })
+">
+            <button type="button"
+              class="flex items-center justify-between w-full lg:cursor-default cursor-pointer font-bold uppercase text-[15px] mb-2 lg:mb-0 focus:outline-none"
+              @click="open = !open">
+              Categories
+              <span class="lg:hidden ml-2 transition-transform duration-200" :class="{'rotate-90': open}">
+                <i class="ri-arrow-right-s-line text-xl"></i>
+              </span>
+            </button>
+            <div class="space-y-2 mt-2" x-show="open" x-transition>
+              <label class="flex items-center gap-2">
+                <input type="checkbox" class="accent-pink-500 w-4 h-4" />
+                <span class="text-[14px]">T-Shirts <span class="text-[11px] text-[#bebec0]">(50000)</span></span>
+              </label>
+              <label class="flex items-center gap-2">
+                <input type="checkbox" class="accent-pink-500 w-4 h-4" />
+                <span class="text-[14px]">Shirts <span class="text-[11px] text-[#bebec0]">(35000)</span></span>
+              </label>
+              <label class="flex items-center gap-2">
+                <input type="checkbox" class="accent-pink-500 w-4 h-4" />
+                <span class="text-[14px]">Shorts <span class="text-[11px] text-[#bebec0]">(20000)</span></span>
+              </label>
+              <label class="flex items-center gap-2">
+                <input type="checkbox" class="accent-pink-500 w-4 h-4" />
+                <span class="text-[14px]">Jeans <span class="text-[11px] text-[#bebec0]">(15000)</span></span>
+              </label>
+              <label class="flex items-center gap-2">
+                <input type="checkbox" class="accent-pink-500 w-4 h-4" />
+                <span class="text-[14px]">Dresses <span class="text-[11px] text-[#bebec0]">(12000)</span></span>
+              </label>
+              <label class="flex items-center gap-2">
+                <input type="checkbox" class="accent-pink-500 w-4 h-4" />
+                <span class="text-[14px]">Jackets <span class="text-[11px] text-[#bebec0]">(8000)</span></span>
+              </label>
+            </div>
+          </div>
+          <!-- Brand -->
+          <!-- Brand Dropdown Filter -->
+          <div class="mb-6" x-data="{ brandOpen: window.innerWidth >= 1024 }"
+            x-init="window.addEventListener('resize', () => { brandOpen = window.innerWidth >= 1024 ? true : false })">
+            <button type="button"
+              class="flex items-center justify-between w-full font-bold uppercase text-[15px] mb-2 focus:outline-none lg:hidden"
+              @click="brandOpen = !brandOpen"> english
+              Brand
+              <span class="ml-2 transition-transform duration-200" :class="{'rotate-90': brandOpen}">
+                <i class="ri-arrow-right-s-line text-xl"></i>
+              </span>
+            </button>
+            <div x-show="brandOpen" x-transition>
+              <div class="flex items-center justify-between mb-2 lg:flex">
+                <p class="font-bold uppercase text-[15px] lg:mb-0 hidden lg:block">Brand</p>
+                <div class="w-7 h-7 rounded-full bg-[#f0f0f0] flex justify-center items-center">
+                  <i class="ri-search-line"></i>
+                </div>
+              </div>
+              <div class="space-y-1">
+                <label
+                  class="flex items-center gap-2 cursor-pointer px-2 py-1 rounded-lg transition-all duration-200 hover:bg-pink-50 hover:scale-105">
+                  <input type="checkbox"
+                    class="w-4 h-4 accent-pink-500 transition-all duration-200 hover:ring-2 hover:ring-pink-400" />
+                  <span class="text-[14px]">H&M Kids <span class="text-[11px] text-[#bebec0]">(8000)</span></span>
+                </label>
+                <label
+                  class="flex items-center gap-2 cursor-pointer px-2 py-1 rounded-lg transition-all duration-200 hover:bg-pink-50 hover:scale-105">
+                  <input type="checkbox"
+                    class="w-4 h-4 accent-pink-500 transition-all duration-200 hover:ring-2 hover:ring-pink-400" />
+                  <span class="text-[14px]">UCB Kids <span class="text-[11px] text-[#bebec0]">(7500)</span></span>
+                </label>
+                <label
+                  class="flex items-center gap-2 cursor-pointer px-2 py-1 rounded-lg transition-all duration-200 hover:bg-pink-50 hover:scale-105">
+                  <input type="checkbox"
+                    class="w-4 h-4 accent-pink-500 transition-all duration-200 hover:ring-2 hover:ring-pink-400" />
+                  <span class="text-[14px]">Max Kids <span class="text-[11px] text-[#bebec0]">(7000)</span></span>
+                </label>
+                <label
+                  class="flex items-center gap-2 cursor-pointer px-2 py-1 rounded-lg transition-all duration-200 hover:bg-pink-50 hover:scale-105">
+                  <input type="checkbox"
+                    class="w-4 h-4 accent-pink-500 transition-all duration-200 hover:ring-2 hover:ring-pink-400" />
+                  <span class="text-[14px]">Allen Solly Junior <span
+                      class="text-[11px] text-[#bebec0]">(6500)</span></span>
+                </label>
+                <label
+                  class="flex items-center gap-2 cursor-pointer px-2 py-1 rounded-lg transition-all duration-200 hover:bg-pink-50 hover:scale-105">
+                  <input type="checkbox"
+                    class="w-4 h-4 accent-pink-500 transition-all duration-200 hover:ring-2 hover:ring-pink-400" />
+                  <span class="text-[14px]">Gini & Jony <span class="text-[11px] text-[#bebec0]">(6000)</span></span>
+                </label>
+                <label
+                  class="flex items-center gap-2 cursor-pointer px-2 py-1 rounded-lg transition-all duration-200 hover:bg-pink-50 hover:scale-105">
+                  <input type="checkbox"
+                    class="w-4 h-4 accent-pink-500 transition-all duration-200 hover:ring-2 hover:ring-pink-400" />
+                  <span class="text-[14px]">Mothercare <span class="text-[11px] text-[#bebec0]">(5500)</span></span>
+                </label>
+                <label
+                  class="flex items-center gap-2 cursor-pointer px-2 py-1 rounded-lg transition-all duration-200 hover:bg-pink-50 hover:scale-105">
+                  <input type="checkbox"
+                    class="w-4 h-4 accent-pink-500 transition-all duration-200 hover:ring-2 hover:ring-pink-400" />
+                  <span class="text-[14px]">Babyhug <span class="text-[11px] text-[#bebec0]">(5000)</span></span>
+                </label>
+                <label
+                  class="flex items-center gap-2 cursor-pointer px-2 py-1 rounded-lg transition-all duration-200 hover:bg-pink-50 hover:scale-105">
+                  <input type="checkbox"
+                    class="w-4 h-4 accent-pink-500 transition-all duration-200 hover:ring-2 hover:ring-pink-400" />
+                  <span class="text-[14px]">Peppermint <span class="text-[11px] text-[#bebec0]">(4500)</span></span>
+                </label>
+                <div class="w-full flex items-center pl-6">
+                  <p
+                    class="text-[#f41c76] cursor-pointer hover:underline transition-colors duration-200 hover:text-pink-600 active:scale-95">
+                    + 200 more</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Price -->
+          <!-- Price Dropdown Filter -->
+          <div class="mb-6" x-data="{ priceOpen: window.innerWidth >= 1024 }"
+            x-init="window.addEventListener('resize', () => { priceOpen = window.innerWidth >= 1024 ? true : false })">
+            <button type="button"
+              class="flex items-center justify-between w-full font-bold uppercase text-[15px] mb-2 focus:outline-none lg:hidden"
+              @click="priceOpen = !priceOpen">
+              Price
+              <span class="ml-2 transition-transform duration-200" :class="{'rotate-90': priceOpen}">
+                <i class="ri-arrow-right-s-line text-xl"></i>
+              </span>
+            </button>
+            <div x-show="priceOpen" x-transition>
+              <p class="font-bold uppercase text-[15px] mb-2 hidden lg:block">Price</p>
+              <input type="range" class="w-full accent-pink-500" min="100" max="10100" />
+              <p class="font-bold text-[14px] pt-2">₹100 - ₹10,100+</p>
+            </div>
+          </div>
+          <!-- Color -->
+          <!-- Color Dropdown Filter -->
+          <div class="mb-6" x-data="{ colorOpen: window.innerWidth >= 1024 }"
+            x-init="window.addEventListener('resize', () => { colorOpen = window.innerWidth >= 1024 ? true : false })">
+            <button type="button"
+              class="flex items-center justify-between w-full font-bold uppercase text-[15px] mb-2 focus:outline-none lg:hidden"
+              @click="colorOpen = !colorOpen">
+              Color
+              <span class="ml-2 transition-transform duration-200" :class="{'rotate-90': colorOpen}">
+                <i class="ri-arrow-right-s-line text-xl"></i>
+              </span>
+            </button>
+            <div x-show="colorOpen" x-transition>
+              <div class="flex items-center justify-between mb-3 lg:flex">
+                <p class="font-bold uppercase text-[13px] hidden lg:block">Color</p>
+                <div class="w-7 h-7 rounded-full bg-[#f0f0f0] flex justify-center items-center">
+                  <i class="ri-search-line"></i>
+                </div>
+              </div>
+              <div class="space-y-2">
+                <label
+                  class="flex items-center cursor-pointer gap-2 transition-colors duration-200 hover:bg-pink-50 rounded-lg px-2 py-1">
+                  <input type="checkbox"
+                    class="accent-pink-500 w-4 h-4 transition-all duration-200 hover:ring-2 hover:ring-pink-400" />
+                  <span
+                    class="w-5 h-5 rounded-full border border-gray-300 bg-black inline-block transition-all duration-200 hover:scale-110"></span>
+                  <span class="text-[14px] pl-1">Black <span class="text-[11px] text-[#bebec0]">(11616)</span></span>
+                </label>
+                <label
+                  class="flex items-center cursor-pointer gap-2 transition-colors duration-200 hover:bg-pink-50 rounded-lg px-2 py-1">
+                  <input type="checkbox"
+                    class="accent-pink-500 w-4 h-4 transition-all duration-200 hover:ring-2 hover:ring-pink-400" />
+                  <span
+                    class="w-5 h-5 rounded-full border border-gray-300 bg-white inline-block transition-all duration-200 hover:scale-110"></span>
+                  <span class="text-[14px] pl-1">White <span class="text-[11px] text-[#bebec0]">(11616)</span></span>
+                </label>
+                <label
+                  class="flex items-center cursor-pointer gap-2 transition-colors duration-200 hover:bg-pink-50 rounded-lg px-2 py-1">
+                  <input type="checkbox"
+                    class="accent-pink-500 w-4 h-4 transition-all duration-200 hover:ring-2 hover:ring-pink-400" />
+                  <span
+                    class="w-5 h-5 rounded-full border border-gray-300 bg-blue-500 inline-block transition-all duration-200 hover:scale-110"></span>
+                  <span class="text-[14px] pl-1">Blue <span class="text-[11px] text-[#bebec0]">(11616)</span></span>
+                </label>
+                <label
+                  class="flex items-center cursor-pointer gap-2 transition-colors duration-200 hover:bg-pink-50 rounded-lg px-2 py-1">
+                  <input type="checkbox"
+                    class="accent-pink-500 w-4 h-4 transition-all duration-200 hover:ring-2 hover:ring-pink-400" />
+                  <span
+                    class="w-5 h-5 rounded-full border border-gray-300 bg-green-500 inline-block transition-all duration-200 hover:scale-110"></span>
+                  <span class="text-[14px] pl-1">Green <span class="text-[11px] text-[#bebec0]">(11616)</span></span>
+                </label>
+                <label
+                  class="flex items-center cursor-pointer gap-2 transition-colors duration-200 hover:bg-pink-50 rounded-lg px-2 py-1">
+                  <input type="checkbox"
+                    class="accent-pink-500 w-4 h-4 transition-all duration-200 hover:ring-2 hover:ring-pink-400" />
+                  <span
+                    class="w-5 h-5 rounded-full border border-gray-300 bg-blue-900 inline-block transition-all duration-200 hover:scale-110"></span>
+                  <span class="text-[14px] pl-1">Navy Blue <span
+                      class="text-[11px] text-[#bebec0]">(11616)</span></span>
+                </label>
+                <label
+                  class="flex items-center cursor-pointer gap-2 transition-colors duration-200 hover:bg-pink-50 rounded-lg px-2 py-1">
+                  <input type="checkbox"
+                    class="accent-pink-500 w-4 h-4 transition-all duration-200 hover:ring-2 hover:ring-pink-400" />
+                  <span
+                    class="w-5 h-5 rounded-full border border-gray-300 bg-gray-400 inline-block transition-all duration-200 hover:scale-110"></span>
+                  <span class="text-[14px] pl-1">Grey <span class="text-[11px] text-[#bebec0]">(11616)</span></span>
+                </label>
+                <label
+                  class="flex items-center cursor-pointer gap-2 transition-colors duration-200 hover:bg-pink-50 rounded-lg px-2 py-1">
+                  <input type="checkbox"
+                    class="accent-pink-500 w-4 h-4 transition-all duration-200 hover:ring-2 hover:ring-pink-400" />
+                  <span
+                    class="w-5 h-5 rounded-full border border-gray-300 bg-red-500 inline-block transition-all duration-200 hover:scale-110"></span>
+                  <span class="text-[14px] pl-1">Red <span class="text-[11px] text-[#bebec0]">(11616)</span></span>
+                </label>
+              </div>
+              <div class="w-full flex items-center justify-center mt-2">
+                <p
+                  class="text-[#f41c76] text-sm cursor-pointer hover:underline transition-colors duration-200 hover:text-pink-600 active:scale-95">
+                  + 45 more</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <!-- Product Grid -->
+      <main class="w-full lg:w-3/4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 justify-items-center"
+          id="boxrmain">
+          <!-- Product cards will be injected here by JS -->
+        </div>
+      </main>
+    </div>
+  </div>
+  <div id="footerbox"></div>
+  <script src="./script.js"></script>
+  <script src="./card.js"></script>
+</body>
+</html>
