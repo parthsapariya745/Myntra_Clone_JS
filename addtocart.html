@@ -365,6 +365,7 @@
         localStorage.setItem("item", JSON.stringify(cart));
         localStorage.setItem("qty", JSON.stringify(qty));
         showCartData()
+        window.updateCartCount();
       }
       
       function proceedToCheckout() {
