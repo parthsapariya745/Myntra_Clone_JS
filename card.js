@@ -144,4 +144,7 @@ function addProduct(id) {
     cart.push(id);
     localStorage.setItem("item", JSON.stringify(cart));
   }
+  else {
+    alert("❗Product already in cart");
+  }
 }
