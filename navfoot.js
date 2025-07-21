@@ -213,7 +213,7 @@ navbox.innerHTML = `
                         </div>
                     </div>
                     <div class="relative group h-full lg:flex lg:items-center">
-                        <a href="#" class="item3 uppercase text-[14px] py-1.5 font-[700] text-[#282C3F]">kids</a>
+                        <a href="./kids_main.html" class="item3 uppercase text-[14px] py-1.5 font-[700] text-[#282C3F]">kids</a>
                         <div class="absolute left-0 top-[80px] hidden group-hover:flex bg-white shadow-lg p-4 space-x-4 w-[900px] border border-gray-200">
                             <div class="w-full">
                                 <h3 class="font-bold text-[#F26A10] text-[14px]">Boys Clothing</h3>
