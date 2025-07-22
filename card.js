@@ -143,6 +143,7 @@ function addProduct(id) {
   if (!cart.includes(id)) {
     cart.push(id);
     localStorage.setItem("item", JSON.stringify(cart));
+    updateCartCount();
   }
   else {
     alert("❗Product already in cart");
