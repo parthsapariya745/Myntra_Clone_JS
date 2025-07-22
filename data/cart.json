@@ -832,7 +832,7 @@
   {
     "id": 84,
     "title": "Women's Slim Fit Jeans",
-    "price": 2999,
+    "price": 1999,
     "description": "Stylish slim fit jeans with modern design.",
     "rating": 4.4,
     "category": "bottomwear",
@@ -842,7 +842,7 @@
   {
     "id": 85,
     "title": "Women's Casual Top",
-    "price": 1299,
+    "price": 899,
     "description": "Comfortable and trendy casual top for daily wear.",
     "rating": 4.2,
     "category": "tops",
@@ -852,7 +852,7 @@
   {
     "id": 86,
     "title": "Women's Sports T-Shirt",
-    "price": 1799,
+    "price": 1399,
     "description": "Breathable sports T-shirt for workouts and active wear.",
     "rating": 4.6,
     "category": "sportswear",
@@ -862,7 +862,7 @@
   {
     "id": 87,
     "title": "Formal Pant",
-    "price": 3499,
+    "price": 2499,
     "description": "Elegant formal pants perfect for office wear.",
     "rating": 4.5,
     "category": "bottomwear",
@@ -872,7 +872,7 @@
   {
     "id": 88,
     "title": "Joggers",
-    "price": 2299,
+    "price": 1599,
     "description": "Comfortable joggers ideal for daily and sporty use.",
     "rating": 4.3,
     "category": "bottomwear",
@@ -882,7 +882,7 @@
   {
     "id": 89,
     "title": "Running Shorts",
-    "price": 1499,
+    "price": 1099,
     "description": "Lightweight and breathable shorts for running.",
     "rating": 4.1,
     "category": "sportswear",
@@ -892,7 +892,7 @@
   {
     "id": 90,
     "title": "Lightweight Jacket",
-    "price": 3999,
+    "price": 2799,
     "description": "Trendy and lightweight jacket for all seasons.",
     "rating": 4.5,
     "category": "jackets",
@@ -902,7 +902,7 @@
   {
     "id": 91,
     "title": "Checked Casual Shirt",
-    "price": 1599,
+    "price": 1199,
     "description": "Classic checked shirt for casual outings.",
     "rating": 4.2,
     "category": "shirts",
@@ -912,7 +912,7 @@
   {
     "id": 92,
     "title": "Formal Blazer",
-    "price": 5999,
+    "price": 4499,
     "description": "Smart and professional blazer for women.",
     "rating": 4.6,
     "category": "blazers",
@@ -922,7 +922,7 @@
   {
     "id": 93,
     "title": "Printed Kurti",
-    "price": 1899,
+    "price": 1399,
     "description": "Beautifully printed kurti for traditional look.",
     "rating": 4.4,
     "category": "ethnic",
@@ -932,7 +932,7 @@
   {
     "id": 94,
     "title": "Floral Dress",
-    "price": 2199,
+    "price": 1599,
     "description": "Elegant floral dress perfect for any occasion.",
     "rating": 4.3,
     "category": "dresses",
@@ -942,7 +942,7 @@
   {
     "id": 95,
     "title": "Chino Trousers",
-    "price": 2699,
+    "price": 1899,
     "description": "Stretchable and stylish chinos for men and women.",
     "rating": 4.1,
     "category": "bottomwear",
@@ -952,7 +952,7 @@
   {
     "id": 96,
     "title": "Track Pants",
-    "price": 1899,
+    "price": 1299,
     "description": "Durable and comfy track pants for workout sessions.",
     "rating": 4.3,
     "category": "sportswear",
@@ -962,7 +962,7 @@
   {
     "id": 97,
     "title": "Denim Jeans",
-    "price": 2499,
+    "price": 1799,
     "description": "Classic denim jeans suitable for any outfit.",
     "rating": 4.4,
     "category": "bottomwear",
@@ -972,7 +972,7 @@
   {
     "id": 98,
     "title": "Lace Blouse",
-    "price": 1999,
+    "price": 1499,
     "description": "Elegant lace blouse for a stylish look.",
     "rating": 4.3,
     "category": "tops",

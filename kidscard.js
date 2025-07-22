@@ -1,5 +1,5 @@
-let box = document.getElementById("boxrmain")
-let card = [
+let kids = document.getElementById("kids")
+let kCard = [
   {
     "id": 69,
     "image": "https://levi.in/cdn/shop/files/182981482_01_Front_4b14f5bd-3c6a-4603-acda-096c5675d825.jpg?v=1740488440",
@@ -107,9 +107,8 @@ let card = [
   }
 ]
 
-card.forEach((e)=>{
+kCard.forEach((e)=>{
     let dPersentage = (((Math.round(e.discount_price * 1.6) - e.discount_price) / Math.round(e.discount_price * 1.6)) * 100).toFixed(2)
-    
     box.innerHTML += `
     <div class="shadow-lg overflow-hidden bg-white group relative rounded-xl transition-transform duration-300 hover:scale-105 hover:shadow-2xl animate-fadeInUp"
     onmouseenter="startSlider(this)" onmouseleave="stopSlider(this)">

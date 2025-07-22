@@ -1,6 +1,5 @@
 <!doctype html>
 <html>
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -97,8 +96,7 @@
 
 <body class="bg-[#fafafd] min-h-screen transition-colors duration-500">
   <!-- navbar -->
-  <div id="navbox"></div>
-  <!-- navbar -->
+  <div class="nav" id="navbox"></div>
 
   <div class="max-w-7xl mx-auto px-2 md:px-6 py-4">
     <!-- Breadcrumb & Heading -->
@@ -338,16 +336,15 @@
         </div>
       </aside>
       <!-- Product Grid -->
-      <main class="w-full lg:w-3/4">
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 justify-items-center"
-          id="boxrmain">
-          <!-- Product cards will be injected here by JS -->
-        </div>
+      <main class="w-full">
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-4" id="kids"></div>
       </main>
     </div>
   </div>
-  <div id="footerbox"></div>
-  <script src="./script.js"></script>
-  <script src="./card.js"></script>
+  <!-- footer -->
+  <div class="footer mt-10" id="footerbox"></div>
+
+  <script src="./navfoot.js"></script>
+  <script src="./kidscard.js"></script>
 </body>
 </html>
