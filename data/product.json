@@ -1179,5 +1179,381 @@
     "description": "Largest iPhone 16 with superior camera and battery.",
     "image": "https://idestiny.in/wp-content/uploads/2024/10/iPhone_16_Pro_Max_White_Titanium_PDP_Image_Position_1__en-IN.jpg",
     "category": "smartphones"
+  },
+  {
+    "id": 153,
+    "title": "Banarasi Silk Saree",
+    "price": 1499,
+    "description": "Elegant Banarasi silk saree with rich zari work.",
+    "image": "https://ilovesarees.com/cdn/shop/files/Premium-Barbie-Pink-Banarasi-Silk-Saree-I-Love-Sarees2.webp?v=1727956731&width=1445",
+    "category": "sarees"
+  },
+  {
+    "id": 154,
+    "title": "Cotton Printed Saree",
+    "price": 699,
+    "description": "Soft cotton saree with floral print for daily wear.",
+    "image": "https://ramrajcotton.in/cdn/shop/files/Untitled-2_0004_DSC08247_0001_DSC08959.jpg_0027_DSC06583_1024x.jpg?v=1723709710",
+    "category": "sarees"
+  },
+  {
+    "id": 155,
+    "title": "Kanjivaram Silk Saree",
+    "price": 1899,
+    "description": "Traditional Kanjivaram saree with gold border.",
+    "image": "https://thesstudioonline.com/cdn/shop/files/SD5861_6.jpg?v=1734439880",
+    "category": "sarees"
+  },
+  {
+    "id": 156,
+    "title": "Georgette Embroidered Saree",
+    "price": 999,
+    "description": "Lightweight georgette saree with embroidery work.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCgecILyyym81Zoc_vKcd27vB1d2SkK9CwYw&s",
+    "category": "sarees"
+  },
+  {
+    "id": 157,
+    "title": "Chiffon Party Wear Saree",
+    "price": 849,
+    "description": "Stylish chiffon saree perfect for parties.",
+    "image": "https://bella-signora.com/wp-content/uploads/2024/10/party-wear-simmer-chiffon-saree-green_15_11zon_37_11zon.webp",
+    "category": "sarees"
+  },
+  {
+    "id": 158,
+    "title": "Art Silk Festive Saree",
+    "price": 1099,
+    "description": "Festive wear saree with a touch of modern design.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcdqO1v2VenXQk5akgE2EipPstEO9Eu45vQA&s",
+    "category": "sarees"
+  },
+  {
+    "id": 159,
+    "title": "Linen Striped Saree",
+    "price": 799,
+    "description": "Casual linen saree with elegant striped design.",
+    "image": "https://aham.store/cdn/shop/files/IMG_4391_6b8ae160-f9d7-49dd-ab6d-9f02fb85f59b_grande.jpg?v=1723874899",
+    "category": "sarees"
+  },
+  {
+    "id": 160,
+    "title": "Net Designer Saree",
+    "price": 1199,
+    "description": "Trendy net saree with stone work and shimmer.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2NF2qElrK1UWR8s_xXgOuGnZMnMYDNxiEoQ&s",
+    "category": "sarees"
+  },
+  {
+    "id": 161,
+    "title": "boAt Stone 650 Speaker",
+    "price": 1999,
+    "description": "10W boAt Bluetooth speaker with powerful bass.",
+    "image": "https://m.media-amazon.com/images/I/71rY4KQ5EtL._UF1000,1000_QL80_.jpg",
+    "category": "speakers"
+  },
+  {
+    "id": 162,
+    "title": "JBL Go 3 Speaker",
+    "price": 2799,
+    "description": "Compact waterproof speaker with punchy sound.",
+    "image": "https://in.jbl.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwb3e22402/JBL_GO_3_HERO_BLUE_0077_1605x1605px.png?sw=535&sh=535",
+    "category": "speakers"
+  },
+  {
+    "id": 163,
+    "title": "Zebronics Sound Bomb",
+    "price": 1699,
+    "description": "Portable speaker with LED lights and deep bass.",
+    "image": "https://zebronics.com/cdn/shop/products/Zeb-Sound-Bomb-G1-pic1.jpg?v=1641286394",
+    "category": "speakers"
+  },
+  {
+    "id": 164,
+    "title": "Realme Pocket Bluetooth Speaker",
+    "price": 1199,
+    "description": "Mini Bluetooth speaker with 360° surround sound.",
+    "image": "https://dukaan.b-cdn.net/700x700/webp/media/e2b9da1a-5f3c-423e-964e-7612efd8cc60.jpg",
+    "category": "speakers"
+  },
+  {
+    "id": 165,
+    "title": "MI Portable Speaker (16W)",
+    "price": 2499,
+    "description": "Powerful dual speaker with stereo pairing option.",
+    "image": "https://rukminim2.flixcart.com/image/704/844/xif0q/speaker/h/n/b/-original-imaggsduyj4chfq4.jpeg?q=90&crop=false",
+    "category": "speakers"
+  },
+  {
+    "id": 166,
+    "title": "Philips BT40 Speaker",
+    "price": 1499,
+    "description": "Compact Bluetooth speaker with deep bass.",
+    "image": "https://rukminim2.flixcart.com/image/704/844/ko0d6kw0/speaker/mobile-tablet-speaker/b/n/n/in-bt40bk-94-bt40bk-94-philips-original-imag2k3uzhwaex9x.jpeg?q=90&crop=false",
+    "category": "speakers"
+  },
+  {
+    "id": 167,
+    "title": "Portronics SoundDrum",
+    "price": 1899,
+    "description": "Portable stereo speaker with FM & USB support.",
+    "image": "https://m.media-amazon.com/images/I/71o881+wdnL.jpg",
+    "category": "speakers"
+  },
+  {
+    "id": 168,
+    "title": "iPhone 15 Transparent Cover",
+    "price": 999,
+    "description": "Crystal clear shockproof cover for iPhone 15.",
+    "image": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MT203?wid=4000&hei=4000&fmt=jpeg&qlt=90&.v=1693247981397",
+    "category": "mobile-covers"
+  },
+  {
+    "id": 169,
+    "title": "Samsung Galaxy M14 Soft Case",
+    "price": 299,
+    "description": "Flexible matte cover with camera protection.",
+    "image": "https://www.jiomart.com/images/product/original/rvh8wimrjk/fashionury-designer-printed-soft-silicone-back-case-cover-for-samsung-galaxy-m14-5g-back-cover-for-samsung-galaxy-m14-5g-d0411-product-images-orvh8wimrjk-p609225661-0-202406051551.jpg?im=Resize=(420,420)",
+    "category": "mobile-covers"
+  },
+  {
+    "id": 170,
+    "title": "Realme Narzo 60 Pro Back Cover",
+    "price": 349,
+    "description": "Textured back cover with anti-slip grip.",
+    "image": "https://images.meesho.com/images/products/428485537/accdr_512.webp",
+    "category": "mobile-covers"
+  },
+  {
+    "id": 171,
+    "title": "OnePlus Nord CE 3 Cover",
+    "price": 379,
+    "description": "Transparent back with corner protection.",
+    "image": "https://www.mystore.in/s/62ea2c599d1398fa16dbae0a/65f00b6299923b662c0668f7/winble-liquid-silicone-back-cover-case-for-oneplus-nord-ce-3-5g-back-cover-case-camera-protection-shockproof-protective-back-cover-case-for-oneplus-nord-ce-3-5g-lavender-0-640x640.jpg",
+    "category": "mobile-covers"
+  },
+  {
+    "id": 172,
+    "title": "Moto G73 Armor Case",
+    "price": 449,
+    "description": "Rugged design with stand and camera shield.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0di2jL6j5QLitc9hcVhMhWld5ziySJEEOLA&s",
+    "category": "mobile-covers"
+  },
+  {
+    "id": 173,
+    "title": "Vivo Y27T Leather Flip Case",
+    "price": 499,
+    "description": "Premium leather flip cover with card slots.",
+    "image": "https://m.media-amazon.com/images/I/61zkBw8UbkL._UF1000,1000_QL80_.jpg",
+    "category": "mobile-covers"
+  },
+  {
+    "id": 174,
+    "title": "iPhone 13 Silicone MagSafe Case",
+    "price": 899,
+    "description": "Official MagSafe compatible silicone case.",
+    "image": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MM293?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1630102494000",
+    "category": "mobile-covers"
+  },
+  {
+    "id": 175,
+    "title": "Oppo A78 Transparent Shockproof Case",
+    "price": 279,
+    "description": "Durable transparent case with air cushion tech.",
+    "image": "https://www.jiomart.com/images/product/original/rvntqqvwo5/fashionury-ultra-hybrid-crystal-clear-back-cover-for-oppo-a78-total-camera-protection-shockproof-design-transparent-back-pc-tpu-oppo-a78-4g-black-bumper-product-images-orvntqqvwo5-p609221592-0-202406051343.jpg?im=Resize=(420,420)",
+    "category": "mobile-covers"
+  },
+  {
+    "id": 176,
+    "title": "Samsung S23 Ultra Armor Case",
+    "price": 1099,
+    "description": "Military grade dual-layer cover with stand.",
+    "image": "https://m.media-amazon.com/images/I/81Nm1C0DUNL.jpg",
+    "category": "mobile-covers"
+  },
+  {
+    "id": 177,
+    "title": "OnePlus 11R Rugged Matte Case",
+    "price": 399,
+    "description": "Matte black anti-slip and anti-fingerprint case.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMIAWkcVOJpuOTsw8yvP10bEZhh5CvFNTdvQ&s",
+    "category": "mobile-covers"
+  },
+  {
+    "id": 178,
+    "title": "Realme C55 Gradient Case",
+    "price": 349,
+    "description": "Stylish gradient TPU case for Realme phones.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk9YpgJJ8rPLCqlUIW_0iNpKgoM2IZGHSsng&s",
+    "category": "mobile-covers"
+  },
+  {
+    "id": 179,
+    "title": "iPhone 14 Pro Max Bumper Cover",
+    "price": 499,
+    "description": "Edge bumper protection with metal frame design.",
+    "image": "https://m.media-amazon.com/images/I/616wP5ls++L.jpg",
+    "category": "mobile-covers"
+  },
+  {
+    "id": 180,
+    "title": "Cotton Printed Double Bedsheet",
+    "price": 799,
+    "description": "Soft cotton bedsheet with two pillow covers.",
+    "image": "https://m.media-amazon.com/images/I/81Xkq7upDCL._UF894,1000_QL80_.jpg",
+    "category": "bed-sheets"
+  },
+  {
+    "id": 181,
+    "title": "Jaipuri King Size Bedsheet",
+    "price": 1099,
+    "description": "Jaipuri print bedsheet with traditional motifs.",
+    "image": "https://lushfabjaipur.com/cdn/shop/products/aipuri_bedsheet_king_size_8.jpg?v=1659608045",
+    "category": "bed-sheets"
+  },
+  {
+    "id": 182,
+    "title": "Floral Cotton Bedsheet Set",
+    "price": 699,
+    "description": "Colorful floral pattern cotton bedsheet set.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJP5nW9UHYX2ieX6iRk9i3IYHmza96DIiU7g&s",
+    "category": "bed-sheets"
+  },
+  {
+    "id": 183,
+    "title": "3D Printed Bedsheet",
+    "price": 899,
+    "description": "3D design bedsheet for modern bedroom look.",
+    "image": "https://5.imimg.com/data5/QV/WH/BE/SELLER-4246563/3d-bedsheets-1-500x500.jpg",
+    "category": "bed-sheets"
+  },
+  {
+    "id": 184,
+    "title": "Satin Finish King Bedsheet",
+    "price": 1299,
+    "description": "Luxury satin bedsheet with premium texture.",
+    "image": "https://5.imimg.com/data5/SELLER/Default/2025/6/521703679/FC/LW/PK/246709147/1411-bedsheet-500x500.jpg",
+    "category": "bed-sheets"
+  },
+  {
+    "id": 185,
+    "title": "Men's Regular Fit Kurta",
+    "price": 1299,
+    "description": "Pure cotton kurta with embroidered design.",
+    "image": "https://m.media-amazon.com/images/I/91TdyxZn3pL._UY1100_.jpg",
+    "category": "ethnic-wear"
+  },
+  {
+    "id": 186,
+    "title": "Women’s Georgette Palazzo Set",
+    "price": 2199,
+    "description": "Floral printed palazzo set with matching dupatta.",
+    "image": "https://images.meesho.com/images/products/418726037/xtbhm_512.webp",
+    "category": "ethnic-wear"
+  },
+  {
+    "id": 187,
+    "title": "Leather Sling Bag",
+    "price": 2499,
+    "description": "Genuine leather sling bag with adjustable strap.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyJn2KjFu7Z7FgG9y99nWJzNXUAyrEs_EvZg&s",
+    "category": "bags"
+  },
+  {
+    "id": 188,
+    "title": "Backpack with USB Port",
+    "price": 1999,
+    "description": "Water-resistant backpack with USB charging port.",
+    "image": "https://www.fgear.in/cdn/shop/files/c_a006f3d2-145a-498e-8fe5-0c56538d7bd8.jpg?v=1722247500&width=1946",
+    "category": "bags"
+  },
+  {
+    "id": 189,
+    "title": "Matte Lipstick Set",
+    "price": 1499,
+    "description": "Long-lasting matte lipstick trio.",
+    "image": "https://files.myglamm.com/site-images/original/qw1-3.jpeg",
+    "category": "beauty"
+  },
+  {
+    "id": 190,
+    "title": "Men’s Aviator Sunglasses",
+    "price": 799,
+    "description": "UV protected metal frame aviators.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaUPkOLIkh4mR76iPhLwQlKBsdyxkKJ1qXU3W0L5YfDEiolWh3vEcNQHBvG6oHJYut4Zc&usqp=CAU",
+    "category": "sunglasses"
+  },
+  {
+    "id": 191,
+    "title": "Women's Wayfarer Sunglasses",
+    "price": 899,
+    "description": "Gradient lens wayfarer style sunglasses.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuVshN9kTX9rSspDwWflYngtBcc8SkEBzNYw&s",
+    "category": "sunglasses"
+  },
+  {
+    "id": 192,
+    "title": "Luxury Eau de Parfum",
+    "price": 2499,
+    "description": "Fresh floral fragrance, long-lasting.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUhaPGHwCclpWbmVscSxrhgFHm2XZcXjCJZA&s",
+    "category": "perfume"
+  },
+  {
+    "id": 193,
+    "title": "Soft Plush Teddy Bear",
+    "price": 699,
+    "description": "Cute 18\" teddy bear plush toy.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7VGj53OiQM6gihbQTVrCz2ZKirUZ4DcMp3A&s",
+    "category": "toys"
+  },
+  {
+    "id": 194,
+    "title": "Children’s Learning Puzzle",
+    "price": 499,
+    "description": "Educational wooden puzzle for kids.",
+    "image": "https://m.media-amazon.com/images/I/812LecVlRPL.jpg",
+    "category": "toys"
+  },
+  {
+    "id": 195,
+    "title": "Hardcover Bestseller Novel",
+    "price": 399,
+    "description": "Top-rated fiction novel paperback edition.",
+    "image": "https://m.media-amazon.com/images/I/71jBWENFZbL._UF1000,1000_QL80_.jpg",
+    "category": "books"
+  },
+  {
+    "id": 196,
+    "title": "Premium Stainless Steel Cookware Set",
+    "price": 4599,
+    "description": "5-piece pot and pan set with lids.",
+    "image": "https://m.media-amazon.com/images/I/71JJiUN+NeL._UF894,1000_QL80_.jpg",
+    "category": "kitchenware"
+  },
+  {
+    "id": 197,
+    "title": "Bamboo Desk Organizer",
+    "price": 599,
+    "description": "Eco-friendly stationery desk organizer.",
+    "image": "https://m.media-amazon.com/images/I/71+I0xZsYTL._UF1000,1000_QL80_.jpg",
+    "category": "stationery"
+  },
+  {
+    "id": 198,
+    "title": "Decorative LED Table Lamp",
+    "price": 1299,
+    "description": "Modern LED lamp with touch control.",
+    "image": "https://m.media-amazon.com/images/I/81w6aiQtKIL._UF1000,1000_QL80_.jpg",
+    "category": "home-decor"
+  },
+  {
+    "id": 199,
+    "title": "Yoga Non-Slip Mat",
+    "price": 799,
+    "description": "Eco-friendly TPE yoga mat with strap.",
+    "image": "https://5.imimg.com/data5/LD/OE/YK/SELLER-88847200/blue-yoga-mat-500x500.jpg",
+    "category": "fitness-accessories"
   }
 ]
