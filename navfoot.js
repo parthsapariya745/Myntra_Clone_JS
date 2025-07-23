@@ -314,7 +314,7 @@ navbox.innerHTML = `
                         </div>
                     </div>
                     <div class="relative group h-full lg:flex lg:items-center">
-                        <a href="#" class="item4 uppercase text-[14px] py-1.5 font-[700] text-[#282C3F]">Home & Living</a>
+                        <a href="#" class="item4 uppercase text-[14px] py-1.5 font-[700] text-[#282C3F]">Home</a>
                         <div class="absolute left-0 top-[80px] hidden group-hover:flex bg-white shadow-lg p-4 space-x-4 w-[900px] border border-gray-200">
                             <div class="w-full">
                                 <h3 class="font-bold text-[#F2C210] text-[14px]">Bed Linen & Furnishing</h3>
@@ -408,7 +408,7 @@ navbox.innerHTML = `
                         </div>
                     </div>                    
                     <div class="relative group h-full lg:flex lg:items-center"> 
-                        <a href="#" class="item5 uppercase text-[14px] py-1.5 font-[700] text-[#282C3F]">Beauty</a>
+                        <a href="#" class="item5 uppercase text-[14px] py-1.5 font-[700] text-[#282C3F]">GenZ</a>
                         <div class="absolute left-0 top-[80px] hidden group-hover:flex bg-white shadow-lg p-4 space-x-4 w-[900px] border border-gray-200">
                             <div class="w-full">
                                 <h3 class="font-bold text-[#0DB7AF] text-[14px]">Makeup</h3>
@@ -657,13 +657,13 @@ footerbox.innerHTML = `
   <footer class="bg-[#FAFBFC] py-10 text-[#282C3F] sm:pb-10 pb-28">
         <div class="footer max-w-6xl mx-auto px-5">
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-                <div class="">
+                <div>
                     <h3 class="text-xs font-bold uppercase mb-5">Online Shopping</h3>
                         <ul class="space-y-[5px] text-sm text-[#696B79]">
                             <li><a href="#" class="hover:text-[#282C3F]">Men</a></li>
                             <li><a href="#" class="hover:text-[#282C3F]">Women</a></li>
                             <li><a href="#" class="hover:text-[#282C3F]">Kids</a></li>
-                            <li><a href="#" class="hover:text-[#282C3F]">Home & Living</a></li>
+                            <li><a href="#" class="hover:text-[#282C3F]">Home & living</a></li>
                             <li><a href="#" class="hover:text-[#282C3F]">Beauty</a></li>
                             <li><a href="#" class="hover:text-[#282C3F]">Gift Cards</a></li>
                             <li><a href="#" class="hover:text-[#282C3F]">Myntra Insider</a></li>
