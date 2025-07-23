@@ -36,11 +36,9 @@
         * {
             font-family: "Assistant", serif;
         }
-
         .nav-menu a {
             position: relative;
         }
-
         .nav-menu a::before {
             content: "";
             position: absolute;
@@ -49,181 +47,144 @@
             bottom: 0;
             transition: .6s;
         }
-
         .nav-menu .item1::before {
             border-bottom: 4px solid #EE5F73;
         }
-
         .nav-menu .item2::before {
             border-bottom: 4px solid #FB56C1;
         }
-
         .nav-menu .item3::before {
             border-bottom: 4px solid #F26A10;
         }
-
         .nav-menu .item4::before {
             border-bottom: 4px solid #F2C210;
         }
-
         .nav-menu .item5::before {
             border-bottom: 4px solid #0DB7AF;
         }
-
         .nav-menu .item6::before {
             border-bottom: 4px solid #FF3F6C;
         }
-
         .nav-menu a:hover::before {
             left: 0%;
             right: 0%;
         }
-
         .slider-container {
             position: relative;
             overflow: hidden;
         }
-
         .slider-track {
             display: flex;
             transition: transform 0.5s ease-in-out;
         }
-
         .slider-item {
             min-width: 100%;
             flex-shrink: 0;
         }
-
         .brand-item {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-
         .category-item {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-
         .iconic-item {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-
         .fashion-item {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-
         .fashion-item:hover {
             transform: translateY(-8px) scale(1.05);
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
         }
-
         .fade-in {
             animation: fadeIn 0.8s ease-in-out;
         }
-
         @keyframes fadeIn {
             from {
                 opacity: 0;
                 transform: translateY(20px);
             }
-
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
-
         .slide-in-left {
             animation: slideInLeft 0.6s ease-out;
         }
-
         @keyframes slideInLeft {
             from {
                 opacity: 0;
                 transform: translateX(-50px);
             }
-
             to {
                 opacity: 1;
                 transform: translateX(0);
             }
         }
-
         .bounce-in {
             animation: bounceIn 0.6s ease-out;
         }
-
         @keyframes bounceIn {
             0% {
                 opacity: 0;
                 transform: scale(0.3);
             }
-
             50% {
                 opacity: 1;
                 transform: scale(1.05);
             }
-
             70% {
                 transform: scale(0.9);
             }
-
             100% {
                 opacity: 1;
                 transform: scale(1);
             }
         }
-
         .slide-up {
             animation: slideUp 0.6s ease-out;
         }
-
         @keyframes slideUp {
             from {
                 opacity: 0;
                 transform: translateY(30px);
             }
-
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
-
         .zoom-in {
             animation: zoomIn 0.7s ease-out;
         }
-
         @keyframes zoomIn {
             from {
                 opacity: 0;
                 transform: scale(0.8);
             }
-
             to {
                 opacity: 1;
                 transform: scale(1);
             }
         }
-
         .nav-dot {
             transition: all 0.3s ease;
         }
-
         .nav-dot.active {
             background-color: #3b82f6;
             transform: scale(1.2);
         }
-
         .nav-arrow {
             transition: all 0.3s ease;
         }
-
         .nav-arrow:hover {
             background-color: rgba(59, 130, 246, 0.9);
             transform: scale(1.1);
         }
     </style>
 </head>
-
 <body>
     <!-- navbar -->
     <div class="nav" id="navbox"></div>
@@ -264,285 +225,286 @@
     </section>
 
     <!-- Favourite Brands Section -->
-
-    <h2 class="text-2xl md:text-3xl font-bold text-gray-800 text-center mb-2 slide-in-left mt-[20px]">
-        FAVOURITE BRANDS
-    </h2>
+    <h2 class="text-2xl md:text-3xl font-bold text-gray-800 text-center mb-2 slide-in-left mt-[20px]">FAVOURITE BRANDS</h2>
     <div class="w-20 h-1 bg-blue-500 mx-auto mb-12"></div>
-
     <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-9">
         <!-- Brand 1 -->
         <div class="brand-item flex justify-center bounce-in" style="animation-delay: 0.1s;">
-            <img src="https://assets.myntassets.com/w_108,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/ab69d015-a975-4bda-990c-49e68938f6b31604926460802-19-FavBrands-AllenSollyJuniors.jpg"
-                alt="Allen Solly Juniors" class="object-cover rounded-lg">
+            <a href="./kids.html">
+                <img src="https://assets.myntassets.com/w_108,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/ab69d015-a975-4bda-990c-49e68938f6b31604926460802-19-FavBrands-AllenSollyJuniors.jpg" alt="Allen Solly Juniors" class="object-cover rounded-lg">
+            </a>
         </div>
 
         <!-- Brand 2 -->
         <div class="brand-item flex justify-center bounce-in cursor-pointer" style="animation-delay: 0.2s;">
-            <img src="https://assets.myntassets.com/w_108,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/fee6018d-c5dd-44b7-b1d1-9b994c1ae1e21604926460545-13-FavBrands-UCB.jpg"
-                alt="UCB" class="object-cover rounded-lg">
+            <a href="./kids.html">
+                <img src="https://assets.myntassets.com/w_108,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/fee6018d-c5dd-44b7-b1d1-9b994c1ae1e21604926460545-13-FavBrands-UCB.jpg" alt="UCB" class="object-cover rounded-lg">
+            </a>
         </div>
 
         <!-- Brand 3 -->
         <div class="brand-item flex justify-center bounce-in cursor-pointer" style="animation-delay: 0.3s;">
-            <img src="https://assets.myntassets.com/w_108,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/4d3f0e9d-1b7a-458e-b05b-75d1f51db0411604926460628-15-FavBrands-NautiNati.jpg"
-                alt="Nauti Nati" class="object-cover rounded-lg">
+            <a href="./kids.html">
+                <img src="https://assets.myntassets.com/w_108,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/4d3f0e9d-1b7a-458e-b05b-75d1f51db0411604926460628-15-FavBrands-NautiNati.jpg" alt="Nauti Nati" class="object-cover rounded-lg">
+            </a>
         </div>
 
         <!-- Brand 4 -->
         <div class="brand-item flex justify-center bounce-in cursor-pointer" style="animation-delay: 0.4s;">
-            <img src="https://assets.myntassets.com/w_108,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/a505cf6b-beab-4bea-ba8d-06d7302486761604926460589-14-FavBrands-USPA.jpg"
-                alt="USPA" class="object-cover rounded-lg">
+            <a href="./kids.html">
+                <img src="https://assets.myntassets.com/w_108,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/a505cf6b-beab-4bea-ba8d-06d7302486761604926460589-14-FavBrands-USPA.jpg" alt="USPA" class="object-cover rounded-lg">
+            </a>
         </div>
 
         <!-- Brand 5 -->
         <div class="brand-item flex justify-center bounce-in cursor-pointer" style="animation-delay: 0.5s;">
-            <img src="https://assets.myntassets.com/w_108,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/10/5843d479-8331-4c70-9e44-796b984a258e1604993081657-17-FavBrands-MiniKlub--1-.jpg"
-                alt="Mini Klub" class="object-cover rounded-lg">
+            <a href="./kids.html">
+                <img src="https://assets.myntassets.com/w_108,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/10/5843d479-8331-4c70-9e44-796b984a258e1604993081657-17-FavBrands-MiniKlub--1-.jpg" alt="Mini Klub" class="object-cover rounded-lg">
+            </a>
         </div>
 
         <!-- Brand 6 -->
         <div class="brand-item flex justify-center bounce-in cursor-pointer" style="animation-delay: 0.6s;">
-            <img src="https://assets.myntassets.com/w_108,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/20/dc3e538c-bdbe-4df6-b38d-e628f1b18e211605856135445-ShopBybrands-lilpicks.jpg"
-                alt="Lil Picks" class="object-cover rounded-lg">
+            <a href="./kids.html">
+                <img src="https://assets.myntassets.com/w_108,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/20/dc3e538c-bdbe-4df6-b38d-e628f1b18e211605856135445-ShopBybrands-lilpicks.jpg" alt="Lil Picks" class="object-cover rounded-lg">
+            </a>
         </div>
 
         <!-- Brand 7 -->
         <div class="brand-item flex justify-center bounce-in cursor-pointer" style="animation-delay: 0.7s;">
-            <img src="https://assets.myntassets.com/w_108,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/0bb2a638-7a84-4e75-bbbb-152140d32fd51604926460667-16-FavBrands-Peppermint.jpg"
-                alt="Peppermint" class="object-cover rounded-lg">
+            <a href="./kids.html">
+                <img src="https://assets.myntassets.com/w_108,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/0bb2a638-7a84-4e75-bbbb-152140d32fd51604926460667-16-FavBrands-Peppermint.jpg" alt="Peppermint" class="object-cover rounded-lg">
+            </a>
         </div>
 
         <!-- Brand 8 -->
         <div class="brand-item flex justify-center bounce-in cursor-pointer" style="animation-delay: 0.8s;">
-            <img src="https://assets.myntassets.com/w_108,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/7a43b5cc-7b14-465a-9043-153fe35fb4d91604926460506-12-FavBrands-Gini_Jony.jpg"
-                alt="Gini & Jony" class="object-cover rounded-lg">
+            <a href="./kids.html">
+                <img src="https://assets.myntassets.com/w_108,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/7a43b5cc-7b14-465a-9043-153fe35fb4d91604926460506-12-FavBrands-Gini_Jony.jpg" alt="Gini & Jony" class="object-cover rounded-lg">
+            </a>
         </div>
 
         <!-- Brand 9 -->
         <div class="brand-item flex justify-center bounce-in cursor-pointer" style="animation-delay: 0.9s;">
-            <img src="https://assets.myntassets.com/w_108,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/4f79cccf-f8af-4a41-b531-a02ffc8bb1151604926460459-11-FavBrands-YK.jpg"
-                alt="YK" class="object-cover rounded-lg">
+            <a href="./kids.html">
+                <img src="https://assets.myntassets.com/w_108,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/4f79cccf-f8af-4a41-b531-a02ffc8bb1151604926460459-11-FavBrands-YK.jpg" alt="YK" class="object-cover rounded-lg">
+            </a>
         </div>
     </div>
 
-
-
     <!-- Top Picks Section -->
-
-    <h2 class="text-2xl md:text-3xl font-bold text-gray-800 text-left mb-8 slide-in-left mt-[50px] ml-[10px]">
-        TOP PICKS
-    </h2>
-
+    <h2 class="text-2xl md:text-3xl font-bold text-gray-800 text-left mb-8 slide-in-left mt-[50px] ml-[10px]">TOP PICKS</h2>
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-11">
         <!-- Category 1 -->
         <div class="category-item slide-up" style="animation-delay: 0.1s;">
-            <img src="https://assets.myntassets.com/w_89,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/12/cca065d6-f192-44dd-9e12-40be8c5ed9ee1649781648648-H_M.jpg"
-                alt="H&M" class="w-full object-cover rounded-lg shadow-md">
+            <a href="./kids.html">
+                <img src="https://assets.myntassets.com/w_89,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/12/cca065d6-f192-44dd-9e12-40be8c5ed9ee1649781648648-H_M.jpg" alt="H&M" class="w-full object-cover rounded-lg shadow-md">
+            </a>
         </div>
 
         <!-- Category 2 -->
         <div class="category-item slide-up" style="animation-delay: 0.2s;">
-            <img src="https://assets.myntassets.com/w_89,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/12/00a95486-20dc-42e4-95d9-91242ba7f83b1649781648667-Kids-wear.jpg"
-                alt="Kids Wear" class="w-full object-cover rounded-lg shadow-md">
+            <a href="./kids.html">
+                <img src="https://assets.myntassets.com/w_89,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/12/00a95486-20dc-42e4-95d9-91242ba7f83b1649781648667-Kids-wear.jpg" alt="Kids Wear" class="w-full object-cover rounded-lg shadow-md">
+            </a>
         </div>
 
         <!-- Category 3 -->
         <div class="category-item slide-up" style="animation-delay: 0.3s;">
-            <img src="https://assets.myntassets.com/w_89,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/12/54794130-d358-421b-a73f-1ea5f98330641649781648655-Indian-Wear.jpg"
-                alt="Indian Wear" class="w-full object-cover rounded-lg shadow-md">
+            <a href="./kids.html">
+                <img src="https://assets.myntassets.com/w_89,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/12/54794130-d358-421b-a73f-1ea5f98330641649781648655-Indian-Wear.jpg" alt="Indian Wear" class="w-full object-cover rounded-lg shadow-md">
+            </a>
         </div>
 
         <!-- Category 4 -->
         <div class="category-item slide-up" style="animation-delay: 0.4s;">
-            <img src="https://assets.myntassets.com/w_89,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/12/2d7c5cdb-1859-4883-8ba6-8fa2bc8ace841649781648661-Jeans-_-Trousers.jpg"
-                alt="Jeans & Trousers" class="w-full object-cover rounded-lg shadow-md">
+            <a href="./kids.html">
+                <img src="https://assets.myntassets.com/w_89,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/12/2d7c5cdb-1859-4883-8ba6-8fa2bc8ace841649781648661-Jeans-_-Trousers.jpg" alt="Jeans & Trousers" class="w-full object-cover rounded-lg shadow-md">
+            </a>
         </div>
 
         <!-- Category 5 -->
         <div class="category-item slide-up" style="animation-delay: 0.5s;">
-            <img src="https://assets.myntassets.com/w_89,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/12/d535f930-b28d-4aaa-a3a1-e6cbf43ac18f1649781648685-Redtape.jpg"
-                alt="Redtape" class="w-full object-cover rounded-lg shadow-md">
+            <a href="./kids.html">
+                <img src="https://assets.myntassets.com/w_89,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/12/d535f930-b28d-4aaa-a3a1-e6cbf43ac18f1649781648685-Redtape.jpg" alt="Redtape" class="w-full object-cover rounded-lg shadow-md">
+            </a>
         </div>
 
         <!-- Category 6 -->
         <div class="category-item slide-up" style="animation-delay: 0.6s;">
-            <img src="https://assets.myntassets.com/w_89,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/12/603cd248-fa30-43be-b649-55b5ec70e5431649781648679-Max.jpg"
-                alt="Max" class="w-full object-cover rounded-lg shadow-md">
+            <a href="./kids.html">
+                <img src="https://assets.myntassets.com/w_89,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/12/603cd248-fa30-43be-b649-55b5ec70e5431649781648679-Max.jpg" alt="Max" class="w-full object-cover rounded-lg shadow-md">
+            </a>
         </div>
 
         <!-- Category 7 -->
         <div class="category-item slide-up" style="animation-delay: 0.7s;">
-            <img src="https://assets.myntassets.com/w_89,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/12/c97dcb69-4b36-4f4a-adde-d473b2e5ae9d1649781648698-Top-Brands.jpg"
-                alt="Top Brands" class="w-full object-cover rounded-lg shadow-md">
+            <a href="./kids.html">
+                <img src="https://assets.myntassets.com/w_89,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/12/c97dcb69-4b36-4f4a-adde-d473b2e5ae9d1649781648698-Top-Brands.jpg" alt="Top Brands" class="w-full object-cover rounded-lg shadow-md">
+            </a>
         </div>
 
         <!-- Category 8 -->
         <div class="category-item slide-up" style="animation-delay: 0.8s;">
-            <img src="https://assets.myntassets.com/w_89,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/12/46e55402-2a6b-4397-8332-4a786cf6fd801649781648704-Tops-_-Tees.jpg"
-                alt="Tops & Tees" class="w-full object-cover rounded-lg shadow-md">
+            <a href="./kids.html">
+                <img src="https://assets.myntassets.com/w_89,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/12/46e55402-2a6b-4397-8332-4a786cf6fd801649781648704-Tops-_-Tees.jpg" alt="Tops & Tees" class="w-full object-cover rounded-lg shadow-md">
+            </a>
         </div>
 
         <!-- Category 9 -->
         <div class="category-item slide-up" style="animation-delay: 0.9s;">
-            <img src="https://assets.myntassets.com/w_89,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/12/489b294a-84f4-4858-8f8e-ca485a36c5811649781648673-Kids-Wear-1.jpg"
-                alt="Kids Wear" class="w-full object-cover rounded-lg shadow-md">
+            <a href="./kids.html">
+                <img src="https://assets.myntassets.com/w_89,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/12/489b294a-84f4-4858-8f8e-ca485a36c5811649781648673-Kids-Wear-1.jpg" alt="Kids Wear" class="w-full object-cover rounded-lg shadow-md">
+            </a>
         </div>
 
         <!-- Category 10 -->
         <div class="category-item slide-up" style="animation-delay: 1.0s;">
-            <img src="https://assets.myntassets.com/w_89,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/12/38907e29-87e1-46ec-8542-43a29e3c82c81649781648691-Teens-Clothing.jpg"
-                alt="Teens Clothing" class="w-full object-cover rounded-lg shadow-md">
+            <a href="./kids.html">
+                <img src="https://assets.myntassets.com/w_89,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/12/38907e29-87e1-46ec-8542-43a29e3c82c81649781648691-Teens-Clothing.jpg" alt="Teens Clothing" class="w-full object-cover rounded-lg shadow-md">
+            </a>
         </div>
 
         <!-- Category 11 -->
         <div class="category-item slide-up" style="animation-delay: 1.1s;">
-            <img src="https://assets.myntassets.com/w_89,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/12/38907e29-87e1-46ec-8542-43a29e3c82c81649781648691-Teens-Clothing.jpg"
-                alt="Teens Clothing" class="w-full object-cover rounded-lg shadow-md">
+            <a href="./kids.html">
+                <img src="https://assets.myntassets.com/w_89,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/12/38907e29-87e1-46ec-8542-43a29e3c82c81649781648691-Teens-Clothing.jpg" alt="Teens Clothing" class="w-full object-cover rounded-lg shadow-md">
+            </a>
         </div>
     </div>
 
-
     <!-- Iconic Brands Section -->
-
-    <h2 class="text-2xl md:text-3xl font-bold text-gray-800 text-left mb-8 slide-in-left mt-[50px] ml-[10px]">
-        ICONIC BRANDS
-    </h2>
-
+    <h2 class="text-2xl md:text-3xl font-bold text-gray-800 text-left mb-8 slide-in-left mt-[50px] ml-[10px]">ICONIC BRANDS</h2>
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5">
         <!-- Iconic Brand 1 -->
         <div class="iconic-item slide-up" style="animation-delay: 0.1s;">
-            <img src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/f79446fb-46b9-455a-a6c0-4ffe3f58dd071604906586106-23-IconicBrands-H_M.jpg"
-                alt="H&M" class="w-full h-auto object-cover rounded-lg">
+            <a href="./kids.html">
+                <img src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/f79446fb-46b9-455a-a6c0-4ffe3f58dd071604906586106-23-IconicBrands-H_M.jpg" alt="H&M" class="w-full h-auto object-cover rounded-lg">
+            </a>
         </div>
 
         <!-- Iconic Brand 2 -->
         <div class="iconic-item slide-up" style="animation-delay: 0.2s;">
-            <img src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/2ba882da-667c-4f6e-a27e-292d0ffe477a1604906586228-26-IconicBrands-MangoKids.jpg"
-                alt="Mango Kids" class="w-full h-auto object-cover rounded-lg">
+            <a href="./kids.html">
+                <img src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/2ba882da-667c-4f6e-a27e-292d0ffe477a1604906586228-26-IconicBrands-MangoKids.jpg" alt="Mango Kids" class="w-full h-auto object-cover rounded-lg">
+            </a>
         </div>
 
         <!-- Iconic Brand 3 -->
         <div class="iconic-item slide-up" style="animation-delay: 0.3s;">
-            <img src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/37147834-2bc5-4cdb-8eb9-68bf0fd48ca01604906586191-25-IconicBrands-Chicco.jpg"
-                alt="Chicco" class="w-full h-auto object-cover rounded-lg">
+            <a href="./kids.html">
+                <img src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/37147834-2bc5-4cdb-8eb9-68bf0fd48ca01604906586191-25-IconicBrands-Chicco.jpg" alt="Chicco" class="w-full h-auto object-cover rounded-lg">
+            </a>
         </div>
 
         <!-- Iconic Brand 4 -->
         <div class="iconic-item slide-up" style="animation-delay: 0.4s;">
-            <img src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/f23d49ee-a598-4039-a6cd-33dab8a7e2011604906586056-22-IconicBrands-M_S.jpg"
-                alt="Marks & Spencer" class="w-full h-auto object-cover rounded-lg">
+            <a href="./kids.html">
+                <img src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/f23d49ee-a598-4039-a6cd-33dab8a7e2011604906586056-22-IconicBrands-M_S.jpg" alt="Marks & Spencer" class="w-full h-auto object-cover rounded-lg">
+            </a>
         </div>
 
         <!-- Iconic Brand 5 -->
         <div class="iconic-item slide-up" style="animation-delay: 0.5s;">
-            <img src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/0f9ec937-304a-433a-9433-5409c556831c1604906586152-24-IconicBrands-TommyHilfiger.jpg"
-                alt="Tommy Hilfiger" class="w-full h-auto object-cover rounded-lg">
+            <a href="./kids.html">
+                <img src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/0f9ec937-304a-433a-9433-5409c556831c1604906586152-24-IconicBrands-TommyHilfiger.jpg" alt="Tommy Hilfiger" class="w-full h-auto object-cover rounded-lg">
+            </a>
         </div>
     </div>
-
 
     <!-- Fashion & Essentials Section -->
     <section class="py-16 px-4 bg-gray-50">
         <div class="max-w-7xl mx-auto">
-            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 text-left mb-8 slide-in-left">
-                FASHION & ESSENTIALS
-            </h2>
-
-            <!-- Fashion Grid -->
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 text-left mb-8 slide-in-left">FASHION & ESSENTIALS</h2>
             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 md:gap-8">
-                <!-- Row 1 -->
                 <!-- Protective Masks -->
-
-                <div
-                    class="w-full bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center">
-                    <img src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/f20838ab-108c-4fe6-bd74-0dc7551a2bbd1604906586589-34-Essentials-Masks.jpg"
-                        alt="Protective Masks" class="w-[100%] object-cover">
+                <div class="w-full bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center">
+                    <a href="./kids.html">
+                        <img src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/f20838ab-108c-4fe6-bd74-0dc7551a2bbd1604906586589-34-Essentials-Masks.jpg" alt="Protective Masks" class="w-[100%] object-cover">
+                    </a>
                 </div>
 
-
                 <!-- Baby Care -->
-                <div
-                    class="w-full bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center">
-                    <img src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/3df8a117-4db8-4cb6-ac0e-e60291d957241604906586646-35-Essentials-BabyCare.jpg"
-                        alt="Protective Masks" class="w-[100%] object-cover">
+                <div class="w-full bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center">
+                    <a href="./kids.html">
+                        <img src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/3df8a117-4db8-4cb6-ac0e-e60291d957241604906586646-35-Essentials-BabyCare.jpg" alt="Protective Masks" class="w-[100%] object-cover">
+                    </a>
                 </div>
 
                 <!-- Shorts -->
-                <div
-                    class="w-full bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center">
-                    <img src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/29baf945-9e5b-4f0e-bb05-0ce65c57f9c91604906586502-32-Essentials-Shorts.jpg"
-                        alt="Protective Masks" class="w-[100%] object-cover">
+                <div class="w-full bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center">
+                    <a href="./kids.html">
+                        <img src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/29baf945-9e5b-4f0e-bb05-0ce65c57f9c91604906586502-32-Essentials-Shorts.jpg" alt="Protective Masks" class="w-[100%] object-cover">
+                    </a>
                 </div>
 
                 <!-- Value Packs & Sets -->
-                <div
-                    class="w-full bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center">
-                    <img src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/353fd453-6a17-45b9-b3da-a3dfd88121a31604906586547-33-Essentials-Valuepacks.jpg"
-                        alt="Protective Masks" class="w-[100%] object-cover">
+                <div class="w-full bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center">
+                    <a href="./kids.html">
+                        <img src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/353fd453-6a17-45b9-b3da-a3dfd88121a31604906586547-33-Essentials-Valuepacks.jpg" alt="Protective Masks" class="w-[100%] object-cover">
+                    </a>
                 </div>
 
                 <!-- Sleepwear & Innerwear -->
-                <div
-                    class="w-full bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center">
-                    <img src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/c22c8c4b-753a-4f90-8def-511d2ed6caf31604906586731-37-Essentials-EthnicWear.jpg"
-                        alt="Protective Masks" class="w-[100%] object-cover">
+                <div class="w-full bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center">
+                    <a href="./kids.html">
+                        <img src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/c22c8c4b-753a-4f90-8def-511d2ed6caf31604906586731-37-Essentials-EthnicWear.jpg" alt="Protective Masks" class="w-[100%] object-cover">
+                    </a>
                 </div>
 
-                <!-- Row 2 -->
                 <!-- Ethnic Wear -->
-                <div
-                    class="w-full bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center">
-                    <img src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/efc4b19d-179f-4437-961c-839df50299a51604906586690-36-Essentials-Night_innerwear.jpg"
-                        alt="Protective Masks" class="w-[100%] object-cover">
+                <div class="w-full bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center">
+                    <a href="./kids.html">
+                        <img src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/efc4b19d-179f-4437-961c-839df50299a51604906586690-36-Essentials-Night_innerwear.jpg" alt="Protective Masks" class="w-[100%] object-cover">
+                    </a>
                 </div>
 
                 <!-- Onesies -->
-                <div
-                    class="w-full bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center">
-                    <img src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/4e6eefd3-3355-4c1c-851e-48a49c97d5b31604906586407-30-Essentials-Onesies.jpg"
-                        alt="Protective Masks" class="w-[100%] object-cover">
+                <div class="w-full bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center">
+                    <a href="./kids.html">
+                        <img src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/4e6eefd3-3355-4c1c-851e-48a49c97d5b31604906586407-30-Essentials-Onesies.jpg" alt="Protective Masks" class="w-[100%] object-cover">
+                    </a>
                 </div>
 
                 <!-- Flip Flops & Sandals -->
-                <div
-                    class="w-full bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center">
-                    <img src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/33368b8b-8702-4108-96a9-b8fa5b7ed36f1604906586455-31-Essentials-FlipFlop_sandals.jpg"
-                        alt="Protective Masks" class="w-[100%] object-cover">
+                <div class="w-full bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center">
+                    <a href="./kids.html">
+                        <img src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/33368b8b-8702-4108-96a9-b8fa5b7ed36f1604906586455-31-Essentials-FlipFlop_sandals.jpg" alt="Protective Masks" class="w-[100%] object-cover">
+                    </a>
                 </div>
 
                 <!-- Dresses -->
-                <div
-                    class="w-full bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center">
-                    <img src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/2ab2f5b3-441a-430c-a605-2ac9d06007c01604906586315-28-Essentials-Dresses.jpg"
-                        alt="Protective Masks" class="w-[100%] object-cover">
+                <div class="w-full bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center">
+                    <a href="./kids.html">
+                        <img src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/2ab2f5b3-441a-430c-a605-2ac9d06007c01604906586315-28-Essentials-Dresses.jpg" alt="Protective Masks" class="w-[100%] object-cover">
+                    </a>
                 </div>
 
                 <!-- T-Shirts & Tops -->
-                <div
-                    class="w-full bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center">
-                    <img src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/c75a2039-4199-4174-b1b9-fecd30f7d3f91604906586359-29-Essentials-Tshirts_Tops.jpg"
-                        alt="Protective Masks" class="w-[100%] object-cover">
+                <div class="w-full bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center">
+                    <a href="./kids.html">
+                        <img src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/c75a2039-4199-4174-b1b9-fecd30f7d3f91604906586359-29-Essentials-Tshirts_Tops.jpg" alt="Protective Masks" class="w-[100%] object-cover">
+                    </a>
                 </div>
+            </div>
+        </div>
     </section>
 
-
     <!-- Logo Mania & Character Store Section -->
-    <h2
-        class="text-2xl md:text-3xl font-bold text-gray-800 text-left mb-8 slide-in-left ml-[20px] md:ml-[20px] lg:ml-[20px]">
-        EXPLORE MORE
-    </h2>
+    <h2 class="text-2xl md:text-3xl font-bold text-gray-800 text-left mb-8 slide-in-left ml-[20px] md:ml-[20px] lg:ml-[20px]">EXPLORE MORE</h2>
     <section class="w-full flex flex-col sm:flex-row">
         <!-- Left Side - Logo Mania -->
         <div class="w-full md:w-1/2 h-1/2 md:h-full">
-            <img src="https://assets.myntassets.com/w_490,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/630c5d84-b4fa-4ba8-aa92-c91cd134b9201604906586823-39-Banner-LogoMania.jpg"
-                alt="Logo Mania" class="w-full h-full object-cover">
+            <a href="./kids.html">
+                <img src="https://assets.myntassets.com/w_490,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/630c5d84-b4fa-4ba8-aa92-c91cd134b9201604906586823-39-Banner-LogoMania.jpg" alt="Logo Mania" class="w-full h-full object-cover">
+            </a>
         </div>
 
         <!-- Right Side - Character Store -->
         <div class="w-full md:w-1/2 h-1/2 md:h-full">
-            <img src="https://assets.myntassets.com/w_490,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/7e5d76b3-afd1-4e82-8eee-179269cbab1c1604906586871-40-Banner-CharacterStore.jpg"
-                alt="Character Store" class="w-full h-full object-cover">
+            <a href="./kids.html">
+                <img src="https://assets.myntassets.com/w_490,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/7e5d76b3-afd1-4e82-8eee-179269cbab1c1604906586871-40-Banner-CharacterStore.jpg" alt="Character Store" class="w-full h-full object-cover">
+            </a>
         </div>
     </section>
 
@@ -550,14 +512,16 @@
     <section class="w-full flex flex-col sm:flex-row">
         <!-- Left Side - Logo Mania -->
         <div class="w-full md:w-1/2 h-1/2 md:h-full">
-            <img src="https://assets.myntassets.com/w_490,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/cd843509-16fe-4437-a814-90f3eea6bb4b1604906586922-41-Banner-AllOrganic.jpg"
-                alt="Logo Mania" class="w-full h-full object-cover-xl">
+            <a href="./kids.html">
+                <img src="https://assets.myntassets.com/w_490,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/cd843509-16fe-4437-a814-90f3eea6bb4b1604906586922-41-Banner-AllOrganic.jpg" alt="Logo Mania" class="w-full h-full object-cover-xl">
+            </a>
         </div>
 
         <!-- Right Side - Character Store -->
         <div class="w-full md:w-1/2 h-1/2 md:h-full">
-            <img src="https://assets.myntassets.com/w_490,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/d878e27a-f64d-45c9-bd9b-ee257b49894f1604906586980-42-Banner-EssentialStore.jpg"
-                alt="Character Store" class="w-full h-full object-cover-xl">
+            <a href="./kids.html">
+                <img src="https://assets.myntassets.com/w_490,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/d878e27a-f64d-45c9-bd9b-ee257b49894f1604906586980-42-Banner-EssentialStore.jpg" alt="Character Store" class="w-full h-full object-cover-xl">
+            </a>
         </div>
     </section>
 
@@ -566,80 +530,84 @@
     <section class="w-full flex flex-col sm:flex-row mt-[30px]">
         <!-- Left Side - Logo Mania -->
         <div class="w-full md:w-1/2 h-1/2 md:h-full">
-            <img src="https://assets.myntassets.com/w_490,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/bb420f64-fea8-4d66-87b7-03c7f7fb6e621604906587041-43-Banner-Uniquely-Myntra.jpg"
-                alt="Logo Mania" class="w-full h-full object-cover-xl">
+            <a href="./kids.html">
+                <img src="https://assets.myntassets.com/w_490,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/bb420f64-fea8-4d66-87b7-03c7f7fb6e621604906587041-43-Banner-Uniquely-Myntra.jpg" alt="Logo Mania" class="w-full h-full object-cover-xl">
+            </a>
         </div>
 
         <!-- Right Side - Character Store -->
         <div class="w-full md:w-1/2 h-1/2 md:h-full">
-            <img src="https://assets.myntassets.com/w_490,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/1ac6219d-54b8-484e-813b-c239bb9880141604906587091-44-Banner-ActiveWearStore.jpg"
-                alt="Character Store" class="w-full h-full object-cover-xl">
+            <a href="./kids.html">
+                <img src="https://assets.myntassets.com/w_490,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/1ac6219d-54b8-484e-813b-c239bb9880141604906587091-44-Banner-ActiveWearStore.jpg" alt="Character Store" class="w-full h-full object-cover-xl">
+            </a>
         </div>
     </section>
 
     <!-- First Section - The Kids Space -->
-    <h2 class="text-2xl md:text-3xl font-bold text-gray-800 text-left mb-8 slide-in-left ml-[50px] mt-[60px]">
-        THE KID SPACE
-    </h2>
+    <h2 class="text-2xl md:text-3xl font-bold text-gray-800 text-left mb-8 slide-in-left ml-[50px] mt-[60px]">THE KID SPACE</h2>
 
     <!-- Main container with two divs -->
     <div class="flex flex-col sm:flex-row justify-center items-center">
         <!-- Left div - Bathroom Essentials -->
         <div class="w-full">
-            <img src="https://assets.myntassets.com/w_490,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/817ada39-86d3-4162-b10f-443c7d658f541604906587912-59b-Banner-KidsSpace.jpg"
-                alt="Kids Space - Bathroom Essentials" class="w-full h-full object-cover rounded-lg">
+            <a href="./kids.html">
+                <img src="https://assets.myntassets.com/w_490,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/817ada39-86d3-4162-b10f-443c7d658f541604906587912-59b-Banner-KidsSpace.jpg" alt="Kids Space - Bathroom Essentials" class="w-full h-full object-cover rounded-lg">
+            </a>
         </div>
 
         <!-- Right div - Home Linen & Decor -->
         <div class="w-full">
-            <img src="https://assets.myntassets.com/w_490,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/9906ea02-f0e5-40b8-b6db-ce3c5fd5fcf31604906587854-59a-Banner-KidsSpace.jpg"
-                alt="Kids Space - Home Linen & Decor" class="w-full h-full object-cover rounded-lg">
+            <a href="./kids.html">
+                <img src="https://assets.myntassets.com/w_490,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/9906ea02-f0e5-40b8-b6db-ce3c5fd5fcf31604906587854-59a-Banner-KidsSpace.jpg" alt="Kids Space - Home Linen & Decor" class="w-full h-full object-cover rounded-lg">
+            </a>
         </div>
     </div>
 
-
     <!-- Second Section - Budget Buy -->
-
-    <h2 class="text-2xl md:text-3xl font-bold text-gray-800 text-left mb-8 slide-in-left ml-[50px] mt-[60px]">
-        BUDGET BUY
-    </h2>
+    <h2 class="text-2xl md:text-3xl font-bold text-gray-800 text-left mb-8 slide-in-left ml-[50px] mt-[60px]">BUDGET BUY</h2>
     <div class="">
         <!-- Main container with 6 divs in responsive grid -->
         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
             <!-- T-Shirts Under 499 -->
             <div class="w-full">
-                <img src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/df528847-96b6-48cc-9104-064ad788804c1604906588040-61-BudgetBuys-TshirtsUnder499.jpg"
-                    alt="T-Shirts Under 499" class="w-full h-auto object-cover rounded-lg">
+                <a href="./kids.html">
+                    <img src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/df528847-96b6-48cc-9104-064ad788804c1604906588040-61-BudgetBuys-TshirtsUnder499.jpg" alt="T-Shirts Under 499" class="w-full h-auto object-cover rounded-lg">
+                </a>
             </div>
 
             <!-- Dresses Under 799 -->
             <div class="w-full">
-                <img src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/e42fbdcd-31cd-43de-b1eb-0f3f4351e08d1604906588093-62-BudgetBuys-DressesUnder799.jpg"
-                    alt="Dresses Under 799" class="w-full h-auto object-cover rounded-lg">
+                <a href="./kids.html">
+                    <img src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/e42fbdcd-31cd-43de-b1eb-0f3f4351e08d1604906588093-62-BudgetBuys-DressesUnder799.jpg" alt="Dresses Under 799" class="w-full h-auto object-cover rounded-lg">
+                </a>
             </div>
 
             <!-- Ethnic Wear Under 999 -->
             <div class="w-full">
-                <img src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/1abffc52-836d-4778-a034-a851b45e43c31604906588162-63-BudgetBuys-EthnicWearUnder999.jpg"
-                    alt="Ethnic Wear Under 999" class="w-full h-auto object-cover rounded-lg">
+                <a href="./kids.html">
+                    <img src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/1abffc52-836d-4778-a034-a851b45e43c31604906588162-63-BudgetBuys-EthnicWearUnder999.jpg" alt="Ethnic Wear Under 999" class="w-full h-auto object-cover rounded-lg">
+                </a>
             </div>
 
             <!-- Shorts Under 599 -->
             <div class="w-full">
-                <img src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/bb9520c5-20c6-496c-811e-4693bc2828b31604906588221-64-BudgetBuys-ShortsUnder599.jpg"
-                    alt="Shorts Under 599" class="w-full h-auto object-cover rounded-lg">
+                <a href="./kids.html">
+                    <img src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/bb9520c5-20c6-496c-811e-4693bc2828b31604906588221-64-BudgetBuys-ShortsUnder599.jpg" alt="Shorts Under 599" class="w-full h-auto object-cover rounded-lg">
+                </a>
             </div>
 
             <!-- Value Packs Under 799 -->
             <div class="w-full">
-                <img src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/8430d7ff-a2f4-496a-bf90-b1c3a8cc7d231604906588272-65-BudgetBuys-ValuePacksUnder799.jpg"
-                    alt="Value Packs Under 799" class="w-full h-auto object-cover rounded-lg">
+                <a href="./kids.html">
+                    <img src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/8430d7ff-a2f4-496a-bf90-b1c3a8cc7d231604906588272-65-BudgetBuys-ValuePacksUnder799.jpg" alt="Value Packs Under 799" class="w-full h-auto object-cover rounded-lg">
+                </a>
             </div>
 
             <!-- Footwear Under 699 -->
             <div class="w-full">
-                <img src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/af518c66-a610-4ab7-91bf-b343b9c1b8501604906588337-66-BudgetBuys-FootwearUnder699.jpg"
-                    alt="Footwear Under 699" class="w-full h-auto object-cover rounded-lg">
+                <a href="./kids.html">
+                    <img src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/11/9/af518c66-a610-4ab7-91bf-b343b9c1b8501604906588337-66-BudgetBuys-FootwearUnder699.jpg" alt="Footwear Under 699" class="w-full h-auto object-cover rounded-lg">
+                </a>
             </div>
         </div>
 
@@ -665,12 +633,12 @@
                 }
             });
 
-            const observerOptions = {
+            let observerOptions = {
                 threshold: 0.1,
                 rootMargin: '0px 0px -50px 0px'
             };
 
-            const observer = new IntersectionObserver((entries) => {
+            let observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.style.opacity = '1';
@@ -685,7 +653,6 @@
                     observer.observe(item);
                 });
             });
-
             document.documentElement.style.scrollBehavior = 'smooth';
         </script>
 </body>
