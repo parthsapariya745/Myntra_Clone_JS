@@ -104,20 +104,17 @@
       <button id="closeSignup" class="absolute top-4 right-4 text-xl text-gray-500 hover:text-gray-700">✕</button>
       <h2 class="mb-4 text-2xl font-bold text-[#282c3f]">Sign Up</h2>
       <form class="flex flex-col gap-4">
-        <input type="text" placeholder="First Name" required class="rounded border border-[#d4d5d9] px-3 py-2" />
-        <input type="text" placeholder="Last Name" required class="rounded border border-[#d4d5d9] px-3 py-2" />
-        <input type="email" placeholder="Email Address" required class="rounded border border-[#d4d5d9] px-3 py-2" />
-        <input type="text" placeholder="Home Address" required class="rounded border border-[#d4d5d9] px-3 py-2" />
-        <input type="password" placeholder="New Password" required class="rounded border border-[#d4d5d9] px-3 py-2" />
-        <input type="password" placeholder="Confirm Password" required
-          class="rounded border border-[#d4d5d9] px-3 py-2" />
+        <input type="text" placeholder="First Name" class="rounded border border-[#d4d5d9] px-3 py-2" required/>
+        <input type="text" placeholder="Last Name" class="rounded border border-[#d4d5d9] px-3 py-2" required/>
+        <input type="email" placeholder="Email Address" class="rounded border border-[#d4d5d9] px-3 py-2" required/>
+        <input type="text" placeholder="Home Address" class="rounded border border-[#d4d5d9] px-3 py-2" required/>
+        <input type="password" placeholder="New Password" class="rounded border border-[#d4d5d9] px-3 py-2" required/>
+        <input type="password" placeholder="Confirm Password" class="rounded border border-[#d4d5d9] px-3 py-2" required/>
         <div class="flex items-center gap-2">
-          <input type="checkbox" id="captchaCheck" required />
+          <input type="checkbox" id="captchaCheck" required/>
           <label for="captchaCheck" class="text-sm text-[#282c3f]">I'm not a robot</label>
         </div>
-        <button type="submit" id="signupSubmit"
-          class="mt-2 h-12 w-full rounded bg-[#ff3f6c] text-lg font-bold text-white transition-colors hover:bg-[#e6356a]">Sign
-          Up</button>
+        <button type="submit" id="signupSubmit" class="mt-2 h-12 w-full rounded bg-[#ff3f6c] text-lg font-bold text-white transition-colors hover:bg-[#e6356a]">Sign Up</button>
         <div class="mt-2 text-center text-sm">
           Already have an account?
           <a href="#" id="showLogin" class="ml-1 font-bold text-[#ff3f6c] hover:underline">Log in</a>
@@ -450,8 +447,7 @@
       passwordInput.type = this.checked ? 'text' : 'password';
     });
 
-    document.getElementById('signupSubmit').addEventListener('click', function (e) {
-      e.preventDefault();
+    document.getElementById('signupSubmit').addEventListener('click', function () {
       showView('profile');
     });
 
