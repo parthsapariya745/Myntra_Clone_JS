@@ -13,6 +13,11 @@ let dot3 = document.querySelectorAll(".dot3")
 let slides3 = dot3.length
 let cIndex3 = 0
 
+let slideWrap4 = document.querySelector("#slideWrap4")
+let dot4 = document.querySelectorAll(".dot4")
+let slides4 = dot4.length
+let cIndex4 = 0
+
 function slidePage1(index) {
     slideWrap1.style.transform = `translateX(-${index * 100}%)`
     dot1.forEach((e, i) => {
@@ -62,4 +67,21 @@ function slidePage3(index) {
 setInterval(()=> {
     cIndex3 = (cIndex3 + 1) % slides3
     slidePage3(cIndex3)
+}, 5000)
+
+function slidePage4(index) {
+    slideWrap4.style.transform = `translateX(-${index * 100}%)`
+    dot4.forEach((e, i) => {
+        if (i == index) {
+            e.style.background = '#7E818C';
+        } else {
+            e.style.background = '#c4c4c4';
+        }
+    });
+    cIndex4 = index
+}
+
+setInterval(()=> {
+    cIndex4 = (cIndex4 + 1) % slides4
+    slidePage4(cIndex4)
 }, 5000)

@@ -314,7 +314,7 @@ navbox.innerHTML = `
                         </div>
                     </div>
                     <div class="relative group h-full lg:flex lg:items-center">
-                        <a href="#" class="item4 uppercase text-[14px] py-1.5 font-[700] text-[#282C3F]">Home</a>
+                        <a href="./home_main.html" class="item4 uppercase text-[14px] py-1.5 font-[700] text-[#282C3F]">Home</a>
                         <div class="absolute left-0 top-[80px] hidden group-hover:flex bg-white shadow-lg p-4 space-x-4 w-[900px] border border-gray-200">
                             <div class="w-full">
                                 <h3 class="font-bold text-[#F2C210] text-[14px]">Bed Linen & Furnishing</h3>
@@ -408,7 +408,7 @@ navbox.innerHTML = `
                         </div>
                     </div>                    
                     <div class="relative group h-full lg:flex lg:items-center"> 
-                        <a href="#" class="item5 uppercase text-[14px] py-1.5 font-[700] text-[#282C3F]">GenZ</a>
+                        <a href="./genZ_main.html" class="item5 uppercase text-[14px] py-1.5 font-[700] text-[#282C3F]">GenZ</a>
                         <div class="absolute left-0 top-[80px] hidden group-hover:flex bg-white shadow-lg p-4 space-x-4 w-[900px] border border-gray-200">
                             <div class="w-full">
                                 <h3 class="font-bold text-[#0DB7AF] text-[14px]">Makeup</h3>
