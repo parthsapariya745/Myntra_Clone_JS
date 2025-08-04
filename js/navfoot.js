@@ -7,7 +7,7 @@ navbox.innerHTML = `
         <div class="navbar bg-white shadow-md w-full fixed top-0 left-0 z-10">
             <div class="navbox flex justify-between items-center h-[80px] xl:max-w-[1430px] px-4 mx-auto">
                 <div class="nav-logo">
-                    <a href="./index.html"><img src="https://github.com/parthsapariya745/myntra-clone/blob/main/Assets/myntra_logo-removebg-preview.png?raw=true" class="xl:w-[50px] w-[40px] object-cover" alt=""></a>
+                    <a href="../html/index.html"><img src="https://github.com/parthsapariya745/myntra-clone/blob/main/Assets/myntra_logo-removebg-preview.png?raw=true" class="xl:w-[50px] w-[40px] object-cover" alt=""></a>
                 </div>
                 <input type="checkbox" id="menu-toggle" class="peer hidden">
                 <label for="menu-toggle" class="lg:hidden cursor-pointe">
@@ -17,7 +17,7 @@ navbox.innerHTML = `
                 </label>
                 <div class="nav-menu hidden peer-checked:flex flex-col absolute top-[80px] bg-[white] lg:h-full left-0 w-full shadow-md p-4 lg:flex lg:flex-row lg:items-center lg:static lg:w-auto lg:shadow-none lg:p-0 xl:gap-9 lg:gap-7 gap-4">
                     <div class="relative group h-full lg:flex lg:items-center">
-                        <a href="./man_m.html" class="item1 uppercase text-[14px] py-1.5 font-[700] text-[#282C3F]">Men</a>
+                        <a href="../html/man_m.html" class="item1 uppercase text-[14px] py-1.5 font-[700] text-[#282C3F]">Men</a>
                         <div class="absolute left-0 top-[80px] hidden group-hover:flex bg-white shadow-lg p-4 space-x-4 w-[900px] border border-gray-200">
                             <div class="w-full">
                                 <h3 class="font-bold text-[#EE5F73] text-[14px]">Topwear</h3>
@@ -116,7 +116,7 @@ navbox.innerHTML = `
                         </div>
                     </div>
                     <div class="relative group h-full lg:flex lg:items-center">
-                        <a href="./woman_m.html" class="item2 uppercase text-[14px] py-1.5 font-[700] text-[#282C3F]">Women</a>
+                        <a href="../html/woman_m.html" class="item2 uppercase text-[14px] py-1.5 font-[700] text-[#282C3F]">Women</a>
                         <div class="absolute left-0 top-[80px] hidden group-hover:flex bg-white shadow-lg p-4 space-x-4 w-[900px] border border-gray-200">
                             <div class="w-full">
                                 <h3 class="font-bold text-[#FB56C1] text-[14px]">Indian & Fusion Wear</h3>
@@ -213,7 +213,7 @@ navbox.innerHTML = `
                         </div>
                     </div>
                     <div class="relative group h-full lg:flex lg:items-center">
-                        <a href="./kids_main.html" class="item3 uppercase text-[14px] py-1.5 font-[700] text-[#282C3F]">kids</a>
+                        <a href="../html/kids_main.html" class="item3 uppercase text-[14px] py-1.5 font-[700] text-[#282C3F]">kids</a>
                         <div class="absolute left-0 top-[80px] hidden group-hover:flex bg-white shadow-lg p-4 space-x-4 w-[900px] border border-gray-200">
                             <div class="w-full">
                                 <h3 class="font-bold text-[#F26A10] text-[14px]">Boys Clothing</h3>
@@ -314,7 +314,7 @@ navbox.innerHTML = `
                         </div>
                     </div>
                     <div class="relative group h-full lg:flex lg:items-center">
-                        <a href="./home_main.html" class="item4 uppercase text-[14px] py-1.5 font-[700] text-[#282C3F]">Home</a>
+                        <a href="../html/home_main.html" class="item4 uppercase text-[14px] py-1.5 font-[700] text-[#282C3F]">Home</a>
                         <div class="absolute left-0 top-[80px] hidden group-hover:flex bg-white shadow-lg p-4 space-x-4 w-[900px] border border-gray-200">
                             <div class="w-full">
                                 <h3 class="font-bold text-[#F2C210] text-[14px]">Bed Linen & Furnishing</h3>
@@ -408,7 +408,7 @@ navbox.innerHTML = `
                         </div>
                     </div>                    
                     <div class="relative group h-full lg:flex lg:items-center"> 
-                        <a href="./genZ_main.html" class="item5 uppercase text-[14px] py-1.5 font-[700] text-[#282C3F]">GenZ</a>
+                        <a href="../html/genZ_main.html" class="item5 uppercase text-[14px] py-1.5 font-[700] text-[#282C3F]">GenZ</a>
                         <div class="absolute left-0 top-[80px] hidden group-hover:flex bg-white shadow-lg p-4 space-x-4 w-[900px] border border-gray-200">
                             <div class="w-full">
                                 <h3 class="font-bold text-[#0DB7AF] text-[14px]">Makeup</h3>
@@ -523,7 +523,7 @@ navbox.innerHTML = `
                         <div class="icon-box flex gap-8 mb-2">
                             <div class="icon flex flex-col items-center">
                                 <i class="ri-user-3-line text-[20px] relative top-[5px]"></i>
-                                <a href="./profile.html"><p class="text-[12px] font-[700]">Profile</p></a>
+                                <a href="../html/profile.html"><p class="text-[12px] font-[700]">Profile</p></a>
                             </div>
                             <div class="icon flex flex-col items-center">
                                 <i class="ri-heart-line text-[20px] relative top-[5px]"></i>
@@ -531,7 +531,7 @@ navbox.innerHTML = `
                             </div>
                             <div class="relative cursor-pointer">
                                 <div class="flex flex-col items-center">
-                                    <a href="./addtocart.html">
+                                    <a href="../html/addtocart.html">
                                         <div class="relative">
                                             <i class="ri-shopping-bag-line text-[20px] relative top-[5px]"></i>
                                             <span id="cartCount" class="absolute -right-2 bg-red-500 text-white text-xs px-1.5 py-0.5 rounded-full">0</span>
@@ -551,7 +551,7 @@ navbox.innerHTML = `
                     <div class="icon-box flex gap-8 mb-2">
                         <div class="relative group inline-block">
                             <div class="icon flex flex-col items-center cursor-pointer">
-                                <a href="./profile.html" class="flex flex-col justify-center items-center pb-0.5 cursor-pointer">
+                                <a href="../html/profile.html" class="flex flex-col justify-center items-center pb-0.5 cursor-pointer">
                                     <i class="ri-user-3-line text-[20px] relative top-[5px] cursor-pointer"></i>
                                     <p class="text-[12px] font-[700] cursor-pointer">Profile</p>
                                 </a>
@@ -559,7 +559,7 @@ navbox.innerHTML = `
                                 <div class="absolute top-[68px] w-max shadow-lg border border-gray-200 bg-white text-black p-5 z-10 hidden group-hover:block">
                                     <p class="text-[15px] font-[700] text-[#282C3F]">Welcome</p>
                                     <p class="font-[300] text-[14px]">To access account and manage orders</p>
-                                    <a href="./profile.html"><button class="text-[#FF3F6C] border-[1px] border-[#d7d7d7] hover:border-[#FF3F6C] duration-300 text-[14.5px] font-[700] mt-3 px-4 py-1.5 cursor-pointer">LOGIN / SIGN UP</button></a>
+                                    <a href="../html/profile.html"><button class="text-[#FF3F6C] border-[1px] border-[#d7d7d7] hover:border-[#FF3F6C] duration-300 text-[14.5px] font-[700] mt-3 px-4 py-1.5 cursor-pointer">LOGIN / SIGN UP</button></a>
                                     <div class="line h-[1px] w-full bg-[#d7d7d7] mt-5 mb-3"></div>
                                     <ul class="text-sm text-gray-700 space-y-1">
                                         <li class="hover:font-bold"><a href="#">Orders</a></li>
@@ -585,7 +585,7 @@ navbox.innerHTML = `
                         </div>
                         <div class="relative cursor-pointer">
                             <div class="flex flex-col items-center">
-                                <a href="./addtocart.html">
+                                <a href="../html/addtocart.html">
                                     <div class="relative">
                                         <i class="ri-shopping-bag-line text-[20px] relative top-[5px]"></i>
                                         <span id="cartCount" class="absolute -right-2 bg-red-500 text-white text-xs px-1.5 py-0.5 rounded-full">0</span>
@@ -607,16 +607,16 @@ navbox.innerHTML = `
         <div class="nav-icon fixed bottom-0 sm:hidden w-full bg-white z-10">
             <div class="icon-box flex justify-between items-center gap-8 pt-3 pb-1 px-[6vw]" style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
                 <div class="icon flex flex-col justify-center items-center pt-1">
-                    <img src="./Assets/myntra_logo-removebg-preview.png" width="30px" alt="">
+                    <img src="../Assets/myntra_logo-removebg-preview.png" width="30px" alt="">
                     <p class="text-[12px] font-[700]">Home</p>
                 </div>
                 <div class="icon flex flex-col justify-center items-center pt-0.5">
-                    <img src="./Assets/fwd.jpeg" width="37.5px" alt="">
+                    <img src="../Assets/fwd.jpeg" width="37.5px" alt="">
                     <p class="text-[12px] font-[700]">Wishlist</p>
                 </div>
                 <div class="relative cursor-pointer">
                     <div class="flex flex-col items-center">
-                        <a href="./addtocart.html">
+                        <a href="../html/addtocart.html">
                             <div class="relative">
                                 <i class="ri-shopping-bag-line text-[20px] relative top-[5px]"></i>
                                 <span id="cartCount" class="absolute -right-2 bg-red-500 text-white text-xs px-1.5 py-0.5 rounded-full">0</span>
@@ -626,7 +626,7 @@ navbox.innerHTML = `
                     </div>
                 </div>
                 <div class="icon flex flex-col justify-center items-center pb-0.5 cursor-pointer">
-                    <a href="./profile.html" class="flex flex-col justify-center items-center pb-0.5 cursor-pointer">
+                    <a href="../html/profile.html" class="flex flex-col justify-center items-center pb-0.5 cursor-pointer">
                         <i class="ri-user-3-line text-[20px] relative top-[5px] cursor-pointer"></i>
                         <p class="text-[12px] font-[700] cursor-pointer">Profile</p>
                     </a>
@@ -704,16 +704,16 @@ footerbox.innerHTML = `
                         <h3 class="text-xs font-bold uppercase mt-6 mb-3">Keep in Touch</h3>
                         <div class="flex gap-2">
                             <a href="#" class="w-8 h-8 rounded-full flex items-center justify-center">
-                                <img src="./Assets/facebook.png" class="w-[23px]" alt="Facebook">
+                                <img src="../Assets/facebook.png" class="w-[23px]" alt="Facebook">
                             </a>
                             <a href="#" class="w-8 h-8 rounded-full flex items-center justify-center">
-                                <img src="./Assets/twitter'.png" class="w-[23px]" alt="Twitter">
+                                <img src="../Assets/twitter'.png" class="w-[23px]" alt="Twitter">
                             </a>
                             <a href="#" class="w-8 h-8 rounded-full flex items-center justify-center">
-                                <img src="./Assets/youtube.png" class="w-[23px]" alt="YouTube">
+                                <img src="../Assets/youtube.png" class="w-[23px]" alt="YouTube">
                             </a>
                             <a href="#" class="w-8 h-8 rounded-full flex items-center justify-center">
-                                <img src="./Assets/instagram.png" class="w-[23px]" alt="Instagram">
+                                <img src="../Assets/instagram.png" class="w-[23px]" alt="Instagram">
                             </a>
                         </div>
                     </div>

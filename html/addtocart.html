@@ -75,7 +75,7 @@
     <!-- navbar -->
     <div class="nav" id="navbox"></div>
     <div id="container"></div>
-    <script src="./navfoot.js"></script>
+    <script src="../js/navfoot.js"></script>
     <script>
       let cart = JSON.parse(localStorage.getItem("item")) || [];
       let qty = JSON.parse(localStorage.getItem("qty")) || [];
@@ -116,7 +116,7 @@
             if (qty[i] == undefined) qty[i] = 1;
           });
           localStorage.setItem("qty", JSON.stringify(qty));
-          fetch("./data/cart.json")
+          fetch("../data/cart.json")
             .then((req) => req.json())
             .then((res) => {
               let container = document.getElementById("container")
