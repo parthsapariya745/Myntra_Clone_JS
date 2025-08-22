@@ -7,10 +7,10 @@ navbox.innerHTML = `
         <div class="navbar bg-white shadow-md w-full fixed top-0 left-0 z-10">
             <div class="navbox flex justify-between items-center h-[80px] xl:max-w-[1430px] px-4 mx-auto">
                 <div class="nav-logo">
-                    <a href="../html/index.html"><img src="https://github.com/parthsapariya745/myntra-clone/blob/main/Assets/myntra_logo-removebg-preview.png?raw=true" class="xl:w-[50px] w-[40px] object-cover" alt=""></a>
+                    <a href="../index.html"><img src="https://github.com/parthsapariya745/myntra-clone/blob/main/Assets/myntra_logo-removebg-preview.png?raw=true" class="xl:w-[50px] w-[40px] object-cover" alt=""></a>
                 </div>
                 <input type="checkbox" id="menu-toggle" class="peer hidden">
-                <label for="menu-toggle" class="lg:hidden cursor-pointe">
+                <label for="menu-toggle" class="lg:hidden cursor-pointer">
                     <div class="w-8 h-8 flex items-center justify-center">
                         <i class="ri-menu-5-line text-3xl"></i>
                     </div>
@@ -607,8 +607,10 @@ navbox.innerHTML = `
         <div class="nav-icon fixed bottom-0 sm:hidden w-full bg-white z-10">
             <div class="icon-box flex justify-between items-center gap-8 pt-3 pb-1 px-[6vw]" style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
                 <div class="icon flex flex-col justify-center items-center pt-1">
-                    <img src="../Assets/myntra_logo-removebg-preview.png" width="30px" alt="">
-                    <p class="text-[12px] font-[700]">Home</p>
+                    <a href="../index.html">
+                        <img src="../Assets/myntra_logo-removebg-preview.png" width="30px" alt="">
+                        <p class="text-[12px] font-[700]">Home</p>
+                    </a>
                 </div>
                 <div class="icon flex flex-col justify-center items-center pt-0.5">
                     <img src="../Assets/fwd.jpeg" width="37.5px" alt="">
